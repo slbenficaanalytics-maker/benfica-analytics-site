@@ -7029,3 +7029,212 @@ body:has(#quarto-margin-sidebar) .section-intro.ba-page-hero {
     transform: translateY(8.06px) !important;
   }
 }
+
+/* BA_MOBILE_FINAL_POLISH_V1
+   Mobile-only layout cleanup. Desktop is intentionally untouched. */
+
+@media (max-width: 767px) {
+
+  /* 1) Homepage: latest match above recent matches */
+  html body .home-matchday.home-matchday-split {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  html body .home-matchday.home-matchday-split > .home-matchday-main,
+  html body .home-matchday.home-matchday-split > .home-matchday-recent {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* 2) Matchday analysis: KPI blocks become one column */
+  html body:has(.ba3-card) .ba3-grid,
+  html body:has(.ba3-card) .ba3-metrics,
+  html body:has(.ba3-card) .ba3-kpis,
+  html body:has(.ba3-card) .ba3-grid-main {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  html body:has(.ba3-card) .ba3-wide {
+    grid-column: 1 !important;
+  }
+
+  /* 3) Jogos: comparison/profile preview cards stack */
+  html body:has(.games-row) .games-quicknav-preview > p,
+  html body:has(.games-row) .games-quicknav,
+  html body:has(.games-row) .games-quicknav-preview {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: .8rem !important;
+  }
+
+  html body:has(.games-row) .games-preview-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 4) Avoid artificial empty space before footer */
+  html body #quarto-content,
+  html body main#quarto-document-content,
+  html body .page-columns,
+  html body .page-rows-contents {
+    min-height: 0 !important;
+  }
+
+  html body main#quarto-document-content {
+    padding-bottom: 1.25rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  html body footer.footer,
+  html body #quarto-footer {
+    margin-top: 1.25rem !important;
+  }
+}
+
+
+/* BA_MOBILE_SCORE_FOOTER_FINAL_V1
+   Mobile only: neutral score colour + remove excessive pre-footer gap. */
+
+@media (max-width: 767px) {
+
+  /* Scores: keep the whole result neutral/white everywhere. */
+  .ba3-score,
+  .ba3-score *,
+  .home-matchday-score,
+  .home-matchday-score * {
+    color: #fff !important;
+  }
+
+  /* Quarto leaves ~100 px of extra vertical space before the footer
+     on these mobile layouts. Pull the footer back up while retaining
+     a normal visual gap after the final content block. */
+  #quarto-footer,
+  footer.footer {
+    margin-top: -75px !important;
+  }
+}
+
+
+/* BA_MOBILE_SCORE_FOOTER_FINAL_V1
+   Mobile only: neutral score colour + remove excessive pre-footer gap. */
+
+@media (max-width: 767px) {
+
+  /* Scores: keep the whole result neutral/white everywhere. */
+  .ba3-score,
+  .ba3-score *,
+  .home-matchday-score,
+  .home-matchday-score * {
+    color: #fff !important;
+  }
+
+  /* Quarto leaves ~100 px of extra vertical space before the footer
+     on these mobile layouts. Pull the footer back up while retaining
+     a normal visual gap after the final content block. */
+  #quarto-footer,
+  footer.footer {
+    margin-top: -75px !important;
+  }
+}
+
+
+/* BA_MOBILE_FOOTER_POSITION_FINAL_V2
+   Mobile only: compensate Quarto's 60px + 68px pre-footer spacing.
+   Keep ~30px visual breathing room after the main content. */
+
+@media (max-width: 767px) {
+  #quarto-footer,
+  footer.footer {
+    position: relative !important;
+    transform: translateY(-98px) !important;
+    margin-bottom: -98px !important;
+  }
+}
+
+/* BA_MOBILE_FOOTER_TRAILING_GAP_FIX */
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 0 !important;
+  }
+
+  #quarto-footer,
+  footer.footer {
+    margin-bottom: -98px !important;
+  }
+}
+
+/* BA_MOBILE_FOOTER_FLOW_FINAL */
+
+@media (max-width: 767px) {
+  #quarto-footer,
+  footer.footer {
+    transform: none !important;
+    position: relative !important;
+    margin-top: -76.75px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* BA_MOBILE_FOOTER_CLEAN_FINAL_V3
+   Mobile only: remove Quarto grid's extra vertical row before the footer.
+   Also neutralises the earlier experimental footer offsets. */
+
+@media (max-width: 767px) {
+
+  /* On mobile there is no useful margin-sidebar grid to preserve.
+     Let the content wrapper shrink-wrap its actual content height. */
+  html body #quarto-content.quarto-container,
+  html body #quarto-content.page-columns,
+  html body #quarto-content {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  html body main#quarto-document-content {
+    height: auto !important;
+    min-height: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 1.25rem !important;
+  }
+
+  /* Reset all previous footer experiments and keep one normal gap. */
+  html body #quarto-footer,
+  html body footer.footer {
+    position: static !important;
+    transform: none !important;
+    margin-top: 1.25rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  html body {
+    padding-bottom: 0 !important;
+  }
+}
+
+
+/* BA_MOBILE_NAV_FOOTER_MARGIN_FIX_V1
+   The 68px mobile gap comes from .nav-footer margin-top collapsing
+   outside the footer. Keep only the normal footer margin. */
+
+@media (max-width: 767px) {
+  #quarto-footer .nav-footer,
+  footer.footer .nav-footer,
+  .nav-footer {
+    margin-top: 0 !important;
+  }
+
+  #quarto-footer,
+  footer.footer {
+    margin-top: 1.25rem !important;
+  }
+}
