@@ -409,7 +409,7 @@ Proprietary metrics are calculated using rules and baselines documented on the <
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
-  const isEN = path === "/en" || path.startsWith("/en/");
+  const isEN = /(^|\/)en(?:\/|$)/.test(path);
 
   function ptTarget() {
     if (!isEN) return path || "/";
@@ -455,7 +455,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- BA_GLOBAL_EN_RUNTIME -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  if (!(location.pathname === "/en" || location.pathname.startsWith("/en/"))) return;
+  if (!(/(^|\/)en(?:\/|$)/.test(location.pathname))) return;
 
   const exact = new Map([
     ["Início","Home"],["Último jogo","Latest match"],["Jogos","Matches"],
@@ -550,7 +550,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- BA_EN_FINAL_CLEANUP -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const isEN = location.pathname === "/en" || location.pathname.startsWith("/en/");
+  const isEN = /(^|\/)en(?:\/|$)/.test(location.pathname);
   if (!isEN) return;
 
   const exact = new Map([
@@ -650,7 +650,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- BA_EN_PLAYERS_FINAL -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  if (!(location.pathname === "/en" || location.pathname.startsWith("/en/"))) return;
+  if (!(/(^|\/)en(?:\/|$)/.test(location.pathname))) return;
   const pairs = [
     ["Tabela completa","Full table"],
     ["amostra curta","short sample"],
@@ -686,7 +686,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- BA_EN_LAST_MILE -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const isEN = location.pathname === "/en" || location.pathname.startsWith("/en/");
+  const isEN = /(^|\/)en(?:\/|$)/.test(location.pathname);
   if (!isEN) return;
 
   const replacements = [
@@ -735,12 +735,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const m = u.pathname.match(/\/jogos\/(SLB_[^/]+\.html)$/);
-    if (m && !u.pathname.startsWith("/en/jogos/")) {
+    if (m && !/(^|\/)en\/jogos\//.test(u.pathname)) {
       a.setAttribute("href", "/en/jogos/" + m[1]);
     }
 
     if (u.pathname.endsWith("/perfil-jogos.html") &&
-        !u.pathname.startsWith("/en/")) {
+        !/(^|\/)en\//.test(u.pathname)) {
       a.setAttribute("href", "/en/perfil-jogos.html");
     }
   });
@@ -750,7 +750,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- BA_PT_TOC_TITLE -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const isEN = location.pathname === "/en" || location.pathname.startsWith("/en/");
+  const isEN = /(^|\/)en(?:\/|$)/.test(location.pathname);
   if (isEN) return;
 
   const candidates = document.querySelectorAll(
@@ -766,6 +766,45 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+
+<!-- BA_GITHUB_PROJECT_PATH_FIX -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const path = location.pathname;
+
+  let base = "";
+  const enPos = path.indexOf("/en/");
+  const jogosPos = path.indexOf("/jogos/");
+
+  if (enPos >= 0) {
+    base = path.slice(0, enPos);
+  } else if (path.endsWith("/en")) {
+    base = path.slice(0, -3);
+  } else if (jogosPos >= 0) {
+    base = path.slice(0, jogosPos);
+  } else {
+    base = path.replace(/\/[^/]*$/, "");
+  }
+
+  if (base === "/") base = "";
+
+  document.querySelectorAll("a[href]").forEach(a => {
+    const href = a.getAttribute("href");
+    if (!href) return;
+
+    if (
+      href === "/en" ||
+      href.startsWith("/en/") ||
+      href.startsWith("/jogos/") ||
+      href === "/perfil-jogos.html"
+    ) {
+      if (base && !href.startsWith(base + "/")) {
+        a.setAttribute("href", base + href);
+      }
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
