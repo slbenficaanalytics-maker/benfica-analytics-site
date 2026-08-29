@@ -346,19 +346,33 @@ Proprietary metrics are calculated using rules and baselines documented on the <
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
-  const isEN = /(^|\/)en(?:\/|$)/.test(path);
+  const enMarker = "/en/";
+  const enPos = path.indexOf(enMarker);
+  const isEN = enPos >= 0 || path.endsWith("/en");
 
+  // Works both at domain root and on GitHub project pages
+  // e.g. /benfica-analytics/index.html <-> /benfica-analytics/en/index.html
   function ptTarget() {
     if (!isEN) return path || "/";
-    let p = path.replace(/^\/en/, "");
-    if (!p || p === "/") p = "/index.html";
-    return p;
+
+    if (enPos >= 0) {
+      const base = path.slice(0, enPos);
+      const rest = path.slice(enPos + enMarker.length);
+      return base + "/" + (rest || "index.html");
+    }
+
+    return path.slice(0, -3) + "/index.html";
   }
 
   function enTarget() {
     if (isEN) return path;
-    if (path === "/" || path === "/index.html") return "/en/index.html";
-    return "/en" + path;
+
+    const lastSlash = path.lastIndexOf("/");
+    const base = lastSlash >= 0 ? path.slice(0, lastSlash) : "";
+    const file = lastSlash >= 0 ? path.slice(lastSlash + 1) : path;
+
+    if (!file) return base + "/en/index.html";
+    return base + "/en/" + file;
   }
 
   const wrap = document.createElement("div");
