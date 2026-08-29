@@ -1,366 +1,520 @@
 [
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html",
-    "title": "Dicionário da ficha pós-jogo",
+    "objectID": "en/perfil-jogos.html",
+    "href": "en/perfil-jogos.html",
+    "title": "Match profiles",
     "section": "",
-    "text": "Identificador do jogo na football-data.org.\n\n\n\nData do jogo no formato AAAA-MM-DD.\n\n\n\nNome do adversário conforme a base principal.\n\n\n\nLocal do jogo:\n\nHome\nAway\n\n\n\n\n\n\n\nGolos marcados pelo Benfica.\n\n\n\nGolos sofridos pelo Benfica.\n\n\n\n\n\n\nPercentagem de posse do Benfica, entre 0 e 100.\n\n\n\nPercentagem de posse do adversário, entre 0 e 100.\nA soma deverá ser aproximadamente 100.\n\n\n\n\n\n\nTotal de remates do Benfica.\n\n\n\nTotal de remates do adversário.\n\n\n\nRemates enquadrados do Benfica.\n\n\n\nRemates enquadrados do adversário.\n\n\n\nRemates do Benfica dentro da área.\n\n\n\nRemates do adversário dentro da área.\n\n\n\n\n\n\nGrandes oportunidades atribuídas ao Benfica pela fonte escolhida.\n\n\n\nGrandes oportunidades atribuídas ao adversário.\n\n\n\nGolos esperados do Benfica.\n\n\n\nGolos esperados do adversário.\nO xG deve vir sempre da mesma fonte principal. Caso seja usada outra fonte, deve ser indicado em data_source ou notes.\n\n\n\n\n\n\nCantos do Benfica.\n\n\n\nCantos do adversário.\n\n\n\n\n\n\nNúmero de alterações no onze inicial relativamente ao jogo anterior.\nNo primeiro jogo da época, deixar vazio.\n\n\n\nNúmero de reforços de 2026/27 no onze inicial.\n\n\n\nSoma dos minutos jogados pelos reforços de 2026/27.\nExemplo:\n\nreforço A joga 90 minutos;\nreforço B joga 60 minutos;\ntotal = 150.\n\n\n\n\n\n\n\nIndica se o Benfica marcou o primeiro golo:\n\nTRUE\nFALSE\n\nNum jogo 0-0, deixar vazio.\n\n\n\nMinuto do primeiro golo do jogo, independentemente da equipa.\nNum jogo 0-0, deixar vazio.\n\n\n\n\n\n\nNúmero de expulsões do Benfica.\n\n\n\nNúmero de expulsões do adversário.\n\n\n\n\n\n\nFonte principal das estatísticas.\nExemplo:\n\nSofascore\nFotMob\nUEFA\nLiga Portugal\n\n\n\n\nAcontecimentos que possam distorcer a comparação:\n\nprolongamento;\nexpulsão;\nlesão precoce;\nmudança tática;\njogo interrompido;\nmétricas divergentes entre fontes;\nvalor estimado ou em falta.\n\n\n\n\n\n\nNunca substituir um valor desconhecido por zero.\nUsar vazio para dados indisponíveis.\nZero significa que a ocorrência foi medida e não aconteceu.\nManter a mesma fonte principal sempre que possível.\nRegistar mudanças de fonte.\nNão misturar xG de fornecedores diferentes sem identificação.\nRever valores anómalos antes de os usar nos modelos."
+    "text": "The map combines GameGrip (match control) with ChanceCraft (creation quality). The dashed lines represent Benfica’s 2025/26 league medians and provide a fixed reference for classifying current matches.\n\n\n\n\n\n\n\nHow to interpret\nComplete dominance combines high control with high-quality creation.\nTerritorial control represents match control without the same relative quality of chances.\nCreation without control identifies matches in which Benfica created high-quality chances without structurally controlling the match.\nLow expression corresponds to values below the reference on both dimensions.\nShot execution is analysed separately through the difference between xGOT and xG."
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#identificação",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#identificação",
-    "title": "Dicionário da ficha pós-jogo",
+    "objectID": "en/calendario.html",
+    "href": "en/calendario.html",
+    "title": "Calendar 2026/27",
     "section": "",
-    "text": "Identificador do jogo na football-data.org.\n\n\n\nData do jogo no formato AAAA-MM-DD.\n\n\n\nNome do adversário conforme a base principal.\n\n\n\nLocal do jogo:\n\nHome\nAway"
+    "text": "Competition\nRound\nDate\nOpponent\nVenue\nStatus\n\n\n\n\nEuropa League · Qualifying\n—\n23/07/2026 · 19:00\nFC St. Gallen 1879\nAway\n2–1\n\n\nEuropa League · Qualifying\n—\n30/07/2026 · 20:00\nFC St. Gallen 1879\nHome\n5–0\n\n\nEuropa League · Qualifying\n—\n06/08/2026 · 20:00\nHeart of Midlothian\nHome\n6–1\n\n\nLiga Portugal\nJ1\n09/08/2026 · 20:30\nAcadémico Viseu FC\nHome\n2–2\n\n\nEuropa League · Qualifying\n—\n13/08/2026 · 19:45\nHeart of Midlothian\nAway\n1–1\n\n\nLiga Portugal\nJ2\n17/08/2026 · 20:15\nCasa Pia\nAway\n0–7\n\n\nEuropa League · Play-off\n—\n20/08/2026 · 20:00\nAGF\nHome\n3–1\n\n\nEuropa League · Play-off\n—\n27/08/2026 · 19:00\nAGF\nAway\n1–3\n\n\nLiga Portugal\nJ4\n31/08/2026 · 20:15\nEstoril Praia\nHome\nScheduled\n\n\nLiga Portugal\nJ5\n05/09/2026 · 18:00\nCS Marítimo\nAway\nScheduled\n\n\nLiga Portugal\nJ3\n09/09/2026 · 20:15\nMoreirense\nAway\nScheduled\n\n\nLiga Portugal\nJ6\n12/09/2026 · 12:00\nGil Vicente\nHome\nScheduled\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nAZ Alkmaar\nHome\nScheduled\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nCeltic\nHome\nScheduled\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nLech Poznań\nHome\nScheduled\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nOFI Crete\nHome\nScheduled\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nAC Milan\nAway\nScheduled\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nFC Viktoria Plzeň\nAway\nScheduled\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nOmonia Nicosia\nAway\nScheduled\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nNEC Nijmegen\nAway\nScheduled\n\n\nLiga Portugal\nJ7\n19/09/2026 · 12:00\nFC Porto\nAway\nScheduled\n\n\nLiga Portugal\nJ8\n10/10/2026 · 12:00\nVitória SC\nHome\nScheduled\n\n\nLiga Portugal\nJ9\n24/10/2026 · 12:00\nSanta Clara\nAway\nScheduled\n\n\nLeague Cup\n—\n27/10/2026 · 19:00\nGil Vicente\nHome\nScheduled\n\n\nLiga Portugal\nJ10\n01/11/2026 · 11:00\nFC Alverca\nHome\nScheduled\n\n\nLiga Portugal\nJ11\n08/11/2026 · 11:00\nCF Estrela Amadora\nAway\nScheduled\n\n\nLiga Portugal\nJ12\n29/11/2026 · 11:00\nFamalicão\nHome\nScheduled\n\n\nLiga Portugal\nJ13\n06/12/2026 · 11:00\nCD Nacional\nAway\nScheduled\n\n\nLiga Portugal\nJ14\n13/12/2026 · 11:00\nSporting Braga\nHome\nScheduled\n\n\nLiga Portugal\nJ15\n20/12/2026 · 11:00\nRio Ave\nAway\nScheduled\n\n\nLiga Portugal\nJ16\n27/12/2026 · 11:00\nSporting CP\nHome\nScheduled\n\n\nLiga Portugal\nJ17\n10/01/2027 · 11:00\nFC Arouca\nAway\nScheduled\n\n\nLiga Portugal\nJ18\n17/01/2027 · 11:00\nAcadémico Viseu FC\nAway\nScheduled\n\n\nLiga Portugal\nJ19\n24/01/2027 · 11:00\nCasa Pia\nHome\nScheduled\n\n\nLiga Portugal\nJ20\n31/01/2027 · 11:00\nMoreirense\nHome\nScheduled\n\n\nLiga Portugal\nJ21\n07/02/2027 · 11:00\nEstoril Praia\nAway\nScheduled\n\n\nLiga Portugal\nJ22\n14/02/2027 · 11:00\nCS Marítimo\nHome\nScheduled\n\n\nLiga Portugal\nJ23\n21/02/2027 · 11:00\nGil Vicente\nAway\nScheduled\n\n\nLiga Portugal\nJ24\n28/02/2027 · 11:00\nFC Porto\nHome\nScheduled\n\n\nLiga Portugal\nJ25\n07/03/2027 · 11:00\nVitória SC\nAway\nScheduled\n\n\nLiga Portugal\nJ26\n14/03/2027 · 11:00\nSanta Clara\nHome\nScheduled\n\n\nLiga Portugal\nJ27\n21/03/2027 · 11:00\nFC Alverca\nAway\nScheduled\n\n\nLiga Portugal\nJ28\n03/04/2027 · 13:00\nCF Estrela Amadora\nHome\nScheduled\n\n\nLiga Portugal\nJ29\n10/04/2027 · 12:00\nFamalicão\nAway\nScheduled\n\n\nLiga Portugal\nJ30\n17/04/2027 · 12:00\nCD Nacional\nHome\nScheduled\n\n\nLiga Portugal\nJ31\n24/04/2027 · 12:00\nSporting Braga\nAway\nScheduled\n\n\nLiga Portugal\nJ32\n01/05/2027 · 12:00\nRio Ave\nHome\nScheduled\n\n\nLiga Portugal\nJ33\n08/05/2027 · 12:00\nSporting CP\nAway\nScheduled\n\n\nLiga Portugal\nJ34\n15/05/2027 · 12:00\nFC Arouca\nHome\nScheduled"
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#resultado",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#resultado",
-    "title": "Dicionário da ficha pós-jogo",
+    "objectID": "en/ultimo-jogo.html",
+    "href": "en/ultimo-jogo.html",
+    "title": "Latest match",
     "section": "",
-    "text": "Golos marcados pelo Benfica.\n\n\n\nGolos sofridos pelo Benfica."
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nAGF1–3BENFICA\n\n\nEstrutura estável. Processo controlado.\n\n\nLiga Europa · Play-off · 27/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+1.84\n\n\nxG Benfica 2.19 · Adversário 0.35\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nNível de processo\n\n\n2.24\n\n\nMédia da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nVolatilidade do processo\n\n\n1.94\n\n\nMediana da variação da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n93.1\n\n\nCobertura de pares: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nContinuidade por setor\n\n\nD 75 · M 83 · A 75\n\n\nContinuidade dos titulares por setor\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · GESTÃO DA VANTAGEM\n\n\nTempo em vantagem\n\n\n78.9%\n\n\nVantagem protegida\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nGianluca Prestianni\n\n\nAmeaça\n\n\n\n\n76.2/100\n\nAlto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#posse",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#posse",
-    "title": "Dicionário da ficha pós-jogo",
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Benfica Analytics",
     "section": "",
-    "text": "Percentagem de posse do Benfica, entre 0 e 100.\n\n\n\nPercentagem de posse do adversário, entre 0 e 100.\nA soma deverá ser aproximadamente 100."
+    "text": "Proprietary metrics to explore control, creation, threat and match context — dimensions traditional statistics do not always reveal directly.\n\nProprietary metrics Match-by-match data Open methodology"
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#remates",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#remates",
-    "title": "Dicionário da ficha pós-jogo",
+    "objectID": "en/index.html#see-the-game-beyond-the-usual-statistics.",
+    "href": "en/index.html#see-the-game-beyond-the-usual-statistics.",
+    "title": "Benfica Analytics",
     "section": "",
-    "text": "Total de remates do Benfica.\n\n\n\nTotal de remates do adversário.\n\n\n\nRemates enquadrados do Benfica.\n\n\n\nRemates enquadrados do adversário.\n\n\n\nRemates do Benfica dentro da área.\n\n\n\nRemates do adversário dentro da área."
+    "text": "Proprietary metrics to explore control, creation, threat and match context — dimensions traditional statistics do not always reveal directly.\n\nProprietary metrics Match-by-match data Open methodology"
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#qualidade-das-oportunidades",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#qualidade-das-oportunidades",
-    "title": "Dicionário da ficha pós-jogo",
-    "section": "",
-    "text": "Grandes oportunidades atribuídas ao Benfica pela fonte escolhida.\n\n\n\nGrandes oportunidades atribuídas ao adversário.\n\n\n\nGolos esperados do Benfica.\n\n\n\nGolos esperados do adversário.\nO xG deve vir sempre da mesma fonte principal. Caso seja usada outra fonte, deve ser indicado em data_source ou notes."
+    "objectID": "en/index.html#league-context",
+    "href": "en/index.html#league-context",
+    "title": "Benfica Analytics",
+    "section": "League context",
+    "text": "League context\nHow Benfica compares with the rest of Liga Portugal this season.\n\n\n\nxG / 90\n\n\n2.86\n\n\n1.º de 18\n\n\n\n\nxGA / 90\n\n\n0.65\n\n\n3.º de 18\n\n\n\n\nxGD / 90\n\n\n2.21\n\n\n1.º de 18\n\n\n\n\nxPTS / 90\n\n\n2.61\n\n\n1.º de 18\n\n\n\n\nxG jogo corrido / 90\n\n\n2.58\n\n\n1.º de 18\n\n\n\nBenchmark OddAlerts · situação acumulada da Liga"
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#bolas-paradas",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#bolas-paradas",
-    "title": "Dicionário da ficha pós-jogo",
-    "section": "",
-    "text": "Cantos do Benfica.\n\n\n\nCantos do adversário."
+    "objectID": "en/index.html#próximos-jogos",
+    "href": "en/index.html#próximos-jogos",
+    "title": "Benfica Analytics",
+    "section": "Próximos jogos",
+    "text": "Próximos jogos\n\n\n\n31 AGO · 20:15\n\n\nEstoril Praia\n\n\nJ4 · Casa\n\n\n\n\n05 SET · 18:00\n\n\nCS Marítimo\n\n\nJ5 · Fora\n\n\n\n\n09 SET · 20:15\n\n\nMoreirense\n\n\nJ3 · Fora\n\n\n\n\n12 SET · 12:00\n\n\nGil Vicente\n\n\nJ6 · Casa\n\n\n\n\n19 SET · 12:00\n\n\nFC Porto\n\n\nJ7 · Fora\n\n\n\nConsultar o calendário completo\n\n\nPLANTEL\n\n\nPlayers\n\n\nDestaques individuais nas diferentes dimensões de desempenho."
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#composição-da-equipa",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#composição-da-equipa",
-    "title": "Dicionário da ficha pós-jogo",
-    "section": "",
-    "text": "Número de alterações no onze inicial relativamente ao jogo anterior.\nNo primeiro jogo da época, deixar vazio.\n\n\n\nNúmero de reforços de 2026/27 no onze inicial.\n\n\n\nSoma dos minutos jogados pelos reforços de 2026/27.\nExemplo:\n\nreforço A joga 90 minutos;\nreforço B joga 60 minutos;\ntotal = 150."
+    "objectID": "en/index.html#destaques-202627",
+    "href": "en/index.html#destaques-202627",
+    "title": "Benfica Analytics",
+    "section": "Destaques 2026/27",
+    "text": "Destaques 2026/27\n\n\n\nAmeaça\n\n\nVangelis Pavlidis\n\n\n85.7\n\n\n513 min · Em formação\n\n\n\n\nCriação\n\n\nAndreas Schjelderup\n\n\n79.2\n\n\n219 min · Em formação\n\n\n\n\nProgressão\n\n\nNeto Jose\n\n\n70.9\n\n\n90 min · Amostra reduzida\n\n\n\n\nSegurança\n\n\nEnzo Barrenechea\n\n\n73.7\n\n\n580 min · Em formação\n\n\n\n\nDefesa\n\n\nNeto Jose\n\n\n73.7\n\n\n90 min · Amostra reduzida"
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#estado-do-resultado",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#estado-do-resultado",
-    "title": "Dicionário da ficha pós-jogo",
-    "section": "",
-    "text": "Indica se o Benfica marcou o primeiro golo:\n\nTRUE\nFALSE\n\nNum jogo 0-0, deixar vazio.\n\n\n\nMinuto do primeiro golo do jogo, independentemente da equipa.\nNum jogo 0-0, deixar vazio."
+    "objectID": "en/index.html#player-spotlight",
+    "href": "en/index.html#player-spotlight",
+    "title": "Benfica Analytics",
+    "section": "Player Spotlight",
+    "text": "Player Spotlight\n\n\n\n\n\nA\n\n\n\n\nVangelis PavlidisA\n\n\n513 min · Em formação\n\n\n\n\n\nAmeaça\n\n\n\n\n\n\n\n\n\n\n85.7\n\n\n\n\nCriação\n\n\n\n\n\n\n\n\n\n\n57.5\n\n\n\n\nProgressão\n\n\n\n\n\n\n\n\n\n\n34.8\n\n\n\n\nSegurança\n\n\n\n\n\n\n\n\n\n\n46.5\n\n\n\n\nContribuição defensiva\n\n\n\n\n\n\n\n\n\n\n39.4\n\n\n\nLinha central = referência 2025/26 (50)\n\n\nView full analysis dos jogadores →"
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#expulsões",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#expulsões",
-    "title": "Dicionário da ficha pós-jogo",
+    "objectID": "jogos/SLB_20260820_H_AGF.html",
+    "href": "jogos/SLB_20260820_H_AGF.html",
+    "title": "Análise do jogo",
     "section": "",
-    "text": "Número de expulsões do Benfica.\n\n\n\nNúmero de expulsões do adversário."
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nBENFICA3–1AGF\n\n\nProcesso forte. Estrutura estável.\n\n\nLiga Europa · Play-off · 20/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+4.15\n\n\nxG Benfica 4.64 · Adversário 0.49\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nNível de processo\n\n\n2.36\n\n\nMédia da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nVolatilidade do processo\n\n\n1.58\n\n\nMediana da variação da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n84.4\n\n\nCobertura de pares: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nContinuidade por setor\n\n\nD 75 · M 83 · A 75\n\n\nContinuidade dos titulares por setor\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · GESTÃO DA VANTAGEM\n\n\nTempo em vantagem\n\n\n97.8%\n\n\nVantagem protegida\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nVangelis Pavlidis\n\n\nAmeaça\n\n\n\n\n84.2/100\n\nMuito alto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#proveniência-e-observações",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#proveniência-e-observações",
-    "title": "Dicionário da ficha pós-jogo",
+    "objectID": "jogos/SLB_20260813_A_HEARTOFMIDLOTHIAN.html",
+    "href": "jogos/SLB_20260813_A_HEARTOFMIDLOTHIAN.html",
+    "title": "Análise do jogo",
     "section": "",
-    "text": "Fonte principal das estatísticas.\nExemplo:\n\nSofascore\nFotMob\nUEFA\nLiga Portugal\n\n\n\n\nAcontecimentos que possam distorcer a comparação:\n\nprolongamento;\nexpulsão;\nlesão precoce;\nmudança tática;\njogo interrompido;\nmétricas divergentes entre fontes;\nvalor estimado ou em falta."
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nHEART OF MIDLOTHIAN1–1BENFICA\n\n\nRotação alta. Resultado curto.\n\n\nLiga Europa · Qualificação · 13/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+0.44\n\n\nxG Benfica 1.12 · Adversário 0.68\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n-2\n\n\nEmpate quando o xG sugeria vitória\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nNível de processo\n\n\n1.51\n\n\nMédia da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nVolatilidade do processo\n\n\n1.10\n\n\nMediana da variação da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n9.5\n\n\nCobertura de pares: 14.5%\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nContinuidade por setor\n\n\nD 25 · M 50 · A 25\n\n\nContinuidade dos titulares por setor\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nTomás Araújo\n\n\nProgressão\n\n\n\n\n70.3/100\n\nAlto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
-    "objectID": "data/manual/MATCH_INPUT_DICTIONARY.html#regras-gerais",
-    "href": "data/manual/MATCH_INPUT_DICTIONARY.html#regras-gerais",
-    "title": "Dicionário da ficha pós-jogo",
+    "objectID": "jogos/SLB_20260806_H_HEARTOFMIDLOTHIAN.html",
+    "href": "jogos/SLB_20260806_H_HEARTOFMIDLOTHIAN.html",
+    "title": "Análise do jogo",
     "section": "",
-    "text": "Nunca substituir um valor desconhecido por zero.\nUsar vazio para dados indisponíveis.\nZero significa que a ocorrência foi medida e não aconteceu.\nManter a mesma fonte principal sempre que possível.\nRegistar mudanças de fonte.\nNão misturar xG de fornecedores diferentes sem identificação.\nRever valores anómalos antes de os usar nos modelos."
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nBENFICA6–1HEART OF MIDLOTHIAN\n\n\nVantagem cedo. Controlo até ao fim.\n\n\nLiga Europa · Qualificação · 06/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+2.45\n\n\nxG Benfica 3.65 · Adversário 1.20\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n38.9\n\n\nCobertura de pares: 65.5%\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nContinuidade por setor\n\n\nD 75 · M 50 · A 75\n\n\nContinuidade dos titulares por setor\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · GESTÃO DA VANTAGEM\n\n\nTempo em vantagem\n\n\n96.7%\n\n\nVantagem protegida\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nGianluca Prestianni\n\n\nThreat Execution · Qualidade de finalização\n\n\n\n\n82.8/100\n\nMuito alto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html",
-    "href": "data/ANALYTICAL_HYPOTHESES.html",
-    "title": "Hipóteses analíticas",
+    "objectID": "jogos/SLB_20260723_A_FCSTGALLEN1879.html",
+    "href": "jogos/SLB_20260723_A_FCSTGALLEN1879.html",
+    "title": "Análise do jogo",
     "section": "",
-    "text": "Este documento regista as perguntas experimentais do projeto.\nCada hipótese deverá ser testada, revista ou rejeitada com base nos dados.\n\n\nO Benfica pode dominar o número de remates sem dominar a qualidade real das oportunidades.\n\n\n\nremates\nremates enquadrados\ndistância média dos remates\nxG, quando disponível\ngrandes oportunidades\n\n\n\n\nEm preparação.\n\n\n\n\n\nO Benfica pode conceder poucos remates, mas permitir que uma proporção elevada chegue enquadrada.\n\n\n\nremates sofridos\nremates enquadrados sofridos\ndefesas\ngolos sofridos\n\n\n\n\nÍndice de exposição defensiva.\n\n\n\nPrimeira versão criada.\n\n\n\n\n\nAlguns resultados defensivos positivos podem esconder uma exposição elevada compensada pelo guarda-redes.\n\n\n\nremates enquadrados sofridos\ndefesas\ngolos sofridos\nxG pós-remate, quando disponível\n\n\n\n\nPrimeira versão criada.\n\n\n\n\n\nA entrada de reforços pode melhorar algumas dimensões individuais e reduzir temporariamente a coordenação coletiva.\n\n\n\nreforços no onze\nminutos dos reforços\nalterações no onze\ndesempenho antes e depois da entrada\ncontinuidade por setor\n\n\n\n\nBase do plantel criada; faltam alinhamentos e minutos.\n\n\n\n\n\nAlterar jogadores não significa necessariamente alterar funções, e manter jogadores não significa necessariamente manter a estrutura.\n\n\n\nonze inicial\nposição e função\nsubstituições\nformação\nredes de passe ou aproximações equivalentes\n\n\n\n\nPor desenvolver.\n\n\n\n\n\nVitórias e derrotas podem não representar corretamente o processo produzido.\n\n\n\nresultado\ncontrolo de remates\nexposição defensiva\nxG\nforça do adversário\nestado do marcador\n\n\n\n\nPrimeiras métricas disponíveis.\n\n\n\n\n\nMarcar primeiro não significa necessariamente controlar o jogo depois da vantagem.\n\n\n\nminuto dos golos\nremates antes e depois do primeiro golo\nposse ou territorialidade por períodos\nsubstituições\nresultado final\n\n\n\n\nPor desenvolver.\n\n\n\n\n\nCada hipótese deverá indicar:\n\npergunta;\nmecanismo esperado;\nvariáveis;\nmodelo ou teste;\nresultado;\nincerteza;\nlimitações;\ndecisão: mantida, reformulada ou rejeitada."
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nFC ST. GALLEN 18792–1BENFICA\n\n\nPouca familiaridade. Estrutura em teste.\n\n\nLiga Europa · Qualificação · 23/07/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n-0.42\n\n\nxG Benfica 1.32 · Adversário 1.74\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n20.4\n\n\nCobertura de pares: 63.6%\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nAlexander Bah\n\n\nContribuição defensiva\n\n\n\n\n67.7/100\n\nAlto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html#h01-volume-versus-qualidade",
-    "href": "data/ANALYTICAL_HYPOTHESES.html#h01-volume-versus-qualidade",
-    "title": "Hipóteses analíticas",
+    "objectID": "en/jogos/SLB_20260820_H_AGF.html",
+    "href": "en/jogos/SLB_20260820_H_AGF.html",
+    "title": "Match analysis",
     "section": "",
-    "text": "O Benfica pode dominar o número de remates sem dominar a qualidade real das oportunidades.\n\n\n\nremates\nremates enquadrados\ndistância média dos remates\nxG, quando disponível\ngrandes oportunidades\n\n\n\n\nEm preparação."
+    "text": "BENFICA ANALYTICS · MATCH ANALYSIS\n\n\nBENFICA3–1AGF\n\n\nProcesso forte. Estrutura estável.\n\n\nLiga Europa · Play-off · 20/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nxG Difference\n\n\n+4.15\n\n\nxG Benfica 4.64 · Opponent 0.49\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nResult vs Process\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nRECENT FORM\n\n\nProcess Level\n\n\n2.36\n\n\nAverage xG difference over the last 5 matches\n\n\n\n\n\n\n\n\n\n\n\nRECENT FORM\n\n\nProcess Volatility\n\n\n1.58\n\n\nMedian xG-difference swing over the last 5 matches\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nStarting XI Familiarity\n\n\n84.4\n\n\nPair coverage: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nSector Continuity\n\n\nD 75 · M 83 · A 75\n\n\nStarter continuity by sector\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · LEAD MANAGEMENT\n\n\nTime Leading\n\n\n97.8%\n\n\nLead protected\n\n\n\n\n\n\n\n\n\n\n\n\nPLAYER SPOTLIGHT\n\n\nVangelis Pavlidis\n\n\nThreat\n\n\n\n\n84.2/100\n\nVery high\n\n\n\nProprietary metrics are calculated using rules and baselines documented on the Methodology."
   },
   {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html#h02-exposição-defensiva-oculta",
-    "href": "data/ANALYTICAL_HYPOTHESES.html#h02-exposição-defensiva-oculta",
-    "title": "Hipóteses analíticas",
+    "objectID": "en/jogos/SLB_20260813_A_HEARTOFMIDLOTHIAN.html",
+    "href": "en/jogos/SLB_20260813_A_HEARTOFMIDLOTHIAN.html",
+    "title": "Match analysis",
     "section": "",
-    "text": "O Benfica pode conceder poucos remates, mas permitir que uma proporção elevada chegue enquadrada.\n\n\n\nremates sofridos\nremates enquadrados sofridos\ndefesas\ngolos sofridos\n\n\n\n\nÍndice de exposição defensiva.\n\n\n\nPrimeira versão criada."
+    "text": "BENFICA ANALYTICS · MATCH ANALYSIS\n\n\nHEART OF MIDLOTHIAN1–1BENFICA\n\n\nRotação alta. Resultado curto.\n\n\nLiga Europa · Qualificação · 13/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nxG Difference\n\n\n+0.44\n\n\nxG Benfica 1.12 · Opponent 0.68\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nResult vs Process\n\n\n-2\n\n\nEmpate quando o xG sugeria vitória\n\n\n\n\n\n\n\n\n\n\n\nRECENT FORM\n\n\nProcess Level\n\n\n1.51\n\n\nAverage xG difference over the last 5 matches\n\n\n\n\n\n\n\n\n\n\n\nRECENT FORM\n\n\nProcess Volatility\n\n\n1.10\n\n\nMedian xG-difference swing over the last 5 matches\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nStarting XI Familiarity\n\n\n9.5\n\n\nPair coverage: 14.5%\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nSector Continuity\n\n\nD 25 · M 50 · A 25\n\n\nStarter continuity by sector\n\n\n\n\n\n\n\n\n\n\n\n\nPLAYER SPOTLIGHT\n\n\nTomás Araújo\n\n\nProgression\n\n\n\n\n70.3/100\n\nHigh\n\n\n\nProprietary metrics are calculated using rules and baselines documented on the Methodology."
   },
   {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html#h03-dependência-do-guarda-redes",
-    "href": "data/ANALYTICAL_HYPOTHESES.html#h03-dependência-do-guarda-redes",
-    "title": "Hipóteses analíticas",
+    "objectID": "en/jogos/SLB_20260806_H_HEARTOFMIDLOTHIAN.html",
+    "href": "en/jogos/SLB_20260806_H_HEARTOFMIDLOTHIAN.html",
+    "title": "Match analysis",
     "section": "",
-    "text": "Alguns resultados defensivos positivos podem esconder uma exposição elevada compensada pelo guarda-redes.\n\n\n\nremates enquadrados sofridos\ndefesas\ngolos sofridos\nxG pós-remate, quando disponível\n\n\n\n\nPrimeira versão criada."
+    "text": "BENFICA ANALYTICS · MATCH ANALYSIS\n\n\nBENFICA6–1HEART OF MIDLOTHIAN\n\n\nVantagem cedo. Controlo até ao fim.\n\n\nLiga Europa · Qualificação · 06/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nxG Difference\n\n\n+2.45\n\n\nxG Benfica 3.65 · Opponent 1.20\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nResult vs Process\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nStarting XI Familiarity\n\n\n38.9\n\n\nPair coverage: 65.5%\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nSector Continuity\n\n\nD 75 · M 50 · A 75\n\n\nStarter continuity by sector\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · LEAD MANAGEMENT\n\n\nTime Leading\n\n\n96.7%\n\n\nLead protected\n\n\n\n\n\n\n\n\n\n\n\n\nPLAYER SPOTLIGHT\n\n\nGianluca Prestianni\n\n\nThreat Execution · Finishing quality\n\n\n\n\n82.8/100\n\nVery high\n\n\n\nProprietary metrics are calculated using rules and baselines documented on the Methodology."
   },
   {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html#h04-custo-temporário-da-integração",
-    "href": "data/ANALYTICAL_HYPOTHESES.html#h04-custo-temporário-da-integração",
-    "title": "Hipóteses analíticas",
+    "objectID": "en/jogos/SLB_20260723_A_FCSTGALLEN1879.html",
+    "href": "en/jogos/SLB_20260723_A_FCSTGALLEN1879.html",
+    "title": "Match analysis",
     "section": "",
-    "text": "A entrada de reforços pode melhorar algumas dimensões individuais e reduzir temporariamente a coordenação coletiva.\n\n\n\nreforços no onze\nminutos dos reforços\nalterações no onze\ndesempenho antes e depois da entrada\ncontinuidade por setor\n\n\n\n\nBase do plantel criada; faltam alinhamentos e minutos."
+    "text": "BENFICA ANALYTICS · MATCH ANALYSIS\n\n\nFC ST. GALLEN 18792–1BENFICA\n\n\nPouca familiaridade. Estrutura em teste.\n\n\nLiga Europa · Qualificação · 23/07/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nxG Difference\n\n\n-0.42\n\n\nxG Benfica 1.32 · Opponent 1.74\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nResult vs Process\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nStarting XI Familiarity\n\n\n20.4\n\n\nPair coverage: 63.6%\n\n\n\n\n\n\n\n\n\n\n\n\nPLAYER SPOTLIGHT\n\n\nAlexander Bah\n\n\nDefensive Contribution\n\n\n\n\n67.7/100\n\nHigh\n\n\n\nProprietary metrics are calculated using rules and baselines documented on the Methodology."
   },
   {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html#h05-continuidade-funcional",
-    "href": "data/ANALYTICAL_HYPOTHESES.html#h05-continuidade-funcional",
-    "title": "Hipóteses analíticas",
+    "objectID": "ultimo-jogo.html",
+    "href": "ultimo-jogo.html",
+    "title": "Último jogo",
     "section": "",
-    "text": "Alterar jogadores não significa necessariamente alterar funções, e manter jogadores não significa necessariamente manter a estrutura.\n\n\n\nonze inicial\nposição e função\nsubstituições\nformação\nredes de passe ou aproximações equivalentes\n\n\n\n\nPor desenvolver."
-  },
-  {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html#h06-resultado-enganador",
-    "href": "data/ANALYTICAL_HYPOTHESES.html#h06-resultado-enganador",
-    "title": "Hipóteses analíticas",
-    "section": "",
-    "text": "Vitórias e derrotas podem não representar corretamente o processo produzido.\n\n\n\nresultado\ncontrolo de remates\nexposição defensiva\nxG\nforça do adversário\nestado do marcador\n\n\n\n\nPrimeiras métricas disponíveis."
-  },
-  {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html#h07-controlo-da-vantagem",
-    "href": "data/ANALYTICAL_HYPOTHESES.html#h07-controlo-da-vantagem",
-    "title": "Hipóteses analíticas",
-    "section": "",
-    "text": "Marcar primeiro não significa necessariamente controlar o jogo depois da vantagem.\n\n\n\nminuto dos golos\nremates antes e depois do primeiro golo\nposse ou territorialidade por períodos\nsubstituições\nresultado final\n\n\n\n\nPor desenvolver."
-  },
-  {
-    "objectID": "data/ANALYTICAL_HYPOTHESES.html#regra-de-avaliação",
-    "href": "data/ANALYTICAL_HYPOTHESES.html#regra-de-avaliação",
-    "title": "Hipóteses analíticas",
-    "section": "",
-    "text": "Cada hipótese deverá indicar:\n\npergunta;\nmecanismo esperado;\nvariáveis;\nmodelo ou teste;\nresultado;\nincerteza;\nlimitações;\ndecisão: mantida, reformulada ou rejeitada."
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nAGF1–3BENFICA\n\n\nEstrutura estável. Processo controlado.\n\n\nLiga Europa · Play-off · 27/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+1.84\n\n\nxG Benfica 2.19 · Adversário 0.35\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nNível de processo\n\n\n2.24\n\n\nMédia da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nVolatilidade do processo\n\n\n1.94\n\n\nMediana da variação da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n93.1\n\n\nCobertura de pares: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nContinuidade por setor\n\n\nD 75 · M 83 · A 75\n\n\nContinuidade dos titulares por setor\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · GESTÃO DA VANTAGEM\n\n\nTempo em vantagem\n\n\n78.9%\n\n\nVantagem protegida\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nGianluca Prestianni\n\n\nAmeaça\n\n\n\n\n76.2/100\n\nAlto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
     "objectID": "metodologia.html",
     "href": "metodologia.html",
     "title": "Metodologia",
     "section": "",
-    "text": "O Benfica Analytics procura estudar aspetos do desempenho que nem sempre são visíveis no resultado final ou nas estatísticas mais comuns.\nAs métricas apresentadas são experimentais e serão revistas à medida que forem incorporados mais jogos e novas fontes."
+    "text": "O Benfica Analytics procura estudar dimensões do desempenho do SL Benfica que não são diretamente visíveis no resultado final ou nas estatísticas mais comuns.\nAs métricas são experimentais, transparentes e reproduzíveis. Podem ser revistas quando existirem amostras maiores, melhores fontes ou evidência de que uma formulação alternativa representa melhor o fenómeno que se pretende medir.\nOs valores desconhecidos permanecem vazios. Um valor zero só é usado quando a ocorrência foi medida e não aconteceu.\nAs métricas não são tratadas como um único “score geral” do jogo. Cada uma responde a uma pergunta diferente e deve ser interpretada no respetivo contexto."
   },
   {
     "objectID": "metodologia.html#princípio-do-projeto",
     "href": "metodologia.html#princípio-do-projeto",
     "title": "Metodologia",
     "section": "",
-    "text": "O Benfica Analytics procura estudar aspetos do desempenho que nem sempre são visíveis no resultado final ou nas estatísticas mais comuns.\nAs métricas apresentadas são experimentais e serão revistas à medida que forem incorporados mais jogos e novas fontes."
+    "text": "O Benfica Analytics procura estudar dimensões do desempenho do SL Benfica que não são diretamente visíveis no resultado final ou nas estatísticas mais comuns.\nAs métricas são experimentais, transparentes e reproduzíveis. Podem ser revistas quando existirem amostras maiores, melhores fontes ou evidência de que uma formulação alternativa representa melhor o fenómeno que se pretende medir.\nOs valores desconhecidos permanecem vazios. Um valor zero só é usado quando a ocorrência foi medida e não aconteceu.\nAs métricas não são tratadas como um único “score geral” do jogo. Cada uma responde a uma pergunta diferente e deve ser interpretada no respetivo contexto."
   },
   {
-    "objectID": "metodologia.html#índice-de-controlo-de-remates",
-    "href": "metodologia.html#índice-de-controlo-de-remates",
+    "objectID": "metodologia.html#processo-e-forma",
+    "href": "metodologia.html#processo-e-forma",
     "title": "Metodologia",
-    "section": "Índice de controlo de remates",
-    "text": "Índice de controlo de remates\nO índice combina:\n\npercentagem dos remates totais pertencentes ao Benfica;\npercentagem dos remates enquadrados pertencentes ao Benfica.\n\n\nFórmula\nÍndice = 100 × (0,5 × quota de remates + 0,5 × quota de remates enquadrados)\n\n\nInterpretação\n\n50 — equilíbrio;\nacima de 50 — maior controlo do Benfica;\nabaixo de 50 — maior controlo do adversário.\n\n\n\nLimitações\nO índice não considera ainda:\n\nlocalização dos remates;\nqualidade individual das oportunidades;\nestado do marcador;\nexpulsões;\ncontexto tático;\nxG."
+    "section": "Processo e forma",
+    "text": "Processo e forma\n\nDiferença de xG\nO xG Difference é a diferença entre o xG produzido pelo Benfica e o xG produzido pelo adversário no mesmo jogo.\nxG Difference = xG Benfica − xG adversário\n\nInterpretação\n\nvalor positivo — o Benfica produziu mais xG do que o adversário;\nvalor negativo — o adversário produziu mais xG;\nvalor próximo de zero — produção de oportunidades semelhante.\n\nÉ uma medida de processo do jogo e não garante correspondência com o resultado final.\n\n\n\n\nReality Gap — Resultado vs processo\nO Reality Gap compara o resultado real do jogo com o desfecho sugerido pela diferença de xG.\nA classificação provisória do resultado por xG é:\n\ndiferença de xG superior a +0,25 → vitória sugerida;\ndiferença entre −0,25 e +0,25 → empate sugerido;\ndiferença inferior a −0,25 → derrota sugerida.\n\nOs pontos reais e os pontos sugeridos pelo xG são depois comparados.\nReality Gap = pontos reais − pontos sugeridos pelo xG\n\nInterpretação\n\n0 — resultado real coincide com o desfecho sugerido pelo xG;\nvalor negativo — o Benfica obteve menos pontos do que o xG sugeria;\nvalor positivo — o Benfica obteve mais pontos do que o xG sugeria.\n\nO Reality Gap não pretende afirmar qual seria o resultado “correto”; apenas mede divergência entre resultado e produção de oportunidades.\n\n\n\n\nNível de processo\nO Process Level resume a qualidade recente do processo através da média do xG Difference nos últimos cinco jogos.\nProcess Level = média do xG Difference nos últimos 5 jogos\nValores superiores indicam uma sequência recente com maior vantagem de produção de oportunidades.\n\n\n\nVolatilidade do processo\nA Process Volatility mede quanto o xG Difference oscila de jogo para jogo na sequência recente.\nNa versão atual é calculada como a mediana da variação absoluta entre jogos consecutivos dentro dos últimos cinco jogos.\nProcess Volatility = mediana de |xG Diff(t) − xG Diff(t−1)|\nValores mais altos indicam maior irregularidade do processo recente."
   },
   {
-    "objectID": "metodologia.html#exposição-defensiva",
-    "href": "metodologia.html#exposição-defensiva",
+    "objectID": "metodologia.html#dinâmica-do-jogo",
+    "href": "metodologia.html#dinâmica-do-jogo",
     "title": "Metodologia",
-    "section": "Exposição defensiva",
-    "text": "Exposição defensiva\nMede a percentagem dos remates adversários que chegaram enquadrados.\n\nFórmula\nExposição = 100 × remates enquadrados sofridos / remates sofridos\nUma exposição elevada pode indicar que, mesmo concedendo poucos remates, o Benfica permitiu oportunidades relativamente perigosas."
+    "section": "Dinâmica do jogo",
+    "text": "Dinâmica do jogo\n\nAmeaça Timing — Momento da ameaça\nO Threat Timing mede em que momentos do jogo se concentra a ameaça ofensiva do Benfica.\nCada remate é ponderado por um fator de leverage, definido a partir do minuto e do estado do marcador antes do remate.\nA versão atual usa:\nThreat Timing = Σ(xG × leverage) / Σ(xG)\n\nInterpretação\n\nvalor superior a 1 — a ameaça concentrou-se relativamente mais em momentos de maior importância competitiva;\nvalor próximo de 1 — distribuição aproximadamente neutra;\nvalor inferior a 1 — maior concentração relativa em momentos de menor importância competitiva.\n\nA métrica não mede volume ofensivo. Mede quando esse volume ocorreu.\nPara leitura agregada, a versão atual é considerada mais estável a partir de cerca de 15 remates.\n\n\n\n\nAmeaça de resposta\nO Response Threat mede a proporção da ameaça ofensiva produzida quando o Benfica estava empatado ou em desvantagem.\nNa versão atual, “resposta” não significa uma janela temporal fixa após sofrer um golo: depende do estado do marcador no momento de cada remate.\nPodem ser observadas, entre outras, duas proporções:\n\npercentagem dos remates produzidos em empate ou desvantagem;\npercentagem do xG produzido em empate ou desvantagem.\n\nA métrica procura descrever quanto da ameaça foi gerada em estados de jogo em que o Benfica ainda precisava de construir ou recuperar vantagem.\n\n\n\nTactical Lift — Impacto após alterações\nO Tactical Lift descreve a alteração do xG Difference em torno de clusters de substituições do Benfica, ajustando a mudança observada pela regressão à média esperada.\nSão considerados clusters de substituições suficientemente próximos no tempo e janelas de 15 minutos antes e depois da intervenção elegível.\nA mudança observada é:\nObserved Change = xG Diff pós − xG Diff pré\nA partir de janelas de controlo sem substituição do Benfica perto do corte foi estimada a relação:\nExpected Change = 0,074 − 0,865 × pre_xG_diff\nA versão atual é então:\nTactical Lift = Observed Change − Expected Change\n\nInterpretação\n\nvalor positivo — a mudança observada foi melhor do que a mudança esperada;\nvalor negativo — foi pior do que a mudança esperada.\n\nO Tactical Lift é descritivo, não causal. Não permite concluir que as substituições “causaram” a mudança.\n\n\n\n\nLeadLock\nO LeadLock estuda a capacidade do Benfica para gerir situações de vantagem no marcador.\nRegista, entre outros indicadores:\n\njogos em que o Benfica esteve em vantagem;\nvantagens perdidas;\nvantagens recuperadas;\ntempo em vantagem;\npercentagem do jogo em vantagem;\nconservação da vantagem;\nvitória depois de estar em vantagem.\n\nUma perda de vantagem ocorre quando o Benfica passa de uma situação de vantagem para empate ou desvantagem após um golo adversário.\nA versão atual usa um relógio analítico normalizado de 90 minutos."
   },
   {
-    "objectID": "metodologia.html#dependência-do-guarda-redes",
-    "href": "metodologia.html#dependência-do-guarda-redes",
+    "objectID": "metodologia.html#estrutura-da-equipa",
+    "href": "metodologia.html#estrutura-da-equipa",
     "title": "Metodologia",
-    "section": "Dependência do guarda-redes",
-    "text": "Dependência do guarda-redes\nMede a proporção dos remates enquadrados adversários que foram defendidos.\n\nFórmula\nDependência = 100 × defesas / remates enquadrados sofridos\nEste indicador deve ser interpretado juntamente com:\n\nnúmero de remates sofridos;\nnúmero de remates enquadrados;\ngolos sofridos;\nqualidade das oportunidades."
+    "section": "Estrutura da equipa",
+    "text": "Estrutura da equipa\n\nFamiliaridade do onze\nA Starting XI Familiarity mede quanto os onze titulares já começaram jogos juntos em pares.\nUm onze contém 55 pares possíveis. Para cada par é contabilizado o número de partidas anteriores em que os dois jogadores começaram juntos, com um teto de cinco jogos por par.\nCada par recebe:\nmin(inícios conjuntos anteriores, 5) / 5\nO score do onze é a média dos 55 pares, apresentada numa escala 0–100.\n\nInterpretação\n\nvalores baixos — onze pouco familiar ou muito alterado;\nvalores altos — combinação de titulares já utilizada com frequência.\n\nOs amigáveis podem contribuir para o histórico de familiaridade.\n\n\n\n\nCobertura de pares\nA Pair Coverage é um indicador auxiliar da Familiarity.\nRepresenta a percentagem dos 55 pares do onze atual que já tinham pelo menos um início conjunto antes do jogo.\nÉ útil para distinguir um onze com muitos pares já testados de um onze com várias combinações inéditas.\n\n\n\nContinuidade por setor\nA Sector Continuity mede a continuidade dos titulares por setor — Defesa, Meio-campo e Ataque.\nPara cada titular do setor atual, calcula-se em quantos dos jogos oficiais anteriores da janela de referência esse jogador começou no mesmo setor.\nA versão atual usa até três jogos oficiais anteriores e passa a ser interpretada apenas quando já existe histórico suficiente.\nO score de cada setor é a média dos seus titulares.\n\nInterpretação\n\nvalores altos — setor com estrutura relativamente estável;\nvalores baixos — rotação elevada ou alteração funcional dos titulares.\n\nO guarda-redes fica fora deste cálculo."
+  },
+  {
+    "objectID": "metodologia.html#perfis-de-jogo",
+    "href": "metodologia.html#perfis-de-jogo",
+    "title": "Metodologia",
+    "section": "Perfis de jogo",
+    "text": "Perfis de jogo\n\nGameGrip — Controlo do jogo\nO GameGrip procura medir o grau de controlo global exercido pelo Benfica num jogo.\nCombina cinco dimensões, sempre expressas como quota do Benfica no total do jogo:\n\n30% — quota de xG;\n25% — quota de Big Chances;\n20% — quota de remates enquadrados;\n15% — quota de toques na área;\n10% — quota de entradas no último terço.\n\nA fórmula é:\nGameGrip = 100 × (0,30 × quota de xG + 0,25 × quota de Big Chances + 0,20 × quota de remates enquadrados + 0,15 × quota de toques na área + 0,10 × quota de entradas no último terço)\n\nInterpretação\n\n50 representa equilíbrio entre as equipas;\nacima de 50, o Benfica controlou uma maior proporção das dimensões incluídas;\nabaixo de 50, o adversário teve maior controlo agregado.\n\nO valor não representa uma probabilidade de vitória.\n\n\n\n\nChanceCraft — Qualidade da criação\nO ChanceCraft procura medir a qualidade da criação ofensiva, distinguindo volume de ataque da qualidade das oportunidades produzidas.\nA versão atual combina:\n\n35% — xG por remate;\n30% — Big Chances por remate;\n20% — precisão de remate;\n15% — toques na área por remate.\n\nOs valores da época 2026/27 são contextualizados relativamente à distribuição observada na Liga 2025/26.\n\nInterpretação\nUm valor superior indica que o Benfica transformou a sua produção ofensiva em oportunidades de maior qualidade ou eficácia relativa.\nO ChanceCraft não mede apenas quantidade de remates e não deve ser interpretado como probabilidade de marcar."
+  },
+  {
+    "objectID": "metodologia.html#jogadores-de-campo",
+    "href": "metodologia.html#jogadores-de-campo",
+    "title": "Metodologia",
+    "section": "Jogadores de campo",
+    "text": "Jogadores de campo\nAs métricas de jogador usam uma baseline Benfica 2025/26 e são apresentadas numa escala comum 0–100, exceto Threat Execution, que conserva a sua unidade própria.\n\nEscala comum 0–100\nCada componente é transformada num z-score relativamente à média e desvio-padrão da baseline 2025/26.\nOs componentes são depois combinados num z-score composto.\nA apresentação final utiliza:\nScore = 50 + 50 × tanh(z / 3,33)\nOs z-scores dos componentes podem ser limitados para reduzir o efeito de amostras muito pequenas ou valores extremos.\n\nInterpretação da escala\n\n50 — aproximadamente a referência Benfica 2025/26;\nacima de 50 — produção superior à referência na dimensão analisada;\nabaixo de 50 — produção inferior à referência;\nvalores próximos de 0 ou 100 representam desempenhos muito afastados da referência.\n\nO score não é uma percentagem nem um percentil.\n\n\n\n\nAmeaça\nO Threat mede a capacidade de gerar perigo direto de finalização.\nComponentes:\n\n40% — xG / 90;\n20% — remates / 90;\n15% — remates enquadrados / 90;\n15% — xGOT / 90;\n10% — golos / 90.\n\n\n\n\nCriação de oportunidades\nA Chance Creation mede a contribuição do jogador para produzir oportunidades para a equipa.\nComponentes:\n\n30% — passes-chave / 90;\n25% — Big Chances criadas / 90;\n20% — xA / 90;\n15% — assistências / 90;\n10% — cruzamentos certos / 90.\n\n\n\n\nProgressão\nA Progression mede a capacidade para fazer a bola avançar para zonas ofensivas.\nA versão atual usa:\n\n45% — passes certos no último terço / 90;\n35% — entradas no último terço / 90;\n20% — entradas na área / 90.\n\nO score é calculado por jogador, independentemente da posição utilizada no jogo. Para apresentação, pode ser associada a posição principal pela maior utilização em minutos.\n\n\n\nSegurança com bola\nA Ball Security mede a qualidade com que o jogador mantém e utiliza a posse, contextualizada pela posição.\nComponentes base:\n\n35% — precisão de passe;\n30% — turnovers / 90, com sinal inverso;\n20% — eficiência no drible;\n15% — eficiência nos duelos.\n\nQuando uma componente não está disponível, o seu peso é removido e os restantes pesos são redistribuídos.\nOs baselines são posicionais: Defesa, Meio-campo e Ataque.\nQuando um jogador é utilizado em mais de uma posição, o score é primeiro calculado em cada posição contra o respetivo baseline e depois consolidado numa única linha, ponderada pelos minutos em cada posição.\n\n\n\nContribuição defensiva\nA Defensive Contribution mede contribuição defensiva através de ações diretamente observáveis.\nComponentes:\n\n20% — recuperações / 90;\n20% — interceções / 90;\n20% — desarmes ganhos / 90;\n15% — duelos ganhos / 90;\n10% — bloqueios / 90;\n10% — cortes / 90;\n−5% — desafios perdidos / 90.\n\nEsta métrica mede atividade e contribuição defensiva e não deve ser interpretada como avaliação completa da qualidade defensiva de um jogador.\n\n\n\nAmeaça Execution\nO Threat Execution mede quanto um jogador acrescenta ou perde na execução final do remate relativamente à qualidade inicial da oportunidade.\nA versão oficial é:\nThreat Execution = (xGOT − xG) / remates\nTambém é registado:\nThreat Added = xGOT − xG\nPara leitura longitudinal pode ser usado:\nTE/90 = (xGOT − xG) / minutos × 90\n\nInterpretação\n\nvalor positivo — a execução colocou os remates, em média, com maior qualidade de finalização do que a oportunidade inicial sugeria;\nvalor negativo — a qualidade final do remate ficou abaixo da qualidade inicial das oportunidades.\n\nO Threat Execution não combina golos com xGOT e não usa o rácio xGOT/xG.\nCritérios atuais de ranking:\n\njogo: pelo menos 2 remates;\népoca: pelo menos 10 remates."
+  },
+  {
+    "objectID": "metodologia.html#fiabilidade-da-amostra",
+    "href": "metodologia.html#fiabilidade-da-amostra",
+    "title": "Metodologia",
+    "section": "Fiabilidade da amostra",
+    "text": "Fiabilidade da amostra\nDurante o início da época os scores podem ser muito voláteis.\nSão usados três estados.\n\nAmostra reduzida\nJogador elegível, mas ainda abaixo dos critérios de formação.\n\n\nEm formação\nAtualmente exige pelo menos:\n\n3 jogos com 30 ou mais minutos, ou\n180 minutos acumulados,\n\nsem ainda cumprir a condição de fiabilidade.\n\n\nFiável\nAtualmente exige:\n\npelo menos 8 jogos com 30 ou mais minutos;\npelo menos 300 minutos acumulados.\n\nMesmo uma amostra marcada como fiável não elimina efeitos de contexto, posição, adversário ou função tática."
+  },
+  {
+    "objectID": "metodologia.html#guarda-redes",
+    "href": "metodologia.html#guarda-redes",
+    "title": "Metodologia",
+    "section": "Guarda-redes",
+    "text": "Guarda-redes\n\nBuildKeeper — Construção do guarda-redes\nO BuildKeeper mede a influência do guarda-redes na construção com bola.\nA referência é constituída pelos jogos de guarda-redes do Benfica na Liga 2025/26.\nA versão atualmente usada no site é a versão processada com dados Flashscore. A interpretação deve ser feita como indicador de construção, não como avaliação global do guarda-redes.\nO score é apresentado numa escala centrada aproximadamente em 50 relativamente à referência histórica.\n\nInterpretação\n\n50 — aproximadamente a construção média da referência Benfica / Liga 2025/26;\nacima de 50 — contribuição de construção acima da referência;\nabaixo de 50 — contribuição abaixo da referência.\n\nO BuildKeeper não mede diretamente shot-stopping, defesas, goals prevented ou qualidade global do guarda-redes.\nPara 2025/26, a cobertura atualmente apresentada no site nesta secção é apenas da Liga Portugal."
+  },
+  {
+    "objectID": "metodologia.html#contexto",
+    "href": "metodologia.html#contexto",
+    "title": "Metodologia",
+    "section": "Contexto",
+    "text": "Contexto\n\nDias de descanso\nRest Days regista os dias de descanso entre jogos.\nÉ usado como variável de contexto e não como score de desempenho.\n\n\n\nJogos nos últimos 14 dias\nGames Last 14d conta quantos jogos o Benfica realizou nos 14 dias anteriores ao jogo analisado.\nNa versão atual não foi encontrada evidência suficientemente robusta para transformar esta variável num score próprio de “carga”.\nPor isso permanece como contexto, não como medida de qualidade."
+  },
+  {
+    "objectID": "metodologia.html#experimentais-adiadas-e-arquivadas",
+    "href": "metodologia.html#experimentais-adiadas-e-arquivadas",
+    "title": "Metodologia",
+    "section": "Experimentais, adiadas e arquivadas",
+    "text": "Experimentais, adiadas e arquivadas\n\nStarter Association — experimental\nCompara o xG Difference dos jogos em que determinado jogador começa de início com os jogos em que não começa, ajustando por contexto disponível.\nA versão atual é considerada experimental porque a associação não é necessariamente causal e os sinais mostraram instabilidade temporal para vários jogadores.\n\n\n\nStructural Dependency — adiada\nA intenção é medir dependência estrutural da equipa em relação a jogadores específicos.\nA métrica permanece adiada até existir uma modelação mais robusta do contexto, incluindo força do adversário e outras variáveis capazes de reduzir enviesamentos.\n\n\n\nNew Signing Integration — adiada\nPretende medir o custo temporário de integração de novos jogadores.\nA métrica permanece adiada por falta de amostra suficiente na época atual.\n\n\n\nImpact Above Expectation — arquivada\nConceito arquivado.\nA formulação anterior procurava atribuir a jogadores individuais variações de resultado coletivo que não eram suficientemente identificáveis a nível individual.\nNão é usada na versão atual do projeto."
+  },
+  {
+    "objectID": "metodologia.html#fontes",
+    "href": "metodologia.html#fontes",
+    "title": "Metodologia",
+    "section": "Fontes",
+    "text": "Fontes\nA base operacional combina várias fontes, dependendo da métrica e da cobertura disponível.\nEntre as fontes usadas no projeto encontram-se:\n\nFlashscore;\nSofaScore;\nFotMob;\nFBref;\nOddAlerts;\noutros datasets públicos ou históricos quando necessários.\n\nUma métrica só deve incorporar uma variável quando a sua definição, cobertura e consistência forem consideradas adequadas.\nA fonte usada numa métrica pode mudar entre versões, desde que essa alteração seja documentada."
   },
   {
     "objectID": "metodologia.html#regras-metodológicas",
     "href": "metodologia.html#regras-metodológicas",
     "title": "Metodologia",
     "section": "Regras metodológicas",
-    "text": "Regras metodológicas\nCada métrica deverá indicar:\n\nversão;\ndefinição;\nfórmula;\nfonte;\npressupostos;\nlimitações;\ndata da última alteração.\n\nOs valores desconhecidos permanecem vazios. Um valor zero só é usado quando a ocorrência foi medida e não aconteceu."
+    "text": "Regras metodológicas\nCada nova métrica deve cumprir, tanto quanto possível, cinco critérios:\n\nOriginalidade — responder a uma pergunta não apresentada diretamente noutras plataformas;\nRelevância — representar uma dimensão futebolisticamente útil;\nRobustez — não depender excessivamente de um único evento ou variável instável;\nExplicabilidade — poder ser compreendida rapidamente;\nReprodutibilidade — ser possível reconstruir o valor a partir dos dados e da fórmula documentada.\n\nAs métricas serão versionadas sempre que houver alterações relevantes de fórmula, fonte, baseline ou critérios de amostra.\nUma métrica condicional deve permanecer vazia quando não é aplicável ou quando não existe cobertura suficiente. O projeto evita transformar ausência de informação em zero."
+  },
+  {
+    "objectID": "jogadores.html",
+    "href": "jogadores.html",
+    "title": "Jogadores",
+    "section": "",
+    "text": "Ameaça\n\n\nVangelis Pavlidis\n\n\n85.7\n\n\n513 min · Em formação\n\n\n\n\nCriação\n\n\nAndreas Schjelderup\n\n\n79.2\n\n\n219 min · Em formação\n\n\n\n\nProgressão\n\n\nNeto Jose\n\n\n70.9\n\n\n90 min · Amostra reduzida\n\n\n\n\nSegurança\n\n\nEnzo Barrenechea\n\n\n73.7\n\n\n580 min · Em formação\n\n\n\n\nContribuição defensiva\n\n\nNeto Jose\n\n\n73.7\n\n\n90 min · Amostra reduzida\n\n\n\n\nThreat Execution · Qualidade de finalização\n\n\nGianluca Prestianni\n\n\n+0.110\n\n\n16 remates · xGOT − xG por remate"
+  },
+  {
+    "objectID": "jogadores.html#destaques-202627",
+    "href": "jogadores.html#destaques-202627",
+    "title": "Jogadores",
+    "section": "",
+    "text": "Ameaça\n\n\nVangelis Pavlidis\n\n\n85.7\n\n\n513 min · Em formação\n\n\n\n\nCriação\n\n\nAndreas Schjelderup\n\n\n79.2\n\n\n219 min · Em formação\n\n\n\n\nProgressão\n\n\nNeto Jose\n\n\n70.9\n\n\n90 min · Amostra reduzida\n\n\n\n\nSegurança\n\n\nEnzo Barrenechea\n\n\n73.7\n\n\n580 min · Em formação\n\n\n\n\nContribuição defensiva\n\n\nNeto Jose\n\n\n73.7\n\n\n90 min · Amostra reduzida\n\n\n\n\nThreat Execution · Qualidade de finalização\n\n\nGianluca Prestianni\n\n\n+0.110\n\n\n16 remates · xGOT − xG por remate"
+  },
+  {
+    "objectID": "jogadores.html#perfil-do-jogador",
+    "href": "jogadores.html#perfil-do-jogador",
+    "title": "Jogadores",
+    "section": "Perfil do jogador",
+    "text": "Perfil do jogador\n\nEscolher jogadorAlexander BahAmar DedićClément LengletNeto JoseSamuel DahlSilva AntonioTomás AraújoEnzo BarrenecheaFigueiredo MiguelGeorgiy SudakovLeandro BarreiroManu SilvaRichard RíosAndreas SchjelderupDodi LukebakioGianluca PrestianniJhon DuránKaminski JakubRafa SilvaVangelis Pavlidis"
+  },
+  {
+    "objectID": "jogadores.html#tabela-completa",
+    "href": "jogadores.html#tabela-completa",
+    "title": "Jogadores",
+    "section": "Tabela completa",
+    "text": "Tabela completa\n\n2026/272025/26 · Liga\n\n\n\n\n\n\n\n\n\n\nA análise dos guarda-redes fica separada das métricas dos jogadores de campo. O BuildKeeper mede a influência na construção com bola. Para 2025/26, o histórico disponível nesta secção cobre apenas a Liga Portugal."
+  },
+  {
+    "objectID": "jogadores.html#guarda-redes",
+    "href": "jogadores.html#guarda-redes",
+    "title": "Jogadores",
+    "section": "Guarda-redes",
+    "text": "Guarda-redes\nA análise dos guarda-redes fica separada das métricas dos jogadores de campo. O BuildKeeper mede a influência na construção com bola; a referência histórica da escala é documentada na Metodologia.\n\n2026/272025/26\n\n\n\n\n\n\nSamuel Soares\n\n\n6 jogos · 540 min\n\n\n\nBuildKeeper53.0\n\n\n\nPasses / 9021.7\n\n\nPrecisão de passe87.7%\n\n\nBolas longas / 905.5\n\n\nPrecisão bola longa54.5%\n\n\nPasses certos no último terço / 900.5\n\n\n\n\n\n\nAnatoliy Trubin\n\n\n2 jogos · 180 min\n\n\n\nBuildKeeper60.1\n\n\n\nPasses / 9040.0\n\n\nPrecisão de passe93.8%\n\n\nBolas longas / 904.5\n\n\nPrecisão bola longa44.4%\n\n\nPasses certos no último terço / 900.5\n\n\n\n\n\n\n\n\n\nAnatoliy Trubin\n\n\n32 jogos · 2880 min\n\n\n\nBuildKeeper50.0\n\n\n\nPasses / 9020.0\n\n\nPrecisão de passe72.8%\n\n\nBolas longas / 908.4\n\n\nPrecisão bola longa36.2%\n\n\nPasses certos no último terço / 900.7\n\n\n\n\n\n\nSamuel Soares\n\n\n2 jogos · 180 min\n\n\n\nBuildKeeper48.5\n\n\n\nPasses / 9018.5\n\n\nPrecisão de passe73.0%\n\n\nBolas longas / 908.5\n\n\nPrecisão bola longa41.2%\n\n\nPasses certos no último terço / 900.5"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Benfica Analytics",
     "section": "",
-    "text": "Este projeto reúne dados, métricas próprias e modelos estatísticos experimentais sobre o desempenho do SL Benfica."
+    "text": "Métricas próprias para explorar controlo, criação, ameaça e contexto de jogo — dimensões que os números tradicionais nem sempre mostram diretamente.\n\nMétricas próprias Dados jogo a jogo Metodologia aberta"
   },
   {
-    "objectID": "index.html#projeto",
-    "href": "index.html#projeto",
+    "objectID": "index.html#ver-o-jogo-para-além-das-estatísticas-habituais.",
+    "href": "index.html#ver-o-jogo-para-além-das-estatísticas-habituais.",
     "title": "Benfica Analytics",
     "section": "",
-    "text": "Este projeto reúne dados, métricas próprias e modelos estatísticos experimentais sobre o desempenho do SL Benfica."
+    "text": "Métricas próprias para explorar controlo, criação, ameaça e contexto de jogo — dimensões que os números tradicionais nem sempre mostram diretamente.\n\nMétricas próprias Dados jogo a jogo Metodologia aberta"
   },
   {
-    "objectID": "index.html#época-202526",
-    "href": "index.html#época-202526",
+    "objectID": "index.html#contexto-da-liga",
+    "href": "index.html#contexto-da-liga",
     "title": "Benfica Analytics",
-    "section": "Época 2025/26",
-    "text": "Época 2025/26\n\n\n\n\n\n\n\n\nResumo da época 2025/26\n\n\nJogos\nVitórias\nEmpates\nDerrotas\nGolos marcados\nGolos sofridos\nPontos\nPontos por jogo\n\n\n\n\n34\n23\n11\n0\n74\n25\n80\n2.35"
-  },
-  {
-    "objectID": "index.html#controlo-de-remates",
-    "href": "index.html#controlo-de-remates",
-    "title": "Benfica Analytics",
-    "section": "Controlo de remates",
-    "text": "Controlo de remates\nO índice combina a percentagem dos remates totais e dos remates enquadrados pertencentes ao Benfica.\n\n50 representa equilíbrio;\nacima de 50, maior controlo do Benfica;\nabaixo de 50, maior controlo do adversário.\n\n\n\n\n\n\n\n\n\nÍndice experimental de controlo de remates\n\n\nVersão 0.1 — não representa ainda uma avaliação global do desempenho\n\n\nData\nAdversário\nResultado\nRemates Benfica\nRemates adversário\nRemates enquadrados Benfica\nRemates enquadrados adversário\nÍndice de controlo\n\n\n\n\n23/07/2026\nch St. Gallen\n1-2\n14\n17\n4\n6\n42.6\n\n\n30/07/2026\nch St. Gallen\n5-0\n25\n11\n10\n3\n73.2"
-  },
-  {
-    "objectID": "index.html#exposição-defensiva",
-    "href": "index.html#exposição-defensiva",
-    "title": "Benfica Analytics",
-    "section": "Exposição defensiva",
-    "text": "Exposição defensiva\nEsta métrica mostra que proporção dos remates adversários chegou enquadrada e quanto o Benfica dependeu das defesas do guarda-redes.\n\nexposição alta não significa necessariamente muitos remates concedidos;\npode significar que poucos remates chegaram em boas condições;\na dependência do guarda-redes deve ser interpretada juntamente com o número de remates enquadrados.\n\n\n\n\n\n\n\n\n\nExposição defensiva e dependência do guarda-redes\n\n\nVersão 0.1 — análise experimental baseada em remates enquadrados\n\n\nData\nAdversário\nResultado\nRemates sofridos\nRemates enquadrados sofridos\nDefesas\nPercentagem de defesas\nÍndice de exposição\nDependência do guarda-redes\n\n\n\n\n23/07/2026\nch St. Gallen\n1-2\n17\n6\n4\n66.7%\n35.3%\n66.7%\n\n\n30/07/2026\nch St. Gallen\n5-0\n11\n3\n2\n100%\n27.3%\n66.7%"
-  },
-  {
-    "objectID": "index.html#eficiência-da-posse",
-    "href": "index.html#eficiência-da-posse",
-    "title": "Benfica Analytics",
-    "section": "Eficiência da posse",
-    "text": "Eficiência da posse\nEsta métrica compara a percentagem de posse do Benfica com a percentagem dos remates do jogo que lhe pertenceu.\n\nvalor próximo de 0 — posse e produção de remates alinhadas;\nvalor positivo — mais posse do que quota de remates;\nvalor negativo — mais quota de remates do que a posse sugeriria.\n\n\n\n\n\n\n\n\n\nEficiência da posse\n\n\nVersão 0.1 — relação entre posse e produção de remates\n\n\nData\nAdversário\nResultado\nPosse\nQuota de remates\nDiferença posse-remates\nRemates por 10 pontos de posse\nPosse potencialmente estéril\n\n\n\n\n23/07/2026\nch St. Gallen\n1-2\n61%\n45.2%\n15.8\n2.30\nSim\n\n\n30/07/2026\nch St. Gallen\n5-0\n72%\n69.4%\n2.6\n3.47\nNão"
-  },
-  {
-    "objectID": "index.html#integração-dos-reforços",
-    "href": "index.html#integração-dos-reforços",
-    "title": "Benfica Analytics",
-    "section": "Integração dos reforços",
-    "text": "Integração dos reforços\n\n\n\n\n\n\n\n\nReforços de 2026/27\n\n\nTempo decorrido desde a chegada ao Benfica\n\n\nJogador\nPosição\nData de chegada\nClube anterior\nDias no clube\n\n\n\n\nClément Lenglet\nDefesa\n30/06/2026\nAtlético de Madrid\n32\n\n\nGabriel Índio\nDefesa\n28/07/2026\nAthletic MG\n4\n\n\nJakub Kamiński\nAtaque\n07/07/2026\nFC Köln\n25"
+    "section": "Contexto da Liga",
+    "text": "Contexto da Liga\nComo se posiciona o Benfica face às restantes equipas da Liga Portugal na época atual.\n\n\n\nxG / 90\n\n\n2.86\n\n\n1.º de 18\n\n\n\n\nxGA / 90\n\n\n0.65\n\n\n3.º de 18\n\n\n\n\nxGD / 90\n\n\n2.21\n\n\n1.º de 18\n\n\n\n\nxPTS / 90\n\n\n2.61\n\n\n1.º de 18\n\n\n\n\nxG jogo corrido / 90\n\n\n2.58\n\n\n1.º de 18\n\n\n\nBenchmark OddAlerts · situação acumulada da Liga"
   },
   {
     "objectID": "index.html#próximos-jogos",
     "href": "index.html#próximos-jogos",
     "title": "Benfica Analytics",
     "section": "Próximos jogos",
-    "text": "Próximos jogos"
+    "text": "Próximos jogos\n\n\n\n31 AGO · 20:15\n\n\nEstoril Praia\n\n\nJ4 · Casa\n\n\n\n\n05 SET · 18:00\n\n\nCS Marítimo\n\n\nJ5 · Fora\n\n\n\n\n09 SET · 20:15\n\n\nMoreirense\n\n\nJ3 · Fora\n\n\n\n\n12 SET · 12:00\n\n\nGil Vicente\n\n\nJ6 · Casa\n\n\n\n\n19 SET · 12:00\n\n\nFC Porto\n\n\nJ7 · Fora\n\n\n\nConsultar o calendário completo\n\n\nPLANTEL\n\n\nJogadores\n\n\nDestaques individuais nas diferentes dimensões de desempenho."
   },
   {
-    "objectID": "index.html#próximos-jogos-1",
-    "href": "index.html#próximos-jogos-1",
+    "objectID": "index.html#destaques-202627",
+    "href": "index.html#destaques-202627",
     "title": "Benfica Analytics",
-    "section": "Próximos jogos",
-    "text": "Próximos jogos\n\n\n\n\n\n\n\n\nData\nJornada\nAdversário\nLocal\n\n\n\n\n09/08/2026\n1\nAcadémico de Viseu FC\nCasa\n\n\n16/08/2026\n2\nCasa Pia AC\nFora\n\n\n23/08/2026\n3\nMoreirense FC\nFora\n\n\n30/08/2026\n4\nGD Estoril Praia\nCasa\n\n\n06/09/2026\n5\nCS Marítimo\nFora\n\n\n\n\n\n\n\nConsultar o calendário completo"
+    "section": "Destaques 2026/27",
+    "text": "Destaques 2026/27\n\n\n\nAmeaça\n\n\nVangelis Pavlidis\n\n\n85.7\n\n\n513 min · Em formação\n\n\n\n\nCriação\n\n\nAndreas Schjelderup\n\n\n79.2\n\n\n219 min · Em formação\n\n\n\n\nProgressão\n\n\nNeto Jose\n\n\n70.9\n\n\n90 min · Amostra reduzida\n\n\n\n\nSegurança\n\n\nEnzo Barrenechea\n\n\n73.7\n\n\n580 min · Em formação\n\n\n\n\nDefesa\n\n\nNeto Jose\n\n\n73.7\n\n\n90 min · Amostra reduzida"
   },
   {
-    "objectID": "index.html#estado-atual",
-    "href": "index.html#estado-atual",
+    "objectID": "index.html#jogador-em-destaque",
+    "href": "index.html#jogador-em-destaque",
     "title": "Benfica Analytics",
-    "section": "Estado atual",
-    "text": "Estado atual\nA época ainda não começou. Os resultados e indicadores serão atualizados depois de cada jogo."
-  },
-  {
-    "objectID": "index.html#resultado-real-vs.-desfecho-sugerido-pelo-xg",
-    "href": "index.html#resultado-real-vs.-desfecho-sugerido-pelo-xg",
-    "title": "Benfica Analytics",
-    "section": "Resultado real vs. desfecho sugerido pelo xG",
-    "text": "Resultado real vs. desfecho sugerido pelo xG\nA diferença de xG foi convertida provisoriamente numa categoria de resultado: vitória quando superior a +0,25, empate entre -0,25 e +0,25 e derrota quando inferior a -0,25.\n\n\n\n\n\n\n\n\nJogos com divergência entre resultado e xG\n\n\nLiga Portugal 2025/26\n\n\nData\nAdversário\nLocal\nResultado\nxG\nDif. xG\nLeitura\n\n\n\n\n11/05/2026\nSporting Braga\nCasa\n2–2\n2.91–0.2\n2.71\nEmpate quando o xG sugeria vitória\n\n\n23/09/2025\nRio Ave\nCasa\n1–1\n2.57–0.16\n2.41\nEmpate quando o xG sugeria vitória\n\n\n06/04/2026\nCasa Pia\nFora\n1–1\n1.93–0.29\n1.64\nEmpate quando o xG sugeria vitória\n\n\n01/02/2026\nTondela\nFora\n0–0\n2.1–0.48\n1.62\nEmpate quando o xG sugeria vitória\n\n\n09/11/2025\nCasa Pia\nCasa\n2–2\n2.22–1.21\n1.01\nEmpate quando o xG sugeria vitória\n\n\n12/09/2025\nSanta Clara\nCasa\n1–1\n1.62–1.02\n0.60\nEmpate quando o xG sugeria vitória\n\n\n05/12/2025\nSporting CP\nCasa\n1–1\n0.92–0.58\n0.34\nEmpate quando o xG sugeria vitória\n\n\n02/05/2026\nFamalicão\nFora\n2–2\n1.29–1.58\n−0.29\nEmpate quando o xG sugeria derrota\n\n\n28/12/2025\nSporting Braga\nFora\n2–2\n1.23–1.7\n−0.47\nEmpate quando o xG sugeria derrota\n\n\n05/10/2025\nFC Porto\nFora\n0–0\n0.12–0.68\n−0.56\nEmpate quando o xG sugeria derrota\n\n\n08/03/2026\nFC Porto\nCasa\n2–2\n1.23–2.12\n−0.89\nEmpate quando o xG sugeria derrota\n\n\n31/08/2025\nFC Alverca\nFora\n2–1\n1.03–0.81\n0.22\nVitória quando o xG sugeria empate\n\n\n26/09/2025\nGil Vicente\nCasa\n2–1\n1.27–1.26\n0.01\nVitória quando o xG sugeria empate\n\n\n02/03/2026\nGil Vicente\nFora\n2–1\n0.75–0.88\n−0.13\nVitória quando o xG sugeria empate\n\n\n14/03/2026\nFC Arouca\nFora\n2–1\n2.1–2.4\n−0.30\nVitória quando o xG sugeria derrota\n\n\n\nFonte: Sofascore. Classificação metodológica provisória — versão 0.1.\n\n\n\n\n\n\n\n\nEsta comparação não avalia isoladamente a qualidade global do desempenho: considera apenas o resultado final e a diferença de xG."
-  },
-  {
-    "objectID": "reports:teste.html",
-    "href": "reports:teste.html",
-    "title": "Benfica Analytics - Teste",
-    "section": "",
-    "text": "Esta é a primeira página experimental do projeto.\n\n\n# A tibble: 10 × 4\n   date       matchday opponent              venue\n   &lt;date&gt;        &lt;dbl&gt; &lt;chr&gt;                 &lt;chr&gt;\n 1 2026-08-09        1 Académico de Viseu FC Home \n 2 2026-08-16        2 Casa Pia AC           Away \n 3 2026-08-23        3 Moreirense FC         Away \n 4 2026-08-30        4 GD Estoril Praia      Home \n 5 2026-09-06        5 CS Marítimo           Away \n 6 2026-09-13        6 Gil Vicente FC        Home \n 7 2026-09-20        7 FC Porto              Away \n 8 2026-10-11        8 Vitória SC            Home \n 9 2026-10-25        9 CD Santa Clara        Away \n10 2026-11-01       10 FC Alverca            Home"
-  },
-  {
-    "objectID": "reports:teste.html#calendário-da-primeira-liga",
-    "href": "reports:teste.html#calendário-da-primeira-liga",
-    "title": "Benfica Analytics - Teste",
-    "section": "",
-    "text": "Esta é a primeira página experimental do projeto.\n\n\n# A tibble: 10 × 4\n   date       matchday opponent              venue\n   &lt;date&gt;        &lt;dbl&gt; &lt;chr&gt;                 &lt;chr&gt;\n 1 2026-08-09        1 Académico de Viseu FC Home \n 2 2026-08-16        2 Casa Pia AC           Away \n 3 2026-08-23        3 Moreirense FC         Away \n 4 2026-08-30        4 GD Estoril Praia      Home \n 5 2026-09-06        5 CS Marítimo           Away \n 6 2026-09-13        6 Gil Vicente FC        Home \n 7 2026-09-20        7 FC Porto              Away \n 8 2026-10-11        8 Vitória SC            Home \n 9 2026-10-25        9 CD Santa Clara        Away \n10 2026-11-01       10 FC Alverca            Home"
+    "section": "Jogador em destaque",
+    "text": "Jogador em destaque\n\n\n\n\n\nA\n\n\n\n\nVangelis PavlidisA\n\n\n513 min · Em formação\n\n\n\n\n\nAmeaça\n\n\n\n\n\n\n\n\n\n\n85.7\n\n\n\n\nCriação\n\n\n\n\n\n\n\n\n\n\n57.5\n\n\n\n\nProgressão\n\n\n\n\n\n\n\n\n\n\n34.8\n\n\n\n\nSegurança\n\n\n\n\n\n\n\n\n\n\n46.5\n\n\n\n\nContribuição defensiva\n\n\n\n\n\n\n\n\n\n\n39.4\n\n\n\nLinha central = referência 2025/26 (50)\n\n\nVer análise completa dos jogadores →"
   },
   {
     "objectID": "calendario.html",
     "href": "calendario.html",
     "title": "Calendário 2026/27",
     "section": "",
-    "text": "Primeira Liga 2026/27\n\n\nCalendário completo do SL Benfica\n\n\nJornada\nData\nAdversário\nLocal\nEstado\n\n\n\n\n1\n09/08/2026\nAcadémico de Viseu FC\nCasa\nAgendado\n\n\n2\n16/08/2026\nCasa Pia AC\nFora\nAgendado\n\n\n3\n23/08/2026\nMoreirense FC\nFora\nAgendado\n\n\n4\n30/08/2026\nGD Estoril Praia\nCasa\nAgendado\n\n\n5\n06/09/2026\nCS Marítimo\nFora\nAgendado\n\n\n6\n13/09/2026\nGil Vicente FC\nCasa\nAgendado\n\n\n7\n20/09/2026\nFC Porto\nFora\nAgendado\n\n\n8\n11/10/2026\nVitória SC\nCasa\nAgendado\n\n\n9\n25/10/2026\nCD Santa Clara\nFora\nAgendado\n\n\n10\n01/11/2026\nFC Alverca\nCasa\nAgendado\n\n\n11\n08/11/2026\nCF Estrela da Amadora\nFora\nAgendado\n\n\n12\n29/11/2026\nFC Famalicão\nCasa\nAgendado\n\n\n13\n06/12/2026\nCD Nacional\nFora\nAgendado\n\n\n14\n13/12/2026\nSporting Clube de Braga\nCasa\nAgendado\n\n\n15\n20/12/2026\nRio Ave FC\nFora\nAgendado\n\n\n16\n27/12/2026\nSporting Clube de Portugal\nCasa\nAgendado\n\n\n17\n10/01/2027\nFC Arouca\nFora\nAgendado\n\n\n18\n17/01/2027\nAcadémico de Viseu FC\nFora\nAgendado\n\n\n19\n24/01/2027\nCasa Pia AC\nCasa\nAgendado\n\n\n20\n31/01/2027\nMoreirense FC\nCasa\nAgendado\n\n\n21\n07/02/2027\nGD Estoril Praia\nFora\nAgendado\n\n\n22\n14/02/2027\nCS Marítimo\nCasa\nAgendado\n\n\n23\n21/02/2027\nGil Vicente FC\nFora\nAgendado\n\n\n24\n28/02/2027\nFC Porto\nCasa\nAgendado\n\n\n25\n07/03/2027\nVitória SC\nFora\nAgendado\n\n\n26\n14/03/2027\nCD Santa Clara\nCasa\nAgendado\n\n\n27\n21/03/2027\nFC Alverca\nFora\nAgendado\n\n\n28\n04/04/2027\nCF Estrela da Amadora\nCasa\nAgendado\n\n\n29\n11/04/2027\nFC Famalicão\nFora\nAgendado\n\n\n30\n18/04/2027\nCD Nacional\nCasa\nAgendado\n\n\n31\n25/04/2027\nSporting Clube de Braga\nFora\nAgendado\n\n\n32\n02/05/2027\nRio Ave FC\nCasa\nAgendado\n\n\n33\n09/05/2027\nSporting Clube de Portugal\nFora\nAgendado\n\n\n34\n16/05/2027\nFC Arouca\nCasa\nAgendado"
+    "text": "Competição\nJornada\nData\nAdversário\nLocal\nEstado\n\n\n\n\nLiga Europa · Qualificação\n—\n23/07/2026 · 19:00\nFC St. Gallen 1879\nFora\n2–1\n\n\nLiga Europa · Qualificação\n—\n30/07/2026 · 20:00\nFC St. Gallen 1879\nCasa\n5–0\n\n\nLiga Europa · Qualificação\n—\n06/08/2026 · 20:00\nHeart of Midlothian\nCasa\n6–1\n\n\nLiga Portugal\nJ1\n09/08/2026 · 20:30\nAcadémico Viseu FC\nCasa\n2–2\n\n\nLiga Europa · Qualificação\n—\n13/08/2026 · 19:45\nHeart of Midlothian\nFora\n1–1\n\n\nLiga Portugal\nJ2\n17/08/2026 · 20:15\nCasa Pia\nFora\n0–7\n\n\nLiga Europa · Play-off\n—\n20/08/2026 · 20:00\nAGF\nCasa\n3–1\n\n\nLiga Europa · Play-off\n—\n27/08/2026 · 19:00\nAGF\nFora\n1–3\n\n\nLiga Portugal\nJ4\n31/08/2026 · 20:15\nEstoril Praia\nCasa\nAgendado\n\n\nLiga Portugal\nJ5\n05/09/2026 · 18:00\nCS Marítimo\nFora\nAgendado\n\n\nLiga Portugal\nJ3\n09/09/2026 · 20:15\nMoreirense\nFora\nAgendado\n\n\nLiga Portugal\nJ6\n12/09/2026 · 12:00\nGil Vicente\nCasa\nAgendado\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nAZ Alkmaar\nCasa\nAgendado\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nCeltic\nCasa\nAgendado\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nLech Poznań\nCasa\nAgendado\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nOFI Crete\nCasa\nAgendado\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nAC Milan\nFora\nAgendado\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nFC Viktoria Plzeň\nFora\nAgendado\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nOmonia Nicosia\nFora\nAgendado\n\n\nUEFA Europa League\n—\n16/09/2026 · 20:00\nNEC Nijmegen\nFora\nAgendado\n\n\nLiga Portugal\nJ7\n19/09/2026 · 12:00\nFC Porto\nFora\nAgendado\n\n\nLiga Portugal\nJ8\n10/10/2026 · 12:00\nVitória SC\nCasa\nAgendado\n\n\nLiga Portugal\nJ9\n24/10/2026 · 12:00\nSanta Clara\nFora\nAgendado\n\n\nTaça da Liga\n—\n27/10/2026 · 19:00\nGil Vicente\nCasa\nAgendado\n\n\nLiga Portugal\nJ10\n01/11/2026 · 11:00\nFC Alverca\nCasa\nAgendado\n\n\nLiga Portugal\nJ11\n08/11/2026 · 11:00\nCF Estrela Amadora\nFora\nAgendado\n\n\nLiga Portugal\nJ12\n29/11/2026 · 11:00\nFamalicão\nCasa\nAgendado\n\n\nLiga Portugal\nJ13\n06/12/2026 · 11:00\nCD Nacional\nFora\nAgendado\n\n\nLiga Portugal\nJ14\n13/12/2026 · 11:00\nSporting Braga\nCasa\nAgendado\n\n\nLiga Portugal\nJ15\n20/12/2026 · 11:00\nRio Ave\nFora\nAgendado\n\n\nLiga Portugal\nJ16\n27/12/2026 · 11:00\nSporting CP\nCasa\nAgendado\n\n\nLiga Portugal\nJ17\n10/01/2027 · 11:00\nFC Arouca\nFora\nAgendado\n\n\nLiga Portugal\nJ18\n17/01/2027 · 11:00\nAcadémico Viseu FC\nFora\nAgendado\n\n\nLiga Portugal\nJ19\n24/01/2027 · 11:00\nCasa Pia\nCasa\nAgendado\n\n\nLiga Portugal\nJ20\n31/01/2027 · 11:00\nMoreirense\nCasa\nAgendado\n\n\nLiga Portugal\nJ21\n07/02/2027 · 11:00\nEstoril Praia\nFora\nAgendado\n\n\nLiga Portugal\nJ22\n14/02/2027 · 11:00\nCS Marítimo\nCasa\nAgendado\n\n\nLiga Portugal\nJ23\n21/02/2027 · 11:00\nGil Vicente\nFora\nAgendado\n\n\nLiga Portugal\nJ24\n28/02/2027 · 11:00\nFC Porto\nCasa\nAgendado\n\n\nLiga Portugal\nJ25\n07/03/2027 · 11:00\nVitória SC\nFora\nAgendado\n\n\nLiga Portugal\nJ26\n14/03/2027 · 11:00\nSanta Clara\nCasa\nAgendado\n\n\nLiga Portugal\nJ27\n21/03/2027 · 11:00\nFC Alverca\nFora\nAgendado\n\n\nLiga Portugal\nJ28\n03/04/2027 · 13:00\nCF Estrela Amadora\nCasa\nAgendado\n\n\nLiga Portugal\nJ29\n10/04/2027 · 12:00\nFamalicão\nFora\nAgendado\n\n\nLiga Portugal\nJ30\n17/04/2027 · 12:00\nCD Nacional\nCasa\nAgendado\n\n\nLiga Portugal\nJ31\n24/04/2027 · 12:00\nSporting Braga\nFora\nAgendado\n\n\nLiga Portugal\nJ32\n01/05/2027 · 12:00\nRio Ave\nCasa\nAgendado\n\n\nLiga Portugal\nJ33\n08/05/2027 · 12:00\nSporting CP\nFora\nAgendado\n\n\nLiga Portugal\nJ34\n15/05/2027 · 12:00\nFC Arouca\nCasa\nAgendado"
   },
   {
-    "objectID": "data/SOURCE_AND_METRIC_PLAN.html",
-    "href": "data/SOURCE_AND_METRIC_PLAN.html",
-    "title": "Plano de fontes e métricas",
+    "objectID": "perfil-jogos.html",
+    "href": "perfil-jogos.html",
+    "title": "Perfis de jogo",
     "section": "",
-    "text": "O projeto não procura replicar websites generalistas.\nO objetivo é combinar dados de várias origens para construir métricas próprias, testar hipóteses e estudar aspetos pouco observados do desempenho do Benfica.\n\n\n\n\n\nUtilização:\n\nremates a favor\nremates contra\nremates enquadrados\nmétricas de eficácia de remate\ndados de guarda-redes\nposse\nformação\nformação adversária\ncapitão\nárbitro\ncontexto competitivo\n\nMétodo atual:\n\nexportação manual através de Share & Export\nimportação e limpeza automáticas em R\natualização após cada jogo\n\nLimitações:\n\nacesso automático bloqueado em alguns pedidos\nsem API oficial usada neste projeto\nsem exportação estável da sequência cronológica dos golos por jogo\ncobertura variável conforme a tabela e a competição\n\n\n\n\nUtilização:\n\ncalendário\nresultados\njornadas\nadversários\ncasa e fora\nplantel base\ndados pessoais básicos dos jogadores\n\nLimitações:\n\nsem estatísticas detalhadas de jogo no plano gratuito\nsem alinhamentos e substituições no plano gratuito\nsem xG\nsem eventos\n\n\n\n\nUtilização:\n\npertença real ao plantel\nreforços\ndatas de chegada\nclubes anteriores\nposições detalhadas\nsituações incertas\nequipa que marcou primeiro\nminuto do primeiro golo\nsequência cronológica dos golos, quando necessária\n\n\n\n\n\n\n\nObjetivo:\n\nforça do adversário antes de cada jogo\ndificuldade ajustada do calendário\ncontextualização de resultados\n\n\n\n\nObjetivo:\n\ndesenvolver modelos experimentais\ntestar métricas com dados de eventos\nestudar sequências, pressão, progressão e redes\nvalidar métodos antes da aplicação ao Benfica\n\n\n\n\nObjetivo:\n\nonze inicial\nsubstituições\nminutos\nremates\nposse\ncantos\ncartões\nxG quando disponível\n\n\n\n\n\n\nFamiliaridade do onze\nContinuidade por setor\nCusto temporário de integração dos reforços\nDependência estrutural de jogadores\nEfeito real das substituições\nCapacidade de controlar vantagens\nVolatilidade do desempenho\nResultado versus processo\nImpacto do descanso e sequência de jogos\nDiferença entre rotação numérica e rotação funcional\n\n\n\n\nCada indicador deverá incluir:\n\ndefinição\nfórmula\nfonte dos dados\npressupostos\nlimitações\nversão do modelo\n\n\n\nUtilização:\n\nremates a favor\nremates contra\nremates enquadrados\nmétricas de eficácia de remate\ndados de guarda-redes\nposse\nformação\nformação adversária\ncapitão\nárbitro\ncontexto competitivo\n\nMétodo atual:\n\nexportação manual através de Share & Export\nimportação e limpeza automáticas em R\natualização após cada jogo\n\nLimitações:\n\nacesso automático bloqueado em alguns pedidos\nsem API oficial usada neste projeto\nsem exportação estável da sequência cronológica dos golos por jogo\nsem tabela Goal and Shot Creation disponível para o Benfica nesta época\ncobertura variável conforme a tabela e a competição\n\n\n\n\n\n\n\nIdentificar jogos em que o resultado final divergiu da categoria de resultado sugerida pela diferença de xG.\n\n\n\n\nxG do Sofascore\nresultado final da tabela canónica\nvalidação possível através do FotMob\n\n\n\n\ndiferença de xG = xG Benfica - xG adversário\n\n\n\n\ndiferença superior a +0,25: vitória sugerida pelo xG\ndiferença entre -0,25 e +0,25: empate sugerido pelo xG\ndiferença inferior a -0,25: derrota sugerida pelo xG\n\n\n\n\n\nxg_result\nactual_result_points\nxg_result_points\nresult_performance_gap\nresult_xg_class\n\n\n\n\nA métrica compara o resultado real com uma categoria derivada exclusivamente da diferença de xG.\nNão representa uma avaliação completa do desempenho, porque não considera:\n\nevolução temporal do jogo\nestado do marcador\nqualidade do adversário\nexpulsões\ncontexto competitivo\ndistribuição dos remates\nmomento em que o xG foi produzido\nestratégia depois de obter vantagem\n\n\n\n\n\nlimiar de 0,25 é uma decisão metodológica provisória\npequenas alterações no limiar podem mudar a categoria de alguns jogos\nxG é um modelo probabilístico e não um resultado esperado determinístico\na diferença de xG não distingue domínio constante de produção concentrada num curto período\n\n\n\n\n\nversão: v0.1\ncobertura: 34 jogos da Liga Portugal 2025/26\nimplementação: python/calculate_result_performance_gap.py\nsaída: data/processed/benfica_2025_26_result_performance_gap.csv"
+    "text": "O mapa cruza GameGrip (controlo do jogo) com ChanceCraft (qualidade da criação). As linhas tracejadas representam as medianas da Liga 2025/26 do Benfica e funcionam como referência fixa para classificar os jogos atuais.\n\n\n\n\n\n\n\nComo interpretar\nDomínio completo combina controlo elevado e criação de qualidade.\nControlo territorial representa domínio do jogo sem a mesma qualidade relativa das oportunidades.\nCriação sem domínio identifica jogos em que o Benfica produziu oportunidades de qualidade sem controlar estruturalmente a partida.\nBaixa expressão corresponde a valores abaixo da referência nas duas dimensões.\nA execução do remate é analisada separadamente através da diferença entre xGOT e xG."
   },
   {
-    "objectID": "data/SOURCE_AND_METRIC_PLAN.html#princípio",
-    "href": "data/SOURCE_AND_METRIC_PLAN.html#princípio",
-    "title": "Plano de fontes e métricas",
+    "objectID": "jogos.html",
+    "href": "jogos.html",
+    "title": "Jogos",
     "section": "",
-    "text": "O projeto não procura replicar websites generalistas.\nO objetivo é combinar dados de várias origens para construir métricas próprias, testar hipóteses e estudar aspetos pouco observados do desempenho do Benfica."
+    "text": "ARQUIVO ANALÍTICO\n\n\nJogos\n\n\nResultados, processo e leituras próprias jogo a jogo.\nData\nAdversário\nResultado\nDif. xG\nResultado vs processo\nFamiliaridade do onze\nMomento da ameaça\nImpacto após alterações\n\n\n\n\n27/08/2026\nAGF\n1–3\n1.84\n0\n93.1\n\n\n\n\n\n\n20/08/2026\nAGF\n3–1\n4.15\n0\n84.4\n\n\n\n\n\n\n17/08/2026\nCasa Pia\n0–7\n2.66\n0\n74.5\n0.82\n\n\n\n\n13/08/2026\nHeart of Midlothian\n1–1\n0.44\n-2\n9.5\n\n\n\n\n\n\n09/08/2026\nAcadémico Viseu FC\n2–2\n2.10\n-2\n58.9\n1.02\n-0.23\n\n\n06/08/2026\nHeart of Midlothian\n6–1\n2.45\n0\n38.9\n\n\n\n\n\n\n30/07/2026\nFC St. Gallen 1879\n5–0\n2.99\n0\n45.8\n\n\n\n\n\n\n23/07/2026\nFC St. Gallen 1879\n2–1\n-0.42\n0\n20.4"
   },
   {
-    "objectID": "data/SOURCE_AND_METRIC_PLAN.html#fontes-atuais",
-    "href": "data/SOURCE_AND_METRIC_PLAN.html#fontes-atuais",
-    "title": "Plano de fontes e métricas",
-    "section": "",
-    "text": "Utilização:\n\nremates a favor\nremates contra\nremates enquadrados\nmétricas de eficácia de remate\ndados de guarda-redes\nposse\nformação\nformação adversária\ncapitão\nárbitro\ncontexto competitivo\n\nMétodo atual:\n\nexportação manual através de Share & Export\nimportação e limpeza automáticas em R\natualização após cada jogo\n\nLimitações:\n\nacesso automático bloqueado em alguns pedidos\nsem API oficial usada neste projeto\nsem exportação estável da sequência cronológica dos golos por jogo\ncobertura variável conforme a tabela e a competição\n\n\n\n\nUtilização:\n\ncalendário\nresultados\njornadas\nadversários\ncasa e fora\nplantel base\ndados pessoais básicos dos jogadores\n\nLimitações:\n\nsem estatísticas detalhadas de jogo no plano gratuito\nsem alinhamentos e substituições no plano gratuito\nsem xG\nsem eventos\n\n\n\n\nUtilização:\n\npertença real ao plantel\nreforços\ndatas de chegada\nclubes anteriores\nposições detalhadas\nsituações incertas\nequipa que marcou primeiro\nminuto do primeiro golo\nsequência cronológica dos golos, quando necessária"
+    "objectID": "jogos.html#perfis-de-jogo",
+    "href": "jogos.html#perfis-de-jogo",
+    "title": "Jogos",
+    "section": "Perfis de jogo",
+    "text": "Perfis de jogo\n\n\n\nEXPLORAR\n\n\nMapa de perfis de jogo\n\n\nCompara a forma como o Benfica controla e cria em cada jogo.\n\n\nGameGrip · controloChanceCraft · criação\n\nExplorar perfis →\n\n\n\nGameGrip →ChanceCraft →AGF\n\n\nJogo mais recente81.8 / 77.2GameGrip / ChanceCraft"
   },
   {
-    "objectID": "data/SOURCE_AND_METRIC_PLAN.html#fontes-a-testar",
-    "href": "data/SOURCE_AND_METRIC_PLAN.html#fontes-a-testar",
-    "title": "Plano de fontes e métricas",
+    "objectID": "en/jogos/SLB_20260730_H_FCSTGALLEN1879.html",
+    "href": "en/jogos/SLB_20260730_H_FCSTGALLEN1879.html",
+    "title": "Match analysis",
     "section": "",
-    "text": "Objetivo:\n\nforça do adversário antes de cada jogo\ndificuldade ajustada do calendário\ncontextualização de resultados\n\n\n\n\nObjetivo:\n\ndesenvolver modelos experimentais\ntestar métricas com dados de eventos\nestudar sequências, pressão, progressão e redes\nvalidar métodos antes da aplicação ao Benfica\n\n\n\n\nObjetivo:\n\nonze inicial\nsubstituições\nminutos\nremates\nposse\ncantos\ncartões\nxG quando disponível"
+    "text": "BENFICA ANALYTICS · MATCH ANALYSIS\n\n\nBENFICA5–0FC ST. GALLEN 1879\n\n\nVantagem cedo. Controlo até ao fim.\n\n\nLiga Europa · Qualificação · 30/07/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nxG Difference\n\n\n+2.99\n\n\nxG Benfica 4.02 · Opponent 1.03\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nResult vs Process\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nStarting XI Familiarity\n\n\n45.8\n\n\nPair coverage: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · LEAD MANAGEMENT\n\n\nTime Leading\n\n\n87.8%\n\n\nLead protected\n\n\n\n\n\n\n\n\n\n\n\n\nPLAYER SPOTLIGHT\n\n\nVangelis Pavlidis\n\n\nThreat\n\n\n\n\n85.8/100\n\nVery high\n\n\n\nProprietary metrics are calculated using rules and baselines documented on the Methodology."
   },
   {
-    "objectID": "data/SOURCE_AND_METRIC_PLAN.html#blind-spots-prioritários",
-    "href": "data/SOURCE_AND_METRIC_PLAN.html#blind-spots-prioritários",
-    "title": "Plano de fontes e métricas",
+    "objectID": "en/jogos/SLB_20260809_H_ACADEMICOVISEUFC.html",
+    "href": "en/jogos/SLB_20260809_H_ACADEMICOVISEUFC.html",
+    "title": "Match analysis",
     "section": "",
-    "text": "Familiaridade do onze\nContinuidade por setor\nCusto temporário de integração dos reforços\nDependência estrutural de jogadores\nEfeito real das substituições\nCapacidade de controlar vantagens\nVolatilidade do desempenho\nResultado versus processo\nImpacto do descanso e sequência de jogos\nDiferença entre rotação numérica e rotação funcional"
+    "text": "BENFICA ANALYTICS · MATCH ANALYSIS\n\n\nBENFICA2–2ACADÉMICO VISEU FC\n\n\nMuito processo. Pouco resultado.\n\n\nLiga Portugal · 09/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nxG Difference\n\n\n+2.10\n\n\nxG Benfica 3.16 · Opponent 1.06\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nResult vs Process\n\n\n-2\n\n\nEmpate quando o xG sugeria vitória\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nStarting XI Familiarity\n\n\n58.9\n\n\nPair coverage: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nSector Continuity\n\n\nD 83 · M 67 · A 83\n\n\nStarter continuity by sector\n\n\n\n\n\n\n\n\n\n\n\nDYNAMICS\n\n\nThreat Timing · Threat timing\n\n\n1.02\n\n\nResponse Threat: 32.0% do xG\n\n\n\n\n\n\n\n\n\n\n\nDYNAMICS\n\n\nTactical Lift · Impact after changes\n\n\n-0.23\n\n\nObserved change versus expectation\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · LEAD MANAGEMENT\n\n\nTime Leading\n\n\n60.0%\n\n\nThe lead was lost during the match\n\n\n\n\n\n\n\n\n\n\n\n\nPLAYER SPOTLIGHT\n\n\nVangelis Pavlidis\n\n\nThreat\n\n\n\n\n84.0/100\n\nVery high\n\n\n\nProprietary metrics are calculated using rules and baselines documented on the Methodology."
   },
   {
-    "objectID": "data/SOURCE_AND_METRIC_PLAN.html#regra-metodológica",
-    "href": "data/SOURCE_AND_METRIC_PLAN.html#regra-metodológica",
-    "title": "Plano de fontes e métricas",
+    "objectID": "en/jogos/SLB_20260817_A_CASAPIA.html",
+    "href": "en/jogos/SLB_20260817_A_CASAPIA.html",
+    "title": "Match analysis",
     "section": "",
-    "text": "Cada indicador deverá incluir:\n\ndefinição\nfórmula\nfonte dos dados\npressupostos\nlimitações\nversão do modelo\n\n\n\nUtilização:\n\nremates a favor\nremates contra\nremates enquadrados\nmétricas de eficácia de remate\ndados de guarda-redes\nposse\nformação\nformação adversária\ncapitão\nárbitro\ncontexto competitivo\n\nMétodo atual:\n\nexportação manual através de Share & Export\nimportação e limpeza automáticas em R\natualização após cada jogo\n\nLimitações:\n\nacesso automático bloqueado em alguns pedidos\nsem API oficial usada neste projeto\nsem exportação estável da sequência cronológica dos golos por jogo\nsem tabela Goal and Shot Creation disponível para o Benfica nesta época\ncobertura variável conforme a tabela e a competição"
+    "text": "BENFICA ANALYTICS · MATCH ANALYSIS\n\n\nCASA PIA0–7BENFICA\n\n\nDomínio claro. Ameaça tardia.\n\n\nLiga Portugal · 17/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nxG Difference\n\n\n+2.66\n\n\nxG Benfica 2.83 · Opponent 0.17\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nResult vs Process\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nRECENT FORM\n\n\nProcess Level\n\n\n2.13\n\n\nAverage xG difference over the last 5 matches\n\n\n\n\n\n\n\n\n\n\n\nRECENT FORM\n\n\nProcess Volatility\n\n\n1.10\n\n\nMedian xG-difference swing over the last 5 matches\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nStarting XI Familiarity\n\n\n74.5\n\n\nPair coverage: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nSector Continuity\n\n\nD 75 · M 83 · A 75\n\n\nStarter continuity by sector\n\n\n\n\n\n\n\n\n\n\n\nDYNAMICS\n\n\nThreat Timing · Threat timing\n\n\n0.82\n\n\nResponse Threat: 3.0% do xG\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · LEAD MANAGEMENT\n\n\nTime Leading\n\n\n96.7%\n\n\nLead protected\n\n\n\n\n\n\n\n\n\n\n\n\nPLAYER SPOTLIGHT\n\n\nVangelis Pavlidis\n\n\nThreat Execution · Finishing quality\n\n\n\n\n85.8/100\n\nVery high\n\n\n\nProprietary metrics are calculated using rules and baselines documented on the Methodology."
   },
   {
-    "objectID": "data/SOURCE_AND_METRIC_PLAN.html#resultado-real-versus-desfecho-sugerido-pelo-xg",
-    "href": "data/SOURCE_AND_METRIC_PLAN.html#resultado-real-versus-desfecho-sugerido-pelo-xg",
-    "title": "Plano de fontes e métricas",
+    "objectID": "en/jogos/SLB_20260827_A_AGF.html",
+    "href": "en/jogos/SLB_20260827_A_AGF.html",
+    "title": "Match analysis",
     "section": "",
-    "text": "Identificar jogos em que o resultado final divergiu da categoria de resultado sugerida pela diferença de xG.\n\n\n\n\nxG do Sofascore\nresultado final da tabela canónica\nvalidação possível através do FotMob\n\n\n\n\ndiferença de xG = xG Benfica - xG adversário\n\n\n\n\ndiferença superior a +0,25: vitória sugerida pelo xG\ndiferença entre -0,25 e +0,25: empate sugerido pelo xG\ndiferença inferior a -0,25: derrota sugerida pelo xG\n\n\n\n\n\nxg_result\nactual_result_points\nxg_result_points\nresult_performance_gap\nresult_xg_class\n\n\n\n\nA métrica compara o resultado real com uma categoria derivada exclusivamente da diferença de xG.\nNão representa uma avaliação completa do desempenho, porque não considera:\n\nevolução temporal do jogo\nestado do marcador\nqualidade do adversário\nexpulsões\ncontexto competitivo\ndistribuição dos remates\nmomento em que o xG foi produzido\nestratégia depois de obter vantagem\n\n\n\n\n\nlimiar de 0,25 é uma decisão metodológica provisória\npequenas alterações no limiar podem mudar a categoria de alguns jogos\nxG é um modelo probabilístico e não um resultado esperado determinístico\na diferença de xG não distingue domínio constante de produção concentrada num curto período\n\n\n\n\n\nversão: v0.1\ncobertura: 34 jogos da Liga Portugal 2025/26\nimplementação: python/calculate_result_performance_gap.py\nsaída: data/processed/benfica_2025_26_result_performance_gap.csv"
+    "text": "BENFICA ANALYTICS · MATCH ANALYSIS\n\n\nAGF1–3BENFICA\n\n\nEstrutura estável. Processo controlado.\n\n\nLiga Europa · Play-off · 27/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nxG Difference\n\n\n+1.84\n\n\nxG Benfica 2.19 · Opponent 0.35\n\n\n\n\n\n\n\n\n\n\n\nPROCESS\n\n\nResult vs Process\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nRECENT FORM\n\n\nProcess Level\n\n\n2.24\n\n\nAverage xG difference over the last 5 matches\n\n\n\n\n\n\n\n\n\n\n\nRECENT FORM\n\n\nProcess Volatility\n\n\n1.94\n\n\nMedian xG-difference swing over the last 5 matches\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nStarting XI Familiarity\n\n\n93.1\n\n\nPair coverage: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nSTRUCTURE\n\n\nSector Continuity\n\n\nD 75 · M 83 · A 75\n\n\nStarter continuity by sector\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · LEAD MANAGEMENT\n\n\nTime Leading\n\n\n78.9%\n\n\nLead protected\n\n\n\n\n\n\n\n\n\n\n\n\nPLAYER SPOTLIGHT\n\n\nGianluca Prestianni\n\n\nThreat\n\n\n\n\n76.2/100\n\nHigh\n\n\n\nProprietary metrics are calculated using rules and baselines documented on the Methodology."
   },
   {
-    "objectID": "data/API_LIMITATIONS.html",
-    "href": "data/API_LIMITATIONS.html",
-    "title": "Limitações da football-data.org",
+    "objectID": "jogos/SLB_20260730_H_FCSTGALLEN1879.html",
+    "href": "jogos/SLB_20260730_H_FCSTGALLEN1879.html",
+    "title": "Análise do jogo",
     "section": "",
-    "text": "calendário\nresultados\nclassificação\nequipas\ncompetição\njornada\nlocal\nárbitros\n\n\n\n\n\nonze inicial\nbanco\nsubstituições\ncartões\nmarcadores detalhados\nestatísticas por jogador\nremates\nposse\nxG\neventos minuto a minuto\n\n\n\n\nA API será usada como fonte estrutural para calendário e resultados.\nAs métricas avançadas exigirão outra fonte ou introdução manual."
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nBENFICA5–0FC ST. GALLEN 1879\n\n\nVantagem cedo. Controlo até ao fim.\n\n\nLiga Europa · Qualificação · 30/07/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+2.99\n\n\nxG Benfica 4.02 · Adversário 1.03\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n45.8\n\n\nCobertura de pares: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · GESTÃO DA VANTAGEM\n\n\nTempo em vantagem\n\n\n87.8%\n\n\nVantagem protegida\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nVangelis Pavlidis\n\n\nAmeaça\n\n\n\n\n85.8/100\n\nMuito alto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
-    "objectID": "data/API_LIMITATIONS.html#dados-disponíveis",
-    "href": "data/API_LIMITATIONS.html#dados-disponíveis",
-    "title": "Limitações da football-data.org",
+    "objectID": "jogos/SLB_20260809_H_ACADEMICOVISEUFC.html",
+    "href": "jogos/SLB_20260809_H_ACADEMICOVISEUFC.html",
+    "title": "Análise do jogo",
     "section": "",
-    "text": "calendário\nresultados\nclassificação\nequipas\ncompetição\njornada\nlocal\nárbitros"
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nBENFICA2–2ACADÉMICO VISEU FC\n\n\nMuito processo. Pouco resultado.\n\n\nLiga Portugal · 09/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+2.10\n\n\nxG Benfica 3.16 · Adversário 1.06\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n-2\n\n\nEmpate quando o xG sugeria vitória\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n58.9\n\n\nCobertura de pares: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nContinuidade por setor\n\n\nD 83 · M 67 · A 83\n\n\nContinuidade dos titulares por setor\n\n\n\n\n\n\n\n\n\n\n\nDINÂMICA\n\n\nThreat Timing · Momento da ameaça\n\n\n1.02\n\n\nAmeaça de resposta: 32.0% do xG\n\n\n\n\n\n\n\n\n\n\n\nDINÂMICA\n\n\nTactical Lift · Impacto após alterações\n\n\n-0.23\n\n\nMudança observada face ao esperado\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · GESTÃO DA VANTAGEM\n\n\nTempo em vantagem\n\n\n60.0%\n\n\nA vantagem foi perdida durante o jogo\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nVangelis Pavlidis\n\n\nAmeaça\n\n\n\n\n84.0/100\n\nMuito alto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
-    "objectID": "data/API_LIMITATIONS.html#dados-não-disponíveis-no-plano-atual",
-    "href": "data/API_LIMITATIONS.html#dados-não-disponíveis-no-plano-atual",
-    "title": "Limitações da football-data.org",
+    "objectID": "jogos/SLB_20260817_A_CASAPIA.html",
+    "href": "jogos/SLB_20260817_A_CASAPIA.html",
+    "title": "Análise do jogo",
     "section": "",
-    "text": "onze inicial\nbanco\nsubstituições\ncartões\nmarcadores detalhados\nestatísticas por jogador\nremates\nposse\nxG\neventos minuto a minuto"
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nCASA PIA0–7BENFICA\n\n\nDomínio claro. Ameaça tardia.\n\n\nLiga Portugal · 17/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+2.66\n\n\nxG Benfica 2.83 · Adversário 0.17\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nNível de processo\n\n\n2.13\n\n\nMédia da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nVolatilidade do processo\n\n\n1.10\n\n\nMediana da variação da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n74.5\n\n\nCobertura de pares: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nContinuidade por setor\n\n\nD 75 · M 83 · A 75\n\n\nContinuidade dos titulares por setor\n\n\n\n\n\n\n\n\n\n\n\nDINÂMICA\n\n\nThreat Timing · Momento da ameaça\n\n\n0.82\n\n\nAmeaça de resposta: 3.0% do xG\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · GESTÃO DA VANTAGEM\n\n\nTempo em vantagem\n\n\n96.7%\n\n\nVantagem protegida\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nVangelis Pavlidis\n\n\nThreat Execution · Qualidade de finalização\n\n\n\n\n85.8/100\n\nMuito alto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
   },
   {
-    "objectID": "data/API_LIMITATIONS.html#consequência",
-    "href": "data/API_LIMITATIONS.html#consequência",
-    "title": "Limitações da football-data.org",
+    "objectID": "jogos/SLB_20260827_A_AGF.html",
+    "href": "jogos/SLB_20260827_A_AGF.html",
+    "title": "Análise do jogo",
     "section": "",
-    "text": "A API será usada como fonte estrutural para calendário e resultados.\nAs métricas avançadas exigirão outra fonte ou introdução manual."
+    "text": "BENFICA ANALYTICS · ANÁLISE DO JOGO\n\n\nAGF1–3BENFICA\n\n\nEstrutura estável. Processo controlado.\n\n\nLiga Europa · Play-off · 27/08/2026\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nDiferença de xG\n\n\n+1.84\n\n\nxG Benfica 2.19 · Adversário 0.35\n\n\n\n\n\n\n\n\n\n\n\nPROCESSO\n\n\nResultado vs processo\n\n\n0\n\n\nResultado coincidente com o desfecho do xG\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nNível de processo\n\n\n2.24\n\n\nMédia da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nFORMA RECENTE\n\n\nVolatilidade do processo\n\n\n1.94\n\n\nMediana da variação da diferença de xG nos últimos 5 jogos\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nFamiliaridade do onze\n\n\n93.1\n\n\nCobertura de pares: 100.0%\n\n\n\n\n\n\n\n\n\n\n\nESTRUTURA\n\n\nContinuidade por setor\n\n\nD 75 · M 83 · A 75\n\n\nContinuidade dos titulares por setor\n\n\n\n\n\n\n\n\n\n\n\nLEADLOCK · GESTÃO DA VANTAGEM\n\n\nTempo em vantagem\n\n\n78.9%\n\n\nVantagem protegida\n\n\n\n\n\n\n\n\n\n\n\n\nJOGADOR EM DESTAQUE\n\n\nGianluca Prestianni\n\n\nAmeaça\n\n\n\n\n76.2/100\n\nAlto\n\n\n\nAs métricas próprias são calculadas com regras e baselines documentados na página de Metodologia."
+  },
+  {
+    "objectID": "en/jogos.html",
+    "href": "en/jogos.html",
+    "title": "Matches",
+    "section": "",
+    "text": "ANALYTICAL ARCHIVE\n\n\nMatches\n\n\nResults, process and proprietary match-by-match analysis.\nData\nOpponent\nResult\nDif. xG\nResult vs Process\nStarting XI Familiarity\nThreat Timing\nTactical Lift\n\n\n\n\n27/08/2026\nAGF\n1–3\n1.84\n0\n93.1\n\n\n\n\n\n\n20/08/2026\nAGF\n3–1\n4.15\n0\n84.4\n\n\n\n\n\n\n17/08/2026\nCasa Pia\n0–7\n2.66\n0\n74.5\n0.82\n\n\n\n\n13/08/2026\nHeart of Midlothian\n1–1\n0.44\n-2\n9.5\n\n\n\n\n\n\n09/08/2026\nAcadémico Viseu FC\n2–2\n2.10\n-2\n58.9\n1.02\n-0.23\n\n\n06/08/2026\nHeart of Midlothian\n6–1\n2.45\n0\n38.9\n\n\n\n\n\n\n30/07/2026\nFC St. Gallen 1879\n5–0\n2.99\n0\n45.8\n\n\n\n\n\n\n23/07/2026\nFC St. Gallen 1879\n2–1\n-0.42\n0\n20.4"
+  },
+  {
+    "objectID": "en/jogos.html#perfis-de-jogo",
+    "href": "en/jogos.html#perfis-de-jogo",
+    "title": "Matches",
+    "section": "Perfis de jogo",
+    "text": "Perfis de jogo\n\n\n\nEXPLORE\n\n\nMatch profile map\n\n\nCompare how Benfica controls and creates in each match.\n\n\nGameGrip · controloChanceCraft · criação\n\nExplore profiles →\n\n\n\nGameGrip →ChanceCraft →AGF\n\n\nLatest match81.8 / 77.2GameGrip / ChanceCraft"
+  },
+  {
+    "objectID": "en/jogadores.html",
+    "href": "en/jogadores.html",
+    "title": "Players",
+    "section": "",
+    "text": "Threat\n\n\nVangelis Pavlidis\n\n\n85.7\n\n\n513 min · Em formação\n\n\n\n\nChance Creation\n\n\nAndreas Schjelderup\n\n\n79.2\n\n\n219 min · Em formação\n\n\n\n\nProgression\n\n\nNeto Jose\n\n\n70.9\n\n\n90 min · Amostra reduzida\n\n\n\n\nBall Security\n\n\nEnzo Barrenechea\n\n\n73.7\n\n\n580 min · Em formação\n\n\n\n\nDefensive Contribution\n\n\nNeto Jose\n\n\n73.7\n\n\n90 min · Amostra reduzida\n\n\n\n\nThreat Execution · Finishing quality\n\n\nGianluca Prestianni\n\n\n+0.110\n\n\n16 shots · xGOT − xG por remate"
+  },
+  {
+    "objectID": "en/jogadores.html#highlights-202627",
+    "href": "en/jogadores.html#highlights-202627",
+    "title": "Players",
+    "section": "",
+    "text": "Threat\n\n\nVangelis Pavlidis\n\n\n85.7\n\n\n513 min · Em formação\n\n\n\n\nChance Creation\n\n\nAndreas Schjelderup\n\n\n79.2\n\n\n219 min · Em formação\n\n\n\n\nProgression\n\n\nNeto Jose\n\n\n70.9\n\n\n90 min · Amostra reduzida\n\n\n\n\nBall Security\n\n\nEnzo Barrenechea\n\n\n73.7\n\n\n580 min · Em formação\n\n\n\n\nDefensive Contribution\n\n\nNeto Jose\n\n\n73.7\n\n\n90 min · Amostra reduzida\n\n\n\n\nThreat Execution · Finishing quality\n\n\nGianluca Prestianni\n\n\n+0.110\n\n\n16 shots · xGOT − xG por remate"
+  },
+  {
+    "objectID": "en/jogadores.html#player-profile",
+    "href": "en/jogadores.html#player-profile",
+    "title": "Players",
+    "section": "Player profile",
+    "text": "Player profile\n\nChoose playerAlexander BahAmar DedićClément LengletNeto JoseSamuel DahlSilva AntonioTomás AraújoEnzo BarrenecheaFigueiredo MiguelGeorgiy SudakovLeandro BarreiroManu SilvaRichard RíosAndreas SchjelderupDodi LukebakioGianluca PrestianniJhon DuránKaminski JakubRafa SilvaVangelis Pavlidis"
+  },
+  {
+    "objectID": "en/jogadores.html#full-table",
+    "href": "en/jogadores.html#full-table",
+    "title": "Players",
+    "section": "Full table",
+    "text": "Full table\n\n2026/272025/26 · League\n\n\n\n\n\n\n\n\n\n\nA análise dos guarda-redes fica separada das métricas dos jogadores de campo. O BuildKeeper mede a influência na construção com bola. Para 2025/26, o histórico disponível nesta secção cobre apenas a Liga Portugal."
+  },
+  {
+    "objectID": "en/jogadores.html#goalkeepers",
+    "href": "en/jogadores.html#goalkeepers",
+    "title": "Players",
+    "section": "Goalkeepers",
+    "text": "Goalkeepers\nGoalkeeper analysis is kept separate from outfield-player metrics. BuildKeeper measures influence in build-up with the ball; the historical scale reference is documented in the Methodology.\n\n2026/272025/26\n\n\n\n\n\n\nSamuel Soares\n\n\n6 matches · 540 min\n\n\n\nBuildKeeper53.0\n\n\n\nPasses / 9021.7\n\n\nPass accuracy87.7%\n\n\nLong balls / 905.5\n\n\nLong-ball accuracy54.5%\n\n\nAccurate final-third passes / 900.5\n\n\n\n\n\n\nAnatoliy Trubin\n\n\n2 matches · 180 min\n\n\n\nBuildKeeper60.1\n\n\n\nPasses / 9040.0\n\n\nPass accuracy93.8%\n\n\nLong balls / 904.5\n\n\nLong-ball accuracy44.4%\n\n\nAccurate final-third passes / 900.5\n\n\n\n\n\n\n\n\n\nAnatoliy Trubin\n\n\n32 matches · 2880 min\n\n\n\nBuildKeeper50.0\n\n\n\nPasses / 9020.0\n\n\nPass accuracy72.8%\n\n\nLong balls / 908.4\n\n\nLong-ball accuracy36.2%\n\n\nAccurate final-third passes / 900.7\n\n\n\n\n\n\nSamuel Soares\n\n\n2 matches · 180 min\n\n\n\nBuildKeeper48.5\n\n\n\nPasses / 9018.5\n\n\nPass accuracy73.0%\n\n\nLong balls / 908.5\n\n\nLong-ball accuracy41.2%\n\n\nAccurate final-third passes / 900.5"
+  },
+  {
+    "objectID": "en/metodologia.html",
+    "href": "en/metodologia.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "Benfica Analytics studies dimensions of SL Benfica’s performance that are not directly visible in the final score or in the most common statistics.\nThe metrics are experimental, transparent and reproducible. They may be revised when larger samples, better sources or evidence indicate that an alternative formulation represents the phenomenon more accurately.\nUnknown values remain blank. Zero is used only when an event was measured and did not occur.\nThe metrics are not combined into a single overall match score. Each metric answers a different question and should be interpreted in its own context."
+  },
+  {
+    "objectID": "en/metodologia.html#project-principle",
+    "href": "en/metodologia.html#project-principle",
+    "title": "Methodology",
+    "section": "",
+    "text": "Benfica Analytics studies dimensions of SL Benfica’s performance that are not directly visible in the final score or in the most common statistics.\nThe metrics are experimental, transparent and reproducible. They may be revised when larger samples, better sources or evidence indicate that an alternative formulation represents the phenomenon more accurately.\nUnknown values remain blank. Zero is used only when an event was measured and did not occur.\nThe metrics are not combined into a single overall match score. Each metric answers a different question and should be interpreted in its own context."
+  },
+  {
+    "objectID": "en/metodologia.html#process-and-form",
+    "href": "en/metodologia.html#process-and-form",
+    "title": "Methodology",
+    "section": "Process and form",
+    "text": "Process and form\n\nxG Difference\nxG Difference is the difference between Benfica’s expected goals and the opponent’s expected goals in the same match.\nxG Difference = Benfica xG − opponent xG\nInterpretation:\n\npositive — Benfica generated more xG than the opponent;\nnegative — the opponent generated more xG;\nclose to zero — similar chance production.\n\nIt is a process measure and does not guarantee correspondence with the final result.\n\n\nReality Gap — Result vs Process\nReality Gap compares the actual result with the result suggested by xG Difference.\nThe provisional xG result is classified as:\n\nxG Difference above +0.25 → suggested win;\nbetween −0.25 and +0.25 → suggested draw;\nbelow −0.25 → suggested loss.\n\nReality Gap = actual points − xG-suggested points\nInterpretation:\n\n0 — actual result matched the xG-suggested outcome;\nnegative — Benfica earned fewer points than xG suggested;\npositive — Benfica earned more points than xG suggested.\n\nReality Gap does not claim what the “correct” result should have been. It measures divergence between result and chance production.\n\n\nProcess Level\nProcess Level = mean xG Difference over the last 5 matches\nHigher values indicate a recent run with a greater advantage in chance production.\n\n\nProcess Volatility\nProcess Volatility = median |xG Diff(t) − xG Diff(t−1)|\nHigher values indicate greater instability in the recent process."
+  },
+  {
+    "objectID": "en/metodologia.html#match-dynamics",
+    "href": "en/metodologia.html#match-dynamics",
+    "title": "Methodology",
+    "section": "Match dynamics",
+    "text": "Match dynamics\n\nThreat Timing\nThreat Timing measures when Benfica’s attacking threat was concentrated.\nEach shot is weighted by a leverage factor based on the minute and the score state immediately before the shot.\nThreat Timing = Σ(xG × leverage) / Σ(xG)\nInterpretation:\n\nabove 1 — relatively more threat in higher-leverage moments;\nclose to 1 — approximately neutral distribution;\nbelow 1 — relatively more threat in lower-leverage moments.\n\nIt does not measure attacking volume; it measures when that volume occurred. For aggregate interpretation, the current version is considered more stable from roughly 15 shots.\n\n\nResponse Threat\nResponse Threat measures the proportion of attacking threat generated while Benfica were drawing or trailing.\n“Response” is defined by the score state at the moment of each shot, not by a fixed time window after conceding.\n\n\nTactical Lift — Impact after changes\nObserved Change = post-window xG Diff − pre-window xG Diff\nThe current expected-change relationship from control windows is:\nExpected Change = 0.074 − 0.865 × pre_xG_diff\nTherefore:\nTactical Lift = Observed Change − Expected Change\nPositive values mean the observed change was better than expected; negative values mean it was worse.\nTactical Lift is descriptive, not causal.\n\n\nLeadLock\nLeadLock studies Benfica’s ability to manage situations in which the team leads.\nIt tracks leads, lost leads, recovered leads, time leading, lead retention and wins after leading. The current version uses a normalised 90-minute analytical clock."
+  },
+  {
+    "objectID": "en/metodologia.html#team-structure",
+    "href": "en/metodologia.html#team-structure",
+    "title": "Methodology",
+    "section": "Team structure",
+    "text": "Team structure\n\nStarting XI Familiarity\nAn XI contains 55 possible pairs. For each current pair, prior joint starts are counted and capped at five.\npair score = min(prior joint starts, 5) / 5\nStarting XI Familiarity is the mean across all 55 pairs on a 0–100 scale. Friendlies may contribute to familiarity history.\n\n\nPair Coverage\nPercentage of the current XI’s 55 pairs that had at least one previous joint start before the match.\n\n\nSector Continuity\nMeasures starter continuity by sector: Defence, Midfield and Attack.\nFor each current starter, the metric checks the proportion of the previous up to three official matches in which that player also started in the same sector."
+  },
+  {
+    "objectID": "en/metodologia.html#match-profiles",
+    "href": "en/metodologia.html#match-profiles",
+    "title": "Methodology",
+    "section": "Match profiles",
+    "text": "Match profiles\n\nGameGrip\nGameGrip is the control axis used in the match-profile map.\n\n\nChanceCraft\nChanceCraft is the creation-quality axis used alongside GameGrip.\nThe map is descriptive: it compares how Benfica controlled and created rather than producing one overall match score."
+  },
+  {
+    "objectID": "en/metodologia.html#outfield-players",
+    "href": "en/metodologia.html#outfield-players",
+    "title": "Methodology",
+    "section": "Outfield players",
+    "text": "Outfield players\nPlayer metrics use the 2025/26 Benfica baseline and:\nScore = 50 + 50 × tanh(z / 3.33)\nA score around 50 represents the baseline reference.\n\nThreat\n\nxG/90 — 40%\nshots/90 — 20%\nshots on target/90 — 15%\nxGOT/90 — 15%\ngoals/90 — 10%\n\n\n\nChance Creation\n\nkey passes/90 — 30%\nbig chances created/90 — 25%\nxA/90 — 20%\nassists/90 — 15%\naccurate crosses/90 — 10%\n\n\n\nProgression\n\naccurate final-third passes/90 — 45%\nfinal-third entries/90 — 35%\npenalty-area entries/90 — 20%\n\n\n\nBall Security\nUses position-specific baselines for Defence (D), Midfield (M) and Forward (F).\n\npass accuracy — 35%\nturnovers/90, inverse — 30%\ndribble efficiency — 20%\nduel efficiency — 15%\n\n\n\nDefensive Contribution\n\nrecoveries — 20%\ninterceptions — 20%\nwon tackles — 20%\nwon duels — 15%\nblocks — 10%\nclearances — 10%\nchallenges lost — −5%\n\n\n\nThreat Execution — Finishing quality\nThreat Execution = (xGOT − xG) / shots\nFor match ranking, at least 2 shots are required. For season ranking, at least 10 shots are required."
+  },
+  {
+    "objectID": "en/metodologia.html#sample-reliability",
+    "href": "en/metodologia.html#sample-reliability",
+    "title": "Methodology",
+    "section": "Sample reliability",
+    "text": "Sample reliability\n\nSmall sample — fewer than 3 matches with 30+ minutes and fewer than 180 total minutes;\nDeveloping — at least 3 matches with 30+ minutes or at least 180 total minutes;\nReliable — at least 8 matches with 30+ minutes and at least 300 total minutes."
+  },
+  {
+    "objectID": "en/metodologia.html#goalkeepers",
+    "href": "en/metodologia.html#goalkeepers",
+    "title": "Methodology",
+    "section": "Goalkeepers",
+    "text": "Goalkeepers\n\nBuildKeeper\nBuildKeeper is a construction-oriented goalkeeper metric, not an overall goalkeeper rating.\nThe 2025/26 historical reference currently covers Liga matches only."
+  },
+  {
+    "objectID": "en/metodologia.html#context",
+    "href": "en/metodologia.html#context",
+    "title": "Methodology",
+    "section": "Context",
+    "text": "Context\n\nRest Days\nDays since the previous Benfica match.\n\n\nGames in the last 14 days\nNumber of Benfica matches in the previous 14-day window.\nThese remain contextual indicators; no separate Schedule Load score is used."
+  },
+  {
+    "objectID": "en/metodologia.html#experimental-deferred-and-archived",
+    "href": "en/metodologia.html#experimental-deferred-and-archived",
+    "title": "Methodology",
+    "section": "Experimental, deferred and archived",
+    "text": "Experimental, deferred and archived\n\nStarter Association — experimental\nExplores the association between player starts and team xG Difference. It is not treated as causal.\n\n\nStructural Dependency — deferred\nDeferred until stronger opponent/context adjustment and a larger sample are available.\n\n\nNew Signing Integration — deferred\nDeferred because the current sample is still insufficient.\n\n\nImpact Above Expectation — archived\nArchived because the attempted individual attribution relied too heavily on collective team outcomes."
+  },
+  {
+    "objectID": "en/metodologia.html#sources",
+    "href": "en/metodologia.html#sources",
+    "title": "Methodology",
+    "section": "Sources",
+    "text": "Sources\nThe project combines multiple sources where appropriate, including SofaScore, FotMob, Flashscore, FBref, football-data.org, OpenLigaDB, public datasets and manually exported OddAlerts data."
+  },
+  {
+    "objectID": "en/metodologia.html#methodological-rules",
+    "href": "en/metodologia.html#methodological-rules",
+    "title": "Methodology",
+    "section": "Methodological rules",
+    "text": "Methodological rules\n\nNo overall match score.\nUnknown values remain blank rather than being forced to zero.\nMetrics are descriptive unless explicitly stated otherwise.\nPlayer and team outputs remain technically separate.\nConditional metrics are omitted when events or coverage are absent.\nDefinitions, thresholds and formulas may be revised when better evidence becomes available."
   }
 ]

@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.557">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Benfica Analytics - Players</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/benfica-analytics-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Benfica Analytics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ultimo-jogo.html"> 
+<span class="menu-text">Último jogo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../jogos.html"> 
+<span class="menu-text">Jogos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../jogadores.html"> 
+<span class="menu-text">Jogadores</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../calendario.html"> 
+<span class="menu-text">Calendário</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../metodologia.html"> 
+<span class="menu-text">Metodologia</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Players</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="highlights-202627" class="level2">
+<h2 class="anchored" data-anchor-id="highlights-202627">Highlights 2026/27</h2>
+<div class="player-highlight-grid">
+<div class="player-highlight-card">
+<div class="player-highlight-label">
+Threat
+</div>
+<div class="player-highlight-player">
+Vangelis Pavlidis
+</div>
+<div class="player-highlight-value">
+85.7
+</div>
+<div class="player-highlight-meta">
+513 min · Em formação
+</div>
+</div>
+<div class="player-highlight-card">
+<div class="player-highlight-label">
+Chance Creation
+</div>
+<div class="player-highlight-player">
+Andreas Schjelderup
+</div>
+<div class="player-highlight-value">
+79.2
+</div>
+<div class="player-highlight-meta">
+219 min · Em formação
+</div>
+</div>
+<div class="player-highlight-card">
+<div class="player-highlight-label">
+Progression
+</div>
+<div class="player-highlight-player">
+Neto Jose
+</div>
+<div class="player-highlight-value">
+70.9
+</div>
+<div class="player-highlight-meta">
+90 min · Amostra reduzida
+</div>
+</div>
+<div class="player-highlight-card">
+<div class="player-highlight-label">
+Ball Security
+</div>
+<div class="player-highlight-player">
+Enzo Barrenechea
+</div>
+<div class="player-highlight-value">
+73.7
+</div>
+<div class="player-highlight-meta">
+580 min · Em formação
+</div>
+</div>
+<div class="player-highlight-card">
+<div class="player-highlight-label">
+Defensive Contribution
+</div>
+<div class="player-highlight-player">
+Neto Jose
+</div>
+<div class="player-highlight-value">
+73.7
+</div>
+<div class="player-highlight-meta">
+90 min · Amostra reduzida
+</div>
+</div>
+<div class="player-highlight-card">
+<div class="player-highlight-label">
+Threat Execution · Finishing quality
+</div>
+<div class="player-highlight-player">
+Gianluca Prestianni
+</div>
+<div class="player-highlight-value">
++0.110
+</div>
+<div class="player-highlight-meta">
+16 shots · xGOT − xG por remate
+</div>
+</div>
+</div>
+</section>
+<section id="player-profile" class="level2">
+<h2 class="anchored" data-anchor-id="player-profile">Player profile</h2>
+<div class="player-profile-selector-wrap">
+<label for="player-profile-select" class="player-profile-select-label">Choose player</label><select id="player-profile-select" class="player-profile-select"><optgroup label="Defensive Contributions"><option value="0">Alexander Bah</option><option value="1">Amar Dedić</option><option value="2">Clément Lenglet</option><option value="3">Neto Jose</option><option value="4">Samuel Dahl</option><option value="5">Silva Antonio</option><option value="6">Tomás Araújo</option></optgroup><optgroup label="Médios"><option value="7">Enzo Barrenechea</option><option value="8">Figueiredo Miguel</option><option value="9">Georgiy Sudakov</option><option value="10">Leandro Barreiro</option><option value="11">Manu Silva</option><option value="12">Richard Ríos</option></optgroup><optgroup label="Avançados"><option value="13">Andreas Schjelderup</option><option value="14">Dodi Lukebakio</option><option value="15">Gianluca Prestianni</option><option value="16">Jhon Durán</option><option value="17">Kaminski Jakub</option><option value="18">Rafa Silva</option><option value="19">Vangelis Pavlidis</option></optgroup></select>
+</div>
+<div id="single-player-profile" class="player-profile-card">
+
+</div>
+<script>const playerProfiles = [{"player":"Bah Alexander","display_name":"Alexander Bah","position":"D","display_position":"D","photo":"../images/players/alexander-bah.png","minutes_played":609,"sample_status":"Em formação","threat":38.7,"chance_creation":62.2,"progression":58.8,"ball_security":35.1,"defensive_contribution":57.4,"te_shots":7,"threat_execution":-0.0545,"te_90":-0.0662,"te_ranking_eligible":false,"threat_timing_ratio":0.991,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.1494,"response_threat_sample":"Amostra reduzida"},{"player":"Dedic Amar","display_name":"Amar Dedić","position":"D","display_position":"D","photo":"../images/players/amar-dedi.png","minutes_played":111,"sample_status":"Amostra reduzida","threat":42.3,"chance_creation":57.7,"progression":57.7,"ball_security":34.3,"defensive_contribution":48.7,"te_shots":3,"threat_execution":-0.0506,"te_90":-0.123,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Lenglet Clement","display_name":"Clément Lenglet","position":"D","display_position":"D","photo":"../images/players/clement-lenglet.png","minutes_played":651,"sample_status":"Fiável","threat":39.2,"chance_creation":50.6,"progression":59.1,"ball_security":64,"defensive_contribution":56.5,"te_shots":6,"threat_execution":0.0698,"te_90":0.0663,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Neto Jose","display_name":"Neto Jose","position":"D","display_position":"D","photo":"../images/players/neto-jose.png","minutes_played":90,"sample_status":"Amostra reduzida","threat":32.7,"chance_creation":55.5,"progression":70.9,"ball_security":50.8,"defensive_contribution":73.7,"te_shots":null,"threat_execution":null,"te_90":null,"te_ranking_eligible":null,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Dahl Samuel","display_name":"Samuel Dahl","position":"D","display_position":"D","photo":"../images/players/samuel-dahl.png","minutes_played":630,"sample_status":"Em formação","threat":35.5,"chance_creation":52.1,"progression":64.8,"ball_security":38,"defensive_contribution":53.4,"te_shots":3,"threat_execution":0.0628,"te_90":0.0314,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Silva Antonio","display_name":"Silva Antonio","position":"D","display_position":"D","photo":"../images/players/silva-antonio.png","minutes_played":180,"sample_status":"Em formação","threat":36.8,"chance_creation":38.5,"progression":66.7,"ball_security":65.7,"defensive_contribution":69.5,"te_shots":1,"threat_execution":0.0004,"te_90":0.0002,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Araujo Tomas","display_name":"Tomás Araújo","position":"D","display_position":"D","photo":"../images/players/tomas-araujo.png","minutes_played":464,"sample_status":"Em formação","threat":43.9,"chance_creation":39.8,"progression":67.2,"ball_security":71.1,"defensive_contribution":53.7,"te_shots":8,"threat_execution":-0.0937,"te_90":-0.1804,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Barrenechea Enzo","display_name":"Enzo Barrenechea","position":"M","display_position":"M","photo":"../images/players/enzo-barrenechea.png","minutes_played":580,"sample_status":"Em formação","threat":33.8,"chance_creation":41.9,"progression":63.2,"ball_security":73.7,"defensive_contribution":64.9,"te_shots":2,"threat_execution":-0.0516,"te_90":-0.0189,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Figueiredo Miguel","display_name":"Figueiredo Miguel","position":"M","display_position":"M","photo":"../images/players/figueiredo-miguel.png","minutes_played":66,"sample_status":"Amostra reduzida","threat":45.1,"chance_creation":54.3,"progression":27.5,"ball_security":35,"defensive_contribution":60.6,"te_shots":2,"threat_execution":-0.0706,"te_90":-0.1927,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Sudakov Georgiy","display_name":"Georgiy Sudakov","position":"M","display_position":"M","photo":"../images/players/georgiy-sudakov.png","minutes_played":600,"sample_status":"Fiável","threat":52.6,"chance_creation":67.4,"progression":59.1,"ball_security":37.4,"defensive_contribution":35.3,"te_shots":19,"threat_execution":0.0008,"te_90":0.0025,"te_ranking_eligible":true,"threat_timing_ratio":0.946,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.1083,"response_threat_sample":"Amostra reduzida"},{"player":"Barreiro Leandro","display_name":"Leandro Barreiro","position":"M","display_position":"M","photo":"../images/players/leandro-barreiro.png","minutes_played":504,"sample_status":"Em formação","threat":70.2,"chance_creation":52.4,"progression":39.6,"ball_security":41.9,"defensive_contribution":48.9,"te_shots":17,"threat_execution":-0.0191,"te_90":-0.0708,"te_ranking_eligible":true,"threat_timing_ratio":0.878,"threat_timing_sample":"Amostra reduzida","response_xg_share":0,"response_threat_sample":"Amostra reduzida"},{"player":"Manu Silva","display_name":"Manu Silva","position":"M","display_position":"M","photo":"../images/players/manu-silva.png","minutes_played":222,"sample_status":"Em formação","threat":37.1,"chance_creation":32.8,"progression":45,"ball_security":61.1,"defensive_contribution":56.5,"te_shots":1,"threat_execution":0.0877,"te_90":0.0356,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Rios Richard","display_name":"Richard Ríos","position":"M","display_position":"M","photo":"../images/players/richard-rios.png","minutes_played":200,"sample_status":"Em formação","threat":42.5,"chance_creation":38.8,"progression":67.1,"ball_security":71,"defensive_contribution":67.3,"te_shots":6,"threat_execution":-0.0402,"te_90":-0.1084,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Schjelderup Andreas","display_name":"Andreas Schjelderup","position":"F","display_position":"A","photo":"../images/players/andreas-schjelderup.png","minutes_played":219,"sample_status":"Em formação","threat":66.2,"chance_creation":79.2,"progression":70.1,"ball_security":36,"defensive_contribution":46.3,"te_shots":8,"threat_execution":-0.0016,"te_90":-0.0059,"te_ranking_eligible":false,"threat_timing_ratio":0.966,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.5847,"response_threat_sample":"Amostra reduzida"},{"player":"Lukebakio Dodi","display_name":"Dodi Lukebakio","position":"F","display_position":"A","photo":"../images/players/dodi-lukebakio.png","minutes_played":136,"sample_status":"Amostra reduzida","threat":74,"chance_creation":67.2,"progression":50.3,"ball_security":53.5,"defensive_contribution":46.9,"te_shots":8,"threat_execution":0.036,"te_90":0.2158,"te_ranking_eligible":false,"threat_timing_ratio":1.2,"threat_timing_sample":"Amostra reduzida","response_xg_share":1,"response_threat_sample":"Amostra reduzida"},{"player":"Prestianni Gianluca","display_name":"Gianluca Prestianni","position":"F","display_position":"A","photo":"../images/players/gianluca-prestianni.png","minutes_played":429,"sample_status":"Em formação","threat":76,"chance_creation":71,"progression":70.3,"ball_security":51.7,"defensive_contribution":58.8,"te_shots":16,"threat_execution":0.1102,"te_90":0.4471,"te_ranking_eligible":true,"threat_timing_ratio":0.949,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.1609,"response_threat_sample":"Amostra reduzida"},{"player":"Duran Jhon","display_name":"Jhon Durán","position":"F","display_position":"A","photo":"../images/players/jhon-duran.png","minutes_played":201,"sample_status":"Em formação","threat":79.9,"chance_creation":46,"progression":40,"ball_security":54.4,"defensive_contribution":30.6,"te_shots":14,"threat_execution":0.0338,"te_90":0.2302,"te_ranking_eligible":true,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Kaminski Jakub","display_name":"Kaminski Jakub","position":"F","display_position":"A","photo":"../images/players/kaminski-jakub.png","minutes_played":163,"sample_status":"Amostra reduzida","threat":34.8,"chance_creation":59.6,"progression":38.5,"ball_security":34.7,"defensive_contribution":30.3,"te_shots":1,"threat_execution":-0.0543,"te_90":-0.03,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Rafa Silva","display_name":"Rafa Silva","position":"F","display_position":"A","photo":"../images/players/rafa-silva.png","minutes_played":550,"sample_status":"Em formação","threat":72.7,"chance_creation":55.4,"progression":51.8,"ball_security":57,"defensive_contribution":37.3,"te_shots":13,"threat_execution":0.0593,"te_90":0.143,"te_ranking_eligible":true,"threat_timing_ratio":0.987,"threat_timing_sample":"Amostra reduzida","response_xg_share":0,"response_threat_sample":"Amostra reduzida"},{"player":"Pavlidis Vangelis","display_name":"Vangelis Pavlidis","position":"F","display_position":"A","photo":"../images/players/vangelis-pavlidis.png","minutes_played":513,"sample_status":"Em formação","threat":85.7,"chance_creation":57.5,"progression":34.8,"ball_security":46.5,"defensive_contribution":39.4,"te_shots":27,"threat_execution":0.0703,"te_90":0.3893,"te_ranking_eligible":true,"threat_timing_ratio":0.896,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.2481,"response_threat_sample":"Amostra reduzida"}];
+
+    function renderPlayerProfile(index) {
+
+      const p = playerProfiles[index];
+
+      if (!p) {
+        return;
+      }
+
+      // ======================================================
+      // MÉTRICAS BASE
+      // ======================================================
+
+      const metrics = [
+
+        ["Threat", p.threat],
+
+        ["Chance Creation", p.chance_creation],
+
+        ["Progression", p.progression],
+
+        ["Ball Security", p.ball_security],
+
+        [
+          "Defensive Contribution",
+          p.defensive_contribution
+        ]
+
+      ];
+
+      let rows = "";
+
+      metrics.forEach(([label, value]) => {
+
+        const numericValue = Number(value);
+
+        const safeValue =
+          Number.isFinite(numericValue)
+            ? numericValue
+            : 0;
+
+        rows += `
+
+          <div class="player-profile-row">
+
+            <div class="player-profile-label">
+              ${label}
+            </div>
+
+            <div class="player-profile-bar-wrap">
+
+              <div class="player-profile-reference">
+              </div>
+
+              <div
+                class="player-profile-bar"
+                style="
+                  width:
+                  ${Math.max(
+                    0,
+                    Math.min(
+                      100,
+                      safeValue
+                    )
+                  )}%;
+                "
+              >
+              </div>
+
+            </div>
+
+            <div class="player-profile-score">
+
+              ${
+                Number.isFinite(numericValue)
+                  ? numericValue.toFixed(1)
+                  : "—"
+              }
+
+            </div>
+
+          </div>
+
+        `;
+
+      });
+
+      // ======================================================
+      // MÉTRICAS CONTEXTUAIS
+      // ======================================================
+
+      const timingAvailable =
+        p.threat_timing_ratio !== null &&
+        p.threat_timing_ratio !== undefined &&
+        Number.isFinite(
+          Number(
+            p.threat_timing_ratio
+          )
+        );
+
+      const responseAvailable =
+        p.response_xg_share !== null &&
+        p.response_xg_share !== undefined &&
+        Number.isFinite(
+          Number(
+            p.response_xg_share
+          )
+        );
+
+      const timingValue =
+        timingAvailable
+          ? Number(
+              p.threat_timing_ratio
+            ).toFixed(2)
+          : "—";
+
+      const responseValue =
+        responseAvailable
+          ? (
+              Number(
+                p.response_xg_share
+              ) * 100
+            ).toFixed(1) + "%"
+          : "—";
+
+      const timingStatus =
+        p.threat_timing_sample ||
+        "Sem amostra";
+
+      const responseStatus =
+        p.response_threat_sample ||
+        "Sem amostra";
+
+      const teAvailable =
+        p.threat_execution !== null &&
+        p.threat_execution !== undefined &&
+        Number.isFinite(
+          Number(
+            p.threat_execution
+          )
+        );
+
+      const teValue =
+        teAvailable
+          ? (
+              Number(p.threat_execution) >= 0
+                ? "+"
+                : ""
+            ) +
+            Number(
+              p.threat_execution
+            ).toFixed(3)
+          : "—";
+
+      const teStatus =
+        teAvailable
+          ? (
+              p.te_shots +
+              " shots" +
+              (
+                p.te_ranking_eligible
+                  ? " · ranking elegível"
+                  : " · short sample"
+              )
+            )
+          : "Sem amostra";
+
+      // ======================================================
+      // FOTO / PLACEHOLDER
+      // ======================================================
+
+      const visual = p.photo
+        ? `
+
+          <div class="player-profile-photo-wrap">
+
+            <img
+              src="${p.photo}"
+              alt="${p.display_name}"
+              class="player-profile-photo"
+
+              onerror="
+                this.style.display='none';
+                this.nextElementSibling.style.display='flex';
+              "
+            >
+
+            <div
+              class="player-profile-avatar
+                     player-profile-avatar-fallback"
+              style="display:none;"
+            >
+              <span>
+                ${p.display_position}
+              </span>
+            </div>
+
+          </div>
+
+        `
+        : `
+
+          <div class="player-profile-photo-wrap">
+
+            <div class="player-profile-avatar">
+              <span>
+                ${p.display_position}
+              </span>
+            </div>
+
+          </div>
+
+        `;
+
+      // ======================================================
+      // RENDER
+      // ======================================================
+
+      document.getElementById(
+        "single-player-profile"
+      ).innerHTML = `
+
+        <div class="player-profile-header-visual">
+
+          ${visual}
+
+          <div class="player-profile-identity">
+
+            <div class="player-profile-name">
+
+              ${p.display_name}
+
+              <span class="player-profile-position">
+                ${p.display_position}
+              </span>
+
+            </div>
+
+            <div class="player-profile-meta">
+
+              ${p.minutes_played} min
+              ·
+              ${p.sample_status}
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="player-profile-metrics">
+
+          ${rows}
+
+        </div>
+
+        <div class="player-profile-reference-label">
+
+          Centre line = 2025/26 reference (50)
+
+        </div>
+
+        <div class="player-profile-context">
+
+          <div class="player-profile-context-title">
+            Context
+          </div>
+
+          <div class="player-profile-context-grid">
+
+            <div class="player-profile-context-item">
+
+              <div class="player-profile-context-label">
+                Threat Timing
+              </div>
+
+              <div class="player-profile-context-value">
+                ${timingValue}
+              </div>
+
+              <div class="player-profile-context-status">
+                ${timingStatus}
+              </div>
+
+            </div>
+
+            <div class="player-profile-context-item">
+
+              <div class="player-profile-context-label">
+                Response Threat
+              </div>
+
+              <div class="player-profile-context-value">
+                ${responseValue}
+              </div>
+
+              <div class="player-profile-context-status">
+                ${responseStatus}
+              </div>
+
+            </div>
+
+            <div class="player-profile-context-item">
+
+              <div class="player-profile-context-label">
+                Threat Execution
+              </div>
+
+              <div class="player-profile-context-value">
+                ${teValue}
+              </div>
+
+              <div class="player-profile-context-status">
+                ${teStatus}
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+    const selector =
+      document.getElementById(
+        "player-profile-select"
+      );
+
+    selector.addEventListener(
+      "change",
+      function() {
+
+        renderPlayerProfile(
+          Number(
+            this.value
+          )
+        );
+
+      }
+    );
+
+    renderPlayerProfile(0);
+
+    </script>
+</section>
+<section id="full-table" class="level2">
+<h2 class="anchored" data-anchor-id="full-table">Full table</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">2026/27</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">2025/26 · League</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-2d0f3a178c3b16117e63" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2d0f3a178c3b16117e63">{"x":{"filter":"none","vertical":false,"data":[["Clément Lenglet","Samuel Dahl","Alexander Bah","Georgiy Sudakov","Enzo Barrenechea","Rafa Silva","Vangelis Pavlidis","Leandro Barreiro","Tomás Araújo","Gianluca Prestianni","Manu Silva","Andreas Schjelderup","Jhon Durán","Richard Ríos","Silva Antonio","Kaminski Jakub","Dodi Lukebakio","Amar Dedić","Neto Jose","Figueiredo Miguel"],["D","D","D","M","M","A","A","M","D","A","M","A","A","M","D","A","A","D","D","M"],[651,630,609,600,580,550,513,504,464,429,222,219,201,200,180,163,136,111,90,66],[39.2,35.5,38.7,52.6,33.8,72.7,85.7,70.2,43.9,76,37.1,66.2,79.90000000000001,42.5,36.8,34.8,74,42.3,32.7,45.1],[50.6,52.1,62.2,67.40000000000001,41.9,55.4,57.5,52.4,39.8,71,32.8,79.2,46,38.8,38.5,59.6,67.2,57.7,55.5,54.3],[59.1,64.8,58.8,59.1,63.2,51.8,34.8,39.6,67.2,70.3,45,70.09999999999999,40,67.09999999999999,66.7,38.5,50.3,57.7,70.90000000000001,27.5],[64,38,35.1,37.4,73.7,57,46.5,41.9,71.09999999999999,51.7,61.1,36,54.4,71,65.7,34.7,53.5,34.3,50.8,35],[56.5,53.4,57.4,35.3,64.90000000000001,37.3,39.4,48.9,53.7,58.8,56.5,46.3,30.6,67.3,69.5,30.3,46.9,48.7,73.7,60.6],[0.06976666666666666,0.06276666666666667,-0.05450000000000001,0.00078947368421052,-0.05155,0.05928461538461536,0.07032222222222222,-0.0191470588235294,-0.093725,0.11023125,0.0877,-0.00159999999999999,0.03379285714285714,-0.04015,0.00039999999999999,-0.0543,0.03596249999999999,-0.05056666666666667,null,-0.07065],["Fiável","Em formação","Em formação","Fiável","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Amostra reduzida","Amostra reduzida","Amostra reduzida","Amostra reduzida","Amostra reduzida"]],"container":"<table class=\"compact stripe hover\">\n  <thead>\n    <tr>\n      <th>Player<\/th>\n      <th>Pos<\/th>\n      <th>Min<\/th>\n      <th>Threat<\/th>\n      <th>Chance Creation<\/th>\n      <th>Progression<\/th>\n      <th>Ball Security<\/th>\n      <th>Defensive Contribution<\/th>\n      <th>Finishing<\/th>\n      <th>Amostra<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"lengthChange":false,"autoWidth":false,"ordering":true,"searching":true,"info":false,"columnDefs":[{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":0,"width":"20%"},{"targets":1,"width":"5%","className":"dt-center"},{"targets":2,"width":"7%","className":"dt-right"},{"targets":[3,4,5,6],"width":"8%","className":"dt-right"},{"targets":7,"width":"13%","className":"dt-right"},{"targets":8,"width":"11%","className":"dt-right"},{"targets":9,"width":"12%"},{"name":"Player","targets":0},{"name":"Pos","targets":1},{"name":"Min","targets":2},{"name":"Threat","targets":3},{"name":"Chance Creation","targets":4},{"name":"Progression","targets":5},{"name":"Ball Security","targets":6},{"name":"Defensive Contribution","targets":7},{"name":"Finishing","targets":8},{"name":"Amostra","targets":9}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>A análise dos guarda-redes fica separada das métricas dos jogadores de campo. O <strong>BuildKeeper</strong> mede a influência na construção com bola. Para 2025/26, o histórico disponível nesta secção cobre apenas a Liga Portugal.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-310f2decd9da8c6673c0" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-310f2decd9da8c6673c0">{"x":{"filter":"none","vertical":false,"data":[["Samuel Dahl","Vangelis Pavlidis","Nicolás Otamendi","Fredrik Aursnes","Richard Ríos","Amar Dedić","António Silva","Enzo Barrenechea","Leandro Barreiro","Andreas Schjelderup","Tomás Araújo","Gianluca Prestianni","Georgiy Sudakov","Rafa Silva","Franjo Ivanović","Dodi Lukebakio"],["D","A","D","A","M","D","D","M","M","A","D","A","M","A","A","A"],[2862,2667,2605,2294,2279,1903,1858,1798,1748,1733,1684,1544,1421,919,868,745],[35.6,77.90000000000001,37.8,41,52.1,36.7,39.4,37,44,56.6,38.8,51.8,51,64.90000000000001,71.8,59.7],[43.5,47.1,34.3,56.2,45.5,50.1,37.8,36,46,65.7,41.5,63.7,59,42.4,45.8,80.3],[55.3,31.2,40.3,63.7,48.4,48.4,57.3,62.7,37.1,52,50.9,56.2,64,42.6,33.3,49.3],[49.3,37.6,66.2,51.9,52.1,40.3,58.6,57.7,47.2,51.8,55.9,50.7,50.1,39.4,32.4,56.9],[57,33.5,64.5,52.9,54.9,50.3,56.9,65.2,47,41.3,55.6,49.4,39.6,40,43.3,48.7],[0.00313529411764705,0.00164736842105264,0.03808333333333333,-0.02195862068965516,-0.05513999999999999,-0.00932666666666666,-0.02325555555555556,0.02852857142857142,0.04304999999999999,-0.02101063829787233,-0.02444117647058823,0.00990222222222222,0.06149428571428569,0.068948,0.05336129032258065,-0.02040588235294117],["Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável"]],"container":"<table class=\"compact stripe hover\">\n  <thead>\n    <tr>\n      <th>Player<\/th>\n      <th>Pos<\/th>\n      <th>Min<\/th>\n      <th>Threat<\/th>\n      <th>Chance Creation<\/th>\n      <th>Progression<\/th>\n      <th>Ball Security<\/th>\n      <th>Defensive Contribution<\/th>\n      <th>Finishing<\/th>\n      <th>Amostra<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"lengthChange":false,"autoWidth":false,"ordering":true,"searching":true,"info":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":0,"width":"20%"},{"targets":1,"width":"5%","className":"dt-center"},{"targets":2,"width":"7%","className":"dt-right"},{"targets":[3,4,5,6],"width":"9%","className":"dt-right"},{"targets":7,"width":"15%","className":"dt-right"},{"targets":8,"width":"13%"},{"className":"dt-right","targets":8},{"name":"Player","targets":0},{"name":"Pos","targets":1},{"name":"Min","targets":2},{"name":"Threat","targets":3},{"name":"Chance Creation","targets":4},{"name":"Progression","targets":5},{"name":"Ball Security","targets":6},{"name":"Defensive Contribution","targets":7},{"name":"Finishing","targets":8},{"name":"Amostra","targets":9}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="goalkeepers" class="level2">
+<h2 class="anchored" data-anchor-id="goalkeepers">Goalkeepers</h2>
+<p>Goalkeeper analysis is kept separate from outfield-player metrics. <strong>BuildKeeper</strong> measures influence in build-up with the ball; the historical scale reference is documented in the Methodology.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">2026/27</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">2025/26</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="gk-current-grid">
+<div class="gk-history-card">
+<div class="gk-history-header">
+<div class="gk-name">
+Samuel Soares
+</div>
+<div class="gk-meta">
+6 matches · 540 min
+</div>
+</div>
+<div class="gk-history-score">
+<span>BuildKeeper</span><strong>53.0</strong>
+</div>
+<div class="gk-history-components">
+<div>
+<span>Passes / 90</span><strong>21.7</strong>
+</div>
+<div>
+<span>Pass accuracy</span><strong>87.7%</strong>
+</div>
+<div>
+<span>Long balls / 90</span><strong>5.5</strong>
+</div>
+<div>
+<span>Long-ball accuracy</span><strong>54.5%</strong>
+</div>
+<div>
+<span>Accurate final-third passes / 90</span><strong>0.5</strong>
+</div>
+</div>
+</div>
+<div class="gk-history-card">
+<div class="gk-history-header">
+<div class="gk-name">
+Anatoliy Trubin
+</div>
+<div class="gk-meta">
+2 matches · 180 min
+</div>
+</div>
+<div class="gk-history-score">
+<span>BuildKeeper</span><strong>60.1</strong>
+</div>
+<div class="gk-history-components">
+<div>
+<span>Passes / 90</span><strong>40.0</strong>
+</div>
+<div>
+<span>Pass accuracy</span><strong>93.8%</strong>
+</div>
+<div>
+<span>Long balls / 90</span><strong>4.5</strong>
+</div>
+<div>
+<span>Long-ball accuracy</span><strong>44.4%</strong>
+</div>
+<div>
+<span>Accurate final-third passes / 90</span><strong>0.5</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="gk-history-card">
+<div class="gk-history-header">
+<div class="gk-name">
+Anatoliy Trubin
+</div>
+<div class="gk-meta">
+32 matches · 2880 min
+</div>
+</div>
+<div class="gk-history-score">
+<span>BuildKeeper</span><strong>50.0</strong>
+</div>
+<div class="gk-history-components">
+<div>
+<span>Passes / 90</span><strong>20.0</strong>
+</div>
+<div>
+<span>Pass accuracy</span><strong>72.8%</strong>
+</div>
+<div>
+<span>Long balls / 90</span><strong>8.4</strong>
+</div>
+<div>
+<span>Long-ball accuracy</span><strong>36.2%</strong>
+</div>
+<div>
+<span>Accurate final-third passes / 90</span><strong>0.7</strong>
+</div>
+</div>
+</div>
+<div class="gk-history-card">
+<div class="gk-history-header">
+<div class="gk-name">
+Samuel Soares
+</div>
+<div class="gk-meta">
+2 matches · 180 min
+</div>
+</div>
+<div class="gk-history-score">
+<span>BuildKeeper</span><strong>48.5</strong>
+</div>
+<div class="gk-history-components">
+<div>
+<span>Passes / 90</span><strong>18.5</strong>
+</div>
+<div>
+<span>Pass accuracy</span><strong>73.0%</strong>
+</div>
+<div>
+<span>Long balls / 90</span><strong>8.5</strong>
+</div>
+<div>
+<span>Long-ball accuracy</span><strong>41.2%</strong>
+</div>
+<div>
+<span>Accurate final-third passes / 90</span><strong>0.5</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const section = document.querySelector("#tabela-completa");
+  if (!section) return;
+
+  const tabs = section.querySelectorAll(
+    '.nav-link[data-bs-toggle="tab"]'
+  );
+
+  tabs.forEach(function(tab) {
+
+    tab.addEventListener("show.bs.tab", function() {
+      window.__playerTableScrollY = window.scrollY;
+    });
+
+    tab.addEventListener("shown.bs.tab", function(event) {
+
+      const savedY = window.__playerTableScrollY;
+
+      /* Recalcular a tabela que acabou de ficar visível */
+      const targetSelector =
+        event.target.getAttribute("data-bs-target");
+
+      const pane = document.querySelector(targetSelector);
+
+      if (
+        pane &&
+        window.jQuery &&
+        jQuery.fn.dataTable
+      ) {
+        jQuery(pane)
+          .find("table.dataTable")
+          .each(function() {
+            if (jQuery.fn.dataTable.isDataTable(this)) {
+              jQuery(this)
+                .DataTable()
+                .columns.adjust();
+            }
+          });
+      }
+
+      /* O widget pode alterar o layout em vários frames.
+         Restauramos a posição depois desses redraws. */
+      requestAnimationFrame(function() {
+        window.scrollTo(0, savedY);
+
+        requestAnimationFrame(function() {
+          window.scrollTo(0, savedY);
+
+          setTimeout(function() {
+            window.scrollTo(0, savedY);
+          }, 50);
+        });
+      });
+
+    });
+
+  });
+
+});
+</script>
+<!-- BA_EN_PHASE2_START -->
+<script id="ba-en-phase2">
+document.addEventListener("DOMContentLoaded", () => {
+  const dict = new Map([
+    ["Início","Home"],["Último jogo","Latest match"],["Jogos","Matches"],
+    ["Jogadores","Players"],["Calendário","Calendar"],["Metodologia","Methodology"],
+    ["Threat","Threat"],["Chance Creation de oportunidades","Chance Creation"],
+    ["Progression","Progression"],["Ball Security com bola","Ball Security"],
+    ["Defensive Contribution","Defensive Contribution"],["Finalização","Finishing"],
+    ["Muito alto","Very high"],["Alto","High"],["Acima da média","Above average"],
+    ["Na média","Average"],["Abaixo da média","Below average"],["Baixo","Low"],
+    ["Em formação","Developing"],["Small sample","Small sample"],["Fiável","Reliable"],
+    ["Competição","Competition"],["Jornada","Round"],["Data","Date"],
+    ["Adversário","Opponent"],["Local","Venue"],["Estado","Status"],
+    ["Casa","Home"],["Fora","Away"],["Terminado","Final"],["Agendado","Scheduled"],
+    ["Taça da Liga","League Cup"],
+    ["Liga Europa · Qualificação","Europa League · Qualifying"],
+    ["Liga Europa · Play-off","Europa League · Play-off"]
+  ]);
+
+  const norm = s => s.replace(/\s+/g," ").trim();
+
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+
+  for (const node of nodes) {
+    const raw = node.nodeValue;
+    const key = norm(raw);
+    if (!key) continue;
+    if (dict.has(key)) node.nodeValue = raw.replace(key, dict.get(key));
+  }
+
+  document.querySelectorAll(".navbar-nav a, .navbar-brand, header a").forEach(a => {
+    const t = norm(a.textContent);
+    if (dict.has(t)) a.textContent = dict.get(t);
+    const label = norm(a.textContent);
+    if (label === "Home") a.href = "/en/index.html";
+    if (label === "Latest match") a.href = "/en/ultimo-jogo.html";
+    if (label === "Matches") a.href = "/en/jogos.html";
+    if (label === "Players") a.href = "/en/jogadores.html";
+    if (label === "Calendar") a.href = "/en/calendario.html";
+    if (label === "Methodology") a.href = "/en/metodologia.html";
+  });
+});
+</script>
+<!-- BA_EN_PHASE2_END -->
+
+
+</section>
+
+</main> <!-- /main -->
+
+<style>
+#ba-lang-switcher{
+  display:inline-flex;
+  align-items:center;
+  gap:.18rem;
+  margin-left:.8rem;
+  padding:.20rem;
+  border:1px solid rgba(255,255,255,.72);
+  border-radius:999px;
+  background:#ffffff;
+  box-shadow:0 1px 3px rgba(0,0,0,.14);
+  font-size:.72rem;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+}
+#ba-lang-switcher a{
+  display:inline-block;
+  min-width:2.15rem;
+  padding:.36rem .52rem;
+  border-radius:999px;
+  color:#8f1118 !important;
+  background:#fff !important;
+  text-align:center;
+  text-decoration:none !important;
+  opacity:1 !important;
+  font-weight:800;
+}
+#ba-lang-switcher a:hover{
+  background:#f4e7e8;
+  color:#7b0b10 !important;
+}
+#ba-lang-switcher a.active{
+  background:#e30613 !important;
+  color:#fff !important;
+}
+@media(max-width:1100px){
+  #ba-lang-switcher{margin-left:auto;margin-right:.35rem}
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const path = window.location.pathname;
+  const isEN = path === "/en" || path.startsWith("/en/");
+
+  function ptTarget() {
+    if (!isEN) return path || "/";
+    let p = path.replace(/^\/en/, "");
+    if (!p || p === "/") p = "/index.html";
+    return p;
+  }
+
+  function enTarget() {
+    if (isEN) return path;
+    if (path === "/" || path === "/index.html") return "/en/index.html";
+    return "/en" + path;
+  }
+
+  const wrap = document.createElement("div");
+  wrap.id = "ba-lang-switcher";
+  wrap.setAttribute("aria-label", "Language selector");
+
+  const pt = document.createElement("a");
+  pt.textContent = "PT";
+  pt.href = ptTarget();
+  if (!isEN) pt.classList.add("active");
+
+  const en = document.createElement("a");
+  en.textContent = "EN";
+  en.href = enTarget();
+  if (isEN) en.classList.add("active");
+
+  wrap.append(pt, en);
+
+  const nav = document.querySelector(".navbar .navbar-container, .navbar .container-fluid, .navbar");
+  if (nav) nav.appendChild(wrap);
+  else {
+    wrap.style.position = "fixed";
+    wrap.style.top = "12px";
+    wrap.style.right = "12px";
+    wrap.style.zIndex = "9999";
+    document.body.appendChild(wrap);
+  }
+});
+</script>
+
+<!-- BA_GLOBAL_EN_RUNTIME -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (!(location.pathname === "/en" || location.pathname.startsWith("/en/"))) return;
+
+  const exact = new Map([
+    ["Início","Home"],["Último jogo","Latest match"],["Jogos","Matches"],
+    ["Jogadores","Players"],["Calendário","Calendar"],["Metodologia","Methodology"],
+    ["Perfis de jogo","Match profiles"],["Próximos jogos","Upcoming matches"],
+    ["Consultar o calendário completo","View full calendar"],
+    ["PLANTEL","SQUAD"],["Destaques 2026/27","Highlights 2026/27"],
+    ["Destaques individuais nas diferentes dimensões de desempenho.","Individual standouts across different performance dimensions."],
+    ["Ameaça","Threat"],["Criação","Chance Creation"],["Progressão","Progression"],
+    ["Segurança","Ball Security"],["Defesa","Defensive Contribution"],
+    ["Contribuição defensiva","Defensive Contribution"],
+    ["Em formação","Developing"],["Amostra reduzida","Small sample"],
+    ["Muito alto","Very high"],["Muito alta","Very high"],
+    ["Linha central = referência 2025/26 (50)","Centre line = 2025/26 reference (50)"],
+    ["View full analysis dos jogadores →","View full player analysis →"],
+    ["xG differential · últimos 5 jogos","xG difference · last 5 matches"],
+    ["Média do xG differential nos últimos 5 jogos","Average xG difference over the last 5 matches"],
+    ["Benchmark OddAlerts · situação acumulada da Liga","OddAlerts benchmark · league season to date"],
+    ["xG jogo corrido / 90","Open-play xG / 90"],
+    ["Casa","Home"],["Fora","Away"],["Agendado","Scheduled"],
+    ["Competição","Competition"],["Jornada","Round"],["Data","Date"],
+    ["Adversário","Opponent"],["Local","Venue"],["Estado","Status"],
+    ["Liga Europa · Qualificação","Europa League · Qualifying"],
+    ["Liga Europa · Play-off","Europa League · Play-off"],
+    ["Taça da Liga","League Cup"],
+    ["Explorar","Explore"],["Mapa de perfis de jogo","Match profile map"],
+    ["Compara a forma como o Benfica controla e cria em cada jogo.","Compare how Benfica controls and creates in each match."],
+    ["Jogo mais recente","Latest match"],["Explorar perfis","Explore profiles"],
+    ["controlo","control"],["criação","creation"],
+    ["BENFICA ANALYTICS · Projeto experimental e independente de análise estatística do SL Benfica.","BENFICA ANALYTICS · Independent experimental statistical analysis project for SL Benfica."],
+    ["Definições, fórmulas, fontes e limitações das métricas próprias.","Definitions, formulas, sources and limitations of the proprietary metrics."],
+    ["Projeto não oficial e não afiliado ao Sport Lisboa e Benfica.","Unofficial project, not affiliated with Sport Lisboa e Benfica."]
+  ]);
+
+  const phrases = [
+    ["Ameaça · Muito alta","Threat · Very high"],
+    ["Média do xG differential nos últimos 5 jogos","Average xG difference over the last 5 matches"],
+    ["Mediana da variação entre jogos","Median match-to-match variation"],
+    ["xG differential · últimos 5 jogos","xG difference · last 5 matches"],
+    ["Destaques individuais nas diferentes dimensões de desempenho.","Individual standouts across different performance dimensions."],
+    ["Cobertura de pares:","Pair coverage:"],
+    ["BENFICA ANALYTICS · ANÁLISE DO JOGO","BENFICA ANALYTICS · MATCH ANALYSIS"],
+    ["Processo forte. Estrutura estável.","Strong process. Stable structure."],
+    ["As métricas próprias são calculadas com regras e baselines documentados na página de","Proprietary metrics are calculated using rules and baselines documented on the"],
+    ["Amostra reduzida","Small sample"],
+    ["Em formação","Developing"]
+  ];
+
+  const norm = x => (x || "").replace(/\s+/g," ").trim();
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+
+  for (const node of nodes) {
+    const raw = node.nodeValue;
+    const key = norm(raw);
+    if (!key) continue;
+    if (exact.has(key)) {
+      node.nodeValue = raw.replace(key, exact.get(key));
+      continue;
+    }
+    let out = raw;
+    for (const [pt,en] of phrases) out = out.split(pt).join(en);
+    out = out.replace(/\bAGO\b/g,"AUG").replace(/\bSET\b/g,"SEP").replace(/\bOUT\b/g,"OCT");
+    out = out.replace(/\b1\.º de 18\b/g,"1st of 18")
+             .replace(/\b2\.º de 18\b/g,"2nd of 18")
+             .replace(/\b3\.º de 18\b/g,"3rd of 18")
+             .replace(/\b([4-9]|1[0-8])\.º de 18\b/g,"$1th of 18");
+    if (out !== raw) node.nodeValue = out;
+  }
+
+  document.querySelectorAll(".navbar-nav a, header a").forEach(a => {
+    const label = norm(a.textContent);
+    const routes = {
+      "Home":"/en/index.html",
+      "Latest match":"/en/ultimo-jogo.html",
+      "Matches":"/en/jogos.html",
+      "Players":"/en/jogadores.html",
+      "Calendar":"/en/calendario.html",
+      "Methodology":"/en/metodologia.html"
+    };
+    if (routes[label]) a.setAttribute("href", routes[label]);
+  });
+
+  document.querySelectorAll("a").forEach(a => {
+    const href = a.getAttribute("href") || "";
+    if (href.startsWith("/jogos/")) a.setAttribute("href", "/en" + href);
+  });
+});
+</script>
+
+<!-- BA_EN_FINAL_CLEANUP -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const isEN = location.pathname === "/en" || location.pathname.startsWith("/en/");
+  if (!isEN) return;
+
+  const exact = new Map([
+    ["Adversário","Opponent"],
+    ["Momento da ameaça","Threat Timing"],
+    ["Impacto após alterações","Tactical Lift"],
+    ["EXPLORAR","EXPLORE"],
+    ["Explorar perfis","Explore profiles"],
+    ["controlo","control"],
+    ["criação","creation"],
+    ["Princípio do projeto","Project principle"],
+    ["Dinâmica do jogo","Match dynamics"],
+    ["Estrutura da equipa","Team structure"],
+    ["Jogadores de campo","Outfield players"],
+    ["Fiabilidade da amostra","Sample reliability"],
+    ["Experimentais, adiadas e arquivadas","Experimental, deferred and archived"],
+    ["Regras metodológicas","Methodological rules"],
+    ["Interpretação","Interpretation"],
+    ["Ameaça","Threat"],
+    ["Muito alto","Very high"],["Muito alta","Very high"],
+    ["Em formação","Developing"],["Amostra reduzida","Small sample"],
+    ["Cobertura de pares","Pair Coverage"],
+    ["Continuidade por setor","Sector Continuity"],
+    ["Resultado vs processo","Result vs Process"],
+    ["Nível de processo","Process Level"],
+    ["Volatilidade do processo","Process Volatility"],
+    ["Diferença de xG","xG Difference"],
+    ["Vantagem protegida","Lead protected"]
+  ]);
+
+  const phrases = [
+    ["xG Benfica ","Benfica xG "],
+    ["Adversário ","Opponent "],
+    ["Média da diferença de xG nos últimos 5 jogos","Average xG difference over the last 5 matches"],
+    ["Mediana da variação da diferença de xG nos últimos 5 jogos","Median xG-difference swing over the last 5 matches"],
+    ["Continuidade dos titulares por setor","Starter continuity by sector"],
+    ["Resultado coincidente com o desfecho do xG","Result matched the outcome suggested by xG"],
+    ["Processo forte. Estrutura estável.","Strong process. Stable structure."],
+    ["BENFICA ANALYTICS · ANÁLISE DO JOGO","BENFICA ANALYTICS · MATCH ANALYSIS"]
+  ];
+
+  const norm = t => (t || "").replace(/\s+/g," ").trim();
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+
+  for (const n of nodes) {
+    const raw = n.nodeValue;
+    const key = norm(raw);
+    if (!key) continue;
+    if (exact.has(key)) {
+      n.nodeValue = raw.replace(key, exact.get(key));
+      continue;
+    }
+    let out = raw;
+    for (const [pt,enText] of phrases) out = out.split(pt).join(enText);
+    if (out !== raw) n.nodeValue = out;
+  }
+
+  // English positions: D / M / F
+  document.querySelectorAll("main *").forEach(el => {
+    if (el.children.length === 0 && norm(el.textContent) === "A") {
+      const cls = (el.className || "").toString().toLowerCase();
+      const parentCls = (el.parentElement?.className || "").toString().toLowerCase();
+      if (cls.includes("position") || cls.includes("badge") ||
+          parentCls.includes("player") || parentCls.includes("profile")) {
+        el.textContent = "F";
+      }
+    }
+  });
+
+  const routes = {
+    "Home":"/en/index.html",
+    "Latest match":"/en/ultimo-jogo.html",
+    "Matches":"/en/jogos.html",
+    "Players":"/en/jogadores.html",
+    "Calendar":"/en/calendario.html",
+    "Methodology":"/en/metodologia.html"
+  };
+
+  document.querySelectorAll("a").forEach(a => {
+    const txt = norm(a.textContent);
+    if (routes[txt]) a.href = routes[txt];
+
+    let href = a.getAttribute("href") || "";
+    if (/^\/?jogos\/SLB_.*\.html$/.test(href)) {
+      href = href.replace(/^\/?/, "/en/");
+      a.setAttribute("href", href);
+    }
+    if (href === "/perfil-jogos.html" || href === "perfil-jogos.html") {
+      a.setAttribute("href", "/en/perfil-jogos.html");
+    }
+  });
+});
+</script>
+
+<!-- BA_EN_PLAYERS_FINAL -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (!(location.pathname === "/en" || location.pathname.startsWith("/en/"))) return;
+  const pairs = [
+    ["Tabela completa","Full table"],
+    ["amostra curta","short sample"],
+    ["Amostra curta","Short sample"],
+    ["amostra reduzida","small sample"],
+    ["Amostra reduzida","Small sample"],
+    [" remates"," shots"],
+    [" jogos ·"," matches ·"],
+    [" jogo ·"," match ·"],
+    ["Precisão de passe","Pass accuracy"],
+    ["Bolas longas / 90","Long balls / 90"],
+    ["Precisão bola longa","Long-ball accuracy"],
+    ["Passes certos no último terço / 90","Accurate final-third passes / 90"],
+    ["Contribuição defensiva","Defensive Contribution"],
+    ["Qualidade de finalização","Finishing quality"],
+    ["Criação","Chance Creation"],
+    ["Progressão","Progression"],
+    ["Segurança","Ball Security"]
+  ];
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+  for (const n of nodes) {
+    let t = n.nodeValue;
+    if (!t || !t.trim()) continue;
+    let out = t;
+    for (const [pt,en] of pairs) out = out.split(pt).join(en);
+    if (out !== t) n.nodeValue = out;
+  }
+});
+</script>
+
+<!-- BA_EN_LAST_MILE -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const isEN = location.pathname === "/en" || location.pathname.startsWith("/en/");
+  if (!isEN) return;
+
+  const replacements = [
+    ["O mapa cruza GameGrip (control do jogo) com ChanceCraft (qualidade da creation).",
+     "The map combines GameGrip (match control) with ChanceCraft (creation quality)."],
+    ["O mapa cruza GameGrip (controlo do jogo) com ChanceCraft (qualidade da criação).",
+     "The map combines GameGrip (match control) with ChanceCraft (creation quality)."],
+    ["A execução do remate é analisada separadamente através da diferença entre xGOT e xG.",
+     "Shot execution is analysed separately through the difference between xGOT and xG."],
+    ["A análise dos guarda-redes fica separada das métricas dos jogadores de campo. O BuildKeeper mede a influência na construção com bola; a referência histórica da escala é documentada na Metodologia.",
+     "Goalkeeper analysis is kept separate from outfield-player metrics. BuildKeeper measures influence in build-up with the ball; the historical scale reference is documented in the Methodology."],
+    ["Projeto experimental e independente de análise estatística do SL Benfica.",
+     "Independent experimental statistical analysis project for SL Benfica."],
+    ["Definições, fórmulas, fontes e limitações das métricas próprias.",
+     "Definitions, formulas, sources and limitations of the proprietary metrics."],
+    ["Projeto não oficial e não afiliado ao Sport Lisboa e Benfica.",
+     "Unofficial project, not affiliated with Sport Lisboa e Benfica."],
+    ["Precisão de passe", "Pass accuracy"],
+    ["Bolas longas / 90", "Long balls / 90"],
+    ["Precisão bola longa", "Long-ball accuracy"],
+    ["Passes certos no último terço / 90", "Accurate final-third passes / 90"],
+    ["amostra curta", "short sample"]
+  ];
+
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) nodes.push(walker.currentNode);
+
+  for (const n of nodes) {
+    const raw = n.nodeValue || "";
+    if (!raw.trim()) continue;
+    let out = raw;
+    for (const [pt,en] of replacements) out = out.split(pt).join(en);
+    if (out !== raw) n.nodeValue = out;
+  }
+
+  document.querySelectorAll("a").forEach(a => {
+    const raw = a.getAttribute("href") || "";
+    if (!raw) return;
+
+    let u;
+    try {
+      u = new URL(raw, window.location.href);
+    } catch {
+      return;
+    }
+
+    const m = u.pathname.match(/\/jogos\/(SLB_[^/]+\.html)$/);
+    if (m && !u.pathname.startsWith("/en/jogos/")) {
+      a.setAttribute("href", "/en/jogos/" + m[1]);
+    }
+
+    if (u.pathname.endsWith("/perfil-jogos.html") &&
+        !u.pathname.startsWith("/en/")) {
+      a.setAttribute("href", "/en/perfil-jogos.html");
+    }
+  });
+});
+</script>
+
+<!-- BA_PT_TOC_TITLE -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const isEN = location.pathname === "/en" || location.pathname.startsWith("/en/");
+  if (isEN) return;
+
+  const candidates = document.querySelectorAll(
+    ".toc-title, #toc-title, .sidebar-title, nav[role='doc-toc'] .toc-title"
+  );
+
+  candidates.forEach(el => {
+    const t = (el.textContent || "").trim().toLowerCase();
+    if (t === "on this page") {
+      el.textContent = "Nesta página";
+    }
+  });
+});
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p><strong>Benfica Analytics</strong> · BENFICA ANALYTICS<br>
+<a href="../metodologia.html">Metodologia</a> · Metrics · Methods · Sources<br>
+Projeto não oficial e não afiliado ao Sport Lisboa e Benfica.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

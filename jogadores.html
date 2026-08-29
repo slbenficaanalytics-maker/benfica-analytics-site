@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Benfica Analytics</title>
+<title>Benfica Analytics - Jogadores</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -90,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
@@ -102,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Jogos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jogadores.html"> 
+    <a class="nav-link active" href="./jogadores.html" aria-current="page"> 
 <span class="menu-text">Jogadores</span></a>
   </li>  
   <li class="nav-item">
@@ -130,8 +140,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Benfica Analytics</h1>
-<p class="subtitle lead">Laboratório experimental de análise estatística do SL Benfica · Projeto independente</p>
+<h1 class="title">Jogadores</h1>
 </div>
 
 
@@ -148,261 +157,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ver-o-jogo-para-além-das-estatísticas-habituais." class="level2 home-hero">
-<h2 class="anchored" data-anchor-id="ver-o-jogo-para-além-das-estatísticas-habituais.">Ver o jogo para além das estatísticas habituais.</h2>
-<p>Métricas próprias para explorar <strong>controlo, criação, ameaça e contexto de jogo</strong> — dimensões que os números tradicionais nem sempre mostram diretamente.</p>
-<div class="home-hero-tags">
-<p><span>Métricas próprias</span> <span>Dados jogo a jogo</span> <span>Metodologia aberta</span></p>
-</div>
-</section>
-<div class="home-matchday">
-<div class="home-matchday-kicker">
-ANÁLISE DO JOGO
-</div>
-<div class="home-matchday-meta">
-UEFA Europa League, Playoff Round · 27/08/2026
-</div>
-<div class="home-matchday-score result-line">
-<span class="result-team"> AGF </span> <span class="result-score"> <span class="result-num"> 1 </span> <span class="result-sep">–</span> <span class="result-num"> 3 </span> </span> <span class="result-team"> BENFICA </span>
-</div>
-<div class="home-matchday-headline">
-Estrutura estável. Processo controlado.
-</div>
-<div class="home-matchday-insights">
-<div class="home-matchday-insight">
-<div class="home-matchday-insight-title">
-Gianluca Prestianni
-</div>
-<div class="home-matchday-insight-value">
-76.2
-</div>
-<div class="home-matchday-insight-note">
-Ameaça · Alta
-</div>
-</div>
-<div class="home-matchday-insight">
-<div class="home-matchday-insight-title">
-Diferença de xG
-</div>
-<div class="home-matchday-insight-value">
-1.84
-</div>
-<div class="home-matchday-insight-note">
-xG 2.19 – 0.35
-</div>
-</div>
-<div class="home-matchday-insight">
-<div class="home-matchday-insight-title">
-Familiaridade do onze
-</div>
-<div class="home-matchday-insight-value">
-93.1
-</div>
-<div class="home-matchday-insight-note">
-Cobertura de pares: 100.0%
-</div>
-</div>
-</div>
-<a class="home-matchday-link" href="ultimo-jogo.html"> Ver análise completa → </a>
-</div>
-<div class="section-intro">
-<div class="section-kicker">
-FORMA RECENTE
-</div>
-<div class="section-title">
-Qualidade do processo e estabilidade
-</div>
-<div class="section-description">
-Indicadores de forma e estabilidade calculados sobre a sequência recente.
-</div>
-</div>
-<div class="home-form-layout">
-<div class="home-form-cards">
-<div class="home-form-card">
-<div class="home-form-label">
-Nível de processo
-</div>
-<div class="home-form-value">
-+2.24
-</div>
-<div class="home-form-note">
-Média do xG differential nos últimos 5 jogos
-</div>
-</div>
-<div class="home-form-card">
-<div class="home-form-label">
-Volatilidade do processo
-</div>
-<div class="home-form-value">
-1.94
-</div>
-<div class="home-form-note">
-Mediana da variação entre jogos
-</div>
-</div>
-</div>
-<div class="home-form-chart-card">
-<div class="home-form-chart-head">
-<span>xG differential · últimos 5 jogos</span><strong>+1.84</strong>
-</div>
-<svg class="home-form-chart" viewbox="0 0 600 118" role="img" aria-label="Evolução recente do xG differential">
-<line x1="30" y1="78" x2="570" y2="78" class="home-form-chart-zero"></line><polyline points="45.0,51.7 172.5,72.5 300.0,44.7 427.5,26.0 555.0,54.9" class="home-form-chart-line"></polyline><circle cx="45.0" cy="51.7" r="4.5" class="home-form-chart-dot"></circle><circle cx="172.5" cy="72.5" r="4.5" class="home-form-chart-dot"></circle><circle cx="300.0" cy="44.7" r="4.5" class="home-form-chart-dot"></circle><circle cx="427.5" cy="26.0" r="4.5" class="home-form-chart-dot"></circle><circle cx="555.0" cy="54.9" r="4.5" class="home-form-chart-dot"></circle>
-</svg>
-<div class="home-form-chart-labels">
-<div class="home-form-chart-label">
-<strong>+2.10</strong><span>Académico Viseu FC</span>
-</div>
-<div class="home-form-chart-label">
-<strong>+0.44</strong><span>Heart of Midlothian</span>
-</div>
-<div class="home-form-chart-label">
-<strong>+2.66</strong><span>Casa Pia</span>
-</div>
-<div class="home-form-chart-label">
-<strong>+4.15</strong><span>AGF</span>
-</div>
-<div class="home-form-chart-label">
-<strong>+1.84</strong><span>AGF</span>
-</div>
-</div>
-</div>
-</div>
-<section id="contexto-da-liga" class="level2">
-<h2 class="anchored" data-anchor-id="contexto-da-liga">Contexto da Liga</h2>
-<p>Como se posiciona o Benfica face às restantes equipas da Liga Portugal na época atual.</p>
-<div class="league-context-card">
-<div class="league-context-row">
-<div class="league-context-label">
-xG / 90
-</div>
-<div class="league-context-value">
-2.86
-</div>
-<div class="league-context-rank">
-1.º de 18
-</div>
-</div>
-<div class="league-context-row">
-<div class="league-context-label">
-xGA / 90
-</div>
-<div class="league-context-value">
-0.65
-</div>
-<div class="league-context-rank">
-3.º de 18
-</div>
-</div>
-<div class="league-context-row">
-<div class="league-context-label">
-xGD / 90
-</div>
-<div class="league-context-value">
-2.21
-</div>
-<div class="league-context-rank">
-1.º de 18
-</div>
-</div>
-<div class="league-context-row">
-<div class="league-context-label">
-xPTS / 90
-</div>
-<div class="league-context-value">
-2.61
-</div>
-<div class="league-context-rank">
-1.º de 18
-</div>
-</div>
-<div class="league-context-row">
-<div class="league-context-label">
-xG jogo corrido / 90
-</div>
-<div class="league-context-value">
-2.58
-</div>
-<div class="league-context-rank">
-1.º de 18
-</div>
-</div>
-<div class="league-context-note">
-Benchmark OddAlerts · situação acumulada da Liga
-</div>
-</div>
-</section>
-<section id="próximos-jogos" class="level2">
-<h2 class="anchored" data-anchor-id="próximos-jogos">Próximos jogos</h2>
-<div class="next-games-grid">
-<div class="next-game-card">
-<div class="next-game-date">
-31 AGO · 20:15
-</div>
-<div class="next-game-opponent">
-Estoril Praia
-</div>
-<div class="next-game-meta">
-J4 · Casa
-</div>
-</div>
-<div class="next-game-card">
-<div class="next-game-date">
-05 SET · 18:00
-</div>
-<div class="next-game-opponent">
-CS Marítimo
-</div>
-<div class="next-game-meta">
-J5 · Fora
-</div>
-</div>
-<div class="next-game-card">
-<div class="next-game-date">
-09 SET · 20:15
-</div>
-<div class="next-game-opponent">
-Moreirense
-</div>
-<div class="next-game-meta">
-J3 · Fora
-</div>
-</div>
-<div class="next-game-card">
-<div class="next-game-date">
-12 SET · 12:00
-</div>
-<div class="next-game-opponent">
-Gil Vicente
-</div>
-<div class="next-game-meta">
-J6 · Casa
-</div>
-</div>
-<div class="next-game-card">
-<div class="next-game-date">
-19 SET · 12:00
-</div>
-<div class="next-game-opponent">
-FC Porto
-</div>
-<div class="next-game-meta">
-J7 · Fora
-</div>
-</div>
-</div>
-<p><a href="./calendario.html">Consultar o calendário completo</a></p>
-<div class="section-intro">
-<div class="section-kicker">
-PLANTEL
-</div>
-<div class="section-title">
-Jogadores
-</div>
-<div class="section-description">
-Destaques individuais nas diferentes dimensões de desempenho.
-</div>
-</div>
-</section>
 <section id="destaques-202627" class="level2">
 <h2 class="anchored" data-anchor-id="destaques-202627">Destaques 2026/27</h2>
 <div class="player-highlight-grid">
@@ -464,7 +218,7 @@ Enzo Barrenechea
 </div>
 <div class="player-highlight-card">
 <div class="player-highlight-label">
-Defesa
+Contribuição defensiva
 </div>
 <div class="player-highlight-player">
 Neto Jose
@@ -476,112 +230,600 @@ Neto Jose
 90 min · Amostra reduzida
 </div>
 </div>
+<div class="player-highlight-card">
+<div class="player-highlight-label">
+Threat Execution · Qualidade de finalização
+</div>
+<div class="player-highlight-player">
+Gianluca Prestianni
+</div>
+<div class="player-highlight-value">
++0.110
+</div>
+<div class="player-highlight-meta">
+16 remates · xGOT − xG por remate
+</div>
+</div>
 </div>
 </section>
-<section id="jogador-em-destaque" class="level2">
-<h2 class="anchored" data-anchor-id="jogador-em-destaque">Jogador em destaque</h2>
-<div class="player-profile-card">
-<div class="player-profile-header-visual">
-<div class="player-profile-photo-wrap">
-<img src="images/players/vangelis-pavlidis.png" alt="Vangelis Pavlidis" class="player-profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-<div class="player-profile-avatar player-profile-avatar-fallback" style="display:none;">
-<span>A</span>
+<section id="perfil-do-jogador" class="level2">
+<h2 class="anchored" data-anchor-id="perfil-do-jogador">Perfil do jogador</h2>
+<div class="player-profile-selector-wrap">
+<label for="player-profile-select" class="player-profile-select-label">Escolher jogador</label><select id="player-profile-select" class="player-profile-select"><optgroup label="Defesas"><option value="0">Alexander Bah</option><option value="1">Amar Dedić</option><option value="2">Clément Lenglet</option><option value="3">Neto Jose</option><option value="4">Samuel Dahl</option><option value="5">Silva Antonio</option><option value="6">Tomás Araújo</option></optgroup><optgroup label="Médios"><option value="7">Enzo Barrenechea</option><option value="8">Figueiredo Miguel</option><option value="9">Georgiy Sudakov</option><option value="10">Leandro Barreiro</option><option value="11">Manu Silva</option><option value="12">Richard Ríos</option></optgroup><optgroup label="Avançados"><option value="13">Andreas Schjelderup</option><option value="14">Dodi Lukebakio</option><option value="15">Gianluca Prestianni</option><option value="16">Jhon Durán</option><option value="17">Kaminski Jakub</option><option value="18">Rafa Silva</option><option value="19">Vangelis Pavlidis</option></optgroup></select>
 </div>
-</div>
-<div class="player-profile-identity">
-<div class="player-profile-name">
-Vangelis Pavlidis<span class="player-profile-position">A</span>
-</div>
-<div class="player-profile-meta">
-513 min · Em formação
-</div>
-</div>
-</div>
-<div class="player-profile-row">
-<div class="player-profile-label">
-Ameaça
-</div>
-<div class="player-profile-bar-wrap">
-<div class="player-profile-reference">
+<div id="single-player-profile" class="player-profile-card">
 
 </div>
-<div class="player-profile-bar" style="width:85.7%;">
+<script>const playerProfiles = [{"player":"Bah Alexander","display_name":"Alexander Bah","position":"D","display_position":"D","photo":"images/players/alexander-bah.png","minutes_played":609,"sample_status":"Em formação","threat":38.7,"chance_creation":62.2,"progression":58.8,"ball_security":35.1,"defensive_contribution":57.4,"te_shots":7,"threat_execution":-0.0545,"te_90":-0.0662,"te_ranking_eligible":false,"threat_timing_ratio":0.991,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.1494,"response_threat_sample":"Amostra reduzida"},{"player":"Dedic Amar","display_name":"Amar Dedić","position":"D","display_position":"D","photo":"images/players/amar-dedi.png","minutes_played":111,"sample_status":"Amostra reduzida","threat":42.3,"chance_creation":57.7,"progression":57.7,"ball_security":34.3,"defensive_contribution":48.7,"te_shots":3,"threat_execution":-0.0506,"te_90":-0.123,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Lenglet Clement","display_name":"Clément Lenglet","position":"D","display_position":"D","photo":"images/players/clement-lenglet.png","minutes_played":651,"sample_status":"Fiável","threat":39.2,"chance_creation":50.6,"progression":59.1,"ball_security":64,"defensive_contribution":56.5,"te_shots":6,"threat_execution":0.0698,"te_90":0.0663,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Neto Jose","display_name":"Neto Jose","position":"D","display_position":"D","photo":"images/players/neto-jose.png","minutes_played":90,"sample_status":"Amostra reduzida","threat":32.7,"chance_creation":55.5,"progression":70.9,"ball_security":50.8,"defensive_contribution":73.7,"te_shots":null,"threat_execution":null,"te_90":null,"te_ranking_eligible":null,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Dahl Samuel","display_name":"Samuel Dahl","position":"D","display_position":"D","photo":"images/players/samuel-dahl.png","minutes_played":630,"sample_status":"Em formação","threat":35.5,"chance_creation":52.1,"progression":64.8,"ball_security":38,"defensive_contribution":53.4,"te_shots":3,"threat_execution":0.0628,"te_90":0.0314,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Silva Antonio","display_name":"Silva Antonio","position":"D","display_position":"D","photo":"images/players/silva-antonio.png","minutes_played":180,"sample_status":"Em formação","threat":36.8,"chance_creation":38.5,"progression":66.7,"ball_security":65.7,"defensive_contribution":69.5,"te_shots":1,"threat_execution":0.0004,"te_90":0.0002,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Araujo Tomas","display_name":"Tomás Araújo","position":"D","display_position":"D","photo":"images/players/tomas-araujo.png","minutes_played":464,"sample_status":"Em formação","threat":43.9,"chance_creation":39.8,"progression":67.2,"ball_security":71.1,"defensive_contribution":53.7,"te_shots":8,"threat_execution":-0.0937,"te_90":-0.1804,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Barrenechea Enzo","display_name":"Enzo Barrenechea","position":"M","display_position":"M","photo":"images/players/enzo-barrenechea.png","minutes_played":580,"sample_status":"Em formação","threat":33.8,"chance_creation":41.9,"progression":63.2,"ball_security":73.7,"defensive_contribution":64.9,"te_shots":2,"threat_execution":-0.0516,"te_90":-0.0189,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Figueiredo Miguel","display_name":"Figueiredo Miguel","position":"M","display_position":"M","photo":"images/players/figueiredo-miguel.png","minutes_played":66,"sample_status":"Amostra reduzida","threat":45.1,"chance_creation":54.3,"progression":27.5,"ball_security":35,"defensive_contribution":60.6,"te_shots":2,"threat_execution":-0.0706,"te_90":-0.1927,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Sudakov Georgiy","display_name":"Georgiy Sudakov","position":"M","display_position":"M","photo":"images/players/georgiy-sudakov.png","minutes_played":600,"sample_status":"Fiável","threat":52.6,"chance_creation":67.4,"progression":59.1,"ball_security":37.4,"defensive_contribution":35.3,"te_shots":19,"threat_execution":0.0008,"te_90":0.0025,"te_ranking_eligible":true,"threat_timing_ratio":0.946,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.1083,"response_threat_sample":"Amostra reduzida"},{"player":"Barreiro Leandro","display_name":"Leandro Barreiro","position":"M","display_position":"M","photo":"images/players/leandro-barreiro.png","minutes_played":504,"sample_status":"Em formação","threat":70.2,"chance_creation":52.4,"progression":39.6,"ball_security":41.9,"defensive_contribution":48.9,"te_shots":17,"threat_execution":-0.0191,"te_90":-0.0708,"te_ranking_eligible":true,"threat_timing_ratio":0.878,"threat_timing_sample":"Amostra reduzida","response_xg_share":0,"response_threat_sample":"Amostra reduzida"},{"player":"Manu Silva","display_name":"Manu Silva","position":"M","display_position":"M","photo":"images/players/manu-silva.png","minutes_played":222,"sample_status":"Em formação","threat":37.1,"chance_creation":32.8,"progression":45,"ball_security":61.1,"defensive_contribution":56.5,"te_shots":1,"threat_execution":0.0877,"te_90":0.0356,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Rios Richard","display_name":"Richard Ríos","position":"M","display_position":"M","photo":"images/players/richard-rios.png","minutes_played":200,"sample_status":"Em formação","threat":42.5,"chance_creation":38.8,"progression":67.1,"ball_security":71,"defensive_contribution":67.3,"te_shots":6,"threat_execution":-0.0402,"te_90":-0.1084,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Schjelderup Andreas","display_name":"Andreas Schjelderup","position":"F","display_position":"A","photo":"images/players/andreas-schjelderup.png","minutes_played":219,"sample_status":"Em formação","threat":66.2,"chance_creation":79.2,"progression":70.1,"ball_security":36,"defensive_contribution":46.3,"te_shots":8,"threat_execution":-0.0016,"te_90":-0.0059,"te_ranking_eligible":false,"threat_timing_ratio":0.966,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.5847,"response_threat_sample":"Amostra reduzida"},{"player":"Lukebakio Dodi","display_name":"Dodi Lukebakio","position":"F","display_position":"A","photo":"images/players/dodi-lukebakio.png","minutes_played":136,"sample_status":"Amostra reduzida","threat":74,"chance_creation":67.2,"progression":50.3,"ball_security":53.5,"defensive_contribution":46.9,"te_shots":8,"threat_execution":0.036,"te_90":0.2158,"te_ranking_eligible":false,"threat_timing_ratio":1.2,"threat_timing_sample":"Amostra reduzida","response_xg_share":1,"response_threat_sample":"Amostra reduzida"},{"player":"Prestianni Gianluca","display_name":"Gianluca Prestianni","position":"F","display_position":"A","photo":"images/players/gianluca-prestianni.png","minutes_played":429,"sample_status":"Em formação","threat":76,"chance_creation":71,"progression":70.3,"ball_security":51.7,"defensive_contribution":58.8,"te_shots":16,"threat_execution":0.1102,"te_90":0.4471,"te_ranking_eligible":true,"threat_timing_ratio":0.949,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.1609,"response_threat_sample":"Amostra reduzida"},{"player":"Duran Jhon","display_name":"Jhon Durán","position":"F","display_position":"A","photo":"images/players/jhon-duran.png","minutes_played":201,"sample_status":"Em formação","threat":79.9,"chance_creation":46,"progression":40,"ball_security":54.4,"defensive_contribution":30.6,"te_shots":14,"threat_execution":0.0338,"te_90":0.2302,"te_ranking_eligible":true,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Kaminski Jakub","display_name":"Kaminski Jakub","position":"F","display_position":"A","photo":"images/players/kaminski-jakub.png","minutes_played":163,"sample_status":"Amostra reduzida","threat":34.8,"chance_creation":59.6,"progression":38.5,"ball_security":34.7,"defensive_contribution":30.3,"te_shots":1,"threat_execution":-0.0543,"te_90":-0.03,"te_ranking_eligible":false,"threat_timing_ratio":null,"threat_timing_sample":null,"response_xg_share":null,"response_threat_sample":null},{"player":"Rafa Silva","display_name":"Rafa Silva","position":"F","display_position":"A","photo":"images/players/rafa-silva.png","minutes_played":550,"sample_status":"Em formação","threat":72.7,"chance_creation":55.4,"progression":51.8,"ball_security":57,"defensive_contribution":37.3,"te_shots":13,"threat_execution":0.0593,"te_90":0.143,"te_ranking_eligible":true,"threat_timing_ratio":0.987,"threat_timing_sample":"Amostra reduzida","response_xg_share":0,"response_threat_sample":"Amostra reduzida"},{"player":"Pavlidis Vangelis","display_name":"Vangelis Pavlidis","position":"F","display_position":"A","photo":"images/players/vangelis-pavlidis.png","minutes_played":513,"sample_status":"Em formação","threat":85.7,"chance_creation":57.5,"progression":34.8,"ball_security":46.5,"defensive_contribution":39.4,"te_shots":27,"threat_execution":0.0703,"te_90":0.3893,"te_ranking_eligible":true,"threat_timing_ratio":0.896,"threat_timing_sample":"Amostra reduzida","response_xg_share":0.2481,"response_threat_sample":"Amostra reduzida"}];
 
-</div>
-</div>
-<div class="player-profile-score">
-85.7
-</div>
-</div>
-<div class="player-profile-row">
-<div class="player-profile-label">
-Criação
-</div>
-<div class="player-profile-bar-wrap">
-<div class="player-profile-reference">
+    function renderPlayerProfile(index) {
 
-</div>
-<div class="player-profile-bar" style="width:57.5%;">
+      const p = playerProfiles[index];
 
-</div>
-</div>
-<div class="player-profile-score">
-57.5
-</div>
-</div>
-<div class="player-profile-row">
-<div class="player-profile-label">
-Progressão
-</div>
-<div class="player-profile-bar-wrap">
-<div class="player-profile-reference">
+      if (!p) {
+        return;
+      }
 
-</div>
-<div class="player-profile-bar" style="width:34.8%;">
+      // ======================================================
+      // MÉTRICAS BASE
+      // ======================================================
 
-</div>
-</div>
-<div class="player-profile-score">
-34.8
-</div>
-</div>
-<div class="player-profile-row">
-<div class="player-profile-label">
-Segurança
-</div>
-<div class="player-profile-bar-wrap">
-<div class="player-profile-reference">
+      const metrics = [
 
-</div>
-<div class="player-profile-bar" style="width:46.5%;">
+        ["Ameaça", p.threat],
 
-</div>
-</div>
-<div class="player-profile-score">
-46.5
-</div>
-</div>
-<div class="player-profile-row">
-<div class="player-profile-label">
-Contribuição defensiva
-</div>
-<div class="player-profile-bar-wrap">
-<div class="player-profile-reference">
+        ["Criação", p.chance_creation],
 
-</div>
-<div class="player-profile-bar" style="width:39.4%;">
+        ["Progressão", p.progression],
 
+        ["Segurança", p.ball_security],
+
+        [
+          "Contribuição defensiva",
+          p.defensive_contribution
+        ]
+
+      ];
+
+      let rows = "";
+
+      metrics.forEach(([label, value]) => {
+
+        const numericValue = Number(value);
+
+        const safeValue =
+          Number.isFinite(numericValue)
+            ? numericValue
+            : 0;
+
+        rows += `
+
+          <div class="player-profile-row">
+
+            <div class="player-profile-label">
+              ${label}
+            </div>
+
+            <div class="player-profile-bar-wrap">
+
+              <div class="player-profile-reference">
+              </div>
+
+              <div
+                class="player-profile-bar"
+                style="
+                  width:
+                  ${Math.max(
+                    0,
+                    Math.min(
+                      100,
+                      safeValue
+                    )
+                  )}%;
+                "
+              >
+              </div>
+
+            </div>
+
+            <div class="player-profile-score">
+
+              ${
+                Number.isFinite(numericValue)
+                  ? numericValue.toFixed(1)
+                  : "—"
+              }
+
+            </div>
+
+          </div>
+
+        `;
+
+      });
+
+      // ======================================================
+      // MÉTRICAS CONTEXTUAIS
+      // ======================================================
+
+      const timingAvailable =
+        p.threat_timing_ratio !== null &&
+        p.threat_timing_ratio !== undefined &&
+        Number.isFinite(
+          Number(
+            p.threat_timing_ratio
+          )
+        );
+
+      const responseAvailable =
+        p.response_xg_share !== null &&
+        p.response_xg_share !== undefined &&
+        Number.isFinite(
+          Number(
+            p.response_xg_share
+          )
+        );
+
+      const timingValue =
+        timingAvailable
+          ? Number(
+              p.threat_timing_ratio
+            ).toFixed(2)
+          : "—";
+
+      const responseValue =
+        responseAvailable
+          ? (
+              Number(
+                p.response_xg_share
+              ) * 100
+            ).toFixed(1) + "%"
+          : "—";
+
+      const timingStatus =
+        p.threat_timing_sample ||
+        "Sem amostra";
+
+      const responseStatus =
+        p.response_threat_sample ||
+        "Sem amostra";
+
+      const teAvailable =
+        p.threat_execution !== null &&
+        p.threat_execution !== undefined &&
+        Number.isFinite(
+          Number(
+            p.threat_execution
+          )
+        );
+
+      const teValue =
+        teAvailable
+          ? (
+              Number(p.threat_execution) >= 0
+                ? "+"
+                : ""
+            ) +
+            Number(
+              p.threat_execution
+            ).toFixed(3)
+          : "—";
+
+      const teStatus =
+        teAvailable
+          ? (
+              p.te_shots +
+              " remates" +
+              (
+                p.te_ranking_eligible
+                  ? " · ranking elegível"
+                  : " · amostra curta"
+              )
+            )
+          : "Sem amostra";
+
+      // ======================================================
+      // FOTO / PLACEHOLDER
+      // ======================================================
+
+      const visual = p.photo
+        ? `
+
+          <div class="player-profile-photo-wrap">
+
+            <img
+              src="${p.photo}"
+              alt="${p.display_name}"
+              class="player-profile-photo"
+
+              onerror="
+                this.style.display='none';
+                this.nextElementSibling.style.display='flex';
+              "
+            >
+
+            <div
+              class="player-profile-avatar
+                     player-profile-avatar-fallback"
+              style="display:none;"
+            >
+              <span>
+                ${p.display_position}
+              </span>
+            </div>
+
+          </div>
+
+        `
+        : `
+
+          <div class="player-profile-photo-wrap">
+
+            <div class="player-profile-avatar">
+              <span>
+                ${p.display_position}
+              </span>
+            </div>
+
+          </div>
+
+        `;
+
+      // ======================================================
+      // RENDER
+      // ======================================================
+
+      document.getElementById(
+        "single-player-profile"
+      ).innerHTML = `
+
+        <div class="player-profile-header-visual">
+
+          ${visual}
+
+          <div class="player-profile-identity">
+
+            <div class="player-profile-name">
+
+              ${p.display_name}
+
+              <span class="player-profile-position">
+                ${p.display_position}
+              </span>
+
+            </div>
+
+            <div class="player-profile-meta">
+
+              ${p.minutes_played} min
+              ·
+              ${p.sample_status}
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="player-profile-metrics">
+
+          ${rows}
+
+        </div>
+
+        <div class="player-profile-reference-label">
+
+          Linha central = referência 2025/26 (50)
+
+        </div>
+
+        <div class="player-profile-context">
+
+          <div class="player-profile-context-title">
+            Contexto
+          </div>
+
+          <div class="player-profile-context-grid">
+
+            <div class="player-profile-context-item">
+
+              <div class="player-profile-context-label">
+                Threat Timing
+              </div>
+
+              <div class="player-profile-context-value">
+                ${timingValue}
+              </div>
+
+              <div class="player-profile-context-status">
+                ${timingStatus}
+              </div>
+
+            </div>
+
+            <div class="player-profile-context-item">
+
+              <div class="player-profile-context-label">
+                Response Threat
+              </div>
+
+              <div class="player-profile-context-value">
+                ${responseValue}
+              </div>
+
+              <div class="player-profile-context-status">
+                ${responseStatus}
+              </div>
+
+            </div>
+
+            <div class="player-profile-context-item">
+
+              <div class="player-profile-context-label">
+                Threat Execution
+              </div>
+
+              <div class="player-profile-context-value">
+                ${teValue}
+              </div>
+
+              <div class="player-profile-context-status">
+                ${teStatus}
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+    const selector =
+      document.getElementById(
+        "player-profile-select"
+      );
+
+    selector.addEventListener(
+      "change",
+      function() {
+
+        renderPlayerProfile(
+          Number(
+            this.value
+          )
+        );
+
+      }
+    );
+
+    renderPlayerProfile(0);
+
+    </script>
+</section>
+<section id="tabela-completa" class="level2">
+<h2 class="anchored" data-anchor-id="tabela-completa">Tabela completa</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">2026/27</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">2025/26 · Liga</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-39c4d7109c49b2f25252" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-39c4d7109c49b2f25252">{"x":{"filter":"none","vertical":false,"data":[["Clément Lenglet","Samuel Dahl","Alexander Bah","Georgiy Sudakov","Enzo Barrenechea","Rafa Silva","Vangelis Pavlidis","Leandro Barreiro","Tomás Araújo","Gianluca Prestianni","Manu Silva","Andreas Schjelderup","Jhon Durán","Richard Ríos","Silva Antonio","Kaminski Jakub","Dodi Lukebakio","Amar Dedić","Neto Jose","Figueiredo Miguel"],["D","D","D","M","M","A","A","M","D","A","M","A","A","M","D","A","A","D","D","M"],[651,630,609,600,580,550,513,504,464,429,222,219,201,200,180,163,136,111,90,66],[39.2,35.5,38.7,52.6,33.8,72.7,85.7,70.2,43.9,76,37.1,66.2,79.90000000000001,42.5,36.8,34.8,74,42.3,32.7,45.1],[50.6,52.1,62.2,67.40000000000001,41.9,55.4,57.5,52.4,39.8,71,32.8,79.2,46,38.8,38.5,59.6,67.2,57.7,55.5,54.3],[59.1,64.8,58.8,59.1,63.2,51.8,34.8,39.6,67.2,70.3,45,70.09999999999999,40,67.09999999999999,66.7,38.5,50.3,57.7,70.90000000000001,27.5],[64,38,35.1,37.4,73.7,57,46.5,41.9,71.09999999999999,51.7,61.1,36,54.4,71,65.7,34.7,53.5,34.3,50.8,35],[56.5,53.4,57.4,35.3,64.90000000000001,37.3,39.4,48.9,53.7,58.8,56.5,46.3,30.6,67.3,69.5,30.3,46.9,48.7,73.7,60.6],[0.06976666666666666,0.06276666666666667,-0.05450000000000001,0.00078947368421052,-0.05155,0.05928461538461536,0.07032222222222222,-0.0191470588235294,-0.093725,0.11023125,0.0877,-0.00159999999999999,0.03379285714285714,-0.04015,0.00039999999999999,-0.0543,0.03596249999999999,-0.05056666666666667,null,-0.07065],["Fiável","Em formação","Em formação","Fiável","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Em formação","Amostra reduzida","Amostra reduzida","Amostra reduzida","Amostra reduzida","Amostra reduzida"]],"container":"<table class=\"compact stripe hover\">\n  <thead>\n    <tr>\n      <th>Jogador<\/th>\n      <th>Pos<\/th>\n      <th>Min<\/th>\n      <th>Ameaça<\/th>\n      <th>Criação<\/th>\n      <th>Progressão<\/th>\n      <th>Segurança<\/th>\n      <th>Contribuição defensiva<\/th>\n      <th>Finalização<\/th>\n      <th>Amostra<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"lengthChange":false,"autoWidth":false,"ordering":true,"searching":true,"info":false,"columnDefs":[{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 3, 3, \",\", \".\", null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":0,"width":"20%"},{"targets":1,"width":"5%","className":"dt-center"},{"targets":2,"width":"7%","className":"dt-right"},{"targets":[3,4,5,6],"width":"8%","className":"dt-right"},{"targets":7,"width":"13%","className":"dt-right"},{"targets":8,"width":"11%","className":"dt-right"},{"targets":9,"width":"12%"},{"name":"Jogador","targets":0},{"name":"Pos","targets":1},{"name":"Min","targets":2},{"name":"Ameaça","targets":3},{"name":"Criação","targets":4},{"name":"Progressão","targets":5},{"name":"Segurança","targets":6},{"name":"Contribuição defensiva","targets":7},{"name":"Finalização","targets":8},{"name":"Amostra","targets":9}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render"],"jsHooks":[]}</script>
 </div>
 </div>
-<div class="player-profile-score">
-39.4
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>A análise dos guarda-redes fica separada das métricas dos jogadores de campo. O <strong>BuildKeeper</strong> mede a influência na construção com bola. Para 2025/26, o histórico disponível nesta secção cobre apenas a Liga Portugal.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-ed84ae581bb83fd1443b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ed84ae581bb83fd1443b">{"x":{"filter":"none","vertical":false,"data":[["Samuel Dahl","Vangelis Pavlidis","Nicolás Otamendi","Fredrik Aursnes","Richard Ríos","Amar Dedić","António Silva","Enzo Barrenechea","Leandro Barreiro","Andreas Schjelderup","Tomás Araújo","Gianluca Prestianni","Georgiy Sudakov","Rafa Silva","Franjo Ivanović","Dodi Lukebakio"],["D","A","D","A","M","D","D","M","M","A","D","A","M","A","A","A"],[2862,2667,2605,2294,2279,1903,1858,1798,1748,1733,1684,1544,1421,919,868,745],[35.6,77.90000000000001,37.8,41,52.1,36.7,39.4,37,44,56.6,38.8,51.8,51,64.90000000000001,71.8,59.7],[43.5,47.1,34.3,56.2,45.5,50.1,37.8,36,46,65.7,41.5,63.7,59,42.4,45.8,80.3],[55.3,31.2,40.3,63.7,48.4,48.4,57.3,62.7,37.1,52,50.9,56.2,64,42.6,33.3,49.3],[49.3,37.6,66.2,51.9,52.1,40.3,58.6,57.7,47.2,51.8,55.9,50.7,50.1,39.4,32.4,56.9],[57,33.5,64.5,52.9,54.9,50.3,56.9,65.2,47,41.3,55.6,49.4,39.6,40,43.3,48.7],[0.00313529411764705,0.00164736842105264,0.03808333333333333,-0.02195862068965516,-0.05513999999999999,-0.00932666666666666,-0.02325555555555556,0.02852857142857142,0.04304999999999999,-0.02101063829787233,-0.02444117647058823,0.00990222222222222,0.06149428571428569,0.068948,0.05336129032258065,-0.02040588235294117],["Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável","Fiável"]],"container":"<table class=\"compact stripe hover\">\n  <thead>\n    <tr>\n      <th>Jogador<\/th>\n      <th>Pos<\/th>\n      <th>Min<\/th>\n      <th>Ameaça<\/th>\n      <th>Criação<\/th>\n      <th>Progressão<\/th>\n      <th>Segurança<\/th>\n      <th>Contribuição defensiva<\/th>\n      <th>Finalização<\/th>\n      <th>Amostra<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"paging":false,"lengthChange":false,"autoWidth":false,"ordering":true,"searching":true,"info":false,"columnDefs":[{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatRound(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":0,"width":"20%"},{"targets":1,"width":"5%","className":"dt-center"},{"targets":2,"width":"7%","className":"dt-right"},{"targets":[3,4,5,6],"width":"9%","className":"dt-right"},{"targets":7,"width":"15%","className":"dt-right"},{"targets":8,"width":"13%"},{"className":"dt-right","targets":8},{"name":"Jogador","targets":0},{"name":"Pos","targets":1},{"name":"Min","targets":2},{"name":"Ameaça","targets":3},{"name":"Criação","targets":4},{"name":"Progressão","targets":5},{"name":"Segurança","targets":6},{"name":"Contribuição defensiva","targets":7},{"name":"Finalização","targets":8},{"name":"Amostra","targets":9}],"order":[],"orderClasses":false}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render"],"jsHooks":[]}</script>
 </div>
 </div>
-<div class="player-profile-reference-label">
-Linha central = referência 2025/26 (50)
 </div>
 </div>
-<p><a href="./jogadores.html">Ver análise completa dos jogadores →</a></p>
+</div>
+</section>
+<section id="guarda-redes" class="level2">
+<h2 class="anchored" data-anchor-id="guarda-redes">Guarda-redes</h2>
+<p>A análise dos guarda-redes fica separada das métricas dos jogadores de campo. O <strong>BuildKeeper</strong> mede a influência na construção com bola; a referência histórica da escala é documentada na Metodologia.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">2026/27</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">2025/26</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="gk-current-grid">
+<div class="gk-history-card">
+<div class="gk-history-header">
+<div class="gk-name">
+Samuel Soares
+</div>
+<div class="gk-meta">
+6 jogos · 540 min
+</div>
+</div>
+<div class="gk-history-score">
+<span>BuildKeeper</span><strong>53.0</strong>
+</div>
+<div class="gk-history-components">
+<div>
+<span>Passes / 90</span><strong>21.7</strong>
+</div>
+<div>
+<span>Precisão de passe</span><strong>87.7%</strong>
+</div>
+<div>
+<span>Bolas longas / 90</span><strong>5.5</strong>
+</div>
+<div>
+<span>Precisão bola longa</span><strong>54.5%</strong>
+</div>
+<div>
+<span>Passes certos no último terço / 90</span><strong>0.5</strong>
+</div>
+</div>
+</div>
+<div class="gk-history-card">
+<div class="gk-history-header">
+<div class="gk-name">
+Anatoliy Trubin
+</div>
+<div class="gk-meta">
+2 jogos · 180 min
+</div>
+</div>
+<div class="gk-history-score">
+<span>BuildKeeper</span><strong>60.1</strong>
+</div>
+<div class="gk-history-components">
+<div>
+<span>Passes / 90</span><strong>40.0</strong>
+</div>
+<div>
+<span>Precisão de passe</span><strong>93.8%</strong>
+</div>
+<div>
+<span>Bolas longas / 90</span><strong>4.5</strong>
+</div>
+<div>
+<span>Precisão bola longa</span><strong>44.4%</strong>
+</div>
+<div>
+<span>Passes certos no último terço / 90</span><strong>0.5</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="gk-history-card">
+<div class="gk-history-header">
+<div class="gk-name">
+Anatoliy Trubin
+</div>
+<div class="gk-meta">
+32 jogos · 2880 min
+</div>
+</div>
+<div class="gk-history-score">
+<span>BuildKeeper</span><strong>50.0</strong>
+</div>
+<div class="gk-history-components">
+<div>
+<span>Passes / 90</span><strong>20.0</strong>
+</div>
+<div>
+<span>Precisão de passe</span><strong>72.8%</strong>
+</div>
+<div>
+<span>Bolas longas / 90</span><strong>8.4</strong>
+</div>
+<div>
+<span>Precisão bola longa</span><strong>36.2%</strong>
+</div>
+<div>
+<span>Passes certos no último terço / 90</span><strong>0.7</strong>
+</div>
+</div>
+</div>
+<div class="gk-history-card">
+<div class="gk-history-header">
+<div class="gk-name">
+Samuel Soares
+</div>
+<div class="gk-meta">
+2 jogos · 180 min
+</div>
+</div>
+<div class="gk-history-score">
+<span>BuildKeeper</span><strong>48.5</strong>
+</div>
+<div class="gk-history-components">
+<div>
+<span>Passes / 90</span><strong>18.5</strong>
+</div>
+<div>
+<span>Precisão de passe</span><strong>73.0%</strong>
+</div>
+<div>
+<span>Bolas longas / 90</span><strong>8.5</strong>
+</div>
+<div>
+<span>Precisão bola longa</span><strong>41.2%</strong>
+</div>
+<div>
+<span>Passes certos no último terço / 90</span><strong>0.5</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const section = document.querySelector("#tabela-completa");
+  if (!section) return;
+
+  const tabs = section.querySelectorAll(
+    '.nav-link[data-bs-toggle="tab"]'
+  );
+
+  tabs.forEach(function(tab) {
+
+    tab.addEventListener("show.bs.tab", function() {
+      window.__playerTableScrollY = window.scrollY;
+    });
+
+    tab.addEventListener("shown.bs.tab", function(event) {
+
+      const savedY = window.__playerTableScrollY;
+
+      /* Recalcular a tabela que acabou de ficar visível */
+      const targetSelector =
+        event.target.getAttribute("data-bs-target");
+
+      const pane = document.querySelector(targetSelector);
+
+      if (
+        pane &&
+        window.jQuery &&
+        jQuery.fn.dataTable
+      ) {
+        jQuery(pane)
+          .find("table.dataTable")
+          .each(function() {
+            if (jQuery.fn.dataTable.isDataTable(this)) {
+              jQuery(this)
+                .DataTable()
+                .columns.adjust();
+            }
+          });
+      }
+
+      /* O widget pode alterar o layout em vários frames.
+         Restauramos a posição depois desses redraws. */
+      requestAnimationFrame(function() {
+        window.scrollTo(0, savedY);
+
+        requestAnimationFrame(function() {
+          window.scrollTo(0, savedY);
+
+          setTimeout(function() {
+            window.scrollTo(0, savedY);
+          }, 50);
+        });
+      });
+
+    });
+
+  });
+
+});
+</script>
 
 
 </section>

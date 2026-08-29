@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Benfica Analytics - Metodologia</title>
+<title>Benfica Analytics - Jogos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Último jogo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./jogos.html"> 
+    <a class="nav-link active" href="./jogos.html" aria-current="page"> 
 <span class="menu-text">Jogos</span></a>
   </li>  
   <li class="nav-item">
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Calendário</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./metodologia.html" aria-current="page"> 
+    <a class="nav-link" href="./metodologia.html"> 
 <span class="menu-text">Metodologia</span></a>
   </li>  
 </ul>
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -129,80 +129,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#princípio-do-projeto" id="toc-princípio-do-projeto" class="nav-link active" data-scroll-target="#princípio-do-projeto">Princípio do projeto</a></li>
-  <li><a href="#processo-e-forma" id="toc-processo-e-forma" class="nav-link" data-scroll-target="#processo-e-forma">Processo e forma</a>
-  <ul class="collapse">
-  <li><a href="#diferença-de-xg" id="toc-diferença-de-xg" class="nav-link" data-scroll-target="#diferença-de-xg">Diferença de xG</a></li>
-  <li><a href="#reality-gap-resultado-vs-processo" id="toc-reality-gap-resultado-vs-processo" class="nav-link" data-scroll-target="#reality-gap-resultado-vs-processo">Reality Gap — Resultado vs processo</a></li>
-  <li><a href="#nível-de-processo" id="toc-nível-de-processo" class="nav-link" data-scroll-target="#nível-de-processo">Nível de processo</a></li>
-  <li><a href="#volatilidade-do-processo" id="toc-volatilidade-do-processo" class="nav-link" data-scroll-target="#volatilidade-do-processo">Volatilidade do processo</a></li>
-  </ul></li>
-  <li><a href="#dinâmica-do-jogo" id="toc-dinâmica-do-jogo" class="nav-link" data-scroll-target="#dinâmica-do-jogo">Dinâmica do jogo</a>
-  <ul class="collapse">
-  <li><a href="#ameaça-timing-momento-da-ameaça" id="toc-ameaça-timing-momento-da-ameaça" class="nav-link" data-scroll-target="#ameaça-timing-momento-da-ameaça">Ameaça Timing — Momento da ameaça</a></li>
-  <li><a href="#ameaça-de-resposta" id="toc-ameaça-de-resposta" class="nav-link" data-scroll-target="#ameaça-de-resposta">Ameaça de resposta</a></li>
-  <li><a href="#tactical-lift-impacto-após-alterações" id="toc-tactical-lift-impacto-após-alterações" class="nav-link" data-scroll-target="#tactical-lift-impacto-após-alterações">Tactical Lift — Impacto após alterações</a></li>
-  <li><a href="#leadlock" id="toc-leadlock" class="nav-link" data-scroll-target="#leadlock">LeadLock</a></li>
-  </ul></li>
-  <li><a href="#estrutura-da-equipa" id="toc-estrutura-da-equipa" class="nav-link" data-scroll-target="#estrutura-da-equipa">Estrutura da equipa</a>
-  <ul class="collapse">
-  <li><a href="#familiaridade-do-onze" id="toc-familiaridade-do-onze" class="nav-link" data-scroll-target="#familiaridade-do-onze">Familiaridade do onze</a></li>
-  <li><a href="#cobertura-de-pares" id="toc-cobertura-de-pares" class="nav-link" data-scroll-target="#cobertura-de-pares">Cobertura de pares</a></li>
-  <li><a href="#continuidade-por-setor" id="toc-continuidade-por-setor" class="nav-link" data-scroll-target="#continuidade-por-setor">Continuidade por setor</a></li>
-  </ul></li>
-  <li><a href="#perfis-de-jogo" id="toc-perfis-de-jogo" class="nav-link" data-scroll-target="#perfis-de-jogo">Perfis de jogo</a>
-  <ul class="collapse">
-  <li><a href="#gamegrip-controlo-do-jogo" id="toc-gamegrip-controlo-do-jogo" class="nav-link" data-scroll-target="#gamegrip-controlo-do-jogo">GameGrip — Controlo do jogo</a></li>
-  <li><a href="#chancecraft-qualidade-da-criação" id="toc-chancecraft-qualidade-da-criação" class="nav-link" data-scroll-target="#chancecraft-qualidade-da-criação">ChanceCraft — Qualidade da criação</a></li>
-  </ul></li>
-  <li><a href="#jogadores-de-campo" id="toc-jogadores-de-campo" class="nav-link" data-scroll-target="#jogadores-de-campo">Jogadores de campo</a>
-  <ul class="collapse">
-  <li><a href="#escala-comum-0100" id="toc-escala-comum-0100" class="nav-link" data-scroll-target="#escala-comum-0100">Escala comum 0–100</a></li>
-  <li><a href="#ameaça" id="toc-ameaça" class="nav-link" data-scroll-target="#ameaça">Ameaça</a></li>
-  <li><a href="#criação-de-oportunidades" id="toc-criação-de-oportunidades" class="nav-link" data-scroll-target="#criação-de-oportunidades">Criação de oportunidades</a></li>
-  <li><a href="#progressão" id="toc-progressão" class="nav-link" data-scroll-target="#progressão">Progressão</a></li>
-  <li><a href="#segurança-com-bola" id="toc-segurança-com-bola" class="nav-link" data-scroll-target="#segurança-com-bola">Segurança com bola</a></li>
-  <li><a href="#contribuição-defensiva" id="toc-contribuição-defensiva" class="nav-link" data-scroll-target="#contribuição-defensiva">Contribuição defensiva</a></li>
-  <li><a href="#ameaça-execution" id="toc-ameaça-execution" class="nav-link" data-scroll-target="#ameaça-execution">Ameaça Execution</a></li>
-  </ul></li>
-  <li><a href="#fiabilidade-da-amostra" id="toc-fiabilidade-da-amostra" class="nav-link" data-scroll-target="#fiabilidade-da-amostra">Fiabilidade da amostra</a>
-  <ul class="collapse">
-  <li><a href="#amostra-reduzida" id="toc-amostra-reduzida" class="nav-link" data-scroll-target="#amostra-reduzida">Amostra reduzida</a></li>
-  <li><a href="#em-formação" id="toc-em-formação" class="nav-link" data-scroll-target="#em-formação">Em formação</a></li>
-  <li><a href="#fiável" id="toc-fiável" class="nav-link" data-scroll-target="#fiável">Fiável</a></li>
-  </ul></li>
-  <li><a href="#guarda-redes" id="toc-guarda-redes" class="nav-link" data-scroll-target="#guarda-redes">Guarda-redes</a>
-  <ul class="collapse">
-  <li><a href="#buildkeeper-construção-do-guarda-redes" id="toc-buildkeeper-construção-do-guarda-redes" class="nav-link" data-scroll-target="#buildkeeper-construção-do-guarda-redes">BuildKeeper — Construção do guarda-redes</a></li>
-  </ul></li>
-  <li><a href="#contexto" id="toc-contexto" class="nav-link" data-scroll-target="#contexto">Contexto</a>
-  <ul class="collapse">
-  <li><a href="#dias-de-descanso" id="toc-dias-de-descanso" class="nav-link" data-scroll-target="#dias-de-descanso">Dias de descanso</a></li>
-  <li><a href="#jogos-nos-últimos-14-dias" id="toc-jogos-nos-últimos-14-dias" class="nav-link" data-scroll-target="#jogos-nos-últimos-14-dias">Jogos nos últimos 14 dias</a></li>
-  </ul></li>
-  <li><a href="#experimentais-adiadas-e-arquivadas" id="toc-experimentais-adiadas-e-arquivadas" class="nav-link" data-scroll-target="#experimentais-adiadas-e-arquivadas">Experimentais, adiadas e arquivadas</a>
-  <ul class="collapse">
-  <li><a href="#starter-association-experimental" id="toc-starter-association-experimental" class="nav-link" data-scroll-target="#starter-association-experimental">Starter Association — experimental</a></li>
-  <li><a href="#structural-dependency-adiada" id="toc-structural-dependency-adiada" class="nav-link" data-scroll-target="#structural-dependency-adiada">Structural Dependency — adiada</a></li>
-  <li><a href="#new-signing-integration-adiada" id="toc-new-signing-integration-adiada" class="nav-link" data-scroll-target="#new-signing-integration-adiada">New Signing Integration — adiada</a></li>
-  <li><a href="#impact-above-expectation-arquivada" id="toc-impact-above-expectation-arquivada" class="nav-link" data-scroll-target="#impact-above-expectation-arquivada">Impact Above Expectation — arquivada</a></li>
-  </ul></li>
-  <li><a href="#fontes" id="toc-fontes" class="nav-link" data-scroll-target="#fontes">Fontes</a></li>
-  <li><a href="#regras-metodológicas" id="toc-regras-metodológicas" class="nav-link" data-scroll-target="#regras-metodológicas">Regras metodológicas</a></li>
+  <li><a href="#perfis-de-jogo" id="toc-perfis-de-jogo" class="nav-link active" data-scroll-target="#perfis-de-jogo">Perfis de jogo</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Metodologia</h1>
+<h1 class="title">Jogos</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
   
@@ -214,453 +155,835 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="princípio-do-projeto" class="level2">
-<h2 class="anchored" data-anchor-id="princípio-do-projeto">Princípio do projeto</h2>
-<p>O <strong>Benfica Analytics</strong> procura estudar dimensões do desempenho do SL Benfica que não são diretamente visíveis no resultado final ou nas estatísticas mais comuns.</p>
-<p>As métricas são experimentais, transparentes e reproduzíveis. Podem ser revistas quando existirem amostras maiores, melhores fontes ou evidência de que uma formulação alternativa representa melhor o fenómeno que se pretende medir.</p>
-<p>Os valores desconhecidos permanecem vazios. Um valor zero só é usado quando a ocorrência foi medida e não aconteceu.</p>
-<p>As métricas não são tratadas como um único “score geral” do jogo. Cada uma responde a uma pergunta diferente e deve ser interpretada no respetivo contexto.</p>
-</section>
-<section id="processo-e-forma" class="level2">
-<h2 class="anchored" data-anchor-id="processo-e-forma">Processo e forma</h2>
-<section id="diferença-de-xg" class="level3">
-<h3 class="anchored" data-anchor-id="diferença-de-xg">Diferença de xG</h3>
-<p>O <strong>xG Difference</strong> é a diferença entre o xG produzido pelo Benfica e o xG produzido pelo adversário no mesmo jogo.</p>
-<p><strong>xG Difference = xG Benfica − xG adversário</strong></p>
-<section id="interpretação" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação">Interpretação</h4>
-<ul>
-<li>valor positivo — o Benfica produziu mais xG do que o adversário;</li>
-<li>valor negativo — o adversário produziu mais xG;</li>
-<li>valor próximo de zero — produção de oportunidades semelhante.</li>
-</ul>
-<p>É uma medida de processo do jogo e não garante correspondência com o resultado final.</p>
-<hr>
-</section>
-</section>
-<section id="reality-gap-resultado-vs-processo" class="level3">
-<h3 class="anchored" data-anchor-id="reality-gap-resultado-vs-processo">Reality Gap — Resultado vs processo</h3>
-<p>O <strong>Reality Gap</strong> compara o resultado real do jogo com o desfecho sugerido pela diferença de xG.</p>
-<p>A classificação provisória do resultado por xG é:</p>
-<ul>
-<li>diferença de xG superior a <strong>+0,25</strong> → vitória sugerida;</li>
-<li>diferença entre <strong>−0,25 e +0,25</strong> → empate sugerido;</li>
-<li>diferença inferior a <strong>−0,25</strong> → derrota sugerida.</li>
-</ul>
-<p>Os pontos reais e os pontos sugeridos pelo xG são depois comparados.</p>
-<p><strong>Reality Gap = pontos reais − pontos sugeridos pelo xG</strong></p>
-<section id="interpretação-1" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-1">Interpretação</h4>
-<ul>
-<li><strong>0</strong> — resultado real coincide com o desfecho sugerido pelo xG;</li>
-<li>valor negativo — o Benfica obteve menos pontos do que o xG sugeria;</li>
-<li>valor positivo — o Benfica obteve mais pontos do que o xG sugeria.</li>
-</ul>
-<p>O Reality Gap não pretende afirmar qual seria o resultado “correto”; apenas mede divergência entre resultado e produção de oportunidades.</p>
-<hr>
-</section>
-</section>
-<section id="nível-de-processo" class="level3">
-<h3 class="anchored" data-anchor-id="nível-de-processo">Nível de processo</h3>
-<p>O <strong>Process Level</strong> resume a qualidade recente do processo através da média do xG Difference nos últimos cinco jogos.</p>
-<p><strong>Process Level = média do xG Difference nos últimos 5 jogos</strong></p>
-<p>Valores superiores indicam uma sequência recente com maior vantagem de produção de oportunidades.</p>
-<hr>
-</section>
-<section id="volatilidade-do-processo" class="level3">
-<h3 class="anchored" data-anchor-id="volatilidade-do-processo">Volatilidade do processo</h3>
-<p>A <strong>Process Volatility</strong> mede quanto o xG Difference oscila de jogo para jogo na sequência recente.</p>
-<p>Na versão atual é calculada como a mediana da variação absoluta entre jogos consecutivos dentro dos últimos cinco jogos.</p>
-<p><strong>Process Volatility = mediana de |xG Diff(t) − xG Diff(t−1)|</strong></p>
-<p>Valores mais altos indicam maior irregularidade do processo recente.</p>
-</section>
-</section>
-<section id="dinâmica-do-jogo" class="level2">
-<h2 class="anchored" data-anchor-id="dinâmica-do-jogo">Dinâmica do jogo</h2>
-<section id="ameaça-timing-momento-da-ameaça" class="level3">
-<h3 class="anchored" data-anchor-id="ameaça-timing-momento-da-ameaça">Ameaça Timing — Momento da ameaça</h3>
-<p>O <strong>Threat Timing</strong> mede em que momentos do jogo se concentra a ameaça ofensiva do Benfica.</p>
-<p>Cada remate é ponderado por um fator de <strong>leverage</strong>, definido a partir do minuto e do estado do marcador antes do remate.</p>
-<p>A versão atual usa:</p>
-<p><strong>Threat Timing = Σ(xG × leverage) / Σ(xG)</strong></p>
-<section id="interpretação-2" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-2">Interpretação</h4>
-<ul>
-<li>valor superior a <strong>1</strong> — a ameaça concentrou-se relativamente mais em momentos de maior importância competitiva;</li>
-<li>valor próximo de <strong>1</strong> — distribuição aproximadamente neutra;</li>
-<li>valor inferior a <strong>1</strong> — maior concentração relativa em momentos de menor importância competitiva.</li>
-</ul>
-<p>A métrica não mede volume ofensivo. Mede <strong>quando</strong> esse volume ocorreu.</p>
-<p>Para leitura agregada, a versão atual é considerada mais estável a partir de cerca de 15 remates.</p>
-<hr>
-</section>
-</section>
-<section id="ameaça-de-resposta" class="level3">
-<h3 class="anchored" data-anchor-id="ameaça-de-resposta">Ameaça de resposta</h3>
-<p>O <strong>Response Threat</strong> mede a proporção da ameaça ofensiva produzida quando o Benfica estava empatado ou em desvantagem.</p>
-<p>Na versão atual, “resposta” não significa uma janela temporal fixa após sofrer um golo: depende do <strong>estado do marcador</strong> no momento de cada remate.</p>
-<p>Podem ser observadas, entre outras, duas proporções:</p>
-<ul>
-<li>percentagem dos remates produzidos em empate ou desvantagem;</li>
-<li>percentagem do xG produzido em empate ou desvantagem.</li>
-</ul>
-<p>A métrica procura descrever quanto da ameaça foi gerada em estados de jogo em que o Benfica ainda precisava de construir ou recuperar vantagem.</p>
-<hr>
-</section>
-<section id="tactical-lift-impacto-após-alterações" class="level3">
-<h3 class="anchored" data-anchor-id="tactical-lift-impacto-após-alterações">Tactical Lift — Impacto após alterações</h3>
-<p>O <strong>Tactical Lift</strong> descreve a alteração do xG Difference em torno de clusters de substituições do Benfica, ajustando a mudança observada pela regressão à média esperada.</p>
-<p>São considerados clusters de substituições suficientemente próximos no tempo e janelas de 15 minutos antes e depois da intervenção elegível.</p>
-<p>A mudança observada é:</p>
-<p><strong>Observed Change = xG Diff pós − xG Diff pré</strong></p>
-<p>A partir de janelas de controlo sem substituição do Benfica perto do corte foi estimada a relação:</p>
-<p><strong>Expected Change = 0,074 − 0,865 × pre_xG_diff</strong></p>
-<p>A versão atual é então:</p>
-<p><strong>Tactical Lift = Observed Change − Expected Change</strong></p>
-<section id="interpretação-3" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-3">Interpretação</h4>
-<ul>
-<li>valor positivo — a mudança observada foi melhor do que a mudança esperada;</li>
-<li>valor negativo — foi pior do que a mudança esperada.</li>
-</ul>
-<p>O Tactical Lift é <strong>descritivo, não causal</strong>. Não permite concluir que as substituições “causaram” a mudança.</p>
-<hr>
-</section>
-</section>
-<section id="leadlock" class="level3">
-<h3 class="anchored" data-anchor-id="leadlock">LeadLock</h3>
-<p>O <strong>LeadLock</strong> estuda a capacidade do Benfica para gerir situações de vantagem no marcador.</p>
-<p>Regista, entre outros indicadores:</p>
-<ul>
-<li>jogos em que o Benfica esteve em vantagem;</li>
-<li>vantagens perdidas;</li>
-<li>vantagens recuperadas;</li>
-<li>tempo em vantagem;</li>
-<li>percentagem do jogo em vantagem;</li>
-<li>conservação da vantagem;</li>
-<li>vitória depois de estar em vantagem.</li>
-</ul>
-<p>Uma perda de vantagem ocorre quando o Benfica passa de uma situação de vantagem para empate ou desvantagem após um golo adversário.</p>
-<p>A versão atual usa um relógio analítico normalizado de 90 minutos.</p>
-</section>
-</section>
-<section id="estrutura-da-equipa" class="level2">
-<h2 class="anchored" data-anchor-id="estrutura-da-equipa">Estrutura da equipa</h2>
-<section id="familiaridade-do-onze" class="level3">
-<h3 class="anchored" data-anchor-id="familiaridade-do-onze">Familiaridade do onze</h3>
-<p>A <strong>Starting XI Familiarity</strong> mede quanto os onze titulares já começaram jogos juntos em pares.</p>
-<p>Um onze contém <strong>55 pares</strong> possíveis. Para cada par é contabilizado o número de partidas anteriores em que os dois jogadores começaram juntos, com um teto de cinco jogos por par.</p>
-<p>Cada par recebe:</p>
-<p><strong>min(inícios conjuntos anteriores, 5) / 5</strong></p>
-<p>O score do onze é a média dos 55 pares, apresentada numa escala 0–100.</p>
-<section id="interpretação-4" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-4">Interpretação</h4>
-<ul>
-<li>valores baixos — onze pouco familiar ou muito alterado;</li>
-<li>valores altos — combinação de titulares já utilizada com frequência.</li>
-</ul>
-<p>Os amigáveis podem contribuir para o histórico de familiaridade.</p>
-<hr>
-</section>
-</section>
-<section id="cobertura-de-pares" class="level3">
-<h3 class="anchored" data-anchor-id="cobertura-de-pares">Cobertura de pares</h3>
-<p>A <strong>Pair Coverage</strong> é um indicador auxiliar da Familiarity.</p>
-<p>Representa a percentagem dos 55 pares do onze atual que já tinham pelo menos um início conjunto antes do jogo.</p>
-<p>É útil para distinguir um onze com muitos pares já testados de um onze com várias combinações inéditas.</p>
-<hr>
-</section>
-<section id="continuidade-por-setor" class="level3">
-<h3 class="anchored" data-anchor-id="continuidade-por-setor">Continuidade por setor</h3>
-<p>A <strong>Sector Continuity</strong> mede a continuidade dos titulares por setor — Defesa, Meio-campo e Ataque.</p>
-<p>Para cada titular do setor atual, calcula-se em quantos dos jogos oficiais anteriores da janela de referência esse jogador começou no mesmo setor.</p>
-<p>A versão atual usa até três jogos oficiais anteriores e passa a ser interpretada apenas quando já existe histórico suficiente.</p>
-<p>O score de cada setor é a média dos seus titulares.</p>
-<section id="interpretação-5" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-5">Interpretação</h4>
-<ul>
-<li>valores altos — setor com estrutura relativamente estável;</li>
-<li>valores baixos — rotação elevada ou alteração funcional dos titulares.</li>
-</ul>
-<p>O guarda-redes fica fora deste cálculo.</p>
-</section>
-</section>
-</section>
+<div class="section-intro">
+<div class="section-kicker">
+ARQUIVO ANALÍTICO
+</div>
+<div class="section-title">
+Jogos
+</div>
+<div class="section-description">
+Resultados, processo e leituras próprias jogo a jogo.
+</div>
+</div>
+<article class="games-row">
+<div class="games-date">
+<strong>27 Aug</strong><span>2026</span>
+</div>
+<div class="games-main">
+<div class="games-result">
+<span class="result-line"><span class="result-team">AGF</span><span class="result-score"><span class="result-num">1</span><span class="result-sep">–</span><span class="result-num">3</span></span><span class="result-team">Benfica</span></span>
+</div>
+<div class="games-headline">
+Estrutura estável. Processo controlado.
+</div>
+<div class="games-meta">
+UEFA Europa League, Playoff Round
+</div>
+</div>
+<div class="games-insights">
+<div class="games-insight">
+<span>Gianluca Prestianni</span><strong>76.2</strong>
+</div>
+<div class="games-insight">
+<span>xG Difference</span><strong>1.84</strong>
+</div>
+</div>
+<div class="games-action">
+<a href="jogos/SLB_20260827_A_AGF.html">Ver análise →</a>
+</div>
+</article>
+<article class="games-row">
+<div class="games-date">
+<strong>20 Aug</strong><span>2026</span>
+</div>
+<div class="games-main">
+<div class="games-result">
+<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">3</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">AGF</span></span>
+</div>
+<div class="games-headline">
+Processo forte. Estrutura estável.
+</div>
+<div class="games-meta">
+UEFA Europa League, Playoff Round
+</div>
+</div>
+<div class="games-insights">
+<div class="games-insight">
+<span>Vangelis Pavlidis</span><strong>84.2</strong>
+</div>
+<div class="games-insight">
+<span>xG Difference</span><strong>4.15</strong>
+</div>
+</div>
+<div class="games-action">
+<a href="jogos/SLB_20260820_H_AGF.html">Ver análise →</a>
+</div>
+</article>
+<article class="games-row">
+<div class="games-date">
+<strong>17 Aug</strong><span>2026</span>
+</div>
+<div class="games-main">
+<div class="games-result">
+<span class="result-line"><span class="result-team">Casa Pia</span><span class="result-score"><span class="result-num">0</span><span class="result-sep">–</span><span class="result-num">7</span></span><span class="result-team">Benfica</span></span>
+</div>
+<div class="games-headline">
+Domínio claro. Ameaça tardia.
+</div>
+<div class="games-meta">
+Liga Portugal Betclic
+</div>
+</div>
+<div class="games-insights">
+<div class="games-insight">
+<span>Vangelis Pavlidis</span><strong>85.8</strong>
+</div>
+<div class="games-insight">
+<span>Threat Timing</span><strong>0.82</strong>
+</div>
+</div>
+<div class="games-action">
+<a href="jogos/SLB_20260817_A_CASAPIA.html">Ver análise →</a>
+</div>
+</article>
+<article class="games-row">
+<div class="games-date">
+<strong>13 Aug</strong><span>2026</span>
+</div>
+<div class="games-main">
+<div class="games-result">
+<span class="result-line"><span class="result-team">Heart of Midlothian</span><span class="result-score"><span class="result-num">1</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">Benfica</span></span>
+</div>
+<div class="games-headline">
+Rotação alta. Resultado curto.
+</div>
+<div class="games-meta">
+UEFA Europa League, Qualification
+</div>
+</div>
+<div class="games-insights">
+<div class="games-insight">
+<span>Tomás Araújo</span><strong>70.3</strong>
+</div>
+<div class="games-insight">
+<span>Reality Gap</span><strong>-2</strong>
+</div>
+</div>
+<div class="games-action">
+<a href="jogos/SLB_20260813_A_HEARTOFMIDLOTHIAN.html">Ver análise →</a>
+</div>
+</article>
+<article class="games-row">
+<div class="games-date">
+<strong>09 Aug</strong><span>2026</span>
+</div>
+<div class="games-main">
+<div class="games-result">
+<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">2</span><span class="result-sep">–</span><span class="result-num">2</span></span><span class="result-team">Académico Viseu FC</span></span>
+</div>
+<div class="games-headline">
+Muito processo. Pouco resultado.
+</div>
+<div class="games-meta">
+Liga Portugal Betclic
+</div>
+</div>
+<div class="games-insights">
+<div class="games-insight">
+<span>Vangelis Pavlidis</span><strong>84.0</strong>
+</div>
+<div class="games-insight">
+<span>Tactical Lift</span><strong>-0.23</strong>
+</div>
+</div>
+<div class="games-action">
+<a href="jogos/SLB_20260809_H_ACADEMICOVISEUFC.html">Ver análise →</a>
+</div>
+</article>
+<article class="games-row">
+<div class="games-date">
+<strong>06 Aug</strong><span>2026</span>
+</div>
+<div class="games-main">
+<div class="games-result">
+<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">6</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">Heart of Midlothian</span></span>
+</div>
+<div class="games-headline">
+Vantagem cedo. Controlo até ao fim.
+</div>
+<div class="games-meta">
+UEFA Europa League, Qualification
+</div>
+</div>
+<div class="games-insights">
+<div class="games-insight">
+<span>Gianluca Prestianni</span><strong>82.8</strong>
+</div>
+<div class="games-insight">
+<span>xG Difference</span><strong>2.45</strong>
+</div>
+</div>
+<div class="games-action">
+<a href="jogos/SLB_20260806_H_HEARTOFMIDLOTHIAN.html">Ver análise →</a>
+</div>
+</article>
+<article class="games-row">
+<div class="games-date">
+<strong>30 Jul</strong><span>2026</span>
+</div>
+<div class="games-main">
+<div class="games-result">
+<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">5</span><span class="result-sep">–</span><span class="result-num">0</span></span><span class="result-team">FC St.&nbsp;Gallen 1879</span></span>
+</div>
+<div class="games-headline">
+Vantagem cedo. Controlo até ao fim.
+</div>
+<div class="games-meta">
+UEFA Europa League, Qualification
+</div>
+</div>
+<div class="games-insights">
+<div class="games-insight">
+<span>Vangelis Pavlidis</span><strong>85.8</strong>
+</div>
+<div class="games-insight">
+<span>xG Difference</span><strong>2.99</strong>
+</div>
+</div>
+<div class="games-action">
+<a href="jogos/SLB_20260730_H_FCSTGALLEN1879.html">Ver análise →</a>
+</div>
+</article>
+<article class="games-row">
+<div class="games-date">
+<strong>23 Jul</strong><span>2026</span>
+</div>
+<div class="games-main">
+<div class="games-result">
+<span class="result-line"><span class="result-team">FC St.&nbsp;Gallen 1879</span><span class="result-score"><span class="result-num">2</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">Benfica</span></span>
+</div>
+<div class="games-headline">
+Pouca familiaridade. Estrutura em teste.
+</div>
+<div class="games-meta">
+UEFA Europa League, Qualification
+</div>
+</div>
+<div class="games-insights">
+<div class="games-insight">
+<span>Alexander Bah</span><strong>67.7</strong>
+</div>
+<div class="games-insight">
+<span>XI Familiarity</span><strong>20.4</strong>
+</div>
+</div>
+<div class="games-action">
+<a href="jogos/SLB_20260723_A_FCSTGALLEN1879.html">Ver análise →</a>
+</div>
+</article>
+<div class="cell">
+<div class="cell-output-display">
+<div id="gvvcfeurac" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gvvcfeurac table {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#gvvcfeurac thead, #gvvcfeurac tbody, #gvvcfeurac tfoot, #gvvcfeurac tr, #gvvcfeurac td, #gvvcfeurac th {
+  border-style: none;
+}
+
+#gvvcfeurac p {
+  margin: 0;
+  padding: 0;
+}
+
+#gvvcfeurac .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: 0;
+  margin-right: auto;
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#gvvcfeurac .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#gvvcfeurac .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#gvvcfeurac .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D9DDE1;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BFC4C9;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#gvvcfeurac .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#gvvcfeurac .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#gvvcfeurac .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#gvvcfeurac .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #BFC4C9;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#gvvcfeurac .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#gvvcfeurac .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#gvvcfeurac .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gvvcfeurac .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#gvvcfeurac .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#gvvcfeurac .gt_row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#gvvcfeurac .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gvvcfeurac .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#gvvcfeurac .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#gvvcfeurac .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#gvvcfeurac .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gvvcfeurac .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#gvvcfeurac .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gvvcfeurac .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_striped {
+  background-color: #F7F7F7;
+}
+
+#gvvcfeurac .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gvvcfeurac .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gvvcfeurac .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gvvcfeurac .gt_left {
+  text-align: left;
+}
+
+#gvvcfeurac .gt_center {
+  text-align: center;
+}
+
+#gvvcfeurac .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#gvvcfeurac .gt_font_normal {
+  font-weight: normal;
+}
+
+#gvvcfeurac .gt_font_bold {
+  font-weight: bold;
+}
+
+#gvvcfeurac .gt_font_italic {
+  font-style: italic;
+}
+
+#gvvcfeurac .gt_super {
+  font-size: 65%;
+}
+
+#gvvcfeurac .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#gvvcfeurac .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#gvvcfeurac .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#gvvcfeurac .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#gvvcfeurac .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#gvvcfeurac .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#gvvcfeurac .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#gvvcfeurac .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#gvvcfeurac div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col>
+<col style="width: 22%">
+<col>
+<col>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th id="Data" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Data</th>
+<th id="Adversário" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Adversário</th>
+<th id="Resultado" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Resultado</th>
+<th id="Dif.-xG" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Dif. xG</th>
+<th id="Resultado-vs-processo" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Resultado vs processo</th>
+<th id="Familiaridade-do-onze" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Familiaridade do onze</th>
+<th id="Momento-da-ameaça" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Momento da ameaça</th>
+<th id="Impacto-após-alterações" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Impacto após alterações</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Data">27/08/2026</td>
+<td class="gt_row gt_left" headers="Adversário">AGF</td>
+<td class="gt_row gt_center" headers="Resultado">1–3</td>
+<td class="gt_row gt_center" headers="Dif. xG">1.84</td>
+<td class="gt_row gt_center" headers="Resultado vs processo">0</td>
+<td class="gt_row gt_center" headers="Familiaridade do onze">93.1</td>
+<td class="gt_row gt_center" headers="Momento da ameaça"><br>
+</td>
+<td class="gt_row gt_center" headers="Impacto após alterações"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left gt_striped" headers="Data">20/08/2026</td>
+<td class="gt_row gt_left gt_striped" headers="Adversário">AGF</td>
+<td class="gt_row gt_center gt_striped" headers="Resultado">3–1</td>
+<td class="gt_row gt_center gt_striped" headers="Dif. xG">4.15</td>
+<td class="gt_row gt_center gt_striped" headers="Resultado vs processo">0</td>
+<td class="gt_row gt_center gt_striped" headers="Familiaridade do onze">84.4</td>
+<td class="gt_row gt_center gt_striped" headers="Momento da ameaça"><br>
+</td>
+<td class="gt_row gt_center gt_striped" headers="Impacto após alterações"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Data">17/08/2026</td>
+<td class="gt_row gt_left" headers="Adversário">Casa Pia</td>
+<td class="gt_row gt_center" headers="Resultado">0–7</td>
+<td class="gt_row gt_center" headers="Dif. xG">2.66</td>
+<td class="gt_row gt_center" headers="Resultado vs processo">0</td>
+<td class="gt_row gt_center" headers="Familiaridade do onze">74.5</td>
+<td class="gt_row gt_center" headers="Momento da ameaça">0.82</td>
+<td class="gt_row gt_center" headers="Impacto após alterações"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left gt_striped" headers="Data">13/08/2026</td>
+<td class="gt_row gt_left gt_striped" headers="Adversário">Heart of Midlothian</td>
+<td class="gt_row gt_center gt_striped" headers="Resultado">1–1</td>
+<td class="gt_row gt_center gt_striped" headers="Dif. xG">0.44</td>
+<td class="gt_row gt_center gt_striped" headers="Resultado vs processo">-2</td>
+<td class="gt_row gt_center gt_striped" headers="Familiaridade do onze">9.5</td>
+<td class="gt_row gt_center gt_striped" headers="Momento da ameaça"><br>
+</td>
+<td class="gt_row gt_center gt_striped" headers="Impacto após alterações"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Data">09/08/2026</td>
+<td class="gt_row gt_left" headers="Adversário">Académico Viseu FC</td>
+<td class="gt_row gt_center" headers="Resultado">2–2</td>
+<td class="gt_row gt_center" headers="Dif. xG">2.10</td>
+<td class="gt_row gt_center" headers="Resultado vs processo">-2</td>
+<td class="gt_row gt_center" headers="Familiaridade do onze">58.9</td>
+<td class="gt_row gt_center" headers="Momento da ameaça">1.02</td>
+<td class="gt_row gt_center" headers="Impacto após alterações">-0.23</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left gt_striped" headers="Data">06/08/2026</td>
+<td class="gt_row gt_left gt_striped" headers="Adversário">Heart of Midlothian</td>
+<td class="gt_row gt_center gt_striped" headers="Resultado">6–1</td>
+<td class="gt_row gt_center gt_striped" headers="Dif. xG">2.45</td>
+<td class="gt_row gt_center gt_striped" headers="Resultado vs processo">0</td>
+<td class="gt_row gt_center gt_striped" headers="Familiaridade do onze">38.9</td>
+<td class="gt_row gt_center gt_striped" headers="Momento da ameaça"><br>
+</td>
+<td class="gt_row gt_center gt_striped" headers="Impacto após alterações"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Data">30/07/2026</td>
+<td class="gt_row gt_left" headers="Adversário">FC St. Gallen 1879</td>
+<td class="gt_row gt_center" headers="Resultado">5–0</td>
+<td class="gt_row gt_center" headers="Dif. xG">2.99</td>
+<td class="gt_row gt_center" headers="Resultado vs processo">0</td>
+<td class="gt_row gt_center" headers="Familiaridade do onze">45.8</td>
+<td class="gt_row gt_center" headers="Momento da ameaça"><br>
+</td>
+<td class="gt_row gt_center" headers="Impacto após alterações"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left gt_striped" headers="Data">23/07/2026</td>
+<td class="gt_row gt_left gt_striped" headers="Adversário">FC St. Gallen 1879</td>
+<td class="gt_row gt_center gt_striped" headers="Resultado">2–1</td>
+<td class="gt_row gt_center gt_striped" headers="Dif. xG">-0.42</td>
+<td class="gt_row gt_center gt_striped" headers="Resultado vs processo">0</td>
+<td class="gt_row gt_center gt_striped" headers="Familiaridade do onze">20.4</td>
+<td class="gt_row gt_center gt_striped" headers="Momento da ameaça"><br>
+</td>
+<td class="gt_row gt_center gt_striped" headers="Impacto após alterações"><br>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
 <section id="perfis-de-jogo" class="level2">
 <h2 class="anchored" data-anchor-id="perfis-de-jogo">Perfis de jogo</h2>
-<section id="gamegrip-controlo-do-jogo" class="level3">
-<h3 class="anchored" data-anchor-id="gamegrip-controlo-do-jogo">GameGrip — Controlo do jogo</h3>
-<p>O <strong>GameGrip</strong> procura medir o grau de controlo global exercido pelo Benfica num jogo.</p>
-<p>Combina cinco dimensões, sempre expressas como quota do Benfica no total do jogo:</p>
-<ul>
-<li><strong>30%</strong> — quota de xG;</li>
-<li><strong>25%</strong> — quota de Big Chances;</li>
-<li><strong>20%</strong> — quota de remates enquadrados;</li>
-<li><strong>15%</strong> — quota de toques na área;</li>
-<li><strong>10%</strong> — quota de entradas no último terço.</li>
-</ul>
-<p>A fórmula é:</p>
-<p><strong>GameGrip = 100 × (0,30 × quota de xG + 0,25 × quota de Big Chances + 0,20 × quota de remates enquadrados + 0,15 × quota de toques na área + 0,10 × quota de entradas no último terço)</strong></p>
-<section id="interpretação-6" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-6">Interpretação</h4>
-<ul>
-<li><strong>50</strong> representa equilíbrio entre as equipas;</li>
-<li>acima de <strong>50</strong>, o Benfica controlou uma maior proporção das dimensões incluídas;</li>
-<li>abaixo de <strong>50</strong>, o adversário teve maior controlo agregado.</li>
-</ul>
-<p>O valor não representa uma probabilidade de vitória.</p>
-<hr>
-</section>
-</section>
-<section id="chancecraft-qualidade-da-criação" class="level3">
-<h3 class="anchored" data-anchor-id="chancecraft-qualidade-da-criação">ChanceCraft — Qualidade da criação</h3>
-<p>O <strong>ChanceCraft</strong> procura medir a qualidade da criação ofensiva, distinguindo volume de ataque da qualidade das oportunidades produzidas.</p>
-<p>A versão atual combina:</p>
-<ul>
-<li><strong>35%</strong> — xG por remate;</li>
-<li><strong>30%</strong> — Big Chances por remate;</li>
-<li><strong>20%</strong> — precisão de remate;</li>
-<li><strong>15%</strong> — toques na área por remate.</li>
-</ul>
-<p>Os valores da época 2026/27 são contextualizados relativamente à distribuição observada na Liga 2025/26.</p>
-<section id="interpretação-7" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-7">Interpretação</h4>
-<p>Um valor superior indica que o Benfica transformou a sua produção ofensiva em oportunidades de maior qualidade ou eficácia relativa.</p>
-<p>O ChanceCraft não mede apenas quantidade de remates e não deve ser interpretado como probabilidade de marcar.</p>
-</section>
-</section>
-</section>
-<section id="jogadores-de-campo" class="level2">
-<h2 class="anchored" data-anchor-id="jogadores-de-campo">Jogadores de campo</h2>
-<p>As métricas de jogador usam uma <strong>baseline Benfica 2025/26</strong> e são apresentadas numa escala comum 0–100, exceto <strong>Threat Execution</strong>, que conserva a sua unidade própria.</p>
-<section id="escala-comum-0100" class="level3">
-<h3 class="anchored" data-anchor-id="escala-comum-0100">Escala comum 0–100</h3>
-<p>Cada componente é transformada num z-score relativamente à média e desvio-padrão da baseline 2025/26.</p>
-<p>Os componentes são depois combinados num z-score composto.</p>
-<p>A apresentação final utiliza:</p>
-<p><strong>Score = 50 + 50 × tanh(z / 3,33)</strong></p>
-<p>Os z-scores dos componentes podem ser limitados para reduzir o efeito de amostras muito pequenas ou valores extremos.</p>
-<section id="interpretação-da-escala" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-da-escala">Interpretação da escala</h4>
-<ul>
-<li><strong>50</strong> — aproximadamente a referência Benfica 2025/26;</li>
-<li>acima de <strong>50</strong> — produção superior à referência na dimensão analisada;</li>
-<li>abaixo de <strong>50</strong> — produção inferior à referência;</li>
-<li>valores próximos de 0 ou 100 representam desempenhos muito afastados da referência.</li>
-</ul>
-<p>O score <strong>não é uma percentagem</strong> nem um percentil.</p>
-<hr>
-</section>
-</section>
-<section id="ameaça" class="level3">
-<h3 class="anchored" data-anchor-id="ameaça">Ameaça</h3>
-<p>O <strong>Threat</strong> mede a capacidade de gerar perigo direto de finalização.</p>
-<p>Componentes:</p>
-<ul>
-<li><strong>40%</strong> — xG / 90;</li>
-<li><strong>20%</strong> — remates / 90;</li>
-<li><strong>15%</strong> — remates enquadrados / 90;</li>
-<li><strong>15%</strong> — xGOT / 90;</li>
-<li><strong>10%</strong> — golos / 90.</li>
-</ul>
-<hr>
-</section>
-<section id="criação-de-oportunidades" class="level3">
-<h3 class="anchored" data-anchor-id="criação-de-oportunidades">Criação de oportunidades</h3>
-<p>A <strong>Chance Creation</strong> mede a contribuição do jogador para produzir oportunidades para a equipa.</p>
-<p>Componentes:</p>
-<ul>
-<li><strong>30%</strong> — passes-chave / 90;</li>
-<li><strong>25%</strong> — Big Chances criadas / 90;</li>
-<li><strong>20%</strong> — xA / 90;</li>
-<li><strong>15%</strong> — assistências / 90;</li>
-<li><strong>10%</strong> — cruzamentos certos / 90.</li>
-</ul>
-<hr>
-</section>
-<section id="progressão" class="level3">
-<h3 class="anchored" data-anchor-id="progressão">Progressão</h3>
-<p>A <strong>Progression</strong> mede a capacidade para fazer a bola avançar para zonas ofensivas.</p>
-<p>A versão atual usa:</p>
-<ul>
-<li><strong>45%</strong> — passes certos no último terço / 90;</li>
-<li><strong>35%</strong> — entradas no último terço / 90;</li>
-<li><strong>20%</strong> — entradas na área / 90.</li>
-</ul>
-<p>O score é calculado por jogador, independentemente da posição utilizada no jogo. Para apresentação, pode ser associada a posição principal pela maior utilização em minutos.</p>
-<hr>
-</section>
-<section id="segurança-com-bola" class="level3">
-<h3 class="anchored" data-anchor-id="segurança-com-bola">Segurança com bola</h3>
-<p>A <strong>Ball Security</strong> mede a qualidade com que o jogador mantém e utiliza a posse, contextualizada pela posição.</p>
-<p>Componentes base:</p>
-<ul>
-<li><strong>35%</strong> — precisão de passe;</li>
-<li><strong>30%</strong> — turnovers / 90, com sinal inverso;</li>
-<li><strong>20%</strong> — eficiência no drible;</li>
-<li><strong>15%</strong> — eficiência nos duelos.</li>
-</ul>
-<p>Quando uma componente não está disponível, o seu peso é removido e os restantes pesos são redistribuídos.</p>
-<p>Os baselines são <strong>posicionais</strong>: Defesa, Meio-campo e Ataque.</p>
-<p>Quando um jogador é utilizado em mais de uma posição, o score é primeiro calculado em cada posição contra o respetivo baseline e depois consolidado numa única linha, ponderada pelos minutos em cada posição.</p>
-<hr>
-</section>
-<section id="contribuição-defensiva" class="level3">
-<h3 class="anchored" data-anchor-id="contribuição-defensiva">Contribuição defensiva</h3>
-<p>A <strong>Defensive Contribution</strong> mede contribuição defensiva através de ações diretamente observáveis.</p>
-<p>Componentes:</p>
-<ul>
-<li><strong>20%</strong> — recuperações / 90;</li>
-<li><strong>20%</strong> — interceções / 90;</li>
-<li><strong>20%</strong> — desarmes ganhos / 90;</li>
-<li><strong>15%</strong> — duelos ganhos / 90;</li>
-<li><strong>10%</strong> — bloqueios / 90;</li>
-<li><strong>10%</strong> — cortes / 90;</li>
-<li><strong>−5%</strong> — desafios perdidos / 90.</li>
-</ul>
-<p>Esta métrica mede atividade e contribuição defensiva e não deve ser interpretada como avaliação completa da qualidade defensiva de um jogador.</p>
-<hr>
-</section>
-<section id="ameaça-execution" class="level3">
-<h3 class="anchored" data-anchor-id="ameaça-execution">Ameaça Execution</h3>
-<p>O <strong>Threat Execution</strong> mede quanto um jogador acrescenta ou perde na execução final do remate relativamente à qualidade inicial da oportunidade.</p>
-<p>A versão oficial é:</p>
-<p><strong>Threat Execution = (xGOT − xG) / remates</strong></p>
-<p>Também é registado:</p>
-<p><strong>Threat Added = xGOT − xG</strong></p>
-<p>Para leitura longitudinal pode ser usado:</p>
-<p><strong>TE/90 = (xGOT − xG) / minutos × 90</strong></p>
-<section id="interpretação-8" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-8">Interpretação</h4>
-<ul>
-<li>valor positivo — a execução colocou os remates, em média, com maior qualidade de finalização do que a oportunidade inicial sugeria;</li>
-<li>valor negativo — a qualidade final do remate ficou abaixo da qualidade inicial das oportunidades.</li>
-</ul>
-<p>O Threat Execution não combina golos com xGOT e não usa o rácio xGOT/xG.</p>
-<p>Critérios atuais de ranking:</p>
-<ul>
-<li>jogo: pelo menos <strong>2 remates</strong>;</li>
-<li>época: pelo menos <strong>10 remates</strong>.</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="fiabilidade-da-amostra" class="level2">
-<h2 class="anchored" data-anchor-id="fiabilidade-da-amostra">Fiabilidade da amostra</h2>
-<p>Durante o início da época os scores podem ser muito voláteis.</p>
-<p>São usados três estados.</p>
-<section id="amostra-reduzida" class="level3">
-<h3 class="anchored" data-anchor-id="amostra-reduzida">Amostra reduzida</h3>
-<p>Jogador elegível, mas ainda abaixo dos critérios de formação.</p>
-</section>
-<section id="em-formação" class="level3">
-<h3 class="anchored" data-anchor-id="em-formação">Em formação</h3>
-<p>Atualmente exige pelo menos:</p>
-<ul>
-<li><strong>3 jogos com 30 ou mais minutos</strong>, ou</li>
-<li><strong>180 minutos acumulados</strong>,</li>
-</ul>
-<p>sem ainda cumprir a condição de fiabilidade.</p>
-</section>
-<section id="fiável" class="level3">
-<h3 class="anchored" data-anchor-id="fiável">Fiável</h3>
-<p>Atualmente exige:</p>
-<ul>
-<li>pelo menos <strong>8 jogos com 30 ou mais minutos</strong>;</li>
-<li>pelo menos <strong>300 minutos acumulados</strong>.</li>
-</ul>
-<p>Mesmo uma amostra marcada como fiável não elimina efeitos de contexto, posição, adversário ou função tática.</p>
-</section>
-</section>
-<section id="guarda-redes" class="level2">
-<h2 class="anchored" data-anchor-id="guarda-redes">Guarda-redes</h2>
-<section id="buildkeeper-construção-do-guarda-redes" class="level3">
-<h3 class="anchored" data-anchor-id="buildkeeper-construção-do-guarda-redes">BuildKeeper — Construção do guarda-redes</h3>
-<p>O <strong>BuildKeeper</strong> mede a influência do guarda-redes na construção com bola.</p>
-<p>A referência é constituída pelos jogos de guarda-redes do Benfica na <strong>Liga 2025/26</strong>.</p>
-<p>A versão atualmente usada no site é a versão processada com dados Flashscore. A interpretação deve ser feita como indicador de construção, não como avaliação global do guarda-redes.</p>
-<p>O score é apresentado numa escala centrada aproximadamente em 50 relativamente à referência histórica.</p>
-<section id="interpretação-9" class="level4">
-<h4 class="anchored" data-anchor-id="interpretação-9">Interpretação</h4>
-<ul>
-<li><strong>50</strong> — aproximadamente a construção média da referência Benfica / Liga 2025/26;</li>
-<li>acima de <strong>50</strong> — contribuição de construção acima da referência;</li>
-<li>abaixo de <strong>50</strong> — contribuição abaixo da referência.</li>
-</ul>
-<p>O BuildKeeper <strong>não mede diretamente</strong> shot-stopping, defesas, goals prevented ou qualidade global do guarda-redes.</p>
-<p>Para 2025/26, a cobertura atualmente apresentada no site nesta secção é apenas da <strong>Liga Portugal</strong>.</p>
-</section>
-</section>
-</section>
-<section id="contexto" class="level2">
-<h2 class="anchored" data-anchor-id="contexto">Contexto</h2>
-<section id="dias-de-descanso" class="level3">
-<h3 class="anchored" data-anchor-id="dias-de-descanso">Dias de descanso</h3>
-<p><strong>Rest Days</strong> regista os dias de descanso entre jogos.</p>
-<p>É usado como variável de contexto e não como score de desempenho.</p>
-<hr>
-</section>
-<section id="jogos-nos-últimos-14-dias" class="level3">
-<h3 class="anchored" data-anchor-id="jogos-nos-últimos-14-dias">Jogos nos últimos 14 dias</h3>
-<p><strong>Games Last 14d</strong> conta quantos jogos o Benfica realizou nos 14 dias anteriores ao jogo analisado.</p>
-<p>Na versão atual não foi encontrada evidência suficientemente robusta para transformar esta variável num score próprio de “carga”.</p>
-<p>Por isso permanece como <strong>contexto</strong>, não como medida de qualidade.</p>
-</section>
-</section>
-<section id="experimentais-adiadas-e-arquivadas" class="level2">
-<h2 class="anchored" data-anchor-id="experimentais-adiadas-e-arquivadas">Experimentais, adiadas e arquivadas</h2>
-<section id="starter-association-experimental" class="level3">
-<h3 class="anchored" data-anchor-id="starter-association-experimental">Starter Association — experimental</h3>
-<p>Compara o xG Difference dos jogos em que determinado jogador começa de início com os jogos em que não começa, ajustando por contexto disponível.</p>
-<p>A versão atual é considerada <strong>experimental</strong> porque a associação não é necessariamente causal e os sinais mostraram instabilidade temporal para vários jogadores.</p>
-<hr>
-</section>
-<section id="structural-dependency-adiada" class="level3">
-<h3 class="anchored" data-anchor-id="structural-dependency-adiada">Structural Dependency — adiada</h3>
-<p>A intenção é medir dependência estrutural da equipa em relação a jogadores específicos.</p>
-<p>A métrica permanece <strong>adiada</strong> até existir uma modelação mais robusta do contexto, incluindo força do adversário e outras variáveis capazes de reduzir enviesamentos.</p>
-<hr>
-</section>
-<section id="new-signing-integration-adiada" class="level3">
-<h3 class="anchored" data-anchor-id="new-signing-integration-adiada">New Signing Integration — adiada</h3>
-<p>Pretende medir o custo temporário de integração de novos jogadores.</p>
-<p>A métrica permanece <strong>adiada</strong> por falta de amostra suficiente na época atual.</p>
-<hr>
-</section>
-<section id="impact-above-expectation-arquivada" class="level3">
-<h3 class="anchored" data-anchor-id="impact-above-expectation-arquivada">Impact Above Expectation — arquivada</h3>
-<p>Conceito arquivado.</p>
-<p>A formulação anterior procurava atribuir a jogadores individuais variações de resultado coletivo que não eram suficientemente identificáveis a nível individual.</p>
-<p>Não é usada na versão atual do projeto.</p>
-</section>
-</section>
-<section id="fontes" class="level2">
-<h2 class="anchored" data-anchor-id="fontes">Fontes</h2>
-<p>A base operacional combina várias fontes, dependendo da métrica e da cobertura disponível.</p>
-<p>Entre as fontes usadas no projeto encontram-se:</p>
-<ul>
-<li><strong>Flashscore</strong>;</li>
-<li><strong>SofaScore</strong>;</li>
-<li><strong>FotMob</strong>;</li>
-<li><strong>FBref</strong>;</li>
-<li><strong>OddAlerts</strong>;</li>
-<li>outros datasets públicos ou históricos quando necessários.</li>
-</ul>
-<p>Uma métrica só deve incorporar uma variável quando a sua definição, cobertura e consistência forem consideradas adequadas.</p>
-<p>A fonte usada numa métrica pode mudar entre versões, desde que essa alteração seja documentada.</p>
-</section>
-<section id="regras-metodológicas" class="level2">
-<h2 class="anchored" data-anchor-id="regras-metodológicas">Regras metodológicas</h2>
-<p>Cada nova métrica deve cumprir, tanto quanto possível, cinco critérios:</p>
-<ol type="1">
-<li><strong>Originalidade</strong> — responder a uma pergunta não apresentada diretamente noutras plataformas;</li>
-<li><strong>Relevância</strong> — representar uma dimensão futebolisticamente útil;</li>
-<li><strong>Robustez</strong> — não depender excessivamente de um único evento ou variável instável;</li>
-<li><strong>Explicabilidade</strong> — poder ser compreendida rapidamente;</li>
-<li><strong>Reprodutibilidade</strong> — ser possível reconstruir o valor a partir dos dados e da fórmula documentada.</li>
-</ol>
-<p>As métricas serão versionadas sempre que houver alterações relevantes de fórmula, fonte, baseline ou critérios de amostra.</p>
-<p>Uma métrica condicional deve permanecer vazia quando não é aplicável ou quando não existe cobertura suficiente. O projeto evita transformar ausência de informação em zero.</p>
+<div class="games-profile-preview">
+<div class="games-profile-copy">
+<div class="games-profile-kicker">
+EXPLORAR
+</div>
+<div class="games-profile-title">
+Mapa de perfis de jogo
+</div>
+<div class="games-profile-text">
+Compara a forma como o Benfica controla e cria em cada jogo.
+</div>
+<div class="games-profile-axis-key">
+<span><strong>GameGrip</strong> · controlo</span><span><strong>ChanceCraft</strong> · criação</span>
+</div>
+<a class="games-profile-link" href="perfil-jogos.html">Explorar perfis →</a>
+</div>
+<div class="games-profile-mini">
+<svg viewbox="0 0 360 215" role="img" aria-label="Mini mapa GameGrip por ChanceCraft">
+<rect x="1" y="1" width="358" height="213" rx="8" class="games-profile-bg"></rect><line x1="38" y1="176" x2="322" y2="176" class="games-profile-axis"></line><line x1="38" y1="176" x2="38" y2="40" class="games-profile-axis"></line><line x1="180.0" y1="40" x2="180.0" y2="176" class="games-profile-guide"></line><line x1="38" y1="108.0" x2="322" y2="108.0" class="games-profile-guide"></line><text x="180" y="204" text-anchor="middle" class="games-profile-axis-label">GameGrip →</text><text x="14" y="108" text-anchor="middle" transform="rotate(-90 14 108)" class="games-profile-axis-label">ChanceCraft →</text><circle cx="256.4" cy="80.4" r="4.5" class="games-profile-dot"></circle><circle cx="262.1" cy="73.0" r="4.5" class="games-profile-dot"></circle><circle cx="248.7" cy="109.4" r="4.5" class="games-profile-dot"></circle><circle cx="214.9" cy="153.8" r="4.5" class="games-profile-dot"></circle><circle cx="303.0" cy="74.0" r="4.5" class="games-profile-dot"></circle><circle cx="292.2" cy="85.8" r="4.5" class="games-profile-dot"></circle><circle cx="270.3" cy="71.0" r="7" class="games-profile-dot latest"></circle><text x="280.3" y="61.0" class="games-profile-latest-label">AGF</text>
+</svg>
+<div class="games-profile-current">
+<span>Jogo mais recente</span><strong>81.8 / 77.2</strong><small>GameGrip / ChanceCraft</small>
+</div>
+</div>
+</div>
 
 
 </section>

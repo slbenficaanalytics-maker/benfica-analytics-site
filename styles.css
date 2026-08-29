@@ -1,0 +1,5798 @@
+.player-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin: 1.2rem 0 1.6rem 0;
+}
+
+.player-highlight-card {
+  border: 1px solid #dddddd;
+  border-top: 4px solid #d40000;
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: #ffffff;
+}
+
+.player-highlight-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+.player-highlight-player {
+  font-weight: 700;
+  line-height: 1.2;
+  min-height: 2.4em;
+}
+
+.player-highlight-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.player-highlight-meta {
+  font-size: 0.78rem;
+  color: #777777;
+  margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+  .player-highlight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .player-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.player-profile-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  background: #ffffff;
+}
+
+.player-profile-header {
+  margin-bottom: 12px;
+}
+
+.player-profile-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.player-profile-meta {
+  font-size: 0.8rem;
+  color: #777777;
+  margin-top: 2px;
+}
+
+.player-profile-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 48px;
+  gap: 10px;
+  align-items: center;
+  margin: 7px 0;
+}
+
+.player-profile-label {
+  font-size: 0.82rem;
+  color: #555555;
+}
+
+.player-profile-bar-wrap {
+  height: 8px;
+  background: #eeeeee;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.player-profile-bar {
+  height: 100%;
+  background: #d00000;
+  border-radius: 999px;
+}
+
+.player-profile-score {
+  font-size: 0.82rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 600px) {
+  .player-profile-row {
+    grid-template-columns: 78px 1fr 42px;
+    gap: 8px;
+  }
+}
+
+.player-profile-selector-wrap {
+  margin: 1rem 0 0.8rem 0;
+}
+
+.player-profile-select-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+.player-profile-select {
+  min-width: 260px;
+  max-width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 0.95rem;
+}
+
+.player-profile-position {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #777777;
+  border: 1px solid #dddddd;
+  border-radius: 999px;
+  padding: 2px 7px;
+  vertical-align: middle;
+}
+
+.player-profile-bar-wrap {
+  position: relative;
+  height: 10px;
+  background: #eeeeee;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.player-profile-reference {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #999999;
+  z-index: 2;
+}
+
+.player-profile-bar {
+  position: relative;
+  height: 100%;
+  background: #d00000;
+  border-radius: 999px;
+  z-index: 1;
+}
+
+.player-profile-reference-label {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: #777777;
+}
+
+.gk-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(320px, 1.6fr);
+  gap: 24px;
+  border: 1px solid #dddddd;
+  border-top: 4px solid #d00000;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 1rem 0 1.5rem 0;
+  background: #ffffff;
+}
+
+.gk-main {
+  padding-right: 10px;
+}
+
+.gk-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.gk-meta {
+  margin-top: 4px;
+  font-size: 0.82rem;
+  color: #777777;
+}
+
+.gk-score-label {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #666666;
+}
+
+.gk-score {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.gk-score-context {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: #777777;
+}
+
+.gk-components {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 18px;
+}
+
+.gk-component {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 8px 0;
+  font-size: 0.86rem;
+}
+
+.gk-component span {
+  color: #666666;
+}
+
+.gk-component strong {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 700px) {
+  .gk-card {
+    grid-template-columns: 1fr;
+  }
+
+  .gk-components {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gk-history-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 12px 0;
+  background: #ffffff;
+}
+
+.gk-history-header {
+  margin-bottom: 12px;
+}
+
+.gk-history-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.gk-history-score span {
+  color: #666666;
+  font-weight: 700;
+}
+
+.gk-history-score strong {
+  font-size: 1.6rem;
+}
+
+.gk-history-components {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 18px;
+}
+
+.gk-history-components div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 6px 0;
+  font-size: 0.84rem;
+}
+
+.gk-history-components span {
+  color: #666666;
+}
+
+@media (max-width: 700px) {
+  .gk-history-components {
+    grid-template-columns: 1fr;
+  }
+}
+
+.league-context-row {
+  display: grid;
+  grid-template-columns: 1fr 90px 100px;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.league-context-label {
+  font-size: 0.88rem;
+  color: #555555;
+}
+
+.league-context-value {
+  font-weight: 700;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.league-context-rank {
+  font-size: 0.82rem;
+  color: #777777;
+  text-align: right;
+}
+
+.league-context-note {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: #888888;
+}
+
+/* ============================================================
+   PLAYER PAGE — RESPONSIVE REFINEMENTS
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   Destaques
+   ------------------------------------------------------------ */
+
+@media (max-width: 1100px) {
+
+  .player-highlight-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .player-highlight-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .player-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ------------------------------------------------------------
+   Perfil
+   ------------------------------------------------------------ */
+
+.player-profile-card {
+  padding:
+    clamp(16px, 2.5vw, 26px);
+}
+
+
+.player-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+
+.player-profile-name {
+  font-size:
+    clamp(1.05rem, 2vw, 1.3rem);
+}
+
+
+.player-profile-meta {
+  text-align: right;
+}
+
+
+.player-profile-row {
+  grid-template-columns:
+    minmax(130px, 180px)
+    1fr
+    52px;
+
+  gap: 14px;
+  margin: 10px 0;
+}
+
+
+.player-profile-label {
+  font-size: 0.86rem;
+}
+
+
+.player-profile-score {
+  font-weight: 700;
+}
+
+
+/* ------------------------------------------------------------
+   Seletor
+   ------------------------------------------------------------ */
+
+.player-profile-selector-wrap {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+.player-profile-select {
+  width: min(100%, 360px);
+}
+
+
+/* ------------------------------------------------------------
+   Mobile
+   ------------------------------------------------------------ */
+
+@media (max-width: 640px) {
+
+  .player-profile-header {
+    display: block;
+  }
+
+  .player-profile-meta {
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  .player-profile-row {
+    grid-template-columns:
+      92px
+      1fr
+      42px;
+
+    gap: 8px;
+  }
+
+  .player-profile-label {
+    font-size: 0.78rem;
+  }
+
+  .player-profile-score {
+    font-size: 0.78rem;
+  }
+
+}
+
+
+/* ------------------------------------------------------------
+   Tabelas responsivas
+   ------------------------------------------------------------ */
+
+.dataTables_wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+table.dataTable {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.dataTables_wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* ------------------------------------------------------------
+   Conteúdo geral
+   ------------------------------------------------------------ */
+
+.quarto-container {
+  max-width: 1400px;
+}
+
+/* ============================================================
+   TABELAS DE JOGADORES — RESPONSIVIDADE
+   ============================================================ */
+
+.dataTables_wrapper {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+table.dataTable {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+table.dataTable th:first-child,
+table.dataTable td:first-child {
+  min-width: 150px;
+  text-align: left;
+}
+
+table.dataTable th:not(:first-child),
+table.dataTable td:not(:first-child) {
+  white-space: nowrap;
+}
+
+table.dataTable th,
+table.dataTable td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ============================================================
+   PERFIL DO JOGADOR — IDENTIDADE VISUAL
+   ============================================================ */
+
+.player-profile-header-visual {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #d00000;
+}
+
+.player-profile-identity {
+  min-width: 0;
+}
+
+.player-profile-name {
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-weight: 700;
+}
+
+.player-profile-meta {
+  margin-top: 4px;
+  color: #777777;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 520px) {
+  .player-profile-header-visual {
+    grid-template-columns: 56px 1fr;
+    gap: 12px;
+  }
+
+  .player-profile-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================================================
+   PLAYER PROFILE — PHOTO VERSION
+   ============================================================ */
+
+.player-profile-header-visual {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+
+/* ------------------------------------------------------------
+   Foto
+   ------------------------------------------------------------ */
+
+.player-profile-photo-wrap {
+  width: 92px;
+  height: 92px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+.player-profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+
+.player-profile-avatar {
+  width: 92px;
+  height: 92px;
+
+  border-radius: 14px;
+
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #d00000;
+
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+
+.player-profile-avatar-fallback {
+  position: absolute;
+  inset: 0;
+}
+
+
+/* ------------------------------------------------------------
+   Identidade
+   ------------------------------------------------------------ */
+
+.player-profile-identity {
+  min-width: 0;
+}
+
+
+.player-profile-name {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+
+.player-profile-meta {
+  margin-top: 5px;
+  font-size: 0.84rem;
+  color: #777777;
+}
+
+
+/* ------------------------------------------------------------
+   Métricas
+   ------------------------------------------------------------ */
+
+.player-profile-metrics {
+  margin-top: 4px;
+}
+
+
+/* ------------------------------------------------------------
+   Contexto
+   ------------------------------------------------------------ */
+
+.player-profile-context {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+.player-profile-context-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+
+.player-profile-context-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 10px;
+}
+
+
+.player-profile-context-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fafafa;
+}
+
+
+.player-profile-context-label {
+  font-size: 0.76rem;
+  color: #666666;
+}
+
+
+.player-profile-context-value {
+  margin-top: 2px;
+  font-size: 1.05rem;
+  font-weight: 750;
+}
+
+
+.player-profile-context-status {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: #888888;
+}
+
+
+/* ------------------------------------------------------------
+   Mobile
+   ------------------------------------------------------------ */
+
+@media (max-width: 600px) {
+
+  .player-profile-header-visual {
+    grid-template-columns:
+      68px
+      minmax(0, 1fr);
+
+    gap: 12px;
+  }
+
+
+  .player-profile-photo-wrap,
+  .player-profile-avatar {
+    width: 68px;
+    height: 68px;
+  }
+
+
+  .player-profile-avatar {
+    border-radius: 11px;
+    font-size: 1.25rem;
+  }
+
+
+  .player-profile-context-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ============================================================
+   HOMEPAGE — LAYOUT
+   ============================================================ */
+
+body .page-columns {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .content {
+  max-width: 1160px;
+}
+
+/* ============================================================
+   HOMEPAGE — LAYOUT
+   ============================================================ */
+
+body .page-columns {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .content {
+  max-width: 1160px;
+}
+
+
+/* =========================================================
+   HOME HERO — MAIS DISCRETO
+   ========================================================= */
+
+.home-hero {
+  margin-top: 1.4rem;
+  margin-bottom: 1.8rem;
+
+  padding: 1.2rem 1.4rem;
+
+  background: #fafafa;
+
+  border: 1px solid #e5e5e5;
+  border-left: 3px solid #d00000;
+
+  border-radius: 8px;
+}
+
+.home-hero h2 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.home-hero p {
+  margin-bottom: 0.8rem;
+
+  max-width: 760px;
+
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.home-hero-tags {
+  gap: 0.35rem;
+}
+
+.home-hero-tags span {
+  padding: 0.18rem 0.55rem;
+  font-size: 0.7rem;
+}
+
+/* ============================================================
+   ÉPOCA — MATCH CARDS
+   ============================================================ */
+
+.season-match-card {
+  display: grid;
+  grid-template-columns: minmax(230px, 1.15fr) minmax(420px, 2fr);
+  gap: 24px;
+
+  padding: 18px 20px;
+  margin: 12px 0;
+
+  border: 1px solid #dddddd;
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+
+.season-match-head {
+  min-width: 0;
+}
+
+
+.season-match-meta {
+  margin-bottom: 7px;
+
+  font-size: 0.75rem;
+  font-weight: 650;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+
+.season-match-result {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+
+.season-match-opponent {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+
+.season-match-result strong {
+  flex: 0 0 auto;
+
+  font-size: 1.55rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+
+.season-match-xg {
+  margin-top: 6px;
+
+  font-size: 0.78rem;
+  color: #777777;
+}
+
+
+/* ------------------------------------------------------------
+   Métricas por jogo
+   ------------------------------------------------------------ */
+
+.season-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+
+.season-metric {
+  padding: 8px 10px;
+
+  border-left: 1px solid #eeeeee;
+}
+
+
+.season-metric span {
+  display: block;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #666666;
+}
+
+
+.season-metric strong {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+
+.season-metric small {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 0.65rem;
+  line-height: 1.2;
+  color: #888888;
+}
+
+
+.season-metric-muted {
+  opacity: 0.55;
+}
+
+
+/* ------------------------------------------------------------
+   Legenda
+   ------------------------------------------------------------ */
+
+.season-metric-legend,
+.season-history-note {
+  margin: 12px 2px 20px;
+
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: #777777;
+}
+
+
+/* ============================================================
+   CONTEXTO DA LIGA
+   ============================================================ */
+
+.league-context-card {
+  margin-top: 12px;
+  padding: 8px 18px 12px;
+
+  border: 1px solid #dddddd;
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+
+.league-context-row {
+  display: grid;
+  grid-template-columns: 1fr 90px 100px;
+  gap: 16px;
+
+  align-items: center;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.league-context-label {
+  font-size: 0.88rem;
+  color: #555555;
+}
+
+
+.league-context-value {
+  text-align: right;
+
+  font-size: 1rem;
+  font-weight: 750;
+
+  font-variant-numeric: tabular-nums;
+}
+
+
+.league-context-rank {
+  text-align: right;
+
+  font-size: 0.78rem;
+  color: #777777;
+}
+
+
+.league-context-note {
+  margin-top: 10px;
+
+  font-size: 0.7rem;
+  color: #888888;
+}
+
+
+/* ============================================================
+   ÉPOCA — MOBILE
+   ============================================================ */
+
+@media (max-width: 760px) {
+
+  .season-match-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+
+    padding: 15px;
+  }
+
+
+  .season-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+
+  .season-metric:nth-child(odd) {
+    border-left: 0;
+  }
+
+
+  .league-context-row {
+    grid-template-columns: 1fr 70px 80px;
+    gap: 8px;
+  }
+
+}
+
+
+@media (max-width: 460px) {
+
+  .season-metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .league-context-row {
+    grid-template-columns: 1fr auto;
+  }
+
+
+  .league-context-rank {
+    grid-column: 1 / -1;
+    text-align: left;
+    margin-top: -5px;
+  }
+
+}
+
+/* ============================================================
+   PLAYER TABLES — FULL WIDTH
+   ============================================================ */
+
+.dataTables_wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.dataTables_wrapper table.dataTable {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: auto !important;
+}
+
+
+/* Jogador — precisa de mais espaço */
+
+.dataTables_wrapper table.dataTable th:nth-child(1),
+.dataTables_wrapper table.dataTable td:nth-child(1) {
+  width: 22%;
+  min-width: 150px;
+  text-align: left;
+}
+
+
+/* Posição */
+
+.dataTables_wrapper table.dataTable th:nth-child(2),
+.dataTables_wrapper table.dataTable td:nth-child(2) {
+  width: 5%;
+  min-width: 45px;
+  text-align: center;
+}
+
+
+/* Minutos */
+
+.dataTables_wrapper table.dataTable th:nth-child(3),
+.dataTables_wrapper table.dataTable td:nth-child(3) {
+  width: 7%;
+  min-width: 55px;
+  text-align: right;
+}
+
+
+/* Métricas */
+
+.dataTables_wrapper table.dataTable th:nth-child(n+4):nth-child(-n+7),
+.dataTables_wrapper table.dataTable td:nth-child(n+4):nth-child(-n+7) {
+  width: 10%;
+  text-align: right;
+}
+
+
+/* Contribuição defensiva */
+
+.dataTables_wrapper table.dataTable th:nth-child(8),
+.dataTables_wrapper table.dataTable td:nth-child(8) {
+  width: 15%;
+  min-width: 135px;
+  text-align: right;
+}
+
+
+/* Amostra */
+
+.dataTables_wrapper table.dataTable th:nth-child(9),
+.dataTables_wrapper table.dataTable td:nth-child(9) {
+  width: 11%;
+  min-width: 110px;
+}
+
+
+/* Evitar que números partam em duas linhas */
+
+.dataTables_wrapper table.dataTable td:not(:first-child),
+.dataTables_wrapper table.dataTable th:not(:first-child) {
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   MOBILE / TABLET
+   Só aqui permitimos scroll horizontal
+   ============================================================ */
+
+@media (max-width: 800px) {
+
+  .dataTables_wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .dataTables_wrapper table.dataTable {
+    min-width: 780px !important;
+  }
+
+}
+
+/* ============================================================
+   PLAYER TABLE — ESPAÇO INFERIOR
+   ============================================================ */
+
+#tabela-completa .dataTables_wrapper {
+  padding-bottom: 18px;
+}
+
+#tabela-completa .dataTables_paginate {
+  margin-bottom: 4px;
+}
+
+/* ============================================================
+   PLAYER TABLE — ESPAÇO INFERIOR
+   ============================================================ */
+
+#tabela-completa .dataTables_wrapper {
+  padding-bottom: 18px;
+}
+
+#tabela-completa .dataTables_paginate {
+  margin-bottom: 4px;
+}
+
+/* ============================================================
+   HOMEPAGE — CONTEXTO DO JOGO
+   ============================================================ */
+
+.match-context-block {
+  margin: 1.4rem 0 2.2rem 0;
+}
+
+.match-context-title {
+  font-size: 1rem;
+  font-weight: 750;
+  margin-bottom: 2px;
+}
+
+.match-context-subtitle {
+  font-size: 0.72rem;
+  color: #888888;
+  margin-bottom: 10px;
+}
+
+.match-context-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.match-context-card {
+  padding: 11px 13px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.match-context-label {
+  font-size: 0.72rem;
+  font-weight: 650;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.match-context-values {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.match-context-values strong {
+  font-weight: 800;
+}
+
+.match-context-values span {
+  color: #aaaaaa;
+  font-weight: 400;
+}
+
+@media (max-width: 850px) {
+
+  .match-context-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 460px) {
+
+  .match-context-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ============================================================
+   HOMEPAGE — PRÓXIMOS JOGOS
+   ============================================================ */
+
+.next-games-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin: 1rem 0 0.8rem 0;
+}
+
+.next-game-card {
+  padding: 15px 17px;
+  border: 1px solid #dddddd;
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+.next-game-date {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+.next-game-opponent {
+  margin-top: 6px;
+  font-size: 1rem;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.next-game-meta {
+  margin-top: 5px;
+  font-size: 0.76rem;
+  color: #777777;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+
+  .next-games-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .next-games-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* ============================================================
+   LARGURA PRINCIPAL DO SITE
+   ============================================================ */
+
+body .quarto-container {
+  max-width: none !important;
+}
+
+/* Conteúdo principal das páginas full */
+body main.content {
+  width: min(1180px, calc(100% - 48px)) !important;
+  max-width: 1180px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* Ecrãs médios */
+@media (max-width: 900px) {
+
+  body main.content {
+    width: calc(100% - 32px) !important;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  body main.content {
+    width: calc(100% - 24px) !important;
+  }
+
+}
+
+/* ============================================================
+   NAVBAR — LAYOUT GLOBAL DEFINITIVO
+   ============================================================ */
+
+.navbar {
+  min-height: 64px;
+}
+
+/* Container que o Quarto gera dentro da navbar */
+.navbar .navbar-container,
+.navbar > .container-fluid,
+.navbar > .container-xxl {
+  width: 100% !important;
+  max-width: 1280px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+
+/* Marca */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-right: 28px !important;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+
+/* Símbolo */
+.navbar-brand img {
+  width: 34px !important;
+  height: 34px !important;
+  max-height: 34px !important;
+
+  object-fit: contain;
+}
+
+
+/* Links */
+.navbar-nav {
+  gap: 6px;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+
+  font-size: 0.95rem;
+}
+
+
+/* Pesquisa encostada à direita do container */
+.navbar .quarto-navbar-tools {
+  margin-left: auto !important;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  .navbar .navbar-container,
+  .navbar > .container-fluid,
+  .navbar > .container-xxl {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .navbar-brand img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+}
+
+/* ============================================================
+   METODOLOGIA — LEITURA
+   ============================================================ */
+
+body .page-columns {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* O corpo textual não deve ficar demasiado largo */
+#quarto-document-content {
+  line-height: 1.55;
+}
+
+/* ============================================================
+   METODOLOGIA — LAYOUT
+   ============================================================ */
+
+body:has(#quarto-margin-sidebar) #quarto-content {
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+body:has(#quarto-margin-sidebar) main.content {
+  max-width: 860px !important;
+  width: 100% !important;
+}
+
+body:has(#quarto-margin-sidebar) #quarto-margin-sidebar {
+  width: 220px;
+}/* ============================================================
+   CALENDÁRIO — TABELA
+   ============================================================ */
+
+#quarto-document-content .gt_table {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#quarto-document-content .gt_table table {
+  width: 100% !important;
+}
+
+/* ============================================================
+   DATATABLES — SORT ICONS
+   ============================================================ */
+
+table.dataTable thead > tr > th.sorting::before,
+table.dataTable thead > tr > th.sorting::after,
+table.dataTable thead > tr > th.sorting_asc::before,
+table.dataTable thead > tr > th.sorting_asc::after,
+table.dataTable thead > tr > th.sorting_desc::before,
+table.dataTable thead > tr > th.sorting_desc::after {
+  display: none !important;
+}
+
+table.dataTable thead > tr > th.sorting {
+  position: relative;
+  padding-right: 24px !important;
+}
+
+table.dataTable thead > tr > th.sorting::after {
+  display: inline-block !important;
+  content: "↕";
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.35;
+  font-size: 0.8rem;
+}
+
+table.dataTable thead > tr > th.sorting_asc::after {
+  display: inline-block !important;
+  content: "↑";
+  opacity: 0.75;
+}
+
+table.dataTable thead > tr > th.sorting_desc::after {
+  display: inline-block !important;
+  content: "↓";
+  opacity: 0.75;
+}
+
+/* ============================================================
+   ACABAMENTO FINAL — NAVBAR, TÍTULO E FOOTER
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   Marca na navbar
+   ------------------------------------------------------------ */
+
+.navbar-brand {
+  margin-right: 32px !important;
+  font-size: 1.08rem;
+  font-weight: 750;
+}
+
+
+/* Um pouco mais de espaço antes do menu */
+
+.navbar-nav {
+  gap: 7px;
+}
+
+
+/* ============================================================
+   HOMEPAGE — LOGO JUNTO AO TÍTULO
+   ============================================================ */
+
+/* Só é aplicado à página que contém o hero da homepage */
+body:has(.home-hero) .quarto-title h1.title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+body:has(.home-hero) .quarto-title h1.title::after {
+  content: "";
+
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+
+  background-image: url("images/benfica-analytics-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  flex: 0 0 38px;
+}
+
+@media (max-width: 600px) {
+
+  body:has(.home-hero) .quarto-title h1.title::after {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+}
+
+/* ------------------------------------------------------------
+   Mais ritmo vertical na homepage
+   ------------------------------------------------------------ */
+
+#época,
+#próximos-jogos,
+#jogadores,
+#guarda-redes,
+#metodologia {
+  margin-top: 2.6rem;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.nav-footer {
+  margin-top: 4rem;
+  padding: 1.35rem 24px;
+
+  border-top: 1px solid #dddddd;
+  background: #f7f7f7;
+
+  font-size: 0.76rem;
+  line-height: 1.6;
+  color: #666666;
+}
+
+.nav-footer-center {
+  width: 100%;
+  max-width: 1280px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+.nav-footer-left,
+.nav-footer-right {
+  display: none;
+}
+
+.nav-footer p {
+  margin: 0;
+}
+
+.nav-footer a {
+  color: #555555;
+  text-decoration: none;
+}
+
+.nav-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .quarto-title h1.title::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-footer {
+    text-align: left;
+  }
+
+}
+
+
+E no fim de `styles.css`:
+
+```css
+/* =========================================================
+   MATCH HEADLINE
+   ========================================================= */
+
+.match-headline {
+  margin: -0.4rem 0 1.8rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #d00000;
+  background: #fafafa;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #333;
+}
+
+.match-headline strong {
+  color: #222;
+}
+
+/* =========================================================
+   HOMEPAGE — GRANDES SECÇÕES
+   ========================================================= */
+
+.section-intro {
+  position: relative;
+  margin-top: 3.6rem;
+  margin-bottom: 1.5rem;
+  padding: 0.15rem 0 1rem 1.15rem;
+  border-bottom: 1px solid #dedede;
+}
+
+.section-intro::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  bottom: 1rem;
+  width: 4px;
+  border-radius: 3px;
+  background: #d00000;
+}
+
+.section-kicker {
+  margin-bottom: 0.15rem;
+  color: #777;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: #242424;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-description {
+  margin-top: 0.3rem;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* O primeiro capítulo não precisa de tanto espaço acima */
+.home-hero + .section-intro {
+  margin-top: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .section-intro {
+    margin-top: 2.8rem;
+    padding-left: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+  }
+}
+
+/* =========================================================
+   HOMEPAGE — SEPARAÇÃO DAS GRANDES SECÇÕES
+   ========================================================= */
+
+/*
+   Separadores principais:
+   ÚLTIMO JOGO / ÉPOCA / PLANTEL
+*/
+
+.section-intro {
+  margin-top: 4rem;
+  margin-bottom: 1.6rem;
+
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
+
+  border-top: 1px solid #dddddd;
+}
+
+
+/* Primeira secção: não precisa de tanto espaço acima */
+.home-hero + .section-intro {
+  margin-top: 2.5rem;
+}
+
+
+/* Pequeno título de categoria */
+.section-kicker {
+  margin-bottom: 0.25rem;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+
+  color: #8a8a8a;
+}
+
+
+/* Título principal da secção */
+.section-intro h2 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+
+/* Texto explicativo */
+.section-intro p {
+  margin-top: 0;
+
+  color: #6b6b6b;
+  font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   SUBSECÇÕES
+   ========================================================= */
+
+/*
+   Dá mais espaço antes de blocos como:
+   Contexto da Liga
+   Próximos jogos
+   Destaques
+   Jogador em destaque
+   Guarda-redes
+*/
+
+#contexto-da-liga,
+#próximos-jogos,
+#destaques-202627,
+#jogador-em-destaque,
+#guarda-redes {
+  margin-top: 2.6rem;
+}
+
+
+/* =========================================================
+   PRÓXIMOS JOGOS
+   ========================================================= */
+
+/*
+   Aproxima os cartões do respetivo título.
+*/
+
+#próximos-jogos + * {
+  margin-top: 1rem;
+}
+
+
+/* =========================================================
+   FUNDO VISUAL DAS GRANDES SECÇÕES
+   ========================================================= */
+
+/*
+   Em vez de envolver tudo em DIVs,
+   damos ao próprio separador uma faixa muito subtil.
+
+   Isto ajuda o olho a perceber imediatamente
+   que começou um novo capítulo.
+*/
+
+.section-intro {
+  position: relative;
+}
+
+.section-intro::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: -1.25rem;
+  right: -1.25rem;
+
+  background: #f8f8f8;
+
+  border-radius: 10px;
+
+  z-index: -1;
+}
+
+
+/*
+   Pequena marca vermelha no lado esquerdo.
+   Mantém a identidade visual sem transformar
+   o separador num cartão igual aos restantes.
+*/
+
+.section-intro::after {
+  content: "";
+
+  position: absolute;
+
+  left: -1.25rem;
+  top: 0;
+
+  width: 4px;
+  height: 100%;
+
+  background: #d00000;
+
+  border-radius: 4px 0 0 4px;
+}
+
+
+/* =========================================================
+   ESPAÇAMENTO ENTRE GRANDES CAPÍTULOS
+   ========================================================= */
+
+.section-intro:not(:first-of-type) {
+  margin-top: 4.5rem;
+}
+
+
+/* =========================================================
+   METODOLOGIA — FECHO DA HOMEPAGE
+   ========================================================= */
+
+#metodologia {
+  margin-top: 4.5rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid #dddddd;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .section-intro {
+    margin-top: 3rem;
+
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .section-intro::before {
+    left: -0.25rem;
+    right: -0.25rem;
+  }
+
+  .section-intro::after {
+    left: -0.25rem;
+  }
+
+  .section-intro h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+/* =========================================================
+   HOMEPAGE — METODOLOGIA / FECHO
+   ========================================================= */
+
+.home-methodology-callout {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+
+  padding: 1rem 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+
+  background: #fafafa;
+}
+
+.home-methodology-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.home-methodology-text strong {
+  font-size: 0.9rem;
+}
+
+.home-methodology-text span {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.home-methodology-link {
+  white-space: nowrap;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+
+  .home-methodology-callout {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+}
+
+#contexto-da-liga,
+#próximos-jogos {
+  font-size: 1.35rem;
+  margin-top: 2.4rem;
+}
+
+#destaques-202627,
+#jogador-em-destaque,
+#guarda-redes {
+  font-size: 1.35rem;
+}
+
+.home-methodology-text p {
+  margin: 0;
+}
+
+.home-methodology-text p + p {
+  margin-top: 0.15rem;
+}
+
+/* =========================================================
+   CONTEXTO DA LIGA — TIPOGRAFIA
+   ========================================================= */
+
+#contexto-da-liga + p {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #666;
+}
+
+.league-context-label {
+  font-size: 0.88rem;
+  color: #555;
+}
+
+.league-context-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.league-context-rank {
+  font-size: 0.78rem;
+  color: #777;
+}
+
+.league-context-note {
+  font-size: 0.72rem;
+  color: #888;
+}
+
+/* =========================================================
+   GUARDA-REDES — TIPOGRAFIA
+   ========================================================= */
+
+.gk-meta,
+.gk-score-context {
+  font-size: 0.78rem;
+}
+
+.gk-component span,
+.gk-history-components span {
+  font-size: 0.82rem;
+  color: #666;
+}
+
+.gk-component strong,
+.gk-history-components strong {
+  font-size: 0.9rem;
+}
+
+.gk-description {
+  margin-top: 1.2rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.gk-description p {
+  margin-top: 0;
+  margin-bottom: 0.65rem;
+}
+
+/* =========================================================
+   HOMEPAGE — AJUSTE TIPOGRÁFICO GLOBAL
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Resultado do último jogo
+   --------------------------------------------------------- */
+
+.match-score {
+  font-size: 1.35rem !important;
+}
+
+.match-score strong {
+  font-size: 1.55rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Métricas Core
+   --------------------------------------------------------- */
+
+.metric-card-value,
+.core-metric-value {
+  font-size: 1.9rem !important;
+}
+
+.metric-card-title,
+.core-metric-title {
+  font-size: 0.92rem !important;
+}
+
+.metric-card-subtitle,
+.core-metric-subtitle {
+  font-size: 0.78rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Contexto da Liga
+   --------------------------------------------------------- */
+
+#contexto-da-liga + p {
+  font-size: 0.88rem !important;
+  line-height: 1.45;
+  color: #666;
+}
+
+.league-context-label {
+  font-size: 0.82rem !important;
+}
+
+.league-context-value {
+  font-size: 0.9rem !important;
+}
+
+.league-context-rank {
+  font-size: 0.74rem !important;
+}
+
+.league-context-note {
+  font-size: 0.68rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Próximos jogos
+   --------------------------------------------------------- */
+
+#próximos-jogos {
+  font-size: 1.3rem !important;
+}
+
+#próximos-jogos ~ p a,
+a[href*="calendario"] {
+  font-size: 0.82rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Jogadores
+   --------------------------------------------------------- */
+
+#destaques-202627,
+#jogador-em-destaque,
+#guarda-redes {
+  font-size: 1.3rem !important;
+}
+
+a[href*="jogadores"] {
+  font-size: 0.82rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Tabs
+   --------------------------------------------------------- */
+
+.nav-tabs .nav-link {
+  font-size: 0.82rem !important;
+  padding: 0.45rem 0.75rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Guarda-redes
+   --------------------------------------------------------- */
+
+.gk-name {
+  font-size: 0.95rem !important;
+}
+
+.gk-meta,
+.gk-score-context {
+  font-size: 0.74rem !important;
+}
+
+.gk-score-label {
+  font-size: 0.8rem !important;
+}
+
+.gk-score {
+  font-size: 2rem !important;
+}
+
+.gk-component span,
+.gk-history-components span {
+  font-size: 0.78rem !important;
+}
+
+.gk-component strong,
+.gk-history-components strong {
+  font-size: 0.86rem !important;
+}
+
+.gk-description {
+  font-size: 0.84rem !important;
+  line-height: 1.45;
+}
+
+
+/* ---------------------------------------------------------
+   Links de chamada
+   --------------------------------------------------------- */
+
+.home-content a,
+main.content a {
+  text-underline-offset: 2px;
+}
+
+/* =========================================================
+   HOMEPAGE — HIERARQUIA TIPOGRÁFICA FINAL
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Grandes capítulos editoriais
+   --------------------------------------------------------- */
+
+.section-title {
+  font-size: 1.48rem !important;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 0.88rem !important;
+  line-height: 1.4;
+}
+
+
+/* ---------------------------------------------------------
+   Subsecções principais
+   --------------------------------------------------------- */
+
+#leitura-do-jogo,
+#contexto-da-liga,
+#próximos-jogos,
+#destaques-202627,
+#jogador-em-destaque,
+#guarda-redes {
+  font-size: 1.28rem !important;
+  line-height: 1.25;
+}
+
+
+/* ---------------------------------------------------------
+   Texto introdutório do Contexto da Liga
+   --------------------------------------------------------- */
+
+#contexto-da-liga + p {
+  margin-top: 0.35rem !important;
+  margin-bottom: 1rem !important;
+
+  font-size: 0.88rem !important;
+  line-height: 1.45 !important;
+  color: #555 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Destaques dos jogadores
+   --------------------------------------------------------- */
+
+#destaques-202627 {
+  margin-bottom: 1rem;
+}
+
+
+/* ---------------------------------------------------------
+   Links de navegação interna
+   --------------------------------------------------------- */
+
+a[href*="calendario"],
+a[href*="jogadores"] {
+  font-size: 0.82rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Último jogo
+   --------------------------------------------------------- */
+
+.match-meta {
+  font-size: 0.76rem !important;
+}
+
+.match-score {
+  font-size: 1.22rem !important;
+}
+
+.match-score strong {
+  font-size: 1.42rem !important;
+}
+
+.match-xg {
+  font-size: 0.78rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Core cards
+   --------------------------------------------------------- */
+
+.core-card-title,
+.metric-card-title {
+  font-size: 0.85rem !important;
+}
+
+.core-card-value,
+.metric-card-value {
+  font-size: 1.75rem !important;
+}
+
+.core-card-label,
+.metric-card-label {
+  font-size: 0.78rem !important;
+}
+
+.core-card-meta,
+.metric-card-meta {
+  font-size: 0.72rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Contexto do jogo
+   --------------------------------------------------------- */
+
+.context-card-label {
+  font-size: 0.76rem !important;
+}
+
+.context-card-value {
+  font-size: 1rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Tabs
+   --------------------------------------------------------- */
+
+.nav-tabs .nav-link {
+  font-size: 0.8rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Guarda-redes
+   --------------------------------------------------------- */
+
+.gk-name {
+  font-size: 0.92rem !important;
+}
+
+.gk-score {
+  font-size: 1.85rem !important;
+}
+
+.gk-component span,
+.gk-description,
+.gk-meta,
+.gk-score-context {
+  font-size: 0.78rem !important;
+}
+
+.gk-component strong {
+  font-size: 0.86rem !important;
+}
+
+/* =========================================================
+   HOMEPAGE — HIERARQUIA TIPOGRÁFICA FINAL
+   ========================================================= */
+
+/* Títulos H2 das secções normais */
+#contexto-da-liga > h2,
+#próximos-jogos > h2,
+#destaques-202627 > h2,
+#jogador-em-destaque > h2,
+#guarda-redes > h2,
+#leitura-do-jogo > h2 {
+  font-size: 1.28rem !important;
+  line-height: 1.25 !important;
+  margin-bottom: 0.8rem !important;
+}
+
+
+/* Texto introdutório do Contexto da Liga */
+#contexto-da-liga > p {
+  font-size: 0.90rem !important;
+  line-height: 1.45 !important;
+  color: #444 !important;
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+
+/* Links de ação */
+#próximos-jogos a,
+#jogador-em-destaque + p a,
+a[href*="calendario"],
+a[href*="jogadores"] {
+  font-size: 0.82rem !important;
+}
+
+
+/* Tabs das épocas */
+.nav-tabs .nav-link {
+  font-size: 0.80rem !important;
+  line-height: 1.2 !important;
+}
+
+
+/* Texto normal dentro da área de guarda-redes */
+#guarda-redes p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+
+/* Nome do guarda-redes */
+.gk-name {
+  font-size: 0.92rem !important;
+}
+
+
+/* Componentes do guarda-redes */
+.gk-component,
+.gk-meta,
+.gk-score-context {
+  font-size: 0.78rem !important;
+}
+
+
+/* BuildKeeper — número principal */
+.gk-score {
+  font-size: 1.8rem !important;
+}
+
+/* =========================================================
+   HOMEPAGE — EQUILÍBRIO TIPOGRÁFICO FINAL
+   ========================================================= */
+
+
+/* =========================================================
+   LEITURA DO JOGO — TEXTO COMPLETO
+   ========================================================= */
+
+#leitura-do-jogo p {
+  font-size: 0.90rem !important;
+  line-height: 1.48 !important;
+  margin-bottom: 0.8rem !important;
+}
+
+#leitura-do-jogo h2 {
+  font-size: 1.22rem !important;
+  margin-bottom: 0.45rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Leitura rápida
+   --------------------------------------------------------- */
+
+.match-headline,
+.match-quick-read {
+  font-size: 0.86rem !important;
+  line-height: 1.45 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Texto introdutório do Contexto da Liga
+   --------------------------------------------------------- */
+
+#contexto-da-liga > p {
+  font-size: 0.86rem !important;
+  line-height: 1.45 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Texto auxiliar dos grandes capítulos
+   --------------------------------------------------------- */
+
+.section-description {
+  font-size: 0.84rem !important;
+  line-height: 1.4 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Contexto do jogo
+   --------------------------------------------------------- */
+
+.context-card-label,
+.match-context-label {
+  font-size: 0.76rem !important;
+}
+
+.context-card-value,
+.match-context-value {
+  font-size: 0.96rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Próximos jogos
+   --------------------------------------------------------- */
+
+.next-match-date {
+  font-size: 0.72rem !important;
+}
+
+.next-match-opponent {
+  font-size: 0.88rem !important;
+}
+
+.next-match-meta {
+  font-size: 0.76rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Cards dos jogadores
+   --------------------------------------------------------- */
+
+.player-highlight-label {
+  font-size: 0.76rem !important;
+}
+
+.player-highlight-player {
+  font-size: 0.92rem !important;
+}
+
+.player-highlight-value {
+  font-size: 1.55rem !important;
+}
+
+.player-highlight-meta {
+  font-size: 0.74rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   Guarda-redes — descrição
+   --------------------------------------------------------- */
+
+.gk-description,
+#guarda-redes p {
+  font-size: 0.82rem !important;
+  line-height: 1.45 !important;
+}
+
+/* =========================================================
+   LEITURA DO JOGO — TEXTO
+   ========================================================= */
+
+.game-reading-text {
+  font-size: 0.90rem;
+  line-height: 1.48;
+  color: #333333;
+}
+
+.game-reading-text p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+/* =========================================================
+   HOMEPAGE — GRANDES CABEÇALHOS
+   ========================================================= */
+
+.section-intro {
+  position: relative;
+
+  margin-top: 3.8rem;
+  margin-bottom: 1.6rem;
+
+  padding: 1rem 1.2rem 1rem 1.35rem;
+
+  background: #f5f5f5;
+
+  border: 1px solid #e2e2e2;
+  border-left: 4px solid #d00000;
+
+  border-radius: 8px;
+}
+
+
+/* Desligar as versões antigas feitas com pseudo-elementos */
+.section-intro::before,
+.section-intro::after {
+  display: none !important;
+}
+
+
+/* ÚLTIMO JOGO / ÉPOCA 2026/27 / PLANTEL */
+.section-kicker {
+  margin-bottom: 0.18rem;
+
+  font-size: 0.70rem !important;
+  font-weight: 700;
+
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+
+  color: #888888;
+}
+
+
+/* Análise do jogo mais recente / Acompanhar a temporada / Jogadores */
+.section-title {
+  font-size: 1.42rem !important;
+  line-height: 1.2;
+
+  font-weight: 700;
+  color: #252525;
+}
+
+
+/* Texto explicativo por baixo */
+.section-description {
+  margin-top: 0.25rem;
+
+  font-size: 0.84rem !important;
+  line-height: 1.4;
+
+  color: #666666;
+}
+
+/* =========================================================
+   HOMEPAGE — HERO INICIAL MAIS LEVE
+   ========================================================= */
+
+.home-hero {
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+
+  padding: 0.75rem 1rem;
+
+  background: transparent !important;
+
+  border: 0 !important;
+  border-left: 3px solid #d00000 !important;
+
+  border-radius: 0 !important;
+}
+
+.home-hero h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+
+  font-size: 1.25rem !important;
+}
+
+.home-hero p {
+  max-width: 820px;
+
+  margin-bottom: 0.65rem;
+
+  font-size: 0.86rem !important;
+  line-height: 1.45;
+
+  color: #555555;
+}
+
+/* Último jogo — cartão branco com contorno leve */
+.match-hero {
+  background: #ffffff !important;
+
+  border: 1px solid #e2e2e2 !important;
+  border-left: 4px solid #d00000 !important;
+
+  border-radius: 8px !important;
+}
+
+/* =========================================================
+   TABELA DE JOGADORES — COMPACTA
+   ========================================================= */
+
+/* Texto da tabela */
+#tabela-completa table.dataTable {
+  font-size: 0.78rem !important;
+}
+
+
+/* Cabeçalhos */
+#tabela-completa table.dataTable thead th {
+  font-size: 0.76rem !important;
+  font-weight: 700 !important;
+}
+
+
+/* Linhas mais compactas */
+#tabela-completa table.dataTable th,
+#tabela-completa table.dataTable td {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+
+/* Search */
+#tabela-completa .dataTables_filter {
+  font-size: 0.76rem !important;
+  margin-bottom: 0.7rem;
+}
+
+
+/* Campo de pesquisa */
+#tabela-completa .dataTables_filter input {
+  height: 28px !important;
+  min-width: 180px;
+  padding: 3px 6px !important;
+
+  font-size: 0.76rem !important;
+}
+
+
+/* Ícones de ordenação ligeiramente mais discretos */
+#tabela-completa table.dataTable thead .sorting::before,
+#tabela-completa table.dataTable thead .sorting::after,
+#tabela-completa table.dataTable thead .sorting_asc::before,
+#tabela-completa table.dataTable thead .sorting_asc::after,
+#tabela-completa table.dataTable thead .sorting_desc::before,
+#tabela-completa table.dataTable thead .sorting_desc::after {
+  opacity: 0.35;
+}
+
+/* =========================================================
+   TABELA DE JOGADORES — ÍCONES DE ORDENAÇÃO
+   ========================================================= */
+
+#tabela-completa table.dataTable thead th {
+  position: relative !important;
+  padding-right: 20px !important;
+}
+
+
+/* Setas do DataTables */
+#tabela-completa table.dataTable thead > tr > th.sorting::before,
+#tabela-completa table.dataTable thead > tr > th.sorting::after,
+#tabela-completa table.dataTable thead > tr > th.sorting_asc::before,
+#tabela-completa table.dataTable thead > tr > th.sorting_asc::after,
+#tabela-completa table.dataTable thead > tr > th.sorting_desc::before,
+#tabela-completa table.dataTable thead > tr > th.sorting_desc::after {
+  right: 6px !important;
+  left: auto !important;
+
+  font-size: 0.58rem !important;
+  opacity: 0.28 !important;
+}
+
+
+/* Coluna Jogador: um pouco mais de espaço */
+#tabela-completa table.dataTable thead th:first-child {
+  padding-right: 24px !important;
+}
+/* ==========================================================
+   MATCHDAY — Último jogo
+   ========================================================== */
+
+.matchday-hero {
+  background: #090909;
+  color: #f3f3f3;
+  padding: 2.4rem;
+  margin-bottom: 2rem;
+  border-top: 3px solid #d00000;
+}
+
+.matchday-kicker {
+  color: #d00000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.matchday-result {
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 1.2rem;
+}
+
+.matchday-headline {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  max-width: 700px;
+}
+
+.matchday-meta {
+  margin-top: 1.5rem;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.matchday-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: #111;
+  color: #f2f2f2;
+  padding: 1.4rem;
+  border-top: 2px solid #d00000;
+}
+
+.metric-card-wide {
+  margin-bottom: 2rem;
+}
+
+.metric-label {
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.metric-value {
+  color: #e21b23;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-top: 0.65rem;
+}
+
+.sector-value {
+  font-size: 2.1rem;
+}
+
+.metric-note {
+  margin-top: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.spotlight-card {
+  background: #090909;
+  color: #f4f4f4;
+  padding: 2rem;
+  border-top: 3px solid #d00000;
+  margin-bottom: 1rem;
+}
+
+.spotlight-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.spotlight-metric {
+  margin-top: 0.3rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.spotlight-score {
+  margin-top: 1.2rem;
+  color: #e21b23;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.spotlight-score span {
+  color: #aaa;
+  font-size: 1.2rem;
+  margin-left: 0.25rem;
+}
+
+.spotlight-label {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.method-note {
+  color: #777;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  .matchday-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   HOMEPAGE V2 — Matchday + recent form
+   Append to styles.css
+   ========================================================= */
+
+.home-matchday {
+  background: #111214;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 32px;
+  margin: 1rem 0 2.8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-matchday::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: #d40000;
+}
+
+.home-matchday-kicker {
+  color: #e30613;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  margin-bottom: 5px;
+}
+
+.home-matchday-meta {
+  color: #a9adb3;
+  font-size: .84rem;
+  margin-bottom: 16px;
+}
+
+.home-matchday-score {
+  font-size: clamp(1.65rem, 4vw, 2.65rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -.025em;
+}
+
+.home-matchday-score span {
+  color: #ffffff;
+}
+
+.home-matchday-headline {
+  margin-top: 9px;
+  max-width: 760px;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  color: #d8dadd;
+}
+
+.home-matchday-insights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.home-matchday-insight {
+  border-top: 1px solid #35373b;
+  padding-top: 12px;
+}
+
+.home-matchday-insight-title {
+  color: #a9adb3;
+  font-size: .78rem;
+  line-height: 1.25;
+}
+
+.home-matchday-insight-value {
+  margin-top: 3px;
+  font-size: 1.75rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.home-matchday-insight-note {
+  color: #7f838a;
+  margin-top: 5px;
+  font-size: .74rem;
+  line-height: 1.3;
+}
+
+.home-matchday-link {
+  display: inline-block;
+  margin-top: 23px;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 650;
+  border-bottom: 1px solid #e30613;
+  padding-bottom: 2px;
+}
+
+.home-matchday-link:hover {
+  color: #e30613 !important;
+}
+
+.home-form-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, .8fr) minmax(420px, 1.7fr);
+  gap: 18px;
+  align-items: stretch;
+  margin: 1rem 0 2.8rem 0;
+}
+
+.home-form-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.home-form-card {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-top: 3px solid #d40000;
+  border-radius: 8px;
+  padding: 18px 16px;
+}
+
+.home-form-label {
+  color: #6c6f74;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.home-form-value {
+  margin-top: 7px;
+  color: #171717;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.home-form-note {
+  margin-top: 8px;
+  color: #7c7f83;
+  font-size: .72rem;
+  line-height: 1.35;
+}
+
+.home-form-strip {
+  min-height: 170px;
+  background: #f7f7f7;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 18px 16px 12px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.home-form-game {
+  min-width: 0;
+  text-align: center;
+}
+
+.home-form-bar-area {
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  border-bottom: 1px solid #bfc1c4;
+}
+
+.home-form-bar {
+  width: min(28px, 50%);
+  min-height: 4px;
+  background: #d40000;
+  border-radius: 3px 3px 0 0;
+}
+
+.home-form-bar.negative {
+  opacity: .38;
+}
+
+.home-form-game-value {
+  margin-top: 8px;
+  font-size: .82rem;
+  font-weight: 750;
+}
+
+.home-form-game-opponent {
+  margin-top: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #7b7e82;
+  font-size: .67rem;
+}
+
+@media (max-width: 800px) {
+  .home-matchday {
+    padding: 24px 21px;
+  }
+
+  .home-matchday-insights {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .home-form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .home-form-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .home-form-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .home-form-strip {
+    padding-left: 9px;
+    padding-right: 9px;
+    gap: 5px;
+  }
+
+  .home-form-game-opponent {
+    font-size: .6rem;
+  }
+}
+
+/* =========================================================
+   HOMEPAGE V5 — finishing pass
+   Append ONCE after homepage-v2-styles.css
+   ========================================================= */
+
+/* NAVBAR — slightly larger type and true vertical alignment */
+.navbar {
+  min-height: 62px;
+}
+
+.navbar .navbar-brand {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 42px;
+  line-height: 1 !important;
+}
+
+.navbar-nav {
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 11px !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  font-weight: 520;
+}
+
+.navbar .quarto-navbar-tools {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+}
+
+/* Recent form — real mini chart rather than decorative bars */
+.home-form-chart-card {
+  background: #f7f7f7;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 15px 17px 13px;
+  min-width: 0;
+}
+
+.home-form-chart-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  color: #707378;
+  font-size: .75rem;
+  font-weight: 650;
+}
+
+.home-form-chart-head strong {
+  color: #171717;
+  font-size: 1rem;
+}
+
+.home-form-chart {
+  width: 100%;
+  height: 116px;
+  display: block;
+  overflow: visible;
+  margin-top: 2px;
+}
+
+.home-form-chart-zero {
+  stroke: #c8cace;
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.home-form-chart-line {
+  fill: none;
+  stroke: #d40000;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-form-chart-dot {
+  fill: #d40000;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.home-form-chart-labels {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: -3px;
+}
+
+.home-form-chart-label {
+  min-width: 0;
+  text-align: center;
+}
+
+.home-form-chart-label strong {
+  display: block;
+  color: #242424;
+  font-size: .73rem;
+}
+
+.home-form-chart-label span {
+  display: block;
+  margin-top: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #85888c;
+  font-size: .62rem;
+}
+
+/* Compact goalkeeper teaser for homepage */
+.home-gk-card {
+  display: grid;
+  grid-template-columns: minmax(210px, 1fr) minmax(145px, .55fr) minmax(360px, 1.5fr);
+  gap: 22px;
+  align-items: center;
+  border: 1px solid #dedede;
+  border-top: 3px solid #d40000;
+  border-radius: 9px;
+  padding: 20px 22px;
+  background: #fff;
+}
+
+.home-gk-kicker {
+  color: #808388;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.home-gk-name {
+  margin-top: 5px;
+  color: #202124;
+  font-size: 1.12rem;
+  font-weight: 780;
+}
+
+.home-gk-meta {
+  margin-top: 3px;
+  color: #808388;
+  font-size: .76rem;
+}
+
+.home-gk-score strong {
+  display: block;
+  color: #202124;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.home-gk-score span {
+  display: block;
+  margin-top: 5px;
+  color: #85888c;
+  font-size: .68rem;
+}
+
+.home-gk-mini {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.home-gk-mini > div {
+  border-left: 1px solid #e2e2e2;
+  padding-left: 14px;
+}
+
+.home-gk-mini span,
+.home-gk-mini strong {
+  display: block;
+}
+
+.home-gk-mini span {
+  color: #7a7d82;
+  font-size: .69rem;
+  line-height: 1.2;
+}
+
+.home-gk-mini strong {
+  margin-top: 5px;
+  color: #242424;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .navbar-nav .nav-link {
+    justify-content: flex-start;
+    min-height: 38px;
+    padding: 0 8px !important;
+  }
+
+  .home-form-chart-label span {
+    font-size: .58rem;
+  }
+
+  .home-gk-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-gk-mini {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .home-gk-card {
+    grid-template-columns: 1fr;
+  }
+
+  .home-gk-mini {
+    grid-column: auto;
+  }
+}
+
+/* =========================================================
+   HOMEPAGE V6 — typography + future-proof form section
+   Append ONCE after homepage-v5-patch.css
+   ========================================================= */
+
+/* Keep section descriptions in the same UI typography as the site */
+.section-description {
+  font-family: var(--bs-body-font-family) !important;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: normal;
+  font-style: normal;
+}
+
+/* Leave room for future recent-form metrics without changing structure */
+.home-form-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-form-card {
+  min-width: 0;
+}
+
+@media (min-width: 1100px) {
+  .home-form-cards.form-expanded {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+/* =========================================================
+   JOGOS V1
+   Append once to styles.css
+   ========================================================= */
+
+.games-row {
+  display: grid;
+  grid-template-columns: 78px minmax(250px, 1.5fr) minmax(280px, 1.2fr) 110px;
+  gap: 22px;
+  align-items: center;
+  padding: 19px 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+.games-row:last-of-type {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.games-date strong,
+.games-date span {
+  display: block;
+}
+
+.games-date strong {
+  color: #232323;
+  font-size: .92rem;
+  text-transform: uppercase;
+}
+
+.games-date span {
+  margin-top: 2px;
+  color: #8a8d91;
+  font-size: .68rem;
+}
+
+.games-result {
+  color: #1f2022;
+  font-size: 1.03rem;
+  font-weight: 780;
+}
+
+.games-headline {
+  margin-top: 3px;
+  color: #55585d;
+  font-size: .88rem;
+}
+
+.games-meta {
+  margin-top: 5px;
+  color: #8a8d91;
+  font-size: .68rem;
+}
+
+.games-insights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.games-insight {
+  padding-left: 12px;
+  border-left: 2px solid #d40000;
+}
+
+.games-insight span,
+.games-insight strong {
+  display: block;
+}
+
+.games-insight span {
+  color: #7b7e82;
+  font-size: .66rem;
+  line-height: 1.2;
+}
+
+.games-insight strong {
+  margin-top: 3px;
+  color: #232323;
+  font-size: 1rem;
+}
+
+.games-action {
+  text-align: right;
+}
+
+.games-action a,
+.games-profile-callout a {
+  color: #d40000 !important;
+  text-decoration: none;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.games-action a:hover,
+.games-profile-callout a:hover {
+  text-decoration: underline;
+}
+
+.games-table-note {
+  margin: -.2rem 0 1rem;
+  color: #777a7f;
+  font-size: .82rem;
+}
+
+.games-profile-callout {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  margin: 1rem 0 2rem;
+  padding: 22px 24px;
+  background: #f5f5f5;
+  border-left: 4px solid #d40000;
+  border-radius: 8px;
+}
+
+.games-profile-kicker {
+  color: #85888c;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.games-profile-title {
+  margin-top: 4px;
+  color: #232323;
+  font-size: 1.18rem;
+  font-weight: 750;
+}
+
+.games-profile-text {
+  margin-top: 5px;
+  max-width: 720px;
+  color: #6d7075;
+  font-size: .82rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .games-row {
+    grid-template-columns: 66px minmax(0, 1fr) 100px;
+  }
+
+  .games-insights {
+    grid-column: 2 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .games-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px 0;
+  }
+
+  .games-date {
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+  }
+
+  .games-insights {
+    grid-column: auto;
+  }
+
+  .games-action {
+    text-align: left;
+  }
+
+  .games-profile-callout {
+    display: block;
+  }
+
+  .games-profile-callout a {
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+/* Matchday desktop mais compacto e alinhado com o resto do site */
+@media (min-width: 900px) {
+
+  body:has(.matchday-hero) main.content {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .matchday-hero {
+    padding: 24px 28px;
+  }
+
+  .matchday-result {
+    font-size: 2.3rem;
+  }
+
+  .matchday-headline {
+    font-size: 1.15rem;
+  }
+
+  .metric-card {
+    padding: 16px 18px;
+  }
+
+  .metric-value {
+    font-size: 1.8rem;
+  }
+
+  .spotlight-card {
+    padding: 20px 22px;
+  }
+}
+
+.games-profile-callout {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.games-profile-callout > a {
+  white-space: nowrap;
+  min-width: max-content;
+}/* =========================================================
+   JOGOS V2 — profile preview
+   Append once after jogos-v1-styles.css
+   ========================================================= */
+
+.games-profile-preview {
+  display: grid;
+  grid-template-columns: minmax(280px, .9fr) minmax(360px, 1.25fr);
+  gap: 30px;
+  align-items: center;
+  margin: 1rem 0 2rem;
+  padding: 24px 26px;
+  background: #f5f5f5;
+  border-left: 4px solid #d40000;
+  border-radius: 9px;
+}
+
+.games-profile-copy {
+  min-width: 0;
+}
+
+.games-profile-axis-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 15px;
+  color: #777a7f;
+  font-size: .72rem;
+}
+
+.games-profile-axis-key strong {
+  color: #383a3d;
+}
+
+.games-profile-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: #d40000 !important;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: .8rem;
+  font-weight: 750;
+}
+
+.games-profile-link:hover {
+  text-decoration: underline;
+}
+
+.games-profile-mini {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 118px;
+  gap: 14px;
+  align-items: center;
+}
+
+.games-profile-mini svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.games-profile-bg {
+  fill: #ffffff;
+  stroke: #dedede;
+}
+
+.games-profile-axis {
+  stroke: #bfc2c5;
+  stroke-width: 1;
+}
+
+.games-profile-guide {
+  stroke: #d7d9dc;
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.games-profile-axis-label {
+  fill: #8a8d91;
+  font-size: 9px;
+  font-weight: 650;
+}
+
+.games-profile-dot {
+  fill: #8e9399;
+  opacity: .72;
+}
+
+.games-profile-dot.latest {
+  fill: #d40000;
+  opacity: 1;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.games-profile-latest-label {
+  fill: #d40000;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.games-profile-current {
+  border-left: 1px solid #dddddd;
+  padding-left: 13px;
+}
+
+.games-profile-current span,
+.games-profile-current strong,
+.games-profile-current small {
+  display: block;
+}
+
+.games-profile-current span {
+  color: #85888c;
+  font-size: .65rem;
+}
+
+.games-profile-current strong {
+  margin-top: 5px;
+  color: #252525;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.games-profile-current small {
+  margin-top: 4px;
+  color: #8a8d91;
+  font-size: .58rem;
+  line-height: 1.25;
+}
+
+.games-profile-empty {
+  grid-template-columns: 1fr auto;
+}
+
+@media (max-width: 850px) {
+  .games-profile-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .games-profile-mini {
+    grid-template-columns: minmax(0, 1fr) 105px;
+  }
+}
+
+@media (max-width: 560px) {
+  .games-profile-mini {
+    grid-template-columns: 1fr;
+  }
+
+  .games-profile-current {
+    border-left: 0;
+    border-top: 1px solid #dddddd;
+    padding: 10px 0 0;
+  }
+}
+/* =========================================================
+   JOGADORES V2
+   Append once to styles.css
+   ========================================================= */
+
+.player-highlight-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gk-current-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 1rem 0;
+}
+
+.gk-current-grid .gk-history-card {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .player-highlight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gk-current-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .player-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   BENFICA ANALYTICS — FINAL POLISH
+   Append ONCE at the end of styles.css
+   ========================================================= */
+
+/* Unified UI typography */
+#quarto-document-content,
+#quarto-document-content .player-highlight-grid,
+#quarto-document-content .player-profile-card,
+#quarto-document-content .dataTables_wrapper,
+#quarto-document-content table.dataTable,
+#quarto-document-content .gt_table,
+#quarto-document-content .gt_table table {
+  font-family: var(--bs-body-font-family) !important;
+}
+
+/* Player highlights: 5 across on desktop, more compact */
+@media (min-width: 1200px) {
+  .player-highlight-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+}
+
+.player-highlight-card {
+  padding: 12px 14px !important;
+}
+
+.player-highlight-label {
+  font-size: .74rem !important;
+}
+
+.player-highlight-player {
+  font-size: .9rem !important;
+  min-height: 2.15em !important;
+}
+
+.player-highlight-value {
+  font-size: 1.45rem !important;
+  margin-top: 6px !important;
+}
+
+.player-highlight-meta {
+  font-size: .71rem !important;
+}
+
+/* Calendar links stay understated */
+.gt_table a {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+.gt_table a:hover {
+  color: #b00000 !important;
+  text-decoration: underline !important;
+}
+
+/* Result emphasis helpers */
+.result-line {
+  display: flex;
+  align-items: baseline;
+  gap: .32rem;
+  flex-wrap: wrap;
+}
+
+.result-team {
+  font-size: .92em;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.result-score {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .08em;
+  margin: 0 .04em;
+  white-space: nowrap;
+}
+
+.result-num {
+  font-size: 1.28em;
+  font-weight: 900;
+  line-height: .9;
+  letter-spacing: -.035em;
+  font-variant-numeric: tabular-nums;
+}
+
+.result-sep {
+  font-size: .95em;
+  font-weight: 700;
+  color: inherit !important;
+}
+
+.home-matchday-score,
+.home-matchday-score span,
+.home-matchday-score .result-sep {
+  color: #fff !important;
+}
+
+.games-result .result-num {
+  font-size: 1.22em;
+}
+
+.games-result .result-team {
+  font-size: 1em;
+}
+
+
+/* =========================================================
+   BENFICA ANALYTICS - RESULT SCORE FINAL
+   Casa à esquerda · score ao centro · fora à direita
+   ========================================================= */
+
+.result-line {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .42em;
+  max-width: 100%;
+}
+
+.result-team {
+  font-size: .78em;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.015em;
+}
+
+.result-score {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .10em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.result-num {
+  font-size: 1.34em;
+  font-weight: 900;
+  line-height: .86;
+  letter-spacing: -.045em;
+}
+
+.result-sep {
+  font-size: .82em;
+  font-weight: 600;
+  opacity: .82;
+  color: inherit !important;
+}
+
+.home-matchday-score.result-line,
+.matchday-result .result-line {
+  gap: .26em;
+}
+
+.home-matchday-score .result-team,
+.matchday-result .result-team {
+  font-size: .68em;
+}
+
+.home-matchday-score .result-num,
+.matchday-result .result-num {
+  font-size: 1.42em;
+}
+
+.home-matchday-score,
+.home-matchday-score *,
+.matchday-result,
+.matchday-result * {
+  color: #fff !important;
+}
+
+.games-result .result-line {
+  gap: .30em;
+}
+
+.games-result .result-team {
+  font-size: .9em;
+}
+
+.games-result .result-num {
+  font-size: 1.24em;
+}
+
+@media (max-width: 620px) {
+  .result-line {
+    gap: .25em;
+  }
+
+  .result-team {
+    font-size: .72em;
+  }
+
+  .result-num {
+    font-size: 1.22em;
+  }
+}
+
+
+/* =========================================================
+   BENFICA ANALYTICS - HOMEPAGE BRAND LOCKUP
+   Logo grande à esquerda de título + subtítulo
+   ========================================================= */
+
+body:has(.home-hero) .quarto-title {
+  display: grid !important;
+  grid-template-columns: 82px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 18px;
+  align-items: center;
+  width: 100%;
+}
+
+body:has(.home-hero) .quarto-title::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 74px;
+  height: 74px;
+  background-image: url("images/benfica-analytics-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  align-self: center;
+  justify-self: start;
+}
+
+body:has(.home-hero) .quarto-title h1.title {
+  grid-column: 2;
+  grid-row: 1;
+  display: block !important;
+  margin: 0 0 .18rem 0 !important;
+  line-height: 1.05;
+}
+
+body:has(.home-hero) .quarto-title h1.title::after {
+  content: none !important;
+  display: none !important;
+}
+
+body:has(.home-hero) .quarto-title .subtitle {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0 !important;
+  align-self: start;
+}
+
+@media (max-width: 650px) {
+  body:has(.home-hero) .quarto-title {
+    grid-template-columns: 58px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  body:has(.home-hero) .quarto-title::before {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+/* =========================================================
+   RESULTADOS — REFINAMENTO FINAL
+   ========================================================= */
+
+.result-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.34em;
+  max-width: 100%;
+}
+
+.result-team {
+  font-size: 0.82em !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.015em;
+}
+
+.result-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.12em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.result-num {
+  font-size: 1.18em !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.03em;
+}
+
+.result-sep {
+  font-size: 0.78em !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  position: relative;
+  top: -0.02em;
+  opacity: 0.78;
+}
+
+/* Homepage e Matchday */
+.home-matchday-score .result-team,
+.matchday-result .result-team {
+  font-size: 0.72em !important;
+}
+
+.home-matchday-score .result-num,
+.matchday-result .result-num {
+  font-size: 1.22em !important;
+}
+
+/* Página Jogos */
+.games-result .result-team {
+  font-size: 0.92em !important;
+}
+
+.games-result .result-num {
+  font-size: 1.12em !important;
+}
+
+.result-sep {
+  font-size: 0.68em !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  margin: 0 0.14em;
+  opacity: 0.68;
+}
+
+.result-sep {
+  font-size: 0.68em !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  margin: 0 0.14em;
+  opacity: 0.68;
+}
+
+/* =========================================================
+   BENFICA ANALYTICS - PT POLISH 3X3
+   ========================================================= */
+
+@media (min-width: 900px) {
+  .player-highlight-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 620px) {
+  .player-highlight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 619px) {
+  .player-highlight-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.gt_table .gt_col_heading {
+  font-size: 0.88rem !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+}
+
+.gt_table .gt_col_heading,
+.gt_table .gt_row {
+  font-family: var(--bs-body-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif) !important;
+}
+
+
+/* =========================================================
+   BENFICA ANALYTICS - UNIFIED TABLE STYLE
+   Aproxima GT / tabelas normais do estilo da tabela Jogadores
+   ========================================================= */
+
+/* ---------- GT tables ---------- */
+.gt_table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-family: var(--bs-body-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif) !important;
+  font-size: 0.92rem !important;
+  color: #2b2b2b !important;
+  background: #fff !important;
+  border: 1px solid #d9dde1 !important;
+}
+
+/* título/subtítulo interno de GT */
+.gt_table .gt_heading {
+  background: #fff !important;
+  border: 0 !important;
+  padding: 0.75rem 0.85rem 0.45rem !important;
+}
+
+.gt_table .gt_title {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  color: #2b2b2b !important;
+}
+
+.gt_table .gt_subtitle {
+  font-size: 0.82rem !important;
+  font-weight: 400 !important;
+  color: #666 !important;
+  margin-top: 0.15rem !important;
+}
+
+/* cabeçalho de colunas */
+.gt_table .gt_col_headings {
+  border-top: 0 !important;
+  border-bottom: 1px solid #bfc4c9 !important;
+  background: #fff !important;
+}
+
+.gt_table .gt_col_heading {
+  font-size: 0.84rem !important;
+  font-weight: 700 !important;
+  line-height: 1.12 !important;
+  padding: 0.52rem 0.55rem !important;
+  color: #303030 !important;
+  background: #fff !important;
+  vertical-align: bottom !important;
+}
+
+/* corpo */
+.gt_table .gt_row {
+  font-size: 0.92rem !important;
+  line-height: 1.2 !important;
+  padding: 0.48rem 0.55rem !important;
+  border-top: 0 !important;
+  border-bottom: 1px solid #eceff1 !important;
+}
+
+/* zebra suave, como Jogadores */
+.gt_table tbody tr:nth-child(odd) td {
+  background: #f7f7f7 !important;
+}
+
+.gt_table tbody tr:nth-child(even) td {
+  background: #fff !important;
+}
+
+/* links sem aparência demasiado forte */
+.gt_table a {
+  color: inherit !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.gt_table a:hover {
+  text-decoration: underline !important;
+}
+
+/* tira linhas pesadas típicas do GT */
+.gt_table .gt_table_body {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.gt_table .gt_sourcenotes,
+.gt_table .gt_footnotes {
+  font-size: 0.78rem !important;
+  color: #777 !important;
+  background: #fff !important;
+}
+
+/* ---------- Markdown / HTML tables ---------- */
+.quarto-document-content table:not(.dataTable):not(.gt_table) {
+  width: 100%;
+  font-family: var(--bs-body-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif);
+  font-size: 0.92rem;
+  border-collapse: collapse;
+}
+
+.quarto-document-content table:not(.dataTable):not(.gt_table) th {
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 0.52rem 0.55rem;
+  border-bottom: 1px solid #bfc4c9;
+}
+
+.quarto-document-content table:not(.dataTable):not(.gt_table) td {
+  padding: 0.48rem 0.55rem;
+  border-bottom: 1px solid #eceff1;
+}
+
+.quarto-document-content table:not(.dataTable):not(.gt_table) tbody tr:nth-child(odd) {
+  background: #f7f7f7;
+}
+\n
+/* =========================================================
+   BENFICA ANALYTICS - MATCHDAY V2
+   Single-card, mobile-first match analysis
+   ========================================================= */
+
+.ba-match-wrap {
+  max-width: 1080px;
+  margin: 0 auto 2rem;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(227, 6, 19, .09), transparent 30%),
+    linear-gradient(180deg, #101113 0%, #0d0e10 100%);
+  color: #f4f4f4;
+  border-top: 4px solid #e30613;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,.14);
+  overflow: hidden;
+}
+
+.ba-match-hero {
+  padding: 2rem 2.2rem 1.8rem;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.ba-kicker,
+.ba-metric-group,
+.ba-spotlight-kicker {
+  color: #ef2630;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.ba-result {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  margin-top: .9rem;
+  flex-wrap: wrap;
+}
+
+.ba-team {
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.ba-score {
+  display: inline-flex;
+  align-items: center;
+  gap: .22em;
+  white-space: nowrap;
+}
+
+.ba-score strong {
+  color: #fff;
+  font-size: clamp(2.1rem, 5vw, 3.6rem);
+  font-weight: 800;
+  line-height: .9;
+}
+
+.ba-score strong:first-child {
+  color: #ef2630;
+}
+
+.ba-score span {
+  color: #85888d;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 400;
+}
+
+.ba-headline {
+  margin-top: 1rem;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 700;
+}
+
+.ba-meta {
+  margin-top: .45rem;
+  color: #9da0a5;
+  font-size: .92rem;
+}
+
+.ba-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: .8rem 1.2rem .2rem;
+}
+
+.ba-metric {
+  min-width: 0;
+  padding: 1.25rem 1rem 1.35rem;
+  border-right: 1px solid rgba(255,255,255,.09);
+  border-bottom: 1px solid rgba(255,255,255,.09);
+}
+
+.ba-metric:nth-child(3n) {
+  border-right: 0;
+}
+
+.ba-metric-wide {
+  grid-column: span 2;
+}
+
+.ba-metric-label {
+  color: #d4d5d7;
+  font-size: .92rem;
+  margin-top: .45rem;
+}
+
+.ba-metric-value {
+  color: #ef2630;
+  font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -.035em;
+  margin-top: .45rem;
+}
+
+.ba-metric-subtitle {
+  color: #9b9da1;
+  font-size: .8rem;
+  line-height: 1.35;
+  margin-top: .55rem;
+  max-width: 28rem;
+}
+
+.ba-spotlight {
+  margin: 1.1rem 2.2rem 0;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid rgba(227,6,19,.30);
+  border-radius: 14px;
+  background: rgba(227,6,19,.045);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ba-spotlight-name {
+  margin-top: .35rem;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: 800;
+}
+
+.ba-spotlight-metric {
+  color: #aeb0b3;
+  margin-top: .15rem;
+  font-size: .9rem;
+}
+
+.ba-spotlight-score {
+  text-align: right;
+  flex: 0 0 auto;
+}
+
+.ba-spotlight-score strong {
+  color: #ef2630;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  line-height: .9;
+}
+
+.ba-spotlight-score span {
+  color: #999ca1;
+  font-weight: 700;
+}
+
+.ba-spotlight-level {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  background: rgba(227,6,19,.18);
+  color: #ff767d;
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.ba-method-note {
+  margin-top: 1rem;
+  padding: 1rem 2.2rem 1.15rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: #85888d;
+  font-size: .78rem;
+}
+
+.ba-method-note a {
+  color: #bfc1c4;
+}
+
+@media (max-width: 820px) {
+  .ba-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ba-metric:nth-child(3n) {
+    border-right: 1px solid rgba(255,255,255,.09);
+  }
+
+  .ba-metric:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .ba-metric-wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .ba-match-wrap {
+    margin-left: -.35rem;
+    margin-right: -.35rem;
+    border-radius: 0 0 14px 14px;
+  }
+
+  .ba-match-hero {
+    padding: 1.35rem 1.05rem 1.2rem;
+  }
+
+  .ba-kicker {
+    font-size: .61rem;
+  }
+
+  .ba-result {
+    gap: .38rem;
+  }
+
+  .ba-team {
+    font-size: 1.15rem;
+  }
+
+  .ba-score strong {
+    font-size: 2rem;
+  }
+
+  .ba-headline {
+    font-size: 1rem;
+  }
+
+  .ba-meta {
+    font-size: .78rem;
+  }
+
+  .ba-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: .35rem .55rem 0;
+  }
+
+  .ba-metric {
+    padding: .9rem .65rem 1rem;
+  }
+
+  .ba-metric-group {
+    font-size: .56rem;
+  }
+
+  .ba-metric-label {
+    font-size: .76rem;
+    line-height: 1.18;
+  }
+
+  .ba-metric-value {
+    font-size: 1.5rem;
+  }
+
+  .ba-metric-subtitle {
+    font-size: .68rem;
+  }
+
+  .ba-metric-wide {
+    grid-column: span 2;
+  }
+
+  .ba-spotlight {
+    margin: .75rem .75rem 0;
+    padding: 1rem;
+    align-items: flex-end;
+  }
+
+  .ba-spotlight-name {
+    font-size: 1.12rem;
+  }
+
+  .ba-spotlight-metric {
+    font-size: .74rem;
+  }
+
+  .ba-spotlight-score strong {
+    font-size: 1.9rem;
+  }
+
+  .ba-method-note {
+    padding: .9rem 1rem 1rem;
+    font-size: .68rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .ba-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ba-metric,
+  .ba-metric:nth-child(2n),
+  .ba-metric:nth-child(3n) {
+    border-right: 0;
+  }
+
+  .ba-metric-wide {
+    grid-column: span 1;
+  }
+}
+
+/* =========================================================
+   MATCHDAY V2 — dashboard escuro
+   Objetivo: dar fundo preto, blocos compactos e melhor contraste
+   ========================================================= */
+
+.matchday-dashboard {
+  margin-top: 1.8rem;
+  background: #06080c;
+  color: #f3f4f6;
+  border: 1px solid #171b22;
+  border-left: 6px solid #c40000;
+  border-radius: 22px;
+  padding: 1.6rem 1.5rem 1.4rem;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.20);
+}
+
+.matchday-hero {
+  margin-bottom: 1.4rem;
+}
+
+.matchday-kicker {
+  color: #ff2b2b;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+
+.matchday-result {
+  margin-bottom: 0.85rem;
+}
+
+.matchday-result .result-line {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.matchday-result .result-team {
+  color: #f5f5f5;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.matchday-result .result-score {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+}
+
+.matchday-result .result-num {
+  color: #ffffff;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+}
+
+.matchday-result .result-sep {
+  color: #d8d8d8;
+  font-size: clamp(2.1rem, 4vw, 3.3rem);
+  font-weight: 500;
+  line-height: 1;
+  display: inline-block;
+  transform: translateY(-0.08em);
+}
+
+.matchday-headline {
+  color: #f5f5f5;
+  font-size: clamp(1.18rem, 2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0.65rem;
+}
+
+.matchday-meta {
+  color: #9da3ae;
+  font-size: 0.96rem;
+  line-height: 1.35;
+}
+
+.matchday-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem 1.1rem;
+  margin-top: 1.2rem;
+}
+
+.metric-card {
+  background: #0b0e13;
+  border: 1px solid #1c212b;
+  border-top: 3px solid #ff2b2b;
+  border-radius: 16px;
+  padding: 1rem 1rem 0.95rem;
+  min-height: 142px;
+}
+
+.metric-group {
+  color: #ff2b2b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.55rem;
+}
+
+.metric-label {
+  color: #b8bec8;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 0.45rem;
+}
+
+.metric-value {
+  color: #ff2b2b;
+  font-size: clamp(2rem, 3.2vw, 3.1rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  margin-bottom: 0.35rem;
+}
+
+.metric-note {
+  color: #9da3ae;
+  font-size: 0.94rem;
+  line-height: 1.4;
+}
+
+.player-spotlight-card {
+  margin-top: 1.15rem;
+  background: #0b0e13;
+  border: 1px solid #1c212b;
+  border-top: 3px solid #ff2b2b;
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.player-spotlight-kicker {
+  color: #ff2b2b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+.player-spotlight-name {
+  color: #f5f5f5;
+  font-size: clamp(1.6rem, 3vw, 2.7rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 0.35rem;
+}
+
+.player-spotlight-metric {
+  color: #b8bec8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.player-spotlight-score-wrap {
+  text-align: right;
+}
+
+.player-spotlight-score {
+  color: #ff2b2b;
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.player-spotlight-score small {
+  color: #c3c7ce;
+  font-size: 0.44em;
+  font-weight: 700;
+}
+
+.player-spotlight-band {
+  display: inline-block;
+  margin-top: 0.45rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 43, 43, 0.14);
+  color: #ff8e8e;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.matchday-method-note {
+  margin-top: 0.95rem;
+  color: #8f96a1;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.matchday-method-note a {
+  color: #c9ced6;
+  text-decoration: underline;
+}
+
+@media (max-width: 980px) {
+  .matchday-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .player-spotlight-card {
+    grid-template-columns: 1fr;
+  }
+
+  .player-spotlight-score-wrap {
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .matchday-dashboard {
+    padding: 1.1rem 1rem 1rem;
+    border-radius: 18px;
+  }
+
+  .matchday-result .result-line {
+    gap: 0.55rem;
+  }
+
+  .matchday-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .metric-card {
+    min-height: auto;
+    padding: 0.9rem 0.9rem 0.85rem;
+  }
+
+  .player-spotlight-card {
+    padding: 1rem 0.95rem;
+  }
+}
+
+/* =========================================================
+   BENFICA ANALYTICS — MATCHDAY V3
+   ========================================================= */
+.ba3-card{max-width:1080px;margin:1.25rem auto 2rem;color:#f6f6f6;background:radial-gradient(circle at 88% 4%,rgba(227,6,19,.13),transparent 28%),linear-gradient(180deg,#111215 0%,#090a0c 100%);border:1px solid #1b1e23;border-top:4px solid #e30613;border-radius:18px;overflow:hidden;box-shadow:0 18px 44px rgba(0,0,0,.18)}
+.ba3-hero{padding:2rem 2rem 1.75rem;border-bottom:1px solid rgba(255,255,255,.09)}
+.ba3-kicker,.ba3-group,.ba3-player-kicker{color:#ef2a33;font-size:.70rem;font-weight:800;letter-spacing:.13em}
+.ba3-result{display:flex;align-items:baseline;flex-wrap:wrap;gap:.55rem;margin-top:.9rem}
+.ba3-team{font-size:clamp(1.45rem,2.8vw,2.35rem);font-weight:800;line-height:1;letter-spacing:-.035em}
+.ba3-score{display:inline-flex;align-items:center;gap:.27em;white-space:nowrap}
+.ba3-score strong{color:#fff;font-size:clamp(2.35rem,4.6vw,3.8rem);font-weight:850;line-height:.9;letter-spacing:-.04em}
+.ba3-score strong:first-child{color:#ef2a33}
+.ba3-score span{color:#9a9da2;font-size:clamp(1rem,2vw,1.55rem);font-weight:400}
+.ba3-headline{margin-top:1rem;font-size:clamp(1.05rem,1.8vw,1.35rem);font-weight:700}
+.ba3-meta{margin-top:.42rem;color:#92969d;font-size:.88rem}
+.ba3-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:.55rem 1.1rem 0}
+.ba3-metric{display:grid;grid-template-columns:42px minmax(0,1fr);gap:.85rem;align-items:start;min-width:0;padding:1.15rem .9rem 1.2rem;border-right:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.ba3-metric:nth-child(3n){border-right:0}.ba3-wide{grid-column:span 2}
+.ba3-icon,.ba3-player-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08)}
+.ba3-icon svg,.ba3-player-icon svg{width:21px;height:21px;fill:none;stroke:#ef2a33;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ba3-metric-copy{min-width:0}.ba3-label{color:#d1d3d6;font-size:.88rem;font-weight:600;margin-top:.35rem;line-height:1.25}
+.ba3-value{color:#ef2a33;font-size:clamp(1.65rem,2.6vw,2.2rem);font-weight:850;line-height:1;letter-spacing:-.035em;margin-top:.42rem}
+.ba3-note{color:#90949b;font-size:.76rem;line-height:1.35;margin-top:.48rem}
+.ba3-player{margin:1rem 1.8rem 0;padding:1.15rem 1.25rem;display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:1rem;align-items:center;border:1px solid rgba(227,6,19,.27);border-radius:14px;background:rgba(227,6,19,.045)}
+.ba3-player-icon{width:46px;height:46px}.ba3-player-name{margin-top:.32rem;font-size:clamp(1.35rem,2.2vw,1.9rem);font-weight:800}
+.ba3-player-metric{margin-top:.12rem;color:#a7aab0;font-size:.85rem}.ba3-player-score{text-align:right;white-space:nowrap}
+.ba3-player-score strong{color:#ef2a33;font-size:clamp(2.2rem,3.8vw,3rem);line-height:.9;font-weight:850}.ba3-player-score span{color:#9fa2a7;font-size:.9rem;font-weight:700}
+.ba3-player-score small{display:inline-block;margin-top:.45rem;padding:.25rem .6rem;border-radius:999px;background:rgba(227,6,19,.18);color:#ff858a;font-size:.72rem;font-weight:700}
+.ba3-footer{margin-top:1rem;padding:.9rem 1.8rem 1rem;border-top:1px solid rgba(255,255,255,.07);color:#83878e;font-size:.74rem}.ba3-footer a{color:#b7bac0}
+@media(max-width:820px){.ba3-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ba3-metric:nth-child(3n){border-right:1px solid rgba(255,255,255,.08)}.ba3-metric:nth-child(2n){border-right:0}.ba3-wide{grid-column:span 2}}
+@media(max-width:560px){.ba3-card{margin:.75rem -.2rem 1.5rem;border-radius:14px}.ba3-hero{padding:1.25rem .95rem 1.15rem}.ba3-kicker{font-size:.58rem}.ba3-result{gap:.38rem}.ba3-team{font-size:1.05rem}.ba3-score strong{font-size:1.9rem}.ba3-score span{font-size:.9rem}.ba3-headline{font-size:.96rem}.ba3-meta{font-size:.74rem}.ba3-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:.35rem .45rem 0}.ba3-metric{grid-template-columns:30px minmax(0,1fr);gap:.55rem;padding:.78rem .5rem .88rem}.ba3-icon{width:28px;height:28px}.ba3-icon svg{width:16px;height:16px}.ba3-group{font-size:.48rem}.ba3-label{font-size:.70rem}.ba3-value{font-size:1.36rem}.ba3-note{font-size:.62rem}.ba3-wide{grid-column:span 2}.ba3-player{margin:.7rem .65rem 0;padding:.9rem;grid-template-columns:38px minmax(0,1fr) auto;gap:.65rem}.ba3-player-icon{width:36px;height:36px}.ba3-player-name{font-size:1rem}.ba3-player-metric{font-size:.66rem}.ba3-player-score strong{font-size:1.65rem}.ba3-player-score span{font-size:.68rem}.ba3-footer{padding:.8rem .9rem .9rem;font-size:.62rem}}
+@media(max-width:390px){.ba3-grid{grid-template-columns:1fr}.ba3-metric,.ba3-metric:nth-child(2n),.ba3-metric:nth-child(3n){border-right:0}.ba3-wide{grid-column:span 1}.ba3-player{grid-template-columns:34px 1fr}.ba3-player-score{grid-column:2;text-align:left}}
+
+/* =========================================================
+   BENFICA ANALYTICS — MATCHDAY V3
+   ========================================================= */
+
+.ba3-card{
+  max-width:1160px;
+  width:min(1160px, 100%);
+  margin:1.25rem auto 2rem;
+  color:#f6f6f6;
+  background:
+    radial-gradient(circle at 88% 4%, rgba(227,6,19,.13), transparent 28%),
+    linear-gradient(180deg,#111215 0%,#090a0c 100%);
+  border:1px solid #1b1e23;
+  border-top:4px solid #e30613;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 18px 44px rgba(0,0,0,.18);
+}
+
+.ba3-hero{
+  padding:2rem 2.15rem 1.75rem;
+  border-bottom:1px solid rgba(255,255,255,.09);
+}
+
+.ba3-kicker,
+.ba3-group,
+.ba3-player-kicker{
+  color:#ef2a33;
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.ba3-result{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:.55rem;
+  margin-top:.9rem;
+}
+
+.ba3-team{
+  font-size:clamp(1.7rem,2.8vw,2.8rem);
+  font-weight:800;
+  line-height:1;
+  letter-spacing:-.035em;
+}
+
+.ba3-score{
+  display:inline-flex;
+  align-items:baseline;
+  gap:.22em;
+  white-space:nowrap;
+}
+
+.ba3-score strong{
+  color:#fff;
+  font-size:clamp(2.9rem,4.4vw,4.7rem);
+  font-weight:820;
+  line-height:.9;
+  letter-spacing:-.04em;
+}
+
+.ba3-score strong:first-child{
+  color:#ef2a33;
+}
+
+.ba3-score span{
+  color:#a7abb2;
+  font-size:clamp(1.15rem,1.85vw,1.7rem);
+  font-weight:500;
+  line-height:1;
+  transform:translateY(-.03em);
+}
+
+.ba3-headline{
+  margin-top:1rem;
+  color:#f3f4f6;
+  font-size:clamp(1.25rem,2vw,1.95rem);
+  line-height:1.2;
+  font-weight:760;
+}
+
+.ba3-meta{
+  margin-top:.6rem;
+  color:#9ba1aa;
+  font-size:.98rem;
+}
+
+.ba3-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+  padding:.7rem 1.45rem 0;
+}
+
+.ba3-metric{
+  display:grid;
+  grid-template-columns:58px minmax(0,1fr);
+  gap:.9rem;
+  padding:1.4rem 1rem 1.3rem;
+  border-right:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  min-height:170px;
+}
+
+.ba3-metric:nth-child(3n){
+  border-right:none;
+}
+
+.ba3-icon{
+  width:50px;
+  height:50px;
+  border-radius:999px;
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(255,255,255,.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.02);
+}
+
+.ba3-icon svg{
+  width:24px;
+  height:24px;
+  stroke:#ff313b;
+  fill:none;
+  stroke-width:1.9;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.ba3-copy{
+  min-width:0;
+}
+
+.ba3-label{
+  margin-top:.18rem;
+  color:#f0f1f3;
+  font-size:1rem;
+  line-height:1.25;
+  font-weight:700;
+}
+
+.ba3-value{
+  margin-top:.5rem;
+  color:#ff313b;
+  font-size:clamp(2.25rem,3.2vw,3.6rem);
+  line-height:.94;
+  font-weight:850;
+  letter-spacing:-.04em;
+}
+
+.ba3-note{
+  margin-top:.35rem;
+  color:#9da3ae;
+  font-size:1rem;
+  line-height:1.35;
+}
+
+.ba3-wide{
+  grid-column:span 2;
+}
+
+.ba3-player{
+  margin:.95rem 1.45rem 0;
+  padding:1.25rem 1.35rem;
+  border:1px solid rgba(255,49,59,.38);
+  border-radius:18px;
+  background:linear-gradient(180deg,rgba(227,6,19,.08),rgba(227,6,19,.03));
+  display:grid;
+  grid-template-columns:54px minmax(0,1fr) auto;
+  gap:1rem;
+  align-items:center;
+}
+
+.ba3-player-icon{
+  width:52px;
+  height:52px;
+  border-radius:999px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.ba3-player-icon svg{
+  width:24px;
+  height:24px;
+  stroke:#ff313b;
+  fill:none;
+  stroke-width:1.9;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.ba3-player-name{
+  color:#f5f5f6;
+  font-size:clamp(1.7rem,2.3vw,2.4rem);
+  line-height:1.05;
+  font-weight:800;
+}
+
+.ba3-player-metric{
+  margin-top:.35rem;
+  color:#b7bcc6;
+  font-size:1rem;
+}
+
+.ba3-player-score{
+  text-align:right;
+}
+
+.ba3-player-score strong{
+  color:#ff313b;
+  font-size:clamp(2.6rem,4vw,4.2rem);
+  line-height:.9;
+  letter-spacing:-.04em;
+  font-weight:850;
+}
+
+.ba3-player-score span{
+  color:#b5bac3;
+  font-size:.42em;
+  font-weight:700;
+}
+
+.ba3-player-band{
+  margin-top:.5rem;
+  display:inline-block;
+  padding:.42rem .82rem;
+  background:rgba(255,49,59,.16);
+  color:#ff9aa0;
+  border-radius:999px;
+  font-size:.92rem;
+  font-weight:700;
+}
+
+.ba3-footer{
+  padding:1rem 1.45rem 1.1rem;
+  border-top:1px solid rgba(255,255,255,.08);
+  color:#8f96a1;
+  font-size:.93rem;
+  line-height:1.45;
+}
+
+.ba3-footer a{
+  color:#c9ced6;
+  text-decoration:underline;
+}
+
+@media (max-width: 980px){
+  .ba3-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .ba3-metric{
+    border-right:1px solid rgba(255,255,255,.08);
+  }
+
+  .ba3-metric:nth-child(3n){
+    border-right:1px solid rgba(255,255,255,.08);
+  }
+
+  .ba3-metric:nth-child(2n){
+    border-right:none;
+  }
+
+  .ba3-wide{
+    grid-column:span 2;
+  }
+
+  .ba3-player{
+    grid-template-columns:54px minmax(0,1fr);
+  }
+
+  .ba3-player-score{
+    grid-column:1 / -1;
+    text-align:left;
+    padding-left:64px;
+  }
+}
+
+@media (max-width: 560px){
+  .ba3-card{
+    margin:.75rem auto 1.5rem;
+    border-radius:14px;
+  }
+
+  .ba3-hero{
+    padding:1.25rem .95rem 1.15rem;
+  }
+
+  .ba3-kicker{
+    font-size:.62rem;
+  }
+
+  .ba3-result{
+    gap:.38rem;
+  }
+
+  .ba3-team{
+    font-size:1.18rem;
+  }
+
+  .ba3-score strong{
+    font-size:2.45rem;
+  }
+
+  .ba3-score span{
+    font-size:1rem;
+  }
+
+  .ba3-headline{
+    font-size:1rem;
+  }
+
+  .ba3-meta{
+    font-size:.78rem;
+  }
+
+  .ba3-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    padding:.35rem .45rem 0;
+  }
+
+  .ba3-metric{
+    grid-template-columns:36px minmax(0,1fr);
+    gap:.62rem;
+    padding:.82rem .58rem .9rem;
+    min-height:auto;
+  }
+
+  .ba3-icon{
+    width:34px;
+    height:34px;
+  }
+
+  .ba3-icon svg{
+    width:18px;
+    height:18px;
+  }
+
+  .ba3-group{
+    font-size:.54rem;
+  }
+
+  .ba3-label{
+    font-size:.78rem;
+  }
+
+  .ba3-value{
+    font-size:1.7rem;
+  }
+
+  .ba3-note{
+    font-size:.68rem;
+  }
+
+  .ba3-wide{
+    grid-column:span 2;
+  }
+
+  .ba3-player{
+    margin:.7rem .65rem 0;
+    padding:.9rem;
+    grid-template-columns:40px minmax(0,1fr) auto;
+    gap:.65rem;
+  }
+
+  .ba3-player-icon{
+    width:38px;
+    height:38px;
+  }
+
+  .ba3-player-icon svg{
+    width:18px;
+    height:18px;
+  }
+
+  .ba3-player-name{
+    font-size:1rem;
+  }
+
+  .ba3-player-metric{
+    font-size:.68rem;
+  }
+
+  .ba3-player-score strong{
+    font-size:1.8rem;
+  }
+
+  .ba3-player-score span{
+    font-size:.7rem;
+  }
+
+  .ba3-player-band{
+    font-size:.72rem;
+    padding:.35rem .6rem;
+  }
+
+  .ba3-footer{
+    padding:.8rem .9rem .9rem;
+    font-size:.66rem;
+  }
+}
+
+/* =========================================================
+   MATCHDAY V3 — ajuste final de proporções
+   ========================================================= */
+
+/* Ícones maiores */
+.ba3-icon {
+  width: 54px !important;
+  height: 54px !important;
+}
+
+.ba3-icon svg {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+.ba3-player-icon {
+  width: 52px !important;
+  height: 52px !important;
+}
+
+.ba3-player-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+/* Resultado principal mais contido */
+.ba3-team {
+  font-size: clamp(1.35rem, 2.2vw, 2.05rem) !important;
+}
+
+.ba3-score strong {
+  font-size: clamp(2.1rem, 3.6vw, 3.15rem) !important;
+}
+
+.ba3-score span {
+  font-size: clamp(.95rem, 1.5vw, 1.25rem) !important;
+}
+
+/* Valores das métricas menores */
+.ba3-value {
+  font-size: clamp(1.65rem, 2.35vw, 2.45rem) !important;
+}
+
+/* Continuidade por setor precisa ainda mais contenção */
+.ba3-metric .ba3-value {
+  line-height: 1.02 !important;
+}
+
+/* Jogador em destaque */
+.ba3-player-score strong {
+  font-size: clamp(2rem, 3vw, 2.9rem) !important;
+}
+
+.ba3-player-name {
+  font-size: clamp(1.25rem, 1.9vw, 1.75rem) !important;
+}
+
+/* Títulos e textos voltam a uma escala mais discreta */
+.ba3-group {
+  font-size: .68rem !important;
+}
+
+.ba3-label {
+  font-size: .88rem !important;
+}
+
+.ba3-note {
+  font-size: .78rem !important;
+}
+
+.ba3-headline {
+  font-size: clamp(1rem, 1.5vw, 1.22rem) !important;
+}
+
+.ba3-meta {
+  font-size: .82rem !important;
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .ba3-icon {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .ba3-icon svg {
+    width: 19px !important;
+    height: 19px !important;
+  }
+
+  .ba3-team {
+    font-size: 1rem !important;
+  }
+
+  .ba3-score strong {
+    font-size: 1.8rem !important;
+  }
+
+  .ba3-value {
+    font-size: 1.35rem !important;
+  }
+
+  .ba3-player-score strong {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* =========================================================
+   MATCHDAY V3 — micro-ajuste final
+   ========================================================= */
+
+/* Mais espaço entre nomes das equipas e o resultado */
+.ba3-result {
+  gap: 1.25rem !important;
+}
+
+.ba3-score {
+  gap: 0.32em !important;
+}
+
+/* Ícones ligeiramente maiores */
+.ba3-icon {
+  width: 58px !important;
+  height: 58px !important;
+}
+
+.ba3-icon svg {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.ba3-player-icon {
+  width: 56px !important;
+  height: 56px !important;
+}
+
+.ba3-player-icon svg {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+/* Títulos pequenos das secções */
+.ba3-group,
+.ba3-player-kicker {
+  font-size: 0.76rem !important;
+  letter-spacing: 0.14em !important;
+  font-weight: 850 !important;
+}
+
+/* Mantém o resultado equilibrado */
+.ba3-team {
+  font-size: clamp(1.35rem, 2.15vw, 2rem) !important;
+}
+
+.ba3-score strong {
+  font-size: clamp(2.05rem, 3.45vw, 3rem) !important;
+}
+
+.ba3-score span {
+  font-size: clamp(.92rem, 1.4vw, 1.18rem) !important;
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .ba3-result {
+    gap: 0.72rem !important;
+  }
+
+  .ba3-icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .ba3-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .ba3-group {
+    font-size: 0.58rem !important;
+  }
+}
+
+/* =========================================================
+   RESULTADO — afinação final do hífen e espaçamento
+   ========================================================= */
+
+/* V3 / cartões escuros */
+.ba3-result {
+  gap: 1.45rem !important;
+}
+
+.ba3-score {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.42em !important;
+}
+
+.ba3-score span {
+  display: inline-block !important;
+  line-height: 1 !important;
+  transform: translateY(-0.06em) !important;
+  margin: 0 0.08em !important;
+}
+
+/* versões antigas / restantes sítios com resultado */
+.result-line {
+  gap: 1.45rem !important;
+}
+
+.result-score {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.42em !important;
+}
+
+.result-sep {
+  display: inline-block !important;
+  line-height: 1 !important;
+  transform: translateY(-0.06em) !important;
+  margin: 0 0.08em !important;
+}
+
+/* =========================================================
+   TABLET — 768–1100 px
+   Menu recolhido + largura/margens consistentes
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+  /* ---------- NAVBAR: comporta-se como mobile ---------- */
+
+  .navbar-expand-lg {
+    flex-wrap: wrap !important;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    display: block !important;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+    flex-basis: 100% !important;
+    width: 100% !important;
+  }
+
+  .navbar-expand-lg .navbar-collapse.show {
+    display: flex !important;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column !important;
+    width: 100% !important;
+    padding-top: .6rem;
+  }
+
+  /* ---------- TOC lateral ---------- */
+
+  #quarto-margin-sidebar {
+    display: none !important;
+  }
+
+  /* ---------- CONTEÚDO ---------- */
+
+  #quarto-content.page-columns {
+    display: block !important;
+  }
+
+  #quarto-document-content {
+    width: calc(100% - 72px) !important;
+    max-width: 960px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* páginas full devem obedecer à mesma margem */
+  body.fullcontent #quarto-document-content,
+  .page-layout-full #quarto-document-content {
+    width: calc(100% - 72px) !important;
+    max-width: 960px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* =========================================================
+   TABLET FINAL — margens e largura consistentes
+   768px a 1100px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+  :root {
+    --ba-tablet-gutter: clamp(28px, 4.5vw, 48px);
+  }
+
+  /* Remove grelhas laterais do Quarto nesta largura */
+  #quarto-content,
+  #quarto-content.page-columns,
+  .page-columns {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+
+  /* TOC lateral deixa de ocupar largura */
+  #quarto-margin-sidebar,
+  .quarto-margin-sidebar,
+  nav[role="doc-toc"] {
+    display: none !important;
+  }
+
+  /* Todas as páginas usam a mesma área útil */
+  main.content,
+  #quarto-document-content,
+  body.fullcontent #quarto-document-content,
+  .page-layout-full #quarto-document-content {
+    width: calc(100% - (2 * var(--ba-tablet-gutter))) !important;
+    max-width: 960px !important;
+    min-width: 0 !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* Impede filhos largos de forçarem a página para fora */
+  #quarto-document-content > *,
+  main.content > * {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Gráficos, imagens, widgets */
+  img,
+  svg,
+  canvas,
+  iframe {
+    max-width: 100% !important;
+  }
+
+  /* Tabelas: nunca cortam a página */
+  .table-responsive,
+  .gt_table,
+  .dataTables_wrapper {
+    max-width: 100% !important;
+  }
+
+  .table-responsive,
+  .dataTables_wrapper {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+
+/* Um pouco mais compacto especificamente entre 768 e 850 */
+@media (min-width: 768px) and (max-width: 850px) {
+
+  :root {
+    --ba-tablet-gutter: 28px;
+  }
+
+  main.content,
+  #quarto-document-content,
+  body.fullcontent #quarto-document-content,
+  .page-layout-full #quarto-document-content {
+    width: calc(100% - 56px) !important;
+  }
+}
+
+/* =========================================================
+   TABLET — páginas com TOC
+   Corrige Jogos / Metodologia entre 768 e 1100 px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+  /* O TOC continua no DOM, mesmo escondido:
+     usamos isso para identificar estas páginas */
+  body:has(#quarto-margin-sidebar) #quarto-content.page-columns {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  body:has(#quarto-margin-sidebar) main.content,
+  body:has(#quarto-margin-sidebar) #quarto-document-content {
+    display: block !important;
+
+    width: calc(100% - 80px) !important;
+    max-width: 920px !important;
+    min-width: 0 !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    grid-column: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  body:has(#quarto-margin-sidebar) #quarto-margin-sidebar {
+    display: none !important;
+  }
+
+  /* Evita que blocos internos forcem largura excessiva */
+  body:has(#quarto-margin-sidebar) main.content > *,
+  body:has(#quarto-margin-sidebar) #quarto-document-content > * {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+/* 768–850: margem um pouco menor */
+@media (min-width: 768px) and (max-width: 850px) {
+
+  body:has(#quarto-margin-sidebar) main.content,
+  body:has(#quarto-margin-sidebar) #quarto-document-content {
+    width: calc(100% - 56px) !important;
+  }
+}
