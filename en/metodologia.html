@@ -208,6 +208,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style id="ba-page-local-final">
+
+@media (min-width: 1101px) {
+  main#quarto-document-content.content {
+    transform: translateY(31px) !important;
+  }
+}
+
+</style>
+<div class="section-intro ba-page-hero">
+<div class="section-kicker">
+METHODOLOGY
+</div>
+<h1>
+Methodology
+</h1>
+<p>
+Principles, metrics, definitions and reading rules used in the project.
+</p>
+</div>
 <section id="project-principle" class="level2">
 <h2 class="anchored" data-anchor-id="project-principle">Project principle</h2>
 <p><strong>Benfica Analytics</strong> studies dimensions of SL Benfica’s performance that are not directly visible in the final score or in the most common statistics.</p>
@@ -541,8 +561,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   wrap.append(pt, en);
 
+  const tools = document.querySelector(".navbar .quarto-navbar-tools");
   const nav = document.querySelector(".navbar .navbar-container, .navbar .container-fluid, .navbar");
-  if (nav) nav.appendChild(wrap);
+  if (tools) tools.appendChild(wrap);
+  else if (nav) nav.appendChild(wrap);
   else {
     wrap.style.position = "fixed";
     wrap.style.top = "12px";

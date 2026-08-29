@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="ba3-card">
 <header class="ba3-hero">
 <div class="ba3-kicker">
-BENFICA ANALYTICS · ANÁLISE DO JOGO
+BENFICA ANALYTICS · ANÁLISE DO ÚLTIMO JOGO
 </div>
 <div class="ba3-result">
 <span class="ba3-team">AGF</span><span class="ba3-score"><strong>1</strong><span>–</span><strong>3</strong></span><span class="ba3-team">BENFICA</span>
@@ -433,8 +433,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   wrap.append(pt, en);
 
+  const tools = document.querySelector(".navbar .quarto-navbar-tools");
   const nav = document.querySelector(".navbar .navbar-container, .navbar .container-fluid, .navbar");
-  if (nav) nav.appendChild(wrap);
+  if (tools) tools.appendChild(wrap);
+  else if (nav) nav.appendChild(wrap);
   else {
     wrap.style.position = "fixed";
     wrap.style.top = "12px";

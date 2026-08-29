@@ -214,6 +214,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style id="ba-page-local-final">
+
+@media (min-width: 1101px) {
+  .section-intro.ba-page-hero {
+    margin-top: 2.25rem !important;
+  }
+}
+
+</style>
+<div class="section-intro ba-page-hero">
+<div class="section-kicker">
+METODOLOGIA
+</div>
+<h1>
+Metodologia
+</h1>
+<p>
+Princípios, métricas, definições e regras de leitura do projeto.
+</p>
+</div>
 <section id="princípio-do-projeto" class="level2">
 <h2 class="anchored" data-anchor-id="princípio-do-projeto">Princípio do projeto</h2>
 <p>O <strong>Benfica Analytics</strong> procura estudar dimensões do desempenho do SL Benfica que não são diretamente visíveis no resultado final ou nas estatísticas mais comuns.</p>
@@ -756,8 +776,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   wrap.append(pt, en);
 
+  const tools = document.querySelector(".navbar .quarto-navbar-tools");
   const nav = document.querySelector(".navbar .navbar-container, .navbar .container-fluid, .navbar");
-  if (nav) nav.appendChild(wrap);
+  if (tools) tools.appendChild(wrap);
+  else if (nav) nav.appendChild(wrap);
   else {
     wrap.style.position = "fixed";
     wrap.style.top = "12px";

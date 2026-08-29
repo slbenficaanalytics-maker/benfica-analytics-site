@@ -5925,3 +5925,1107 @@ body:has(.home-hero) .quarto-title .subtitle {
     grid-template-columns: 1fr;
   }
 }
+
+.home-matchday.home-matchday-split > .home-matchday-main {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.home-matchday.home-matchday-split > .home-matchday-recent {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+@media (max-width: 900px) {
+  .home-matchday.home-matchday-split > .home-matchday-main,
+  .home-matchday.home-matchday-split > .home-matchday-recent {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+
+
+
+/* BA_FINAL_CLOSEOUT_V2 */
+
+body:has(.ba3-card) #title-block-header,
+body:has(.games-row) #title-block-header {
+  display: none !important;
+}
+
+.page-layout-full #quarto-document-content > .section-intro {
+  margin-top: 2.35rem !important;
+  margin-bottom: 1.05rem !important;
+}
+
+.page-layout-full #quarto-document-content > h2 {
+  margin-top: 2.15rem !important;
+}
+
+.page-layout-full #quarto-document-content > .section-intro + h2 {
+  margin-top: 1.05rem !important;
+}
+
+.page-layout-full .home-matchday {
+  margin-bottom: 2.55rem !important;
+}
+
+.page-layout-full .home-form-layout {
+  margin-bottom: 2.45rem !important;
+}
+
+.page-layout-full .next-games-grid {
+  margin-bottom: .9rem !important;
+}
+
+@media (min-width: 1101px) {
+  :root {
+    --ba-desktop-content: 1000px;
+  }
+
+  main.content,
+  #quarto-document-content,
+  body.fullcontent #quarto-document-content,
+  .page-layout-full #quarto-document-content {
+    width: min(calc(100% - 64px), var(--ba-desktop-content)) !important;
+    max-width: var(--ba-desktop-content) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  body:has(#quarto-margin-sidebar) #quarto-content.page-columns {
+    width: min(calc(100% - 64px), 1280px) !important;
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(#quarto-margin-sidebar) main.content,
+  body:has(#quarto-margin-sidebar) #quarto-document-content {
+    width: min(100%, var(--ba-desktop-content)) !important;
+    max-width: var(--ba-desktop-content) !important;
+  }
+}
+
+.games-quicknav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .7rem;
+  margin: 1rem 0 1.45rem;
+}
+
+.games-quick-card {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 18px;
+  align-items: center;
+  gap: .65rem;
+  min-height: 62px;
+  padding: .7rem .8rem;
+  border: 1px solid #dedede;
+  border-top: 2px solid #d40000;
+  border-radius: 7px;
+  background: #fafafa;
+  color: #222 !important;
+  text-decoration: none !important;
+}
+
+.games-quick-card:hover {
+  background: #f4f4f4;
+  border-color: #cfcfcf;
+}
+
+.games-quick-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  color: #d40000;
+  font-weight: 800;
+}
+
+.games-quick-card strong {
+  display: block;
+  font-size: .84rem;
+  line-height: 1.15;
+}
+
+.games-quick-card small {
+  display: block;
+  margin-top: .15rem;
+  color: #777;
+  font-size: .69rem;
+}
+
+.games-quick-card b {
+  color: #d40000;
+  font-size: .9rem;
+}
+
+.ba-scroll-anchor {
+  scroll-margin-top: 72px;
+  height: 0;
+}
+
+.navbar .quarto-navbar-tools {
+  display: flex !important;
+  align-items: center !important;
+  gap: .35rem !important;
+}
+
+.navbar .quarto-navbar-tools #ba-lang-switcher {
+  order: 0;
+  margin: 0 !important;
+}
+
+.navbar .quarto-navbar-tools .quarto-search-button,
+.navbar .quarto-navbar-tools #quarto-search {
+  order: 1;
+}
+
+.js-plotly-plot,
+.js-plotly-plot .plotly,
+.js-plotly-plot text {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+@media (max-width: 700px) {
+  .games-quicknav {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* BA_GAMES_WIDTH_AND_HOME_RESPONSIVE_V3 */
+
+@media (min-width: 1101px) {
+  body:has(.games-row) #quarto-content.page-columns {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 210px !important;
+    column-gap: 34px !important;
+    width: min(calc(100% - 64px), 1320px) !important;
+    max-width: 1320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(.games-row) main.content,
+  body:has(.games-row) #quarto-document-content {
+    grid-column: 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+  }
+
+  body:has(.games-row) #quarto-margin-sidebar {
+    grid-column: 2 !important;
+    width: 210px !important;
+  }
+}
+
+body:has(.games-row) #quarto-document-content {
+  padding-top: .5rem !important;
+}
+
+body:has(.games-row) .section-intro:first-of-type {
+  margin-top: .55rem !important;
+}
+
+.games-quicknav-preview {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px !important;
+  margin: .85rem 0 1.5rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.games-preview-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 92px;
+  grid-template-rows: 1fr auto;
+  gap: 6px 14px;
+  min-height: 116px;
+  padding: 16px 16px 12px;
+  border: 1px solid #dedede;
+  border-top: 3px solid #d40000;
+  border-radius: 8px;
+  background: #fafafa;
+  color: #222 !important;
+  text-decoration: none !important;
+}
+
+.games-preview-card:hover {
+  background: #f5f5f5;
+  border-color: #cfcfcf;
+}
+
+.games-preview-kicker {
+  color: #8a8d92;
+  font-size: .69rem;
+  font-weight: 800;
+  letter-spacing: .10em;
+}
+
+.games-preview-title {
+  margin-top: 3px;
+  font-size: .98rem;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.games-preview-note {
+  margin-top: 5px;
+  color: #73777d;
+  font-size: .73rem;
+  line-height: 1.3;
+}
+
+.games-preview-link {
+  grid-column: 1 / -1;
+  color: #d40000;
+  font-size: .76rem;
+  font-weight: 800;
+}
+
+.games-preview-visual {
+  align-self: center;
+  justify-self: stretch;
+  height: 58px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.games-preview-scatter::before,
+.games-preview-scatter::after {
+  content: "";
+  position: absolute;
+  background: #e4e4e4;
+}
+.games-preview-scatter::before { left: 50%; top: 8px; bottom: 8px; width: 1px; }
+.games-preview-scatter::after { top: 50%; left: 8px; right: 8px; height: 1px; }
+
+.gp-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #aeb2b6;
+}
+.gp-dot.d1 { left: 28%; top: 55%; }
+.gp-dot.d2 { left: 47%; top: 39%; }
+.gp-dot.d3 { left: 68%; top: 28%; background: #d40000; }
+.gp-dot.d4 { left: 76%; top: 48%; }
+
+.games-preview-table {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4px;
+  padding: 8px;
+}
+.games-preview-table i {
+  display: block;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #d9dcdf 0 22%, #eeeeee 22% 52%, #e1e3e5 52% 73%, #f0f0f0 73%);
+}
+.games-preview-table i:first-child {
+  background: linear-gradient(90deg, #d40000 0 22%, #ededed 22% 52%, #dedede 52% 73%, #ececec 73%);
+}
+
+.home-matchday.home-matchday-split {
+  grid-template-columns: minmax(0, 1.95fr) minmax(250px, .75fr) !important;
+}
+
+.home-matchday-split .home-matchday-insights {
+  gap: 18px !important;
+}
+
+.home-matchday-split .home-matchday-insight {
+  min-width: 0;
+}
+
+.home-matchday-split .home-matchday-insight-title,
+.home-matchday-split .home-matchday-insight-note {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1050px) {
+  .home-matchday.home-matchday-split {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-matchday-recent {
+    border-left: 0 !important;
+    border-top: 1px solid #35373b !important;
+  }
+
+  .home-matchday-split .home-matchday-insights {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .games-quicknav-preview {
+    grid-template-columns: 1fr !important;
+  }
+
+  .games-preview-card {
+    grid-template-columns: minmax(0, 1fr) 78px;
+  }
+
+  .home-matchday-split .home-matchday-insights {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* BA_GAMES_CLEAN_FULLWIDTH_V4 */
+
+body:has(.games-row) #quarto-content,
+body:has(.games-row) #quarto-content.page-columns {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+body:has(.games-row) main.content,
+body:has(.games-row) #quarto-document-content,
+body:has(.games-row).page-layout-full #quarto-document-content {
+  width: min(calc(100% - 64px), 1000px) !important;
+  max-width: 1000px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body:has(.games-row) #quarto-margin-sidebar {
+  display: none !important;
+}
+
+body:has(.games-row) #quarto-document-content {
+  padding-top: 0 !important;
+}
+
+body:has(.games-row) .section-intro:first-of-type {
+  margin-top: .65rem !important;
+}
+
+.games-quicknav-preview {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+  margin: .8rem 0 1.55rem !important;
+}
+
+.games-preview-card {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 92px !important;
+  align-items: center;
+  gap: 14px;
+  min-height: 112px;
+  padding: 14px 15px !important;
+  border: 1px solid #dedede !important;
+  border-top: 3px solid #d40000 !important;
+  border-radius: 8px !important;
+  background: #fafafa !important;
+  color: #222 !important;
+  text-decoration: none !important;
+}
+
+.games-preview-copy,
+.games-preview-kicker,
+.games-preview-title,
+.games-preview-note,
+.games-preview-link {
+  display: block;
+}
+
+.games-preview-kicker {
+  color: #8a8d92;
+  font-size: .67rem;
+  font-weight: 800;
+  letter-spacing: .10em;
+}
+
+.games-preview-title {
+  margin-top: 3px;
+  font-size: .95rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.games-preview-note {
+  margin-top: 4px;
+  color: #74787d;
+  font-size: .71rem;
+  line-height: 1.3;
+}
+
+.games-preview-link {
+  margin-top: 9px;
+  color: #d40000;
+  font-size: .74rem;
+  font-weight: 800;
+}
+
+.games-preview-visual {
+  display: block;
+  height: 58px;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.games-preview-scatter::before,
+.games-preview-scatter::after {
+  content: "";
+  position: absolute;
+  background: #e4e4e4;
+}
+.games-preview-scatter::before { left: 50%; top: 8px; bottom: 8px; width: 1px; }
+.games-preview-scatter::after { top: 50%; left: 8px; right: 8px; height: 1px; }
+
+.gp-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #adb1b5;
+}
+.gp-dot.d1 { left: 26%; top: 57%; }
+.gp-dot.d2 { left: 47%; top: 42%; }
+.gp-dot.d3 { left: 68%; top: 27%; background: #d40000; }
+.gp-dot.d4 { left: 77%; top: 48%; }
+
+.games-preview-table {
+  padding: 8px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4px;
+}
+.games-preview-table > span {
+  display: block;
+  border-radius: 2px;
+  background: linear-gradient(90deg,#d7dade 0 23%,#ededed 23% 52%,#dedede 52% 74%,#eeeeee 74%);
+}
+.games-preview-table > span:first-child {
+  background: linear-gradient(90deg,#d40000 0 23%,#ededed 23% 52%,#dedede 52% 74%,#eeeeee 74%);
+}
+
+@media (max-width: 700px) {
+  .games-quicknav-preview {
+    grid-template-columns: 1fr !important;
+  }
+  .games-preview-card {
+    grid-template-columns: minmax(0, 1fr) 78px !important;
+  }
+}
+
+/* Jogos — previews lado a lado + separação antes da tabela */
+
+.games-quicknav-preview {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.games-quicknav-preview > p {
+  display: contents;
+}
+
+#tabela-comparativa {
+  margin-top: 2.4rem !important;
+}
+
+/* BA_GLOBAL_DESKTOP_ALIGNMENT_V1
+   Align the page canvas with the navbar, with a small inner inset. */
+
+@media (min-width: 1101px) {
+  :root {
+    --ba-shell-max: 1280px;
+    --ba-shell-gutter: 32px;
+    --ba-content-inset: 24px;
+  }
+
+  .navbar .navbar-container,
+  .navbar > .container-fluid,
+  .navbar > .container-xxl {
+    width: calc(100% - (2 * var(--ba-shell-gutter))) !important;
+    max-width: var(--ba-shell-max) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  #quarto-content,
+  #quarto-content.page-columns,
+  body .page-columns {
+    width: calc(100% - (2 * var(--ba-shell-gutter))) !important;
+    max-width: var(--ba-shell-max) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:not(:has(#quarto-margin-sidebar)) main.content,
+  body:not(:has(#quarto-margin-sidebar)) #quarto-document-content,
+  body.fullcontent:not(:has(#quarto-margin-sidebar)) #quarto-document-content,
+  .page-layout-full:not(:has(#quarto-margin-sidebar)) #quarto-document-content {
+    width: calc(100% - (2 * var(--ba-content-inset))) !important;
+    max-width: calc(var(--ba-shell-max) - (2 * var(--ba-content-inset))) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body:has(#quarto-margin-sidebar) #quarto-content.page-columns {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 220px !important;
+    column-gap: 36px !important;
+  }
+
+  body:has(#quarto-margin-sidebar) main.content,
+  body:has(#quarto-margin-sidebar) #quarto-document-content {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding-left: var(--ba-content-inset) !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body:has(#quarto-margin-sidebar) #quarto-margin-sidebar {
+    width: 220px !important;
+    max-width: 220px !important;
+    margin: 0 !important;
+  }
+
+  body:has(.games-row) #quarto-content,
+  body:has(.games-row) #quarto-document-content,
+  body:has(.games-row) main.content {
+    width: calc(100% - (2 * var(--ba-content-inset))) !important;
+    max-width: calc(var(--ba-shell-max) - (2 * var(--ba-content-inset))) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+
+/* BA_FINAL_WIDTH_TOC_HOME_ORDER_V2
+   Final page-width tuning using the homepage as the visual reference. */
+
+@media (min-width: 1101px) {
+
+  body:has(.player-profile-card) #quarto-content,
+  body:has(.player-profile-card) #quarto-document-content,
+  body:has(.player-profile-card) main.content {
+    width: min(calc(100% - 80px), 1180px) !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(.gt_table):not(:has(.games-row)) #quarto-content,
+  body:has(.gt_table):not(:has(.games-row)) #quarto-document-content,
+  body:has(.gt_table):not(:has(.games-row)) main.content {
+    width: min(calc(100% - 80px), 1180px) !important;
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(.games-row) #quarto-content,
+  body:has(.games-row) #quarto-document-content,
+  body:has(.games-row) main.content {
+    width: min(calc(100% - 96px), 1160px) !important;
+    max-width: 1160px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-content.page-columns {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 220px !important;
+    grid-template-rows: auto !important;
+    column-gap: 40px !important;
+    width: min(calc(100% - 64px), 1280px) !important;
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: start !important;
+  }
+
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) main.content,
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-document-content {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding-left: 24px !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-margin-sidebar {
+    display: block !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 220px !important;
+    max-width: 220px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    inset: auto !important;
+    align-self: start !important;
+  }
+}
+
+
+/* BA_FINAL_WIDTH_MATCH_HOME_SPACING_V3 */
+
+/* Use the homepage content width as the desktop reference for Games and Methodology */
+@media (min-width: 1101px) {
+  :root {
+    --ba-home-reference-width: 1232px;
+  }
+
+  body:has(.games-row) #quarto-content,
+  body:has(.games-row) #quarto-document-content,
+  body:has(.games-row) main.content {
+    width: min(calc(100% - 96px), var(--ba-home-reference-width)) !important;
+    max-width: var(--ba-home-reference-width) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-content.page-columns {
+    width: min(calc(100% - 96px), var(--ba-home-reference-width)) !important;
+    max-width: var(--ba-home-reference-width) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Homepage: tighten the transition from latest match to upcoming fixtures */
+.page-layout-full .home-matchday {
+  margin-bottom: 1.45rem !important;
+}
+
+.page-layout-full .home-matchday + h2,
+.page-layout-full .home-matchday + .section-intro {
+  margin-top: 1.25rem !important;
+}
+
+/* Upcoming fixtures should sit closer to the latest-match card */
+.page-layout-full .next-games-grid {
+  margin-top: .55rem !important;
+  margin-bottom: .7rem !important;
+}
+
+/* After removing League context, avoid a dead gap before Player spotlight */
+.page-layout-full #quarto-document-content > h2#jogador-em-destaque,
+.page-layout-full #quarto-document-content > h2#player-spotlight {
+  margin-top: 1.8rem !important;
+}
+
+
+/* BA_REFERENCE_PLAYERS_WIDTH_RHYTHM_V1
+   Use the Players page as the final reference for desktop width and vertical rhythm. */
+
+@media (min-width: 1101px) {
+
+  :root {
+    --ba-players-reference-width: 1180px;
+  }
+
+  body:has(.games-row) #quarto-content,
+  body:has(.games-row) #quarto-document-content,
+  body:has(.games-row) main.content {
+    width: min(calc(100% - 80px), var(--ba-players-reference-width)) !important;
+    max-width: var(--ba-players-reference-width) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-content.page-columns {
+    width: min(calc(100% - 80px), var(--ba-players-reference-width)) !important;
+    max-width: var(--ba-players-reference-width) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    grid-template-columns: minmax(0, 1fr) 210px !important;
+    column-gap: 32px !important;
+  }
+
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) main.content,
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-document-content {
+    padding-left: 0 !important;
+  }
+}
+
+/* Home */
+.page-layout-full #quarto-document-content > .section-intro {
+  margin-top: 2.15rem !important;
+  margin-bottom: 1.15rem !important;
+}
+
+.page-layout-full #quarto-document-content > h2 {
+  margin-top: 2rem !important;
+  margin-bottom: .9rem !important;
+}
+
+.page-layout-full .home-matchday {
+  margin-bottom: 1.65rem !important;
+}
+
+.page-layout-full .next-games-grid {
+  margin-top: .45rem !important;
+  margin-bottom: .55rem !important;
+}
+
+.page-layout-full .home-form-layout {
+  margin-top: .85rem !important;
+  margin-bottom: 1.95rem !important;
+}
+
+.page-layout-full .player-highlight-grid {
+  margin-top: .8rem !important;
+  margin-bottom: 1.9rem !important;
+}
+
+.page-layout-full .player-profile-card {
+  margin-top: .55rem !important;
+  margin-bottom: .75rem !important;
+}
+
+/* Games */
+body:has(.games-row) .section-intro {
+  margin-top: .75rem !important;
+  margin-bottom: .9rem !important;
+}
+
+body:has(.games-row) .games-quicknav-preview {
+  margin-top: .65rem !important;
+  margin-bottom: 1.15rem !important;
+}
+
+body:has(.games-row) #tabela-comparativa,
+body:has(.games-row) #comparison-table {
+  margin-top: 2rem !important;
+}
+
+body:has(.games-row) #perfis-de-jogo,
+body:has(.games-row) #match-profiles {
+  margin-top: 2rem !important;
+}
+
+/* Methodology */
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-document-content h2 {
+  margin-top: 2rem !important;
+  margin-bottom: .85rem !important;
+}
+
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-document-content h3 {
+  margin-top: 1.35rem !important;
+  margin-bottom: .55rem !important;
+}
+
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-document-content p {
+  margin-bottom: .9rem !important;
+}
+
+/* BA_TRUE_FINAL_LAYOUT_V1
+   Final visual correction based on the actual Quarto DOM.
+   Quarto wraps headings in section.level2/level3, so spacing is applied there. */
+
+@media (min-width: 1101px) {
+
+  /* JOGOS */
+  body:has(.games-row) #quarto-content {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(.games-row) main#quarto-document-content {
+    width: min(calc(100% - 96px), 1040px) !important;
+    max-width: 1040px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* METODOLOGIA */
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-content.page-columns {
+    width: min(calc(100% - 96px), 1080px) !important;
+    max-width: 1080px !important;
+    grid-template-columns: minmax(0, 840px) 208px !important;
+    column-gap: 32px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) main#quarto-document-content {
+    width: 100% !important;
+    max-width: 840px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-margin-sidebar {
+    width: 208px !important;
+    max-width: 208px !important;
+  }
+}
+
+/* HOMEPAGE */
+body:has(.home-matchday) .home-matchday {
+  margin-bottom: .8rem !important;
+}
+
+body:has(.home-matchday) section#próximos-jogos,
+body:has(.home-matchday) section#upcoming-matches {
+  margin-top: .9rem !important;
+  margin-bottom: 1.15rem !important;
+}
+
+body:has(.home-matchday) section#próximos-jogos > h2,
+body:has(.home-matchday) section#upcoming-matches > h2 {
+  margin-top: 0 !important;
+  margin-bottom: .6rem !important;
+}
+
+body:has(.home-matchday) section#próximos-jogos .next-games-grid,
+body:has(.home-matchday) section#upcoming-matches .next-games-grid {
+  margin-top: .35rem !important;
+  margin-bottom: .5rem !important;
+}
+
+body:has(.home-matchday) #quarto-document-content > .section-intro {
+  margin-top: 1.55rem !important;
+  margin-bottom: .8rem !important;
+}
+
+body:has(.home-matchday) #quarto-document-content > section.level2 {
+  margin-top: 1.45rem !important;
+  margin-bottom: 1.15rem !important;
+}
+
+body:has(.home-matchday) #quarto-document-content > section.level2 > h2 {
+  margin-top: 0 !important;
+  margin-bottom: .7rem !important;
+}
+
+/* JOGOS */
+body:has(.games-row) .section-intro {
+  margin-top: .55rem !important;
+  margin-bottom: .7rem !important;
+}
+
+body:has(.games-row) .games-quicknav-preview {
+  margin-top: .55rem !important;
+  margin-bottom: 1rem !important;
+}
+
+body:has(.games-row) #quarto-document-content > section.level2 {
+  margin-top: 1.55rem !important;
+  margin-bottom: 1rem !important;
+}
+
+body:has(.games-row) #quarto-document-content > section.level2 > h2 {
+  margin-top: 0 !important;
+  margin-bottom: .7rem !important;
+}
+
+/* METODOLOGIA */
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-document-content > section.level2 {
+  margin-top: 1.55rem !important;
+  margin-bottom: 1rem !important;
+}
+
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-document-content > section.level2:first-of-type {
+  margin-top: .35rem !important;
+}
+
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) section.level2 > h2 {
+  margin-top: 0 !important;
+  margin-bottom: .7rem !important;
+}
+
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) section.level3 {
+  margin-top: 1rem !important;
+  margin-bottom: .8rem !important;
+}
+
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) section.level3 > h3 {
+  margin-top: 0 !important;
+  margin-bottom: .45rem !important;
+}
+
+body:has(#quarto-margin-sidebar):not(:has(.games-row)) #quarto-document-content p {
+  margin-top: .45rem !important;
+  margin-bottom: .7rem !important;
+}
+
+/* BA_FINAL_UNIFY_HERO_AND_GAMES_WIDTH_V1 */
+
+/* Jogos ainda está um pouco largo: este bloco fecha a largura final */
+@media (min-width: 1101px) {
+  body:has(.games-row) #quarto-content,
+  body:has(.games-row) main#quarto-document-content {
+    width: min(calc(100% - 96px), 1080px) !important;
+    max-width: 1080px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Cartões iniciais uniformes */
+body:has(.ba-page-hero) #quarto-document-content > h1,
+body:has(.ba-page-hero) #quarto-document-content > header#title-block-header,
+body:has(.ba-page-hero) #quarto-document-content > .quarto-title-block {
+  display: none !important;
+}
+
+body:has(.ba-page-hero) #quarto-document-content > .ba-page-hero.section-intro {
+  margin-top: 1rem !important;
+  margin-bottom: 1.35rem !important;
+}
+
+/* BA_FINAL_HERO_GAMES_TUNE_V2
+   Final tune: equal intro-card geometry, methodology vertical offset,
+   and Games width matching the Players page more closely. */
+
+/* Common intro-card geometry */
+.section-intro.ba-page-hero,
+body:has(.games-row) .section-intro {
+  min-height: 168px !important;
+  padding: 24px 28px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+.section-intro.ba-page-hero .section-kicker,
+body:has(.games-row) .section-intro .section-kicker {
+  margin-bottom: 10px !important;
+}
+
+.section-intro.ba-page-hero h1,
+body:has(.games-row) .section-intro .section-title {
+  margin: 0 0 8px 0 !important;
+  font-size: 1.55rem !important;
+  line-height: 1.12 !important;
+  font-weight: 750 !important;
+}
+
+.section-intro.ba-page-hero p,
+body:has(.games-row) .section-intro .section-description {
+  margin: 0 !important;
+  font-size: .96rem !important;
+  line-height: 1.35 !important;
+}
+
+/* Methodology: give the hero the same breathing room below the navbar */
+body:has(#quarto-margin-sidebar) .section-intro.ba-page-hero {
+  margin-top: 1.35rem !important;
+}
+
+/* Games: final desktop width aligned visually with Players */
+@media (min-width: 1101px) {
+  body:has(.games-row) #quarto-content {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  body:has(.games-row) main#quarto-document-content {
+    width: min(calc(100% - 120px), 1080px) !important;
+    max-width: 1080px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+
+/* BA_LAST_TWO_TWEAKS_V1
+   Final two visual tweaks only: Games width + Methodology top offset. */
+
+@media (min-width: 1101px) {
+
+  /* Games: match the visual width of Players/Calendar */
+  body:has(.games-row) main#quarto-document-content {
+    width: min(calc(100% - 140px), 980px) !important;
+    max-width: 980px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Methodology: lower the page hero slightly */
+  body:has(#quarto-margin-sidebar) .section-intro.ba-page-hero {
+    margin-top: 2rem !important;
+  }
+}
+
+
+/* BA_FORCE_FINAL_GRID_OVERRIDE_V1
+   High-specificity override for the remaining Quarto grid conflicts. */
+
+@media (min-width: 1101px) {
+
+  /* GAMES — force a centred canvas instead of letting column-page stretch. */
+  html body:has(.games-row)
+  #quarto-content.page-columns
+  main#quarto-document-content.content.column-page {
+    grid-column: 1 / -1 !important;
+    width: 1080px !important;
+    max-width: 1080px !important;
+    min-width: 0 !important;
+    justify-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 1.35rem !important;
+    box-sizing: border-box !important;
+  }
+
+  /* METHODOLOGY — keep existing width/TOC, only lower the content start. */
+  html body:has(#quarto-margin-sidebar):not(:has(.games-row))
+  #quarto-content.page-columns
+  main#quarto-document-content.content.column-page-left {
+    padding-top: 1.35rem !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* BA_PIXEL_TOP_ALIGNMENT_FINAL */
+
+@media (min-width: 1101px) {
+
+  /* Jogos: subir 11.48 px */
+  html body:has(.games-row)
+  #quarto-content.page-columns
+  main#quarto-document-content.content.column-page {
+    transform: translateY(-11.48px) !important;
+  }
+
+  /* Metodologia: descer 8.06 px */
+  html body:has(#quarto-margin-sidebar):not(:has(.games-row))
+  #quarto-content.page-columns
+  main#quarto-document-content.content.column-page-left {
+    transform: translateY(8.06px) !important;
+  }
+}

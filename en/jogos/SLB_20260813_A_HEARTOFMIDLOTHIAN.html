@@ -412,8 +412,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   wrap.append(pt, en);
 
+  const tools = document.querySelector(".navbar .quarto-navbar-tools");
   const nav = document.querySelector(".navbar .navbar-container, .navbar .container-fluid, .navbar");
-  if (nav) nav.appendChild(wrap);
+  if (tools) tools.appendChild(wrap);
+  else if (nav) nav.appendChild(wrap);
   else {
     wrap.style.position = "fixed";
     wrap.style.top = "12px";
