@@ -7312,3 +7312,374 @@ body:has(#quarto-margin-sidebar) .section-intro.ba-page-hero {
 .ba3-score span {
   color: #fff !important;
 }
+
+/* BA_HOME_30_SECONDS_V1 */
+.home-30s-card{
+  margin:2.1rem 0 2.6rem;
+  padding:1.55rem 1.65rem 1.25rem;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:18px;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(227,6,19,.13), transparent 30%),
+    linear-gradient(145deg, #17191d 0%, #101216 100%);
+  box-shadow:0 14px 35px rgba(0,0,0,.16);
+}
+.home-30s-top{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:2rem;
+  align-items:start;
+}
+.home-30s-kicker{
+  margin-bottom:.55rem;
+  color:#e30613;
+  font-size:.72rem;
+  font-weight:850;
+  letter-spacing:.12em;
+}
+.home-30s-title{
+  margin:0 0 .65rem;
+  color:#fff;
+  font-size:clamp(1.45rem,2.35vw,2.05rem);
+  line-height:1.08;
+  letter-spacing:-.025em;
+}
+.home-30s-copy{
+  max-width:780px;
+  margin:0;
+  color:#c6c8cc;
+  font-size:.98rem;
+  line-height:1.58;
+}
+.home-30s-record{
+  min-width:145px;
+  padding:.85rem 1rem;
+  border-left:2px solid #e30613;
+  background:rgba(255,255,255,.035);
+}
+.home-30s-record-label{
+  display:block;
+  margin-bottom:.35rem;
+  color:#8f949c;
+  font-size:.66rem;
+  font-weight:800;
+  letter-spacing:.09em;
+}
+.home-30s-record strong{
+  color:#fff;
+  font-size:1.05rem;
+  letter-spacing:.02em;
+}
+.home-30s-metrics{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;
+  margin-top:1.35rem;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  background:rgba(255,255,255,.08);
+}
+.home-30s-metric{
+  padding:1rem 1.1rem .95rem;
+  background:#15171b;
+}
+.home-30s-metric-label{
+  display:block;
+  margin-bottom:.45rem;
+  color:#8f949c;
+  font-size:.65rem;
+  font-weight:850;
+  letter-spacing:.1em;
+}
+.home-30s-metric-main{
+  display:flex;
+  align-items:baseline;
+  gap:.55rem;
+}
+.home-30s-metric-main strong{
+  color:#fff;
+  font-size:1.48rem;
+  line-height:1;
+}
+.home-30s-metric-main span{
+  color:#c8cacf;
+  font-size:.78rem;
+  font-weight:700;
+}
+.home-30s-metric small{
+  display:block;
+  margin-top:.48rem;
+  color:#e30613;
+  font-size:.74rem;
+  font-weight:750;
+  text-transform:lowercase;
+}
+.home-30s-foot{
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  margin-top:.8rem;
+  color:#777d86;
+  font-size:.7rem;
+}
+@media(max-width:760px){
+  .home-30s-card{
+    margin:1.5rem 0 2rem;
+    padding:1.25rem 1.05rem 1rem;
+  }
+  .home-30s-top{
+    grid-template-columns:1fr;
+    gap:1rem;
+  }
+  .home-30s-record{
+    min-width:0;
+    width:100%;
+    box-sizing:border-box;
+  }
+  .home-30s-metrics{
+    grid-template-columns:1fr;
+  }
+  .home-30s-foot{
+    flex-direction:column;
+    gap:.3rem;
+  }
+}
+
+
+/* BA_HOME_30_SECONDS_V1_1 */
+.home-30s-card{
+  margin:1.9rem 0 2.3rem;
+  padding:1.35rem 1.5rem 1.05rem;
+}
+.home-30s-top{
+  grid-template-columns:minmax(0,1fr) 132px;
+  gap:1.35rem;
+}
+.home-30s-title{
+  max-width:760px;
+  margin-bottom:.55rem;
+  font-size:clamp(1.35rem,2vw,1.8rem);
+  line-height:1.1;
+}
+.home-30s-copy{
+  max-width:800px;
+  font-size:.94rem;
+  line-height:1.5;
+}
+.home-30s-record{
+  min-width:0;
+  padding:.72rem .82rem;
+  margin-top:.05rem;
+  border-left:2px solid #e30613;
+  background:rgba(255,255,255,.025);
+}
+.home-30s-record-label{
+  margin-bottom:.28rem;
+  font-size:.61rem;
+}
+.home-30s-record strong{
+  font-size:.98rem;
+}
+.home-30s-metrics{
+  margin-top:1.05rem;
+}
+.home-30s-metric{
+  padding:.82rem 1rem .78rem;
+}
+.home-30s-metric-label{
+  margin-bottom:.35rem;
+}
+.home-30s-metric-main strong{
+  font-size:1.34rem;
+}
+.home-30s-metric small{
+  margin-top:.38rem;
+  font-size:.7rem;
+}
+.home-30s-foot{
+  justify-content:flex-start;
+  margin-top:.62rem;
+  font-size:.66rem;
+}
+
+@media(max-width:760px){
+  .home-30s-card{
+    padding:1.15rem 1rem .9rem;
+  }
+  .home-30s-top{
+    grid-template-columns:1fr;
+    gap:.8rem;
+  }
+  .home-30s-title{
+    font-size:1.38rem;
+  }
+  .home-30s-record{
+    width:auto;
+    display:inline-block;
+    justify-self:start;
+  }
+}
+
+
+/* BA_HOME_30_SECONDS_V1_2 */
+.home-30s-top{
+  grid-template-columns:minmax(0,1fr) 180px;
+  gap:1.5rem;
+}
+.home-30s-record{
+  width:180px;
+  box-sizing:border-box;
+  padding:.78rem 1rem;
+}
+.home-30s-record-label{
+  white-space:nowrap;
+}
+.home-30s-metrics{
+  margin-top:.9rem;
+}
+.home-30s-copy{
+  margin-bottom:.1rem;
+}
+
+/* Tablet */
+@media(max-width:900px){
+  .home-30s-top{
+    grid-template-columns:minmax(0,1fr) 165px;
+    gap:1.1rem;
+  }
+  .home-30s-record{
+    width:165px;
+  }
+}
+
+/* Mobile */
+@media(max-width:760px){
+  .home-30s-top{
+    grid-template-columns:1fr;
+    gap:.8rem;
+  }
+  .home-30s-record{
+    width:100%;
+    max-width:220px;
+    justify-self:start;
+    padding:.7rem .9rem;
+  }
+  .home-30s-record-label{
+    white-space:normal;
+  }
+  .home-30s-metrics{
+    grid-template-columns:1fr;
+    margin-top:.85rem;
+  }
+}
+
+/* Very small mobile */
+@media(max-width:420px){
+  .home-30s-card{
+    padding:1rem .85rem .85rem;
+  }
+  .home-30s-title{
+    font-size:1.28rem;
+    line-height:1.12;
+  }
+  .home-30s-copy{
+    font-size:.9rem;
+  }
+  .home-30s-record{
+    max-width:none;
+    width:100%;
+  }
+}
+
+
+/* BA_HOME_MATCHDAY_MOBILE_RADIUS_FIX */
+@media (max-width: 767px) {
+  html body .home-matchday.home-matchday-split {
+    width: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    isolation: isolate;
+  }
+
+  html body .home-matchday.home-matchday-split > .home-matchday-main,
+  html body .home-matchday.home-matchday-split > .home-matchday-recent {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  html body .home-matchday.home-matchday-split > .home-matchday-main {
+    border-radius: 0 !important;
+  }
+
+  html body .home-matchday.home-matchday-split > .home-matchday-recent {
+    border-radius: 0 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  html body .home-matchday.home-matchday-split {
+    border-radius: 10px !important;
+  }
+}
+
+
+/* BA_HOME_MATCHDAY_MOBILE_WIDTH_FIX_V2 */
+@media (max-width: 767px) {
+  html body .home-matchday.home-matchday-split {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+
+  html body .home-matchday.home-matchday-split > .home-matchday-main,
+  html body .home-matchday.home-matchday-split > .home-matchday-recent {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+/* BA_HOME_MATCHDAY_MOBILE_WIDTH_FIX_V3 */
+@media (max-width: 767px) {
+  html body .home-matchday.home-matchday-split {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (max-width: 420px) {
+  html body .home-matchday.home-matchday-split {
+    width: calc(100% - 18px) !important;
+    max-width: calc(100% - 18px) !important;
+  }
+}
+
+/* BA_HOME_MATCHDAY_MOBILE_WIDTH_FINAL */
+@media (max-width: 767px) {
+  html body .home-matchday.home-matchday-split {
+    width: calc(100% - 64px) !important;
+    max-width: calc(100% - 64px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (max-width: 420px) {
+  html body .home-matchday.home-matchday-split {
+    width: calc(100% - 40px) !important;
+    max-width: calc(100% - 40px) !important;
+  }
+}
