@@ -566,12 +566,22 @@ document.addEventListener("DOMContentLoaded", () => {
   pt.textContent = "PT";
   pt.href = ptTarget();
   pt.dataset.baLanguageSwitcher = "1";
+  pt.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    window.location.assign(ptTarget());
+  });
   if (!isEN) pt.classList.add("active");
 
   const en = document.createElement("a");
   en.textContent = "EN";
   en.href = enTarget();
   en.dataset.baLanguageSwitcher = "1";
+  en.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    window.location.assign(enTarget());
+  });
   if (isEN) en.classList.add("active");
 
   wrap.append(pt, en);
