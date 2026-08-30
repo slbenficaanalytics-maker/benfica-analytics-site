@@ -752,6 +752,19 @@ document.addEventListener("DOMContentLoaded", () => {
   function enTarget() {
     if (isEN) return path;
 
+    // Match pages are one level deeper:
+    // /jogos/SLB_x.html -> /en/jogos/SLB_x.html
+    const jogosMarker = "/jogos/";
+    const jogosPos = path.indexOf(jogosMarker);
+    if (jogosPos >= 0) {
+      const base = path.slice(0, jogosPos);
+      const rest = path.slice(jogosPos);
+      return base + "/en" + rest;
+    }
+
+    // Top-level pages:
+    // /index.html -> /en/index.html
+    // /project/index.html -> /project/en/index.html
     const lastSlash = path.lastIndexOf("/");
     const base = lastSlash >= 0 ? path.slice(0, lastSlash) : "";
     const file = lastSlash >= 0 ? path.slice(lastSlash + 1) : path;
@@ -767,11 +780,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const pt = document.createElement("a");
   pt.textContent = "PT";
   pt.href = ptTarget();
+  pt.dataset.baLanguageSwitcher = "1";
   if (!isEN) pt.classList.add("active");
 
   const en = document.createElement("a");
   en.textContent = "EN";
   en.href = enTarget();
+  en.dataset.baLanguageSwitcher = "1";
   if (isEN) en.classList.add("active");
 
   wrap.append(pt, en);
@@ -879,6 +894,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelectorAll("a").forEach(a => {
+    if (a.dataset.baLanguageSwitcher === "1") return;
     const href = a.getAttribute("href") || "";
     if (href.startsWith("/jogos/")) a.setAttribute("href", "/en" + href);
   });
@@ -970,6 +986,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   document.querySelectorAll("a").forEach(a => {
+    if (a.dataset.baLanguageSwitcher === "1") return;
     const txt = norm(a.textContent);
     if (routes[txt]) a.href = routes[txt];
 
@@ -1062,6 +1079,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.querySelectorAll("a").forEach(a => {
+    if (a.dataset.baLanguageSwitcher === "1") return;
     const raw = a.getAttribute("href") || "";
     if (!raw) return;
 
@@ -1127,6 +1145,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (base === "/") base = "";
 
   document.querySelectorAll("a[href]").forEach(a => {
+    if (a.dataset.baLanguageSwitcher === "1") return;
     const href = a.getAttribute("href");
     if (!href) return;
 
