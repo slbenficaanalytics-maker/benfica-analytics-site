@@ -7238,3 +7238,77 @@ body:has(#quarto-margin-sidebar) .section-intro.ba-page-hero {
     margin-top: 1.25rem !important;
   }
 }
+
+
+/* BA_QUICKREAD_V1 */
+.ba3-quickread {
+  padding: 1.25rem 1.4rem 1.2rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: #11151c;
+}
+
+.ba3-quickread-kicker {
+  margin-bottom: .45rem;
+  color: #ff2b2b;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.ba3-quickread-title {
+  margin: 0 0 .55rem !important;
+  color: #fff;
+  font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+  line-height: 1.2;
+}
+
+.ba3-quickread-text {
+  max-width: 880px;
+  margin: 0 !important;
+  color: #d9dde4;
+  font-size: .95rem;
+  line-height: 1.55;
+}
+
+.ba3-quickread-data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem 1rem;
+  margin-top: .8rem;
+  color: #aeb6c2;
+  font-size: .78rem;
+}
+
+.ba3-quickread-data strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .ba3-quickread {
+    padding: 1rem .95rem;
+  }
+
+  .ba3-quickread-title {
+    font-size: 1.08rem;
+  }
+
+  .ba3-quickread-text {
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+
+  .ba3-quickread-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .25rem;
+  }
+}
+
+/* BA_MATCHDAY_SCORE_WHITE_FINAL */
+
+.ba3-score strong,
+.ba3-score span {
+  color: #fff !important;
+}
