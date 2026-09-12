@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Benfica Analytics - Matches</title>
+<title>Benfica Analytics - Match analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/benfica-analytics-logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/benfica-analytics-logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Benfica Analytics</span>
     </a>
   </div>
@@ -90,27 +90,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../ultimo-jogo.html"> 
+    <a class="nav-link" href="../../ultimo-jogo.html"> 
 <span class="menu-text">Último jogo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../jogos.html"> 
+    <a class="nav-link" href="../../jogos.html"> 
 <span class="menu-text">Jogos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../jogadores.html"> 
+    <a class="nav-link" href="../../jogadores.html"> 
 <span class="menu-text">Jogadores</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../calendario.html"> 
+    <a class="nav-link" href="../../calendario.html"> 
 <span class="menu-text">Calendário</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../metodologia.html"> 
+    <a class="nav-link" href="../../metodologia.html"> 
 <span class="menu-text">Metodologia</span></a>
   </li>  
 </ul>
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Matches</h1>
+<h1 class="title">Match analysis</h1>
 </div>
 
 
@@ -147,1055 +147,256 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style id="ba-page-local-final">
-
-@media (min-width: 1101px) {
-  #quarto-content {
-    width: 100% !important;
-    max-width: none !important;
-  }
-
-  main#quarto-document-content {
-    width: min(calc(100% - 96px), 1180px) !important;
-    max-width: 1180px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
-
-</style>
-<div class="section-intro">
-<div class="section-kicker">
-ANALYTICAL ARCHIVE
+<div class="ba3-card">
+<header class="ba3-hero">
+<div class="ba3-kicker">
+BENFICA ANALYTICS · MATCH ANALYSIS
 </div>
-<div class="section-title">
-Matches
+<div class="ba3-result">
+<span class="ba3-team">CS MARÍTIMO</span><span class="ba3-score"><strong>0</strong><span>–</span><strong>3</strong></span><span class="ba3-team">BENFICA</span>
 </div>
-<div class="section-description">
-Results, process and proprietary match-by-match analysis.
-</div>
-</div>
-<div class="games-quicknav games-quicknav-preview">
-<p><a class="games-preview-card" href="#comparison-table"><span class="games-preview-copy"><span class="games-preview-kicker">COMPARISON TABLE</span><span class="games-preview-title">Match-by-match metrics</span><span class="games-preview-note">Compare process, context and structure.</span><span class="games-preview-link">Compare ↓</span></span><span class="games-preview-visual games-preview-table" aria-hidden="true"><span></span><span></span><span></span><span></span></span></a> <a class="games-preview-card" href="#match-profiles"><span class="games-preview-copy"><span class="games-preview-kicker">MATCH PROFILES</span><span class="games-preview-title">GameGrip x ChanceCraft</span><span class="games-preview-note">How Benfica controls and creates in each match.</span><span class="games-preview-link">Explore ↓</span></span><span class="games-preview-visual games-preview-scatter" aria-hidden="true"><span class="gp-dot d1"></span><span class="gp-dot d2"></span><span class="gp-dot d3"></span><span class="gp-dot d4"></span></span></a></p>
-</div>
-<article class="games-row">
-<div class="games-date">
-<strong>09 Sep</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">Moreirense</span><span class="result-score"><span class="result-num">0</span><span class="result-sep">–</span><span class="result-num">4</span></span><span class="result-team">Benfica</span></span>
-</div>
-<div class="games-headline">
-Clear dominance in the underlying performance.
-</div>
-<div class="games-meta">
-Liga Portugal Betclic
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Schjelderup Andreas</span><strong>85.8</strong>
-</div>
-<div class="games-insight">
-<span>Tactical Lift</span><strong>0.25</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260909_A_MOREIRENSE.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>05 Sep</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">CS Marítimo</span><span class="result-score"><span class="result-num">0</span><span class="result-sep">–</span><span class="result-num">3</span></span><span class="result-team">Benfica</span></span>
-</div>
-<div class="games-headline">
+<div class="ba3-headline">
 Threat concentrated outside key moments.
 </div>
-<div class="games-meta">
-Liga Portugal Betclic
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Barreiro Leandro</span><strong>85.8</strong>
-</div>
-<div class="games-insight">
-<span>Tactical Lift</span><strong>0.26</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260905_A_CSMARITIMO.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>31 Aug</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">2</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">Estoril Praia</span></span>
-</div>
-<div class="games-headline">
-Threat concentrated outside key moments.
-</div>
-<div class="games-meta">
-Liga Portugal Betclic
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Vangelis Pavlidis</span><strong>77.6</strong>
-</div>
-<div class="games-insight">
-<span>Tactical Lift</span><strong>0.27</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260831_H_ESTORILPRAIA.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>27 Aug</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">AGF</span><span class="result-score"><span class="result-num">1</span><span class="result-sep">–</span><span class="result-num">3</span></span><span class="result-team">Benfica</span></span>
-</div>
-<div class="games-headline">
-Stable structure. Controlled process.
-</div>
-<div class="games-meta">
-UEFA Europa League, Playoff Round
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Gianluca Prestianni</span><strong>76.2</strong>
-</div>
-<div class="games-insight">
-<span>xG Difference</span><strong>1.84</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260827_A_AGF.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>20 Aug</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">3</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">AGF</span></span>
-</div>
-<div class="games-headline">
-Strong process. Stable structure.
-</div>
-<div class="games-meta">
-UEFA Europa League, Playoff Round
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Vangelis Pavlidis</span><strong>84.2</strong>
-</div>
-<div class="games-insight">
-<span>xG Difference</span><strong>4.15</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260820_H_AGF.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>17 Aug</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">Casa Pia</span><span class="result-score"><span class="result-num">0</span><span class="result-sep">–</span><span class="result-num">7</span></span><span class="result-team">Benfica</span></span>
-</div>
-<div class="games-headline">
-Clear dominance. Threat came late.
-</div>
-<div class="games-meta">
-Liga Portugal Betclic
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Vangelis Pavlidis</span><strong>85.8</strong>
-</div>
-<div class="games-insight">
-<span>Threat Timing</span><strong>0.82</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260817_A_CASAPIA.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>13 Aug</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">Heart of Midlothian</span><span class="result-score"><span class="result-num">1</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">Benfica</span></span>
-</div>
-<div class="games-headline">
-Heavy rotation. Narrow result.
-</div>
-<div class="games-meta">
-UEFA Europa League, Qualification
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Tomás Araújo</span><strong>70.3</strong>
-</div>
-<div class="games-insight">
-<span>Reality Gap</span><strong>-2</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260813_A_HEARTOFMIDLOTHIAN.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>09 Aug</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">2</span><span class="result-sep">–</span><span class="result-num">2</span></span><span class="result-team">Académico Viseu FC</span></span>
-</div>
-<div class="games-headline">
-Strong process. Little reward.
-</div>
-<div class="games-meta">
-Liga Portugal Betclic
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Vangelis Pavlidis</span><strong>84.0</strong>
-</div>
-<div class="games-insight">
-<span>Tactical Lift</span><strong>-0.23</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260809_H_ACADEMICOVISEUFC.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>06 Aug</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">6</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">Heart of Midlothian</span></span>
-</div>
-<div class="games-headline">
-Early lead. Control to the end.
-</div>
-<div class="games-meta">
-UEFA Europa League, Qualification
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Gianluca Prestianni</span><strong>82.8</strong>
-</div>
-<div class="games-insight">
-<span>xG Difference</span><strong>2.45</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260806_H_HEARTOFMIDLOTHIAN.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>30 Jul</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">Benfica</span><span class="result-score"><span class="result-num">5</span><span class="result-sep">–</span><span class="result-num">0</span></span><span class="result-team">FC St.&nbsp;Gallen 1879</span></span>
-</div>
-<div class="games-headline">
-Early lead. Control to the end.
-</div>
-<div class="games-meta">
-UEFA Europa League, Qualification
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Vangelis Pavlidis</span><strong>85.8</strong>
-</div>
-<div class="games-insight">
-<span>xG Difference</span><strong>2.99</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260730_H_FCSTGALLEN1879.html">View analysis →</a>
-</div>
-</article>
-<article class="games-row">
-<div class="games-date">
-<strong>23 Jul</strong><span>2026</span>
-</div>
-<div class="games-main">
-<div class="games-result">
-<span class="result-line"><span class="result-team">FC St.&nbsp;Gallen 1879</span><span class="result-score"><span class="result-num">2</span><span class="result-sep">–</span><span class="result-num">1</span></span><span class="result-team">Benfica</span></span>
-</div>
-<div class="games-headline">
-Low familiarity. Structure under test.
-</div>
-<div class="games-meta">
-UEFA Europa League, Qualification
-</div>
-</div>
-<div class="games-insights">
-<div class="games-insight">
-<span>Alexander Bah</span><strong>67.7</strong>
-</div>
-<div class="games-insight">
-<span>XI Familiarity</span><strong>20.4</strong>
-</div>
-</div>
-<div class="games-action">
-<a href="../en/jogos/SLB_20260723_A_FCSTGALLEN1879.html">View analysis →</a>
-</div>
-</article>
-<div id="comparison-table" class="ba-scroll-anchor">
-
-</div>
-<section id="comparison-table" class="level2">
-<h2 class="anchored" data-anchor-id="comparison-table">Comparison table</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div id="leonvttivx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#leonvttivx table {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#leonvttivx thead, #leonvttivx tbody, #leonvttivx tfoot, #leonvttivx tr, #leonvttivx td, #leonvttivx th {
-  border-style: none;
-}
-
-#leonvttivx p {
-  margin: 0;
-  padding: 0;
-}
-
-#leonvttivx .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: 0;
-  margin-right: auto;
-  color: #333333;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: 100%;
-  border-top-style: none;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#leonvttivx .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#leonvttivx .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#leonvttivx .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#leonvttivx .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#leonvttivx .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#leonvttivx .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D9DDE1;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #BFC4C9;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#leonvttivx .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 13px;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#leonvttivx .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 13px;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#leonvttivx .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#leonvttivx .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#leonvttivx .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #BFC4C9;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#leonvttivx .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#leonvttivx .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#leonvttivx .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#leonvttivx .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#leonvttivx .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#leonvttivx .gt_row {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#leonvttivx .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#leonvttivx .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#leonvttivx .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#leonvttivx .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#leonvttivx .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#leonvttivx .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#leonvttivx .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#leonvttivx .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#leonvttivx .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#leonvttivx .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#leonvttivx .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#leonvttivx .gt_striped {
-  background-color: #F7F7F7;
-}
-
-#leonvttivx .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#leonvttivx .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#leonvttivx .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#leonvttivx .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#leonvttivx .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#leonvttivx .gt_left {
-  text-align: left;
-}
-
-#leonvttivx .gt_center {
-  text-align: center;
-}
-
-#leonvttivx .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#leonvttivx .gt_font_normal {
-  font-weight: normal;
-}
-
-#leonvttivx .gt_font_bold {
-  font-weight: bold;
-}
-
-#leonvttivx .gt_font_italic {
-  font-style: italic;
-}
-
-#leonvttivx .gt_super {
-  font-size: 65%;
-}
-
-#leonvttivx .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#leonvttivx .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#leonvttivx .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#leonvttivx .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#leonvttivx .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#leonvttivx .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#leonvttivx .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#leonvttivx .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#leonvttivx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<colgroup>
-<col>
-<col style="width: 22%">
-<col>
-<col>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 15%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header gt_col_headings">
-<th id="Data" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Data</th>
-<th id="Opponent" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Opponent</th>
-<th id="Result" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Result</th>
-<th id="Dif.-xG" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Dif. xG</th>
-<th id="Result-vs-Process" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Result vs Process</th>
-<th id="Starting-XI-Familiarity" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Starting XI Familiarity</th>
-<th id="Threat-Timing" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Threat Timing</th>
-<th id="Tactical-Lift" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Tactical Lift</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Data">09/09/2026</td>
-<td class="gt_row gt_left" headers="Opponent">Moreirense</td>
-<td class="gt_row gt_center" headers="Result">0–4</td>
-<td class="gt_row gt_center" headers="Dif. xG">2.98</td>
-<td class="gt_row gt_center" headers="Result vs Process">0</td>
-<td class="gt_row gt_center" headers="Starting XI Familiarity">54.5</td>
-<td class="gt_row gt_center" headers="Threat Timing">0.95</td>
-<td class="gt_row gt_center" headers="Tactical Lift">0.25</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left gt_striped" headers="Data">05/09/2026</td>
-<td class="gt_row gt_left gt_striped" headers="Opponent">CS Marítimo</td>
-<td class="gt_row gt_center gt_striped" headers="Result">0–3</td>
-<td class="gt_row gt_center gt_striped" headers="Dif. xG">0.46</td>
-<td class="gt_row gt_center gt_striped" headers="Result vs Process">0</td>
-<td class="gt_row gt_center gt_striped" headers="Starting XI Familiarity">81.8</td>
-<td class="gt_row gt_center gt_striped" headers="Threat Timing">0.94</td>
-<td class="gt_row gt_center gt_striped" headers="Tactical Lift">0.26</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Data">31/08/2026</td>
-<td class="gt_row gt_left" headers="Opponent">Estoril Praia</td>
-<td class="gt_row gt_center" headers="Result">2–1</td>
-<td class="gt_row gt_center" headers="Dif. xG">1.67</td>
-<td class="gt_row gt_center" headers="Result vs Process">0</td>
-<td class="gt_row gt_center" headers="Starting XI Familiarity">100.0</td>
-<td class="gt_row gt_center" headers="Threat Timing">0.91</td>
-<td class="gt_row gt_center" headers="Tactical Lift">0.27</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left gt_striped" headers="Data">27/08/2026</td>
-<td class="gt_row gt_left gt_striped" headers="Opponent">AGF</td>
-<td class="gt_row gt_center gt_striped" headers="Result">1–3</td>
-<td class="gt_row gt_center gt_striped" headers="Dif. xG">1.84</td>
-<td class="gt_row gt_center gt_striped" headers="Result vs Process">0</td>
-<td class="gt_row gt_center gt_striped" headers="Starting XI Familiarity">93.1</td>
-<td class="gt_row gt_center gt_striped" headers="Threat Timing"><br>
-</td>
-<td class="gt_row gt_center gt_striped" headers="Tactical Lift"><br>
-</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Data">20/08/2026</td>
-<td class="gt_row gt_left" headers="Opponent">AGF</td>
-<td class="gt_row gt_center" headers="Result">3–1</td>
-<td class="gt_row gt_center" headers="Dif. xG">4.15</td>
-<td class="gt_row gt_center" headers="Result vs Process">0</td>
-<td class="gt_row gt_center" headers="Starting XI Familiarity">84.4</td>
-<td class="gt_row gt_center" headers="Threat Timing"><br>
-</td>
-<td class="gt_row gt_center" headers="Tactical Lift"><br>
-</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left gt_striped" headers="Data">17/08/2026</td>
-<td class="gt_row gt_left gt_striped" headers="Opponent">Casa Pia</td>
-<td class="gt_row gt_center gt_striped" headers="Result">0–7</td>
-<td class="gt_row gt_center gt_striped" headers="Dif. xG">2.66</td>
-<td class="gt_row gt_center gt_striped" headers="Result vs Process">0</td>
-<td class="gt_row gt_center gt_striped" headers="Starting XI Familiarity">74.5</td>
-<td class="gt_row gt_center gt_striped" headers="Threat Timing">0.82</td>
-<td class="gt_row gt_center gt_striped" headers="Tactical Lift"><br>
-</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Data">13/08/2026</td>
-<td class="gt_row gt_left" headers="Opponent">Heart of Midlothian</td>
-<td class="gt_row gt_center" headers="Result">1–1</td>
-<td class="gt_row gt_center" headers="Dif. xG">0.44</td>
-<td class="gt_row gt_center" headers="Result vs Process">-2</td>
-<td class="gt_row gt_center" headers="Starting XI Familiarity">9.5</td>
-<td class="gt_row gt_center" headers="Threat Timing"><br>
-</td>
-<td class="gt_row gt_center" headers="Tactical Lift"><br>
-</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left gt_striped" headers="Data">09/08/2026</td>
-<td class="gt_row gt_left gt_striped" headers="Opponent">Académico Viseu FC</td>
-<td class="gt_row gt_center gt_striped" headers="Result">2–2</td>
-<td class="gt_row gt_center gt_striped" headers="Dif. xG">2.10</td>
-<td class="gt_row gt_center gt_striped" headers="Result vs Process">-2</td>
-<td class="gt_row gt_center gt_striped" headers="Starting XI Familiarity">58.9</td>
-<td class="gt_row gt_center gt_striped" headers="Threat Timing">1.02</td>
-<td class="gt_row gt_center gt_striped" headers="Tactical Lift">-0.23</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Data">06/08/2026</td>
-<td class="gt_row gt_left" headers="Opponent">Heart of Midlothian</td>
-<td class="gt_row gt_center" headers="Result">6–1</td>
-<td class="gt_row gt_center" headers="Dif. xG">2.45</td>
-<td class="gt_row gt_center" headers="Result vs Process">0</td>
-<td class="gt_row gt_center" headers="Starting XI Familiarity">38.9</td>
-<td class="gt_row gt_center" headers="Threat Timing"><br>
-</td>
-<td class="gt_row gt_center" headers="Tactical Lift"><br>
-</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left gt_striped" headers="Data">30/07/2026</td>
-<td class="gt_row gt_left gt_striped" headers="Opponent">FC St. Gallen 1879</td>
-<td class="gt_row gt_center gt_striped" headers="Result">5–0</td>
-<td class="gt_row gt_center gt_striped" headers="Dif. xG">2.99</td>
-<td class="gt_row gt_center gt_striped" headers="Result vs Process">0</td>
-<td class="gt_row gt_center gt_striped" headers="Starting XI Familiarity">45.8</td>
-<td class="gt_row gt_center gt_striped" headers="Threat Timing"><br>
-</td>
-<td class="gt_row gt_center gt_striped" headers="Tactical Lift"><br>
-</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Data">23/07/2026</td>
-<td class="gt_row gt_left" headers="Opponent">FC St. Gallen 1879</td>
-<td class="gt_row gt_center" headers="Result">2–1</td>
-<td class="gt_row gt_center" headers="Dif. xG">-0.42</td>
-<td class="gt_row gt_center" headers="Result vs Process">0</td>
-<td class="gt_row gt_center" headers="Starting XI Familiarity">20.4</td>
-<td class="gt_row gt_center" headers="Threat Timing"><br>
-</td>
-<td class="gt_row gt_center" headers="Tactical Lift"><br>
-</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<div id="match-profiles" class="ba-scroll-anchor">
-
+<div class="ba3-meta">
+Liga Portugal · 05/09/2026
+</div>
+</header>
+<section class="ba3-quickread">
+<div class="ba3-quickread-kicker">
+QUICK READ
+</div>
+<h2 class="ba3-quickread-title anchored">
+Benfica could not impose the game
+</h2>
+<p class="ba3-quickread-text">
+The team failed to impose itself consistently in the main dimensions. Benfica held only a narrow edge in the quality of the chances. In short: the result was consistent with the underlying process.
+</p>
+<div class="ba3-quickread-data">
+<span><strong>GameGrip</strong> 65.8</span><span><strong>ChanceCraft</strong> 44.9</span><span><strong>xG</strong> 1.05–0.59</span>
 </div>
 </section>
-<section id="perfis-de-jogo" class="level2">
-<h2 class="anchored" data-anchor-id="perfis-de-jogo">Perfis de jogo</h2>
-<div class="games-profile-preview">
-<div class="games-profile-copy">
-<div class="games-profile-kicker">
-EXPLORE
-</div>
-<div class="games-profile-title">
-Match profile map
-</div>
-<div class="games-profile-text">
-Compare how Benfica controls and creates in each match.
-</div>
-<div class="games-profile-axis-key">
-<span><strong>GameGrip</strong> · controlo</span><span><strong>ChanceCraft</strong> · criação</span>
-</div>
-<a class="games-profile-link" href="perfil-jogos.html">Explore profiles →</a>
-</div>
-<div class="games-profile-mini">
-<svg viewbox="0 0 360 215" role="img" aria-label="Mini mapa GameGrip por ChanceCraft">
-<rect x="1" y="1" width="358" height="213" rx="8" class="games-profile-bg"></rect><line x1="38" y1="176" x2="322" y2="176" class="games-profile-axis"></line><line x1="38" y1="176" x2="38" y2="40" class="games-profile-axis"></line><line x1="180.0" y1="40" x2="180.0" y2="176" class="games-profile-guide"></line><line x1="38" y1="108.0" x2="322" y2="108.0" class="games-profile-guide"></line><text x="180" y="204" text-anchor="middle" class="games-profile-axis-label">GameGrip →</text><text x="14" y="108" text-anchor="middle" transform="rotate(-90 14 108)" class="games-profile-axis-label">ChanceCraft →</text><circle cx="214.9" cy="153.8" r="4.5" class="games-profile-dot"></circle><circle cx="303.0" cy="74.0" r="4.5" class="games-profile-dot"></circle><circle cx="292.2" cy="85.8" r="4.5" class="games-profile-dot"></circle><circle cx="270.3" cy="71.0" r="4.5" class="games-profile-dot"></circle><circle cx="282.2" cy="149.8" r="4.5" class="games-profile-dot"></circle><circle cx="224.9" cy="114.9" r="4.5" class="games-profile-dot"></circle><circle cx="284.2" cy="63.9" r="7" class="games-profile-dot latest"></circle><text x="294.2" y="53.9" class="games-profile-latest-label">Moreirense</text>
+<section class="ba3-grid">
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<path d="M4 17l5-6 4 3 7-8"></path><path d="M16 6h4v4"></path>
 </svg>
-<div class="games-profile-current">
-<span>Latest match</span><strong>86.7 / 82.4</strong><small>GameGrip / ChanceCraft</small>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+PROCESS
+</div>
+<div class="ba3-label">
+xG Difference
+</div>
+<div class="ba3-value">
++0.46
+</div>
+<div class="ba3-note">
+xG Benfica 1.05 · Opponent 0.59
 </div>
 </div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="12" r="7"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+</svg>
 </div>
-<!-- BA_EN_PHASE1_START -->
-<script id="ba-en-phase1">
-document.addEventListener("DOMContentLoaded", () => {
-  const exact = new Map([
-    ["Início","Home"],["Último jogo","Latest match"],["Jogos","Matches"],
-    ["Jogadores","Players"],["Calendário","Calendar"],["Metodologia","Methodology"],
-    ["Perfis de jogo","Match profiles"],
-    ["ANÁLISE DO JOGO","MATCH ANALYSIS"],
-    ["BENFICA ANALYTICS · ANÁLISE DO JOGO","BENFICA ANALYTICS · MATCH ANALYSIS"],
-    ["ARQUIVO ANALÍTICO","ANALYTICAL ARCHIVE"],
-    ["Processo forte. Estrutura estável.","Strong process. Stable structure."],
-    ["Vantagem cedo. Controlo até ao fim.","Early lead. Control to the end."],
-    ["Muito processo. Pouco resultado.","Strong process. Little reward."],
-    ["Rotação alta. Resultado curto.","Heavy rotation. Narrow result."],
-    ["Domínio claro. Ameaça tardia.","Clear dominance. Threat came late."],
-    ["Pouca familiaridade. Estrutura em teste.","Low familiarity. Structure under test."],
-    ["PROCESSO","PROCESS"],["FORMA RECENTE","RECENT FORM"],["ESTRUTURA","STRUCTURE"],
-    ["DINÂMICA","DYNAMICS"],["LEADLOCK · GESTÃO DA VANTAGEM","LEADLOCK · LEAD MANAGEMENT"],
-    ["JOGADOR EM DESTAQUE","PLAYER SPOTLIGHT"],
-    ["Diferença de xG","xG Difference"],["Resultado vs processo","Result vs Process"],
-    ["Nível de processo","Process Level"],["Volatilidade do processo","Process Volatility"],
-    ["Familiaridade do onze","Starting XI Familiarity"],["Cobertura de pares","Pair Coverage"],
-    ["Continuidade por setor","Sector Continuity"],["Tempo em vantagem","Time Leading"],
-    ["Vantagem protegida","Lead protected"],["Ameaça","Threat"],["Muito alto","Very high"],
-    ["Ver análise completa","View full analysis"],["Ver análise","View analysis"],
-    ["Contexto da Liga","League context"],
-    ["Liga Europa · Qualificação","Europa League · Qualifying"],
-    ["Liga Europa · Play-off","Europa League · Play-off"],
-    ["Taça da Liga","League Cup"]
-  ]);
-
-  const phrases = [
-    ["Cobertura de pares:","Pair coverage:"],
-    ["Média da diferença de xG nos últimos 5 jogos","Average xG difference over the last 5 matches"],
-    ["Mediana da variação da diferença de xG nos últimos 5 jogos","Median xG-difference swing over the last 5 matches"],
-    ["Média da xG differential nos últimos 5 jogos","Average xG difference over the last 5 matches"],
-    ["Mediana da variação entre jogos","Median match-to-match variation"],
-    ["Continuidade dos titulares por setor","Starter continuity by sector"],
-    ["Resultado coincidente com o desfecho do xG","Result matched the outcome suggested by xG"],
-    ["Empate quando o xG sugeria vitória","Draw when xG suggested a win"],
-    ["Mudança observada face ao esperado","Observed change versus expectation"],
-    ["As métricas próprias são calculadas com regras e baselines documentados na página de","Proprietary metrics are calculated using rules and baselines documented on the"],
-    ["Como se posiciona o Benfica face às restantes equipas da Liga Portugal na época atual.","How Benfica compares with the rest of Liga Portugal this season."]
-  ];
-
-  const norm = s => s.replace(/\s+/g," ").trim();
-  function translate(root=document.body){
-    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-    const nodes=[]; while(w.nextNode()) nodes.push(w.currentNode);
-    for(const n of nodes){
-      const raw=n.nodeValue, key=norm(raw);
-      if(!key) continue;
-      if(exact.has(key)){ n.nodeValue=raw.replace(key, exact.get(key)); continue; }
-      let out=raw;
-      for(const [pt,en] of phrases) out=out.split(pt).join(en);
-      if(out!==raw) n.nodeValue=out;
-    }
-  }
-  translate();
-
-  document.querySelectorAll('.navbar-nav a, .navbar-brand, header a').forEach(a=>{
-    const t=norm(a.textContent);
-    if(exact.has(t)) a.textContent=exact.get(t);
-    const label=norm(a.textContent);
-    if(label==='Home') a.href='/en/index.html';
-    if(label==='Latest match') a.href='/en/ultimo-jogo.html';
-    if(label==='Matches') a.href='/en/jogos.html';
-    if(label==='Players') a.href='/jogadores.html';
-    if(label==='Calendar') a.href='/calendario.html';
-    if(label==='Methodology') a.href='/metodologia.html';
-  });
-  translate();
-});
-</script>
-<!-- BA_EN_PHASE1_END -->
-
-
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+PROCESS
+</div>
+<div class="ba3-label">
+Result vs Process
+</div>
+<div class="ba3-value">
+0
+</div>
+<div class="ba3-note">
+Resultado coincidente com o desfecho do xG
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<path d="M3 14h3l2-6 4 10 3-8 2 4h4"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+RECENT FORM
+</div>
+<div class="ba3-label">
+Process Level
+</div>
+<div class="ba3-value">
+2.16
+</div>
+<div class="ba3-note">
+Average xG difference over the last 5 matches
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<path d="M3 14h3l2-6 4 10 3-8 2 4h4"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+RECENT FORM
+</div>
+<div class="ba3-label">
+Process Volatility
+</div>
+<div class="ba3-value">
+1.35
+</div>
+<div class="ba3-note">
+Median xG-difference swing over the last 5 matches
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M3 20c0-4 2-6 5-6s5 2 5 6M11 20c0-4 2-6 5-6s5 2 5 6"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+STRUCTURE
+</div>
+<div class="ba3-label">
+Starting XI Familiarity
+</div>
+<div class="ba3-value">
+81.8
+</div>
+<div class="ba3-note">
+Pair coverage: 81.8%
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<rect x="4" y="4" width="6" height="6"></rect><rect x="14" y="4" width="6" height="6"></rect><rect x="4" y="14" width="6" height="6"></rect><rect x="14" y="14" width="6" height="6"></rect>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+STRUCTURE
+</div>
+<div class="ba3-label">
+Sector Continuity
+</div>
+<div class="ba3-value">
+D 100 · M 50 · A 100
+</div>
+<div class="ba3-note">
+Starter continuity by sector
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="12" r="7"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+DYNAMICS
+</div>
+<div class="ba3-label">
+Threat Timing · Threat timing
+</div>
+<div class="ba3-value">
+0.94
+</div>
+<div class="ba3-note">
+Response Threat: 30.0% of xG
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<path d="M5 18l4-4 3 2 6-7"></path><path d="M15 9h3v3"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+DYNAMICS
+</div>
+<div class="ba3-label">
+Tactical Lift · Impact after changes
+</div>
+<div class="ba3-value">
++0.26
+</div>
+<div class="ba3-note">
+Observed change versus expectation
+</div>
+</div>
+</article>
+<article class="ba3-metric ba3-wide">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="12" r="8"></circle><path d="M12 7v5l4 2"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+LEADLOCK · LEAD MANAGEMENT
+</div>
+<div class="ba3-label">
+Time Leading
+</div>
+<div class="ba3-value">
+92.2%
+</div>
+<div class="ba3-note">
+Lead protected
+</div>
+</div>
+</article>
 </section>
+<section class="ba3-player">
+<div class="ba3-player-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="8" r="4"></circle><path d="M5 21c0-5 3-8 7-8s7 3 7 8"></path>
+</svg>
+</div>
+<div class="ba3-player-copy">
+<div class="ba3-player-kicker">
+PLAYER SPOTLIGHT
+</div>
+<div class="ba3-player-name">
+Barreiro Leandro
+</div>
+<div class="ba3-player-metric">
+Threat Execution · Finishing quality
+</div>
+</div>
+<div class="ba3-player-score">
+<div>
+<strong>85.8</strong><span>/100</span>
+</div>
+<small>Very high</small>
+</div>
+</section>
+<footer class="ba3-footer">
+Proprietary metrics are calculated using rules and baselines documented on the <a href="../metodologia.html">Methodology</a>.
+</footer>
+</div>
+
+
 
 </main> <!-- /main -->
 
@@ -2101,7 +1302,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p><strong>Benfica Analytics</strong> · BENFICA ANALYTICS<br>
-<a href="../metodologia.html">Metodologia</a> · Metrics · Methods · Sources<br>
+<a href="../../metodologia.html">Metodologia</a> · Metrics · Methods · Sources<br>
 Projeto não oficial e não afiliado ao Sport Lisboa e Benfica.</p>
 </div>
     <div class="nav-footer-right">
