@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Benfica Analytics - Match profiles</title>
+<title>Benfica Analytics - Match analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/benfica-analytics-logo.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/benfica-analytics-logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,18 +67,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
-<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="../site_libs/plotly-binding-4.12.1/plotly.js"></script>
-<script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
-<script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
-<link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
-<script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
-<link href="../site_libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet">
-<script src="../site_libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -88,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Benfica Analytics</span>
     </a>
   </div>
@@ -99,27 +90,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../ultimo-jogo.html"> 
+    <a class="nav-link" href="../../ultimo-jogo.html"> 
 <span class="menu-text">Último jogo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../jogos.html"> 
+    <a class="nav-link" href="../../jogos.html"> 
 <span class="menu-text">Jogos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../jogadores.html"> 
+    <a class="nav-link" href="../../jogadores.html"> 
 <span class="menu-text">Jogadores</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../calendario.html"> 
+    <a class="nav-link" href="../../calendario.html"> 
 <span class="menu-text">Calendário</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../metodologia.html"> 
+    <a class="nav-link" href="../../metodologia.html"> 
 <span class="menu-text">Metodologia</span></a>
   </li>  
 </ul>
@@ -130,29 +121,21 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#how-to-interpret" id="toc-how-to-interpret" class="nav-link active" data-scroll-target="#how-to-interpret">How to interpret</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Match profiles</h1>
+<h1 class="title">Match analysis</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -164,46 +147,214 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style id="ba-profile-mobile-final">
-@media (max-width: 767px) {
-  /* Keep the analytical map legible instead of squeezing it into ~350 px. */
-  #quarto-document-content .cell-output-display,
-  #quarto-document-content figure,
-  #quarto-document-content .quarto-figure {
-    max-width: 100% !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  #quarto-document-content .cell-output-display > img,
-  #quarto-document-content figure img,
-  #quarto-document-content .quarto-figure img,
-  #quarto-document-content .cell-output-display > svg,
-  #quarto-document-content figure svg {
-    width: 760px !important;
-    min-width: 760px !important;
-    max-width: none !important;
-    height: auto !important;
-  }
-}
-</style>
-<p>The map combines <strong>GameGrip</strong> (match control) with <strong>ChanceCraft</strong> (creation quality). The dashed lines represent Benfica’s 2025/26 league medians and provide a fixed reference for classifying current matches.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-5add3ad2bdcc78bf51c0" style="width:100%;height:454px;"></div>
-<script type="application/json" data-for="htmlwidget-5add3ad2bdcc78bf51c0">{"x":{"data":[{"x":[56.100000000000001,83.5,48.200000000000003,59.200000000000003,76.799999999999997,88,42.399999999999999,19.300000000000001,91.599999999999994,85,64.599999999999994,81.099999999999994,57.899999999999999,75.299999999999997,79.700000000000003,52.299999999999997,61.100000000000001,89.700000000000003,84.799999999999997,81.099999999999994,67.400000000000006,75.900000000000006,93.200000000000003,50,47.399999999999999,53.799999999999997,73.400000000000006,73.599999999999994,86.099999999999994,54.200000000000003,67.700000000000003,42.299999999999997,80.200000000000003,71.700000000000003],"y":[43.899999999999999,76.5,64.200000000000003,31.100000000000001,59.200000000000003,65.299999999999997,39.5,15.199999999999999,90.599999999999994,47.399999999999999,35.899999999999999,16.5,25.800000000000001,69.099999999999994,48.600000000000001,44.399999999999999,25.300000000000001,26.699999999999999,72.599999999999994,37.700000000000003,16.100000000000001,63,70.900000000000006,24.199999999999999,10.6,37.100000000000001,76.400000000000006,44.799999999999997,58.899999999999999,64.799999999999997,62.100000000000001,70.599999999999994,39.399999999999999,92.400000000000006],"text":["<b>CF Estrela Amadora<\/b><br>Época: 2025/26<br>Resultado: 1-0<br>GameGrip: 56.1<br>ChanceCraft: 43.9<br>Perfil: Baixa expressão<br>Execução: -0.63<br>Execução abaixo da referência<br>Conversão: -0.78<br>Conversão abaixo da referência","<b>Tondela<\/b><br>Época: 2025/26<br>Resultado: 3-0<br>GameGrip: 83.5<br>ChanceCraft: 76.5<br>Perfil: Domínio completo<br>Execução: 0.01<br>Execução normal<br>Conversão: 0.03<br>Conversão normal","<b>FC Alverca<\/b><br>Época: 2025/26<br>Resultado: 2-1<br>GameGrip: 48.2<br>ChanceCraft: 64.2<br>Perfil: Criação sem domínio<br>Execução: 0.23<br>Execução normal<br>Conversão: 0.74<br>Conversão normal","<b>Santa Clara<\/b><br>Época: 2025/26<br>Resultado: 1-1<br>GameGrip: 59.2<br>ChanceCraft: 31.1<br>Perfil: Baixa expressão<br>Execução: 0.17<br>Execução normal<br>Conversão: -0.79<br>Conversão abaixo da referência","<b>AVS - Futebol SAD<\/b><br>Época: 2025/26<br>Resultado: 3-0<br>GameGrip: 76.8<br>ChanceCraft: 59.2<br>Perfil: Domínio completo<br>Execução: -0.11<br>Execução normal<br>Conversão: 0.71<br>Conversão normal","<b>Rio Ave<\/b><br>Época: 2025/26<br>Resultado: 1-1<br>GameGrip: 88.0<br>ChanceCraft: 65.3<br>Perfil: Domínio completo<br>Execução: -0.30<br>Execução normal<br>Conversão: -1.27<br>Conversão abaixo da referência","<b>Gil Vicente<\/b><br>Época: 2025/26<br>Resultado: 2-1<br>GameGrip: 42.4<br>ChanceCraft: 39.5<br>Perfil: Baixa expressão<br>Execução: -0.10<br>Execução normal<br>Conversão: 0.83<br>Conversão acima da referência","<b>FC Porto<\/b><br>Época: 2025/26<br>Resultado: 0-0<br>GameGrip: 19.3<br>ChanceCraft: 15.2<br>Perfil: Baixa expressão<br>Execução: 0.21<br>Execução normal<br>Conversão: -0.33<br>Conversão normal","<b>FC Arouca<\/b><br>Época: 2025/26<br>Resultado: 5-0<br>GameGrip: 91.6<br>ChanceCraft: 90.6<br>Perfil: Domínio completo<br>Execução: 0.71<br>Execução acima da referência<br>Conversão: 0.45<br>Conversão normal","<b>Vitória SC<\/b><br>Época: 2025/26<br>Resultado: 3-0<br>GameGrip: 85.0<br>ChanceCraft: 47.4<br>Perfil: Domínio completo<br>Execução: 0.39<br>Execução normal<br>Conversão: 0.48<br>Conversão normal","<b>Casa Pia<\/b><br>Época: 2025/26<br>Resultado: 2-2<br>GameGrip: 64.6<br>ChanceCraft: 35.9<br>Perfil: Baixa expressão<br>Execução: 0.38<br>Execução normal<br>Conversão: -0.60<br>Conversão normal","<b>CD Nacional<\/b><br>Época: 2025/26<br>Resultado: 2-1<br>GameGrip: 81.1<br>ChanceCraft: 16.5<br>Perfil: Controlo territorial<br>Execução: 0.22<br>Execução normal<br>Conversão: -0.62<br>Conversão normal","<b>Sporting CP<\/b><br>Época: 2025/26<br>Resultado: 1-1<br>GameGrip: 57.9<br>ChanceCraft: 25.8<br>Perfil: Baixa expressão<br>Execução: 0.62<br>Execução acima da referência<br>Conversão: -0.54<br>Conversão normal","<b>Moreirense<\/b><br>Época: 2025/26<br>Resultado: 4-0<br>GameGrip: 75.3<br>ChanceCraft: 69.1<br>Perfil: Domínio completo<br>Execução: 1.09<br>Execução acima da referência<br>Conversão: 1.91<br>Conversão acima da referência","<b>Famalicão<\/b><br>Época: 2025/26<br>Resultado: 1-0<br>GameGrip: 79.7<br>ChanceCraft: 48.6<br>Perfil: Domínio completo<br>Execução: 0.70<br>Execução acima da referência<br>Conversão: -0.98<br>Conversão abaixo da referência","<b>Sporting Braga<\/b><br>Época: 2025/26<br>Resultado: 2-2<br>GameGrip: 52.3<br>ChanceCraft: 44.4<br>Perfil: Baixa expressão<br>Execução: 0.96<br>Execução acima da referência<br>Conversão: -0.19<br>Conversão normal","<b>Estoril Praia<\/b><br>Época: 2025/26<br>Resultado: 3-1<br>GameGrip: 61.1<br>ChanceCraft: 25.3<br>Perfil: Baixa expressão<br>Execução: -0.39<br>Execução abaixo da referência<br>Conversão: 1.12<br>Conversão acima da referência","<b>Rio Ave<\/b><br>Época: 2025/26<br>Resultado: 2-0<br>GameGrip: 89.7<br>ChanceCraft: 26.7<br>Perfil: Controlo territorial<br>Execução: -0.86<br>Execução abaixo da referência<br>Conversão: 1.08<br>Conversão acima da referência","<b>CF Estrela Amadora<\/b><br>Época: 2025/26<br>Resultado: 4-0<br>GameGrip: 84.8<br>ChanceCraft: 72.6<br>Perfil: Domínio completo<br>Execução: 0.59<br>Execução acima da referência<br>Conversão: 0.88<br>Conversão acima da referência","<b>Tondela<\/b><br>Época: 2025/26<br>Resultado: 0-0<br>GameGrip: 81.1<br>ChanceCraft: 37.7<br>Perfil: Controlo territorial<br>Execução: 0.21<br>Execução normal<br>Conversão: -2.31<br>Conversão abaixo da referência","<b>FC Alverca<\/b><br>Época: 2025/26<br>Resultado: 2-1<br>GameGrip: 67.4<br>ChanceCraft: 16.1<br>Perfil: Baixa expressão<br>Execução: 1.20<br>Execução acima da referência<br>Conversão: -1.17<br>Conversão abaixo da referência","<b>Santa Clara<\/b><br>Época: 2025/26<br>Resultado: 2-1<br>GameGrip: 75.9<br>ChanceCraft: 63.0<br>Perfil: Domínio completo<br>Execução: 0.83<br>Execução acima da referência<br>Conversão: -0.02<br>Conversão normal","<b>AVS - Futebol SAD<\/b><br>Época: 2025/26<br>Resultado: 3-0<br>GameGrip: 93.2<br>ChanceCraft: 70.9<br>Perfil: Domínio completo<br>Execução: 0.04<br>Execução normal<br>Conversão: -0.73<br>Conversão abaixo da referência","<b>Gil Vicente<\/b><br>Época: 2025/26<br>Resultado: 2-1<br>GameGrip: 50.0<br>ChanceCraft: 24.2<br>Perfil: Baixa expressão<br>Execução: 0.09<br>Execução normal<br>Conversão: 1.16<br>Conversão acima da referência","<b>FC Porto<\/b><br>Época: 2025/26<br>Resultado: 2-2<br>GameGrip: 47.4<br>ChanceCraft: 10.6<br>Perfil: Baixa expressão<br>Execução: 0.56<br>Execução normal<br>Conversão: 0.21<br>Conversão normal","<b>FC Arouca<\/b><br>Época: 2025/26<br>Resultado: 2-1<br>GameGrip: 53.8<br>ChanceCraft: 37.1<br>Perfil: Baixa expressão<br>Execução: -0.72<br>Execução abaixo da referência<br>Conversão: 0.62<br>Conversão normal","<b>Vitória SC<\/b><br>Época: 2025/26<br>Resultado: 3-0<br>GameGrip: 73.4<br>ChanceCraft: 76.4<br>Perfil: Domínio completo<br>Execução: -1.44<br>Execução abaixo da referência<br>Conversão: 2.10<br>Conversão acima da referência","<b>Casa Pia<\/b><br>Época: 2025/26<br>Resultado: 1-1<br>GameGrip: 73.6<br>ChanceCraft: 44.8<br>Perfil: Controlo territorial<br>Execução: -0.56<br>Execução abaixo da referência<br>Conversão: -0.37<br>Conversão normal","<b>CD Nacional<\/b><br>Época: 2025/26<br>Resultado: 2-0<br>GameGrip: 86.1<br>ChanceCraft: 58.9<br>Perfil: Domínio completo<br>Execução: -0.52<br>Execução abaixo da referência<br>Conversão: -0.91<br>Conversão abaixo da referência","<b>Sporting CP<\/b><br>Época: 2025/26<br>Resultado: 2-1<br>GameGrip: 54.2<br>ChanceCraft: 64.8<br>Perfil: Criação sem domínio<br>Execução: 0.09<br>Execução normal<br>Conversão: -0.36<br>Conversão normal","<b>Moreirense<\/b><br>Época: 2025/26<br>Resultado: 4-1<br>GameGrip: 67.7<br>ChanceCraft: 62.1<br>Perfil: Criação sem domínio<br>Execução: 1.87<br>Execução acima da referência<br>Conversão: 0.14<br>Conversão normal","<b>Famalicão<\/b><br>Época: 2025/26<br>Resultado: 2-2<br>GameGrip: 42.3<br>ChanceCraft: 70.6<br>Perfil: Criação sem domínio<br>Execução: -0.49<br>Execução abaixo da referência<br>Conversão: 1.20<br>Conversão acima da referência","<b>Sporting Braga<\/b><br>Época: 2025/26<br>Resultado: 2-2<br>GameGrip: 80.2<br>ChanceCraft: 39.4<br>Perfil: Controlo territorial<br>Execução: -0.07<br>Execução normal<br>Conversão: -0.84<br>Conversão abaixo da referência","<b>Estoril Praia<\/b><br>Época: 2025/26<br>Resultado: 3-1<br>GameGrip: 71.7<br>ChanceCraft: 92.4<br>Perfil: Criação sem domínio<br>Execução: -1.99<br>Execução abaixo da referência<br>Conversão: 0.84<br>Conversão acima da referência"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":0.29999999999999999,"size":11.338582677165356,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[72.550000000000011,72.550000000000011],"y":[-5,105],"text":"","type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,0.55)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-5,105],"y":[46.099999999999994,46.099999999999994],"text":"","type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,0.55)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[74.200000000000003],"y":[49],"text":"<b>Académico Viseu FC<\/b><br>Época: 2026/27<br>Resultado: 2-2<br>GameGrip: 74.2<br>ChanceCraft: 49.0<br>Perfil: Domínio completo<br>Execução: -0.66<br>Execução abaixo da referência<br>Conversão: -0.50<br>Conversão normal","type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":18.897637795275593,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"Execução abaixo da referência","legendgroup":"Execução abaixo da referência","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[76.900000000000006,78.900000000000006,93.299999999999997,89.5,81.799999999999997,86,65.799999999999997],"y":[70.299999999999997,75.700000000000003,75,66.299999999999997,77.200000000000003,19.300000000000001,44.899999999999999],"text":["<b>FC St. Gallen 1879<\/b><br>Época: 2026/27<br>Resultado: 5-0<br>GameGrip: 76.9<br>ChanceCraft: 70.3<br>Perfil: Domínio completo<br>Execução: 0.94<br>Execução acima da referência<br>Conversão: 0.04<br>Conversão normal","<b>Heart of Midlothian<\/b><br>Época: 2026/27<br>Resultado: 6-1<br>GameGrip: 78.9<br>ChanceCraft: 75.7<br>Perfil: Domínio completo<br>Execução: 1.55<br>Execução acima da referência<br>Conversão: 0.80<br>Conversão normal","<b>Casa Pia<\/b><br>Época: 2026/27<br>Resultado: 7-0<br>GameGrip: 93.3<br>ChanceCraft: 75.0<br>Perfil: Domínio completo<br>Execução: 1.82<br>Execução acima da referência<br>Conversão: 2.35<br>Conversão acima da referência","<b>AGF<\/b><br>Época: 2026/27<br>Resultado: 3-1<br>GameGrip: 89.5<br>ChanceCraft: 66.3<br>Perfil: Domínio completo<br>Execução: 1.14<br>Execução acima da referência<br>Conversão: -2.78<br>Conversão abaixo da referência","<b>AGF<\/b><br>Época: 2026/27<br>Resultado: 3-1<br>GameGrip: 81.8<br>ChanceCraft: 77.2<br>Perfil: Domínio completo<br>Execução: 0.76<br>Execução acima da referência<br>Conversão: 0.05<br>Conversão normal","<b>Estoril Praia<\/b><br>Época: 2026/27<br>Resultado: 2-1<br>GameGrip: 86.0<br>ChanceCraft: 19.3<br>Perfil: Controlo territorial<br>Execução: 0.83<br>Execução acima da referência<br>Conversão: -0.86<br>Conversão abaixo da referência","<b>CS Marítimo<\/b><br>Época: 2026/27<br>Resultado: 3-0<br>GameGrip: 65.8<br>ChanceCraft: 44.9<br>Perfil: Baixa expressão<br>Execução: 1.07<br>Execução acima da referência<br>Conversão: 0.88<br>Conversão acima da referência"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":18.897637795275593,"symbol":"triangle-up","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"Execução acima da referência","legendgroup":"Execução acima da referência","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[42.899999999999999,62.299999999999997,86.700000000000003,75.299999999999997,54.600000000000001,38.899999999999999],"y":[35.100000000000001,16.300000000000001,82.400000000000006,77.900000000000006,15.300000000000001,26.300000000000001],"text":["<b>FC St. Gallen 1879<\/b><br>Época: 2026/27<br>Resultado: 1-2<br>GameGrip: 42.9<br>ChanceCraft: 35.1<br>Perfil: Baixa expressão<br>Execução: -0.17<br>Execução normal<br>Conversão: -0.15<br>Conversão normal","<b>Heart of Midlothian<\/b><br>Época: 2026/27<br>Resultado: 1-1<br>GameGrip: 62.3<br>ChanceCraft: 16.3<br>Perfil: Baixa expressão<br>Execução: -0.04<br>Execução normal<br>Conversão: -0.08<br>Conversão normal","<b>Moreirense<\/b><br>Época: 2026/27<br>Resultado: 4-0<br>GameGrip: 86.7<br>ChanceCraft: 82.4<br>Perfil: Domínio completo<br>Execução: -0.26<br>Execução normal<br>Conversão: 0.95<br>Conversão acima da referência","<b>Gil Vicente<\/b><br>Época: 2026/27<br>Resultado: 3-1<br>GameGrip: 75.3<br>ChanceCraft: 77.9<br>Perfil: Domínio completo<br>Execução: -0.19<br>Execução normal<br>Conversão: -0.13<br>Conversão normal","<b>AC Milan<\/b><br>Época: 2026/27<br>Resultado: 2-0<br>GameGrip: 54.6<br>ChanceCraft: 15.3<br>Perfil: Baixa expressão<br>Execução: 0.40<br>Execução normal<br>Conversão: 0.97<br>Conversão acima da referência","<b>FC Porto<\/b><br>Época: 2026/27<br>Resultado: 1-3<br>GameGrip: 38.9<br>ChanceCraft: 26.3<br>Perfil: Baixa expressão<br>Execução: -0.17<br>Execução normal<br>Conversão: 0.18<br>Conversão normal"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":18.897637795275593,"symbol":"square","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","name":"Execução normal","legendgroup":"Execução normal","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[42.899999999999999,76.900000000000006,78.900000000000006,74.200000000000003,62.299999999999997,93.299999999999997,89.5,81.799999999999997,86,65.799999999999997,86.700000000000003,75.299999999999997,54.600000000000001,38.899999999999999],"y":[39.100000000000001,74.299999999999997,79.700000000000003,53,20.300000000000001,79,70.299999999999997,81.200000000000003,23.300000000000001,48.899999999999999,86.400000000000006,81.900000000000006,19.300000000000001,30.300000000000001],"text":["FC St. Gallen 1879","FC St. Gallen 1879","Heart of Midlothian","Académico Viseu FC","Heart of Midlothian","Casa Pia","AGF","AGF","Estoril Praia","CS Marítimo","Moreirense","Gil Vicente","AC Milan","FC Porto"],"hovertext":["","","","","","","","","","","","","",""],"textfont":{"size":13.228346456692915,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[87],"y":[96],"text":"PRODUCTIVE DOMINANCE","hovertext":"","textfont":{"size":13.984251968503939,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[87],"y":[6],"text":"STERILE DOMINANCE","hovertext":"","textfont":{"size":13.984251968503939,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[31],"y":[96],"text":"OPPORTUNISTIC CREATION","hovertext":"","textfont":{"size":13.984251968503939,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[31],"y":[6],"text":"LIMITED MATCH","hovertext":"","textfont":{"size":13.984251968503939,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":53.193856371938573,"r":26.567040265670411,"b":70,"l":52.337069323370706},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"#222222","family":"Arial, Helvetica, sans-serif","size":14},"title":{"text":"<b> Benfica match profiles <\/b>","font":{"color":"rgba(0,0,0,1)","family":"Arial","size":23.910336239103366},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-5,105],"tickmode":"array","ticktext":["0","20","40","60","80","100"],"tickvals":[0,20,40,60,80,100],"categoryorder":"array","categoryarray":["0","20","40","60","80","100"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.9850560398505608,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"Arial","size":12.7521793275218},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.72455564360919289,"zeroline":false,"anchor":"y","title":{"text":"GameGrip - match control","font":{"color":"rgba(0,0,0,1)","family":"Arial","size":15.940224159402243}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-5,105],"tickmode":"array","ticktext":["0","20","40","60","80","100"],"tickvals":[0,20,40,60,80,100],"categoryorder":"array","categoryarray":["0","20","40","60","80","100"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.9850560398505603,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"Arial","size":12.7521793275218},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.72455564360919278,"zeroline":false,"anchor":"x","title":{"text":"ChanceCraft - creation quality","font":{"color":"rgba(0,0,0,1)","family":"Arial","size":15.940224159402243}},"hoverformat":".2f"},"shapes":[],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Arial","size":12.7521793275218}},"hovermode":"closest","barmode":"relative","hoverlabel":{"align":"left"}},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displaylogo":false,"modeBarButtonsToRemove":["select2d","lasso2d","autoScale2d","toggleSpikelines"]},"source":"A","attrs":{"17c59f6639b":{"x":{},"y":{},"text":{},"type":"scatter"},"17c5f055a39":{"xintercept":{}},"17c528665be3":{"yintercept":{}},"17c5581aa8cd":{"x":{},"y":{},"text":{},"shape":{}},"17c53e4057eb":{"x":{},"y":{},"label":{}},"17c5724c253a":{"x":{},"y":{}},"17c565203d75":{"x":{},"y":{}},"17c527a30031":{"x":{},"y":{}},"17c53e61a54b":{"x":{},"y":{}}},"cur_data":"17c59f6639b","visdat":{"17c59f6639b":["function (y) ","x"],"17c5f055a39":["function (y) ","x"],"17c528665be3":["function (y) ","x"],"17c5581aa8cd":["function (y) ","x"],"17c53e4057eb":["function (y) ","x"],"17c5724c253a":["function (y) ","x"],"17c565203d75":["function (y) ","x"],"17c527a30031":["function (y) ","x"],"17c53e61a54b":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="ba3-card">
+<header class="ba3-hero">
+<div class="ba3-kicker">
+BENFICA ANALYTICS · MATCH ANALYSIS
 </div>
+<div class="ba3-result">
+<span class="ba3-team">AC MILAN</span><span class="ba3-score"><strong>0</strong><span>–</span><strong>2</strong></span><span class="ba3-team">BENFICA</span>
 </div>
-<section id="how-to-interpret" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-interpret">How to interpret</h3>
-<p><strong>Complete dominance</strong> combines high control with high-quality creation.<br>
-<strong>Territorial control</strong> represents match control without the same relative quality of chances.<br>
-<strong>Creation without control</strong> identifies matches in which Benfica created high-quality chances without structurally controlling the match.<br>
-<strong>Low expression</strong> corresponds to values below the reference on both dimensions.</p>
-<p>Shot execution is analysed separately through the difference between <strong>xGOT and xG</strong>.</p>
-
-
+<div class="ba3-headline">
+Low familiarity. Structure under test.
+</div>
+<div class="ba3-meta">
+UEFA Europa League · 16/09/2026
+</div>
+</header>
+<section class="ba3-quickread">
+<div class="ba3-quickread-kicker">
+QUICK READ
+</div>
+<h2 class="ba3-quickread-title anchored">
+The result was better than the process suggested
+</h2>
+<p class="ba3-quickread-text">
+The team failed to impose itself consistently in the main dimensions. Chance quality favoured the opponent. In short: efficiency helped the scoreline outperform the performance.
+</p>
+<div class="ba3-quickread-data">
+<span><strong>GameGrip</strong> 54.6</span><span><strong>ChanceCraft</strong> 15.3</span><span><strong>xG</strong> 0.63–1.03</span>
+</div>
 </section>
+<section class="ba3-grid">
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<path d="M4 17l5-6 4 3 7-8"></path><path d="M16 6h4v4"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+PROCESS
+</div>
+<div class="ba3-label">
+xG Difference
+</div>
+<div class="ba3-value">
+-0.40
+</div>
+<div class="ba3-note">
+xG Benfica 0.63 · Opponent 1.03
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="12" r="7"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+PROCESS
+</div>
+<div class="ba3-label">
+Result vs Process
+</div>
+<div class="ba3-value">
++3
+</div>
+<div class="ba3-note">
+Vitória quando o xG sugeria derrota
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<path d="M3 14h3l2-6 4 10 3-8 2 4h4"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+RECENT FORM
+</div>
+<div class="ba3-label">
+Process Level
+</div>
+<div class="ba3-value">
+1.36
+</div>
+<div class="ba3-note">
+Average xG difference over the last 5 matches
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<path d="M3 14h3l2-6 4 10 3-8 2 4h4"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+RECENT FORM
+</div>
+<div class="ba3-label">
+Process Volatility
+</div>
+<div class="ba3-value">
+1.84
+</div>
+<div class="ba3-note">
+Median xG-difference swing over the last 5 matches
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M3 20c0-4 2-6 5-6s5 2 5 6M11 20c0-4 2-6 5-6s5 2 5 6"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+STRUCTURE
+</div>
+<div class="ba3-label">
+Starting XI Familiarity
+</div>
+<div class="ba3-value">
+8.0
+</div>
+<div class="ba3-note">
+Pair coverage: 20.0%
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<rect x="4" y="4" width="6" height="6"></rect><rect x="14" y="4" width="6" height="6"></rect><rect x="4" y="14" width="6" height="6"></rect><rect x="14" y="14" width="6" height="6"></rect>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+STRUCTURE
+</div>
+<div class="ba3-label">
+Sector Continuity
+</div>
+<div class="ba3-value">
+D 42 · M 33 · A 8
+</div>
+<div class="ba3-note">
+Starter continuity by sector
+</div>
+</div>
+</article>
+<article class="ba3-metric">
+<div class="ba3-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="12" r="7"></circle><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+</svg>
+</div>
+<div class="ba3-metric-copy">
+<div class="ba3-group">
+DYNAMICS
+</div>
+<div class="ba3-label">
+Threat Timing · Threat timing
+</div>
+<div class="ba3-value">
+1.09
+</div>
+<div class="ba3-note">
+Response Threat: 100.0% of xG
+</div>
+</div>
+</article>
+</section>
+<section class="ba3-player">
+<div class="ba3-player-icon">
+<svg viewbox="0 0 24 24" aria-hidden="true">
+<circle cx="12" cy="8" r="4"></circle><path d="M5 21c0-5 3-8 7-8s7 3 7 8"></path>
+</svg>
+</div>
+<div class="ba3-player-copy">
+<div class="ba3-player-kicker">
+PLAYER SPOTLIGHT
+</div>
+<div class="ba3-player-name">
+Dodi Lukebakio
+</div>
+<div class="ba3-player-metric">
+Threat Execution · Finishing quality
+</div>
+</div>
+<div class="ba3-player-score">
+<div>
+<strong>76.7</strong><span>/100</span>
+</div>
+<small>High</small>
+</div>
+</section>
+<footer class="ba3-footer">
+Proprietary metrics are calculated using rules and baselines documented on the <a href="../metodologia.html">Methodology</a>.
+</footer>
+</div>
+
+
 
 </main> <!-- /main -->
 
@@ -1109,7 +1260,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p><strong>Benfica Analytics</strong> · BENFICA ANALYTICS<br>
-<a href="../metodologia.html">Metodologia</a> · Metrics · Methods · Sources<br>
+<a href="../../metodologia.html">Metodologia</a> · Metrics · Methods · Sources<br>
 Projeto não oficial e não afiliado ao Sport Lisboa e Benfica.</p>
 </div>
     <div class="nav-footer-right">
